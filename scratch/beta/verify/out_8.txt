@@ -1,0 +1,1 @@
+[8] F2 pdf(1e-308, 1.5, 5) scipy='OverflowError' ref=1.3535156249999999e-153 ulp=exc rel100v200=1.88e-99 check= warn=[] t=0.0

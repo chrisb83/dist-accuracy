@@ -1,0 +1,188 @@
+{
+ "scipy_version": "1.18.1",
+ "distributions": [
+  {
+   "name": "betaprime",
+   "scipy_version": "1.18.1",
+   "class": "betaprime_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    973,
+    1081
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "betaprime_gen",
+     "lines": [
+      1033,
+      1035
+     ]
+    },
+    "logpdf": {
+     "class": "betaprime_gen",
+     "lines": [
+      1037,
+      1038
+     ]
+    },
+    "cdf": {
+     "class": "betaprime_gen",
+     "lines": [
+      1040,
+      1051
+     ]
+    },
+    "sf": {
+     "class": "betaprime_gen",
+     "lines": [
+      1053,
+      1057
+     ]
+    },
+    "ppf": {
+     "class": "betaprime_gen",
+     "lines": [
+      1059,
+      1075
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "a",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "b",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     5.0,
+     6.0
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, a, b) = \\frac{x^{a-1} (1+x)^{-a-b}}{\\beta(a, b)}"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.betaln",
+    "sc.xlog1py",
+    "sc.xlogy",
+    "special.beta"
+   ],
+   "base_classes": [],
+   "calls_into": [
+    "beta"
+   ],
+   "light_review": false,
+   "related": [
+    "beta"
+   ]
+  },
+  {
+   "name": "bradford",
+   "scipy_version": "1.18.1",
+   "class": "bradford_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    1087,
+    1139
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "bradford_gen",
+     "lines": [
+      1112,
+      1114
+     ]
+    },
+    "cdf": {
+     "class": "bradford_gen",
+     "lines": [
+      1116,
+      1117
+     ]
+    },
+    "ppf": {
+     "class": "bradford_gen",
+     "lines": [
+      1119,
+      1120
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "sf": "1 - cdf",
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     0.29891359763170633
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    1.0
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, c) = \\frac{c}{\\log(1+c) (1+cx)}"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.expm1",
+    "sc.log1p"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  }
+ ]
+}

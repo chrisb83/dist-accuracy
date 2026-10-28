@@ -1,0 +1,46 @@
+  ... self-checks (3, 1.2, 1.5, 2)
+  ... self-checks (0, 0.01, 1, 1)
+  ... self-checks (0, 10, 2, 3)
+  ... (3, 1.2, 1.5, 2) pdf: 95 points, references 0.0 s
+  ... (3, 1.2, 1.5, 2) logpdf: 95 points, references 0.0 s
+  ... (3, 1.2, 1.5, 2) cdf: 95 points, references 0.0 s
+  ... (3, 1.2, 1.5, 2) logcdf: 95 points, references 0.0 s
+  ... (3, 1.2, 1.5, 2) sf: 95 points, references 0.0 s
+  ... (3, 1.2, 1.5, 2) logsf: 95 points, references 0.0 s
+  ... (0, 0.01, 1, 1) pdf: 94 points, references 0.0 s
+  ... (0, 0.01, 1, 1) logpdf: 94 points, references 0.0 s
+  ... (0, 0.01, 1, 1) cdf: 94 points, references 0.0 s
+  ... (0, 0.01, 1, 1) logcdf: 94 points, references 0.0 s
+  ... (0, 0.01, 1, 1) sf: 94 points, references 0.0 s
+  ... (0, 0.01, 1, 1) logsf: 94 points, references 0.0 s
+  ... (0, 10, 2, 3) pdf: 90 points, references 0.0 s
+  ... (0, 10, 2, 3) logpdf: 90 points, references 0.0 s
+  ... (0, 10, 2, 3) cdf: 90 points, references 0.0 s
+  ... (0, 10, 2, 3) logcdf: 90 points, references 0.0 s
+  ... (0, 10, 2, 3) sf: 90 points, references 0.0 s
+  ... (0, 10, 2, 3) logsf: 90 points, references 0.0 s
+  ... (0, 1, 100, 100) pdf: 94 points, references 0.0 s
+  ... (0, 1, 100, 100) logpdf: 94 points, references 0.0 s
+  ... (0, 1, 100, 100) cdf: 94 points, references 0.0 s
+  ... (0, 1, 100, 100) logcdf: 94 points, references 0.0 s
+  ... (0, 1, 100, 100) sf: 94 points, references 0.0 s
+  ... (0, 1, 100, 100) logsf: 94 points, references 0.0 s
+  ... (0, 1, 0.001, 0.001) pdf: 94 points, references 0.0 s
+  ... (0, 1, 0.001, 0.001) logpdf: 94 points, references 0.0 s
+  ... (0, 1, 0.001, 0.001) cdf: 94 points, references 0.0 s
+  ... (0, 1, 0.001, 0.001) logcdf: 94 points, references 0.0 s
+  ... (0, 1, 0.001, 0.001) sf: 94 points, references 0.0 s
+  ... (0, 1, 0.001, 0.001) logsf: 94 points, references 0.0 s
+  ... (500, 0.1, 2, 3) pdf: 95 points, references 0.0 s
+  ... (500, 0.1, 2, 3) logpdf: 95 points, references 0.0 s
+  ... (500, 0.1, 2, 3) cdf: 95 points, references 0.0 s
+  ... (500, 0.1, 2, 3) logcdf: 95 points, references 0.0 s
+  ... (500, 0.1, 2, 3) sf: 95 points, references 0.0 s
+  ... (500, 0.1, 2, 3) logsf: 95 points, references 0.0 s
+  ... (-2, 0.5, 5, 0.5) pdf: 95 points, references 0.0 s
+  ... (-2, 0.5, 5, 0.5) logpdf: 95 points, references 0.0 s
+  ... (-2, 0.5, 5, 0.5) cdf: 95 points, references 0.0 s
+  ... (-2, 0.5, 5, 0.5) logcdf: 95 points, references 0.0 s
+  ... (-2, 0.5, 5, 0.5) sf: 95 points, references 0.0 s
+  ... (-2, 0.5, 5, 0.5) logsf: 95 points, references 0.0 s
+  ... condition numbers for 1950 points above 8 ulp

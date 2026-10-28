@@ -1,0 +1,100 @@
+== logpdf 0.9999838579178736 1e6 2
+  reference      0.4547449475892311478999919  (float 0.4547449475892312)
+  cond (arg)     2.1e+06  (within conditioning: <= 2.1e+06 ulp)
+  cond (shapes)  41.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.45474494783051966)  2.4e+06 ulp  severe
+== logpdf 0.25 1e5 3e5
+  reference      6.367658693848444775878201  (float 6.367658693848445)
+  cond (arg)     0.105  (within conditioning: <= 8.1 ulp)
+  cond (shapes)  0.0785  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(6.367658694187412)  2.4e+05 ulp  moderate
+== logpdf 0.5 1e6 0.5
+  reference      -693139.805448963412062303  (float -693139.8054489634)
+  cond (arg)     1.44  (within conditioning: <= 9.44 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-693139.8054489624)     6.81 ulp  ok
+== ppf 1e-9 0.5 2
+  reference      4.444444444444444999375463e-19  (float 4.444444444444445e-19)
+  cond (arg)     2  (within conditioning: <= 10 ulp)
+  cond (shapes)  42.7  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2.4678339236759816e-24)  4.5e+15 ulp  severe  [Error in function boost::math::ibeta<double>(%1%, %1%, %1%): Root finding evaluation exceeded %1% iterations, giving up now.]
+== ppf 1e-16 0.5 3
+  reference      2.844444444444444325534076e-33  (float 2.8444444444444444e-33)
+  cond (arg)     2  (within conditioning: <= 10 ulp)
+  cond (shapes)  75  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.5)             7.9e+47 ulp  loss  [Error in function boost::math::ibeta<double>(%1%, %1%, %1%): Root finding evaluation exceeded %1% iterations, giving up now.]
+== ppf 1e-300 2 1e6
+  reference      1.414212855266844209617558e-156  (float 1.4142128552668443e-156)
+  cond (arg)     0.5  (within conditioning: <= 8.5 ulp)
+  cond (shapes)  347  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(6.588487656280434e-53) 2.1e+119 ulp  loss  [Error in function boost::math::ibeta<double>(%1%, %1%, %1%): Root finding evaluation exceeded %1% iterations, giving up now.]
+== ppf 1e-120 2 10
+  reference      1.348399724926484158069765e-61  (float 1.3483997249264841e-61)
+  cond (arg)     0.5  (within conditioning: <= 8.5 ulp)
+  cond (shapes)  140  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(8.196050044267321e-53)  2.7e+24 ulp  loss  [Error in function boost::math::ibeta<double>(%1%, %1%, %1%): Root finding evaluation exceeded %1% iterations, giving up now.]
+== ppf 1e-200 5 2
+  reference      6.988271187715792427312127e-41  (float 6.988271187715792e-41)
+  cond (arg)     0.2  (within conditioning: <= 8.2 ulp)
+  cond (shapes)  92.9  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss
+== ppf 0.78 2 1e6
+  reference      0.000002866464025077198467071083  (float 2.8664640250771984e-06)
+  cond (arg)     1.67  (within conditioning: <= 9.67 ulp)
+  cond (shapes)  1.9  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2.866464025139682e-06) 9.82e+04 ulp  moderate
+== isf 0.22 2 1e6
+  reference      0.000002866464025077198296897024  (float 2.8664640250771984e-06)
+  cond (arg)     0.471  (within conditioning: <= 8.47 ulp)
+  cond (shapes)  1.9  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2.8664640251396815e-06) 9.82e+04 ulp  moderate
+== isf 1e-300 20 50
+  reference      0.999999535808348849314429  (float 0.9999995358083489)
+  cond (arg)     9.28e-09  (within conditioning: <= 8 ulp)
+  cond (shapes)  6.86e-06  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.9999995339149244)  8.5e+06 ulp  severe
+== isf 1e-200 5 2
+  reference      1.0  (float 1.0)
+  cond (arg)     1.29e-101  (within conditioning: <= 8 ulp)
+  cond (shapes)  5.98e-99  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss
+== isf 1e-200 1e6 2
+  reference      1.0  (float 1.0)
+  cond (arg)     7.07e-107  (within conditioning: <= 8 ulp)
+  cond (shapes)  3.28e-104  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss
+== pdf 0.25684652341066566 1e5 3e5
+  reference      2.000397163936350715604706e-19  (float 2.0003971639363507e-19)
+  cond (arg)     3.69e+03  (within conditioning: <= 3.69e+03 ulp)
+  cond (shapes)  5.45e+03  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2.0003971639383982e-19) 4.61e+03 ulp  moderate
+== cdf 0.24315347658933434 1e5 3e5
+  reference      4.086085837965272835638527e-24  (float 4.086085837965273e-24)
+  cond (arg)     3.65e+03  (within conditioning: <= 3.66e+03 ulp)
+  cond (shapes)  5.56e+03  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(4.086085837969341e-24) 4.48e+03 ulp  moderate
+== sf 0.25684652341066566 1e5 3e5
+  reference      1.380459632459705474401499e-23  (float 1.3804596324597056e-23)
+  cond (arg)     3.72e+03  (within conditioning: <= 3.73e+03 ulp)
+  cond (shapes)  5.51e+03  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.3804596324611288e-23) 4.64e+03 ulp  moderate
+== pdf 1e-250 1 3
+  reference      3.0  (float 3.0)
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  575  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2.9999999999998286)      257 ulp  minor
+== pdf 1e-200 2.3098496451481823 0.6268795430096368
+  reference      1.205107710272072786046041e-262  (float 1.2051077102720727e-262)
+  cond (arg)     1.31  (within conditioning: <= 9.31 ulp)
+  cond (shapes)  1.06e+03  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.205107710272275e-262)      756 ulp  minor
+== ppf 2.3713737056616554e-263 1000 1000
+  reference      0.1640667682501997369540214  (float 0.16406676825019972)
+  cond (arg)     0.00124  (within conditioning: <= 8 ulp)
+  cond (shapes)  2.03  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.16406676825030245) 2.82e+03 ulp  moderate
+== ppf 0.42999999999999994 0.001 0.001
+  reference      3.145849199010168561995728e-66  (float 3.1458491990101685e-66)
+  cond (arg)     1e+03  (within conditioning: <= 1.01e+03 ulp)
+  cond (shapes)  1.15e+03  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(3.1458491990111627e-66) 1.42e+03 ulp  moderate

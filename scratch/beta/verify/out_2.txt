@@ -1,0 +1,1 @@
+[2] F1 ppf(1e-300, 2, 1000000.0) scipy=6.588487656280434e-53 ref=1.4142128552668442e-156 ulp=2.1e+119 rel100v200=1.76e-99 check=1.0000000000000002e-300 warn=['Error in function boost::math::ibeta<double>(%1%, %1%, %1%):'] t=0.0

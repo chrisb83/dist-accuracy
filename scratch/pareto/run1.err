@@ -1,0 +1,40 @@
+  ... self-checks (2.62172)
+  ... self-checks (1)
+  ... self-checks (0.001)
+  ... (2.62172) pdf: 64 points, references 0.0 s
+  ... (2.62172) cdf: 64 points, references 0.0 s
+  ... (2.62172) sf: 64 points, references 0.0 s
+  ... (2.62172) ppf: 61 points, references 0.0 s
+  ... (2.62172) isf: 61 points, references 0.0 s
+  ... (1) pdf: 64 points, references 0.0 s
+  ... (1) cdf: 64 points, references 0.0 s
+  ... (1) sf: 64 points, references 0.0 s
+  ... (1) ppf: 61 points, references 0.0 s
+  ... (1) isf: 61 points, references 0.0 s
+  ... (0.001) pdf: 61 points, references 0.0 s
+  ... (0.001) cdf: 61 points, references 0.0 s
+  ... (0.001) sf: 61 points, references 0.0 s
+  ... (0.001) ppf: 61 points, references 0.0 s
+  ... (0.001) isf: 61 points, references 0.0 s
+  ... (1e-08) pdf: 61 points, references 0.0 s
+  ... (1e-08) cdf: 61 points, references 0.0 s
+  ... (1e-08) sf: 61 points, references 0.0 s
+  ... (1e-08) ppf: 61 points, references 0.0 s
+  ... (1e-08) isf: 61 points, references 0.0 s
+  ... (1e-17) pdf: 61 points, references 0.0 s
+  ... (1e-17) cdf: 61 points, references 0.0 s
+  ... (1e-17) sf: 61 points, references 0.0 s
+  ... (1e-17) ppf: 61 points, references 0.0 s
+  ... (1e-17) isf: 61 points, references 0.0 s
+  ... (1000) pdf: 64 points, references 0.0 s
+  ... (1000) cdf: 64 points, references 0.0 s
+  ... (1000) sf: 64 points, references 0.0 s
+  ... (1000) ppf: 61 points, references 0.0 s
+  ... (1000) isf: 61 points, references 0.0 s
+  ... (1e+06) pdf: 64 points, references 0.0 s
+  ... (1e+06) cdf: 64 points, references 0.0 s
+  ... (1e+06) sf: 64 points, references 0.0 s
+  ... (1e+06) ppf: 61 points, references 0.0 s
+  ... (1e+06) isf: 61 points, references 0.0 s
+  ... condition numbers for 312 points above 8 ulp
+  ... condition numbers done in 1.7 s
