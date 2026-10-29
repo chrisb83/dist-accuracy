@@ -1,0 +1,67 @@
+  ... self-checks (4.41624, 3.11931)
+  ... self-checks (4.41624, -3.11931)
+  ... self-checks (0.001, 10)
+  ... (4.41624, 3.11931) pdf: 99 points, references 0.0 s
+  ... (4.41624, 3.11931) logpdf: 99 points, references 0.0 s
+  ... (4.41624, 3.11931) cdf: 99 points, references 0.0 s
+  ... (4.41624, 3.11931) sf: 99 points, references 0.0 s
+  ... (4.41624, 3.11931) ppf: 62 points, references 0.0 s
+  ... (4.41624, 3.11931) isf: 62 points, references 0.0 s
+  ... (4.41624, -3.11931) pdf: 99 points, references 0.0 s
+  ... (4.41624, -3.11931) logpdf: 99 points, references 0.0 s
+  ... (4.41624, -3.11931) cdf: 99 points, references 0.0 s
+  ... (4.41624, -3.11931) sf: 99 points, references 0.0 s
+  ... (4.41624, -3.11931) ppf: 62 points, references 0.0 s
+  ... (4.41624, -3.11931) isf: 62 points, references 0.0 s
+  ... (0.001, 10) pdf: 98 points, references 0.0 s
+  ... (0.001, 10) logpdf: 98 points, references 0.0 s
+  ... (0.001, 10) cdf: 98 points, references 0.0 s
+  ... (0.001, 10) sf: 98 points, references 0.0 s
+  ... (0.001, 10) ppf: 62 points, references 0.0 s
+  ... (0.001, 10) isf: 62 points, references 0.0 s
+  ... (0.001, -10) pdf: 98 points, references 0.0 s
+  ... (0.001, -10) logpdf: 98 points, references 0.0 s
+  ... (0.001, -10) cdf: 98 points, references 0.0 s
+  ... (0.001, -10) sf: 98 points, references 0.0 s
+  ... (0.001, -10) ppf: 62 points, references 0.0 s
+  ... (0.001, -10) isf: 62 points, references 0.0 s
+  ... (0.333333, 3) pdf: 98 points, references 0.0 s
+  ... (0.333333, 3) logpdf: 98 points, references 0.0 s
+  ... (0.333333, 3) cdf: 98 points, references 0.0 s
+  ... (0.333333, 3) sf: 98 points, references 0.0 s
+  ... (0.333333, 3) ppf: 62 points, references 0.0 s
+  ... (0.333333, 3) isf: 62 points, references 0.0 s
+  ... (1000, 2) pdf: 99 points, references 0.0 s
+  ... (1000, 2) logpdf: 99 points, references 0.0 s
+  ... (1000, 2) cdf: 99 points, references 0.0 s
+  ... (1000, 2) sf: 99 points, references 0.0 s
+  ... (1000, 2) ppf: 62 points, references 0.0 s
+  ... (1000, 2) isf: 62 points, references 0.0 s
+  ... (2, 0.001) pdf: 85 points, references 0.0 s
+  ... (2, 0.001) logpdf: 85 points, references 0.0 s
+  ... (2, 0.001) cdf: 85 points, references 0.0 s
+  ... (2, 0.001) sf: 85 points, references 0.0 s
+  ... (2, 0.001) ppf: 62 points, references 0.0 s
+  ... (2, 0.001) isf: 62 points, references 0.0 s
+  ... (0.5, -0.5) pdf: 90 points, references 0.0 s
+  ... (0.5, -0.5) logpdf: 90 points, references 0.0 s
+  ... (0.5, -0.5) cdf: 90 points, references 0.0 s
+  ... (0.5, -0.5) sf: 90 points, references 0.0 s
+  ... (0.5, -0.5) ppf: 62 points, references 0.0 s
+  ... (0.5, -0.5) isf: 62 points, references 0.0 s
+  ... condition numbers for 634 points above 8 ulp
+  ... condition numbers done in 194.6 s
+Windows fatal exception: code 0xc06d007f
+
+Current thread 0x0000c9a0 (most recent call first):
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\matplotlib\bezier.py", line 310 in __call__
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\matplotlib\axes\_base.py", line 2593 in _update_patch_limits
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\matplotlib\axes\_base.py", line 2566 in add_patch
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\matplotlib\axes\_axes.py", line 1043 in axhspan
+  File "C:\Users\chbau\Documents\research\dist-accuracy\.claude\skills\dist-accuracy-review\scripts\accuracy.py", line 657 in plot
+  File "C:\Users\chbau\Documents\research\dist-accuracy\.claude\skills\dist-accuracy-review\scripts\accuracy.py", line 769 in main
+  File "C:\Users\chbau\Documents\research\dist-accuracy\.claude\skills\dist-accuracy-review\scripts\accuracy.py", line 780 in <module>
+
+Current thread's C stack trace (most recent call first):
+  <cannot get C stack on this system>
+exit 127

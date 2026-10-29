@@ -1,0 +1,72 @@
+  ... self-checks (-0.1)
+  ... self-checks (0)
+  ... self-checks (0.5)
+  ... (-0.1) pdf: 67 points, references 0.0 s
+  ... (-0.1) logpdf: 67 points, references 0.0 s
+  ... (-0.1) cdf: 67 points, references 0.0 s
+  ... (-0.1) logcdf: 67 points, references 0.0 s
+  ... (-0.1) sf: 67 points, references 0.0 s
+  ... (-0.1) ppf: 59 points, references 0.0 s
+  ... (-0.1) isf: 59 points, references 0.0 s
+  ... (0) pdf: 148 points, references 0.0 s
+  ... (0) logpdf: 148 points, references 0.0 s
+  ... (0) cdf: 148 points, references 0.0 s
+  ... (0) logcdf: 148 points, references 0.0 s
+  ... (0) sf: 148 points, references 0.0 s
+  ... (0) ppf: 59 points, references 0.0 s
+  ... (0) isf: 59 points, references 0.0 s
+  ... (0.5) pdf: 60 points, references 0.0 s
+  ... (0.5) logpdf: 60 points, references 0.0 s
+  ... (0.5) cdf: 60 points, references 0.0 s
+  ... (0.5) logcdf: 60 points, references 0.0 s
+  ... (0.5) sf: 60 points, references 0.0 s
+  ... (0.5) ppf: 59 points, references 0.0 s
+  ... (0.5) isf: 59 points, references 0.0 s
+  ... (2) pdf: 65 points, references 0.0 s
+  ... (2) logpdf: 65 points, references 0.0 s
+  ... (2) cdf: 65 points, references 0.0 s
+  ... (2) logcdf: 65 points, references 0.0 s
+  ... (2) sf: 65 points, references 0.0 s
+  ... (2) ppf: 59 points, references 0.0 s
+  ... (2) isf: 59 points, references 0.0 s
+C:\Users\chbau\Documents\research\dist-accuracy\refs/genextreme_ref.py:151: RuntimeWarning: overflow encountered in exp
+  q = np.exp(-np.exp(-y))
+C:\Users\chbau\Documents\research\dist-accuracy\refs/genextreme_ref.py:152: RuntimeWarning: overflow encountered in exp
+  pts += [q, -np.expm1(-np.exp(-y))]   # ppf target, isf target (1 - q)
+  ... (1) pdf: 68 points, references 0.0 s
+  ... (1) logpdf: 68 points, references 0.0 s
+  ... (1) cdf: 68 points, references 0.0 s
+  ... (1) logcdf: 68 points, references 0.0 s
+  ... (1) sf: 68 points, references 0.0 s
+  ... (1) ppf: 59 points, references 0.0 s
+  ... (1) isf: 59 points, references 0.0 s
+  ... (1e-12) pdf: 69 points, references 0.0 s
+  ... (1e-12) logpdf: 69 points, references 0.0 s
+  ... (1e-12) cdf: 69 points, references 0.0 s
+  ... (1e-12) logcdf: 69 points, references 0.0 s
+  ... (1e-12) sf: 69 points, references 0.0 s
+  ... (1e-12) ppf: 59 points, references 0.0 s
+  ... (1e-12) isf: 59 points, references 0.0 s
+  ... (-1e-12) pdf: 69 points, references 0.0 s
+  ... (-1e-12) logpdf: 69 points, references 0.0 s
+  ... (-1e-12) cdf: 69 points, references 0.0 s
+  ... (-1e-12) logcdf: 69 points, references 0.0 s
+  ... (-1e-12) sf: 69 points, references 0.0 s
+  ... (-1e-12) ppf: 59 points, references 0.0 s
+  ... (-1e-12) isf: 59 points, references 0.0 s
+  ... (1000) pdf: 69 points, references 0.0 s
+  ... (1000) logpdf: 69 points, references 0.0 s
+  ... (1000) cdf: 69 points, references 0.0 s
+  ... (1000) logcdf: 69 points, references 0.0 s
+  ... (1000) sf: 69 points, references 0.0 s
+  ... (1000) ppf: 71 points, references 0.0 s
+  ... (1000) isf: 71 points, references 0.0 s
+  ... (-1000) pdf: 73 points, references 0.0 s
+  ... (-1000) logpdf: 73 points, references 0.0 s
+  ... (-1000) cdf: 73 points, references 0.0 s
+  ... (-1000) logcdf: 73 points, references 0.0 s
+  ... (-1000) sf: 73 points, references 0.0 s
+  ... (-1000) ppf: 71 points, references 0.0 s
+  ... (-1000) isf: 71 points, references 0.0 s
+  ... condition numbers for 481 points above 8 ulp
+  ... condition numbers done in 5.7 s

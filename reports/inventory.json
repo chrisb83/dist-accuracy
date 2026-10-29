@@ -2313,6 +2313,308 @@
    "related": []
   },
   {
+   "name": "genextreme",
+   "scipy_version": "1.18.1",
+   "class": "genextreme_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    3355,
+    3525
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "genextreme_gen",
+     "lines": [
+      3413,
+      3417
+     ]
+    },
+    "logpdf": {
+     "class": "genextreme_gen",
+     "lines": [
+      3419,
+      3434
+     ]
+    },
+    "cdf": {
+     "class": "genextreme_gen",
+     "lines": [
+      3439,
+      3440
+     ]
+    },
+    "logcdf": {
+     "class": "genextreme_gen",
+     "lines": [
+      3436,
+      3437
+     ]
+    },
+    "sf": {
+     "class": "genextreme_gen",
+     "lines": [
+      3442,
+      3443
+     ]
+    },
+    "ppf": {
+     "class": "genextreme_gen",
+     "lines": [
+      3445,
+      3450
+     ]
+    },
+    "isf": {
+     "class": "genextreme_gen",
+     "lines": [
+      3452,
+      3457
+     ]
+    }
+   },
+   "inherited": {
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      -Infinity,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     -0.1
+    ]
+   ],
+   "support_for_example": [
+    -10.0,
+    Infinity
+   ],
+   "get_support_overridden": true,
+   "pdf_in_docstring": [
+    "f(x) = \\exp(-\\exp(-x)) \\exp(-x),",
+    "f(x, c) = \\exp(-(1-c x)^{1/c}) (1-c x)^{1/c-1},"
+   ],
+   "helpers": [
+    "_skew"
+   ],
+   "special_functions": [
+    "sc.comb",
+    "sc.expm1",
+    "sc.gamma",
+    "sc.gammaln",
+    "sc.log1p"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "gengamma",
+   "scipy_version": "1.18.1",
+   "class": "gengamma_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    3852,
+    3951
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "gengamma_gen",
+     "lines": [
+      3897,
+      3898
+     ]
+    },
+    "logpdf": {
+     "class": "gengamma_gen",
+     "lines": [
+      3900,
+      3905
+     ]
+    },
+    "cdf": {
+     "class": "gengamma_gen",
+     "lines": [
+      3907,
+      3911
+     ]
+    },
+    "sf": {
+     "class": "gengamma_gen",
+     "lines": [
+      3917,
+      3921
+     ]
+    },
+    "ppf": {
+     "class": "gengamma_gen",
+     "lines": [
+      3923,
+      3926
+     ]
+    },
+    "isf": {
+     "class": "gengamma_gen",
+     "lines": [
+      3928,
+      3931
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "a",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "c",
+     "domain": [
+      -Infinity,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     4.4162385429431925,
+     3.119309167924276
+    ],
+    [
+     4.4162385429431925,
+     -3.119309167924276
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, a, c) = \\frac{|c| x^{c a-1} \\exp(-x^c)}{\\Gamma(a)}"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.gammainc",
+    "sc.gammaincc",
+    "sc.gammainccinv",
+    "sc.gammaincinv",
+    "sc.gammaln",
+    "sc.poch",
+    "sc.pocha",
+    "sc.psi",
+    "sc.xlogy",
+    "special.gamma"
+   ],
+   "base_classes": [],
+   "calls_into": [
+    "norm"
+   ],
+   "light_review": false,
+   "related": [
+    "norm"
+   ]
+  },
+  {
+   "name": "genhalflogistic",
+   "scipy_version": "1.18.1",
+   "class": "genhalflogistic_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    3957,
+    4004
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "genhalflogistic_gen",
+     "lines": [
+      3985,
+      3992
+     ]
+    },
+    "cdf": {
+     "class": "genhalflogistic_gen",
+     "lines": [
+      3994,
+      3998
+     ]
+    },
+    "ppf": {
+     "class": "genhalflogistic_gen",
+     "lines": [
+      4000,
+      4001
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "sf": "1 - cdf",
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     0.7727472780992932
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    1.2940841441197626
+   ],
+   "get_support_overridden": true,
+   "pdf_in_docstring": [
+    "f(x, c) = \\frac{2 (1 - c x)^{1/(c-1)}}{[1 + (1 - c x)^{1/c}]^2}"
+   ],
+   "helpers": [],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
    "name": "genlogistic",
    "scipy_version": "1.18.1",
    "class": "genlogistic_gen",
@@ -2516,6 +2818,101 @@
     "sc.inv_boxcox1p",
     "sc.log1p",
     "sc.xlog1py"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "gompertz",
+   "scipy_version": "1.18.1",
+   "class": "gompertz_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    4242,
+    4287
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "gompertz_gen",
+     "lines": [
+      4267,
+      4269
+     ]
+    },
+    "logpdf": {
+     "class": "gompertz_gen",
+     "lines": [
+      4271,
+      4272
+     ]
+    },
+    "cdf": {
+     "class": "gompertz_gen",
+     "lines": [
+      4274,
+      4275
+     ]
+    },
+    "sf": {
+     "class": "gompertz_gen",
+     "lines": [
+      4280,
+      4281
+     ]
+    },
+    "ppf": {
+     "class": "gompertz_gen",
+     "lines": [
+      4277,
+      4278
+     ]
+    },
+    "isf": {
+     "class": "gompertz_gen",
+     "lines": [
+      4283,
+      4284
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     0.9474371307510525
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, c) = c \\exp(x) \\exp(-c (e^x-1))"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc._ufuncs",
+    "sc.expm1",
+    "sc.log1p"
    ],
    "base_classes": [],
    "calls_into": [],
