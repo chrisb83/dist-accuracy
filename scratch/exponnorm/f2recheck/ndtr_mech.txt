@@ -1,0 +1,8 @@
+-37.0 ndtr ulp 511.47 | exact erfc(fl(z)) vs true 395.58 | ndtr vs exact erfc(fl(z)) 115.88
+-36.0 ndtr ulp 511.59 | exact erfc(fl(z)) vs true 705.0 | ndtr vs exact erfc(fl(z)) 193.4
+-35.0 ndtr ulp 0.55 | exact erfc(fl(z)) vs true 204.05 | ndtr vs exact erfc(fl(z)) 203.5
+-33.0 ndtr ulp 0.21 | exact erfc(fl(z)) vs true 31.94 | ndtr vs exact erfc(fl(z)) 31.72
+-30.0 ndtr ulp 256.17 | exact erfc(fl(z)) vs true 149.96 | ndtr vs exact erfc(fl(z)) 106.22
+-30.3 ndtr ulp 25.98 | exact erfc(fl(z)) vs true 26.46 | ndtr vs exact erfc(fl(z)) 0.48
+-20.7 ndtr ulp 215.46 | exact erfc(fl(z)) vs true 241.16 | ndtr vs exact erfc(fl(z)) 25.7
+-10.0 ndtr ulp 33.36 | exact erfc(fl(z)) vs true 16.81 | ndtr vs exact erfc(fl(z)) 16.56

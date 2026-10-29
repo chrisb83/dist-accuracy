@@ -1,0 +1,53 @@
+  ... self-checks (2.69712)
+  ... self-checks (1)
+  ... self-checks (1)
+  ... (2.69712) pdf: 96 points, references 0.0 s
+  ... (2.69712) logpdf: 96 points, references 0.0 s
+  ... (2.69712) cdf: 96 points, references 0.0 s
+  ... (2.69712) sf: 96 points, references 0.0 s
+  ... (2.69712) ppf: 55 points, references 0.0 s
+  ... (2.69712) isf: 55 points, references 0.0 s
+  ... (1) pdf: 89 points, references 0.0 s
+  ... (1) logpdf: 89 points, references 0.0 s
+  ... (1) cdf: 89 points, references 0.0 s
+  ... (1) sf: 89 points, references 0.0 s
+  ... (1) ppf: 55 points, references 0.0 s
+  ... (1) isf: 55 points, references 0.0 s
+  ... (1) pdf: 96 points, references 0.0 s
+  ... (1) logpdf: 96 points, references 0.0 s
+  ... (1) cdf: 96 points, references 0.0 s
+  ... (1) sf: 96 points, references 0.0 s
+  ... (1) ppf: 55 points, references 0.0 s
+  ... (1) isf: 55 points, references 0.0 s
+  ... (0.5) pdf: 93 points, references 0.0 s
+  ... (0.5) logpdf: 93 points, references 0.0 s
+  ... (0.5) cdf: 93 points, references 0.0 s
+  ... (0.5) sf: 93 points, references 0.0 s
+  ... (0.5) ppf: 55 points, references 0.0 s
+  ... (0.5) isf: 55 points, references 0.0 s
+  ... (0.001) pdf: 83 points, references 0.0 s
+  ... (0.001) logpdf: 83 points, references 0.0 s
+  ... (0.001) cdf: 83 points, references 0.0 s
+  ... (0.001) sf: 83 points, references 0.0 s
+  ... (0.001) ppf: 55 points, references 0.0 s
+  ... (0.001) isf: 55 points, references 0.0 s
+  ... (0.1) pdf: 94 points, references 0.0 s
+  ... (0.1) logpdf: 94 points, references 0.0 s
+  ... (0.1) cdf: 94 points, references 0.0 s
+  ... (0.1) sf: 94 points, references 0.0 s
+  ... (0.1) ppf: 55 points, references 0.0 s
+  ... (0.1) isf: 55 points, references 0.0 s
+  ... (10) pdf: 96 points, references 0.0 s
+  ... (10) logpdf: 96 points, references 0.0 s
+  ... (10) cdf: 96 points, references 0.0 s
+  ... (10) sf: 96 points, references 0.0 s
+  ... (10) ppf: 55 points, references 0.0 s
+  ... (10) isf: 55 points, references 0.0 s
+  ... (1000) pdf: 96 points, references 0.0 s
+  ... (1000) logpdf: 96 points, references 0.0 s
+  ... (1000) cdf: 96 points, references 0.0 s
+  ... (1000) sf: 96 points, references 0.0 s
+  ... (1000) ppf: 55 points, references 0.0 s
+  ... (1000) isf: 55 points, references 0.0 s
+  ... condition numbers for 358 points above 8 ulp
+  ... condition numbers done in 11.7 s

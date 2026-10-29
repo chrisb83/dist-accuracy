@@ -1,0 +1,20 @@
+F4 ppf(1e-100, 0.3, 50) scipy=0.0 ref=2.1544346900318825e-7 ulp=4.5e+15 100v200=5.09e-101 invchk=-8.09e-107 t=3.8s
+F4 ppf(1e-300, 0.3, 50) scipy=0.0 ref=9.999999999999983e-21 ulp=4.5e+15 100v200=1.46e-100 invchk=8.94e-12 t=0.9s
+F5 logpdf(1e-200, 2.8923945291034436, 1.9505288745913174) scipy=-inf ref=-2135.8512205013921 ulp=inf 100v200=7.31e-102 invchk=- t=0.0s
+F5 logpdf(1e-100, 0.3, 50) scipy=inf ref=-3220.9110799905616 ulp=inf 100v200=2.34e-101 invchk=- t=0.0s
+F5 pdf(1e-20, 0.3, 50) scipy=inf ref=1.5000000000000371e-279 ulp=inf 100v200=5.74e-99 invchk=- t=0.0s
+F5 cdf(1e-20, 0.3, 50) scipy=0.0 ref=1.0000000000089617e-300 ulp=4.5e+15 100v200=2.65e-12 invchk=- t=0.7s
+F6 cdf(9.5, 1000000.0, 1) scipy=3.097751863680524e-33 ref=4.0298496913137851e+977503 ulp=nan 100v200=1.0e+100 invchk=- t=13.6s
+F6 logpdf(9.5, 1000000.0, 1) scipy=-70.5390460130696 ref=-70.539046013124697 ulp=3.52e+03 100v200=2.35e-98 invchk=- t=0.0s
+F6 pdf(9.5, 1000000.0, 1) scipy=2.3188975290685954e-31 ref=2.3188975289408174e-31 ulp=2.48e+05 100v200=1.66e-96 invchk=- t=0.0s
+Traceback (most recent call last):
+  File "C:\Users\chbau\Documents\research\dist-accuracy\scratch\exponweib\verify\verify.py", line 69, in <module>
+    mp.mp.dps = 100; r1, k1 = ref(meth, x, a, c)
+                              ~~~^^^^^^^^^^^^^^^
+  File "C:\Users\chbau\Documents\research\dist-accuracy\scratch\exponweib\verify\verify.py", line 55, in ref
+    if meth == 'sf': return sf_q(x, a, c), None
+                            ~~~~^^^^^^^^^
+  File "C:\Users\chbau\Documents\research\dist-accuracy\scratch\exponweib\verify\verify.py", line 22, in sf_q
+    if v0 >= vtop: raise ValueError
+                   ^^^^^^^^^^^^^^^^
+ValueError

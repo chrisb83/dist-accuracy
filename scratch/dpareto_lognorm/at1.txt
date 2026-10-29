@@ -1,0 +1,81 @@
+dpareto_lognorm.logpdf(1e-100, 0.0, 0.01, 1.0, 1.0)
+  reference      -0.6930971805599453094151505  (float -0.6930971805599453)
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  332  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-0.6930971145629883)  4.3e+08 ulp  severe  [underflow encountered in logaddexp]
+dpareto_lognorm.pdf(1e-290, 0.0, 0.01, 1.0, 1.0)
+  reference      0.5000250006250104167979172  (float 0.5000250006250104)
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  668  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.5000255104863995)  4.6e+09 ulp  severe  [underflow encountered in logaddexp]
+dpareto_lognorm.cdf(1e-290, 0.0, 0.01, 1.0, 1.0)
+  reference      5.000250006250104513635797e-291  (float 5.000250006250105e-291)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  cond (shapes)  669  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(5.000254049480568e-291)  3.6e+09 ulp  severe  [underflow encountered in exp]
+dpareto_lognorm.logcdf(1e+290, 0.0, 0.01, 1.0, 1.0)
+  reference      -5.000250006250103859324572e-291  (float -5.000250006250104e-291)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  cond (shapes)  669  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-5.000254049480568e-291)  3.6e+09 ulp  severe  [underflow encountered in exp]
+dpareto_lognorm.sf(1e+290, 0.0, 0.01, 1.0, 1.0)
+  reference      5.000250006250103859324572e-291  (float 5.000250006250104e-291)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  cond (shapes)  669  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(5.000254049480568e-291)  3.6e+09 ulp  severe  [underflow encountered in exp]
+dpareto_lognorm.logsf(1e+290, 0.0, 0.01, 1.0, 1.0)
+  reference      -668.4427741488331937363605  (float -668.4427741488332)
+  cond (arg)     0.0015  (within conditioning: <= 8 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-668.4427733402279)  5.4e+06 ulp  severe  [underflow encountered in exp]
+dpareto_lognorm.pdf(10.0, 0.0, 0.01, 1.0, 1.0)
+  reference      0.005000250006250104167979172  (float 0.005000250006250104)
+  cond (arg)     2  (within conditioning: <= 10 ulp)
+  cond (shapes)  2.3  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.005000250006275993) 2.33e+04 ulp  moderate  [underflow encountered in logaddexp]
+dpareto_lognorm.pdf(1e-270, 3.0, 1.2, 1.5, 2.0)
+  reference      3.784900150259387947409506e-272  (float 3.784900150259388e-272)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  cond (shapes)  1.26e+03  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(3.784900150370755e-272)  1.3e+05 ulp  moderate  [underflow encountered in logaddexp]
+dpareto_lognorm.sf(1e+200, 3.0, 1.2, 1.5, 2.0)
+  reference      2.599226825711571064873396e-298  (float 2.599226825711571e-298)
+  cond (arg)     1.5  (within conditioning: <= 9.5 ulp)
+  cond (shapes)  692  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2.5992268256729944e-298) 6.68e+04 ulp  moderate  [underflow encountered in exp]
+dpareto_lognorm.pdf(9.5, 0.0, 1.0, 100.0, 100.0)
+  reference      0.003332671709322735448026762  (float 0.0033326717093227353)
+  cond (arg)     3.25  (within conditioning: <= 11.3 ulp)
+  cond (shapes)  4.11  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.003332671709315517) 9.75e+03 ulp  moderate
+dpareto_lognorm.logsf(1e+220, 3.0, 1.2, 1.5, 2.0)
+  reference      -754.292696475970498526768  (float -754.2926964759705)
+  cond (arg)     0.00199  (within conditioning: <= 8 ulp)
+  cond (shapes)  1.01  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-inf)                inf ulp  loss  [underflow encountered in exp]
+dpareto_lognorm.logsf(1e+20, 0.0, 1.0, 100.0, 100.0)
+  reference      -1064.890452531216988540022  (float -1064.890452531217)
+  cond (arg)     0.0433  (within conditioning: <= 8.04 ulp)
+  cond (shapes)  1.99  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-inf)                inf ulp  loss  [underflow encountered in exp]
+dpareto_lognorm.logsf(1e+210, 3.0, 1.2, 1.5, 2.0)
+  reference      -719.753920081059813162513  (float -719.7539200810598)
+  cond (arg)     0.00208  (within conditioning: <= 8 ulp)
+  cond (shapes)  1.01  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-719.7539200810804)      129 ulp  minor  [underflow encountered in exp]
+dpareto_lognorm.logsf(1e+215, 3.0, 1.2, 1.5, 2.0)
+  reference      -737.0233082785151557618832  (float -737.0233082785152)
+  cond (arg)     0.00204  (within conditioning: <= 8 ulp)
+  cond (shapes)  1.01  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-737.0230923000001)  1.3e+09 ulp  severe  [underflow encountered in exp]
+dpareto_lognorm.pdf(3.8153592203558975e+217, 500.0, 0.1, 2.0, 3.0)
+  reference      4.342529109424627391038645e-219  (float 4.342529109424627e-219)
+  cond (arg)     3  (within conditioning: <= 11 ulp)
+  cond (shapes)  1e+03  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(4.342529109424843e-219)      224 ulp  minor
+dpareto_lognorm.logpdf(1e-170, 500.0, 0.1, 2.0, 3.0)
+  reference      -2282.651610061181577968218  (float -2282.6516100611816)
+  cond (arg)     0.000876  (within conditioning: <= 8 ulp)
+  cond (shapes)  1.83  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-2282.651610046625) 2.87e+04 ulp  moderate  [underflow encountered in logaddexp]
+exit 0

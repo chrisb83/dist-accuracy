@@ -1,0 +1,23 @@
+F1 sf(1e-30, 0.01, 1) scipy=1.0 ref=0.49881276637272772 ulp=4.53e+15 100v200=4.53e-103 invchk=- t=22.5s
+F1 sf(9.99999999999999e-18, 0.01, 1) scipy=1.0 ref=0.32391702460801824 ulp=9.4e+15 100v200=5.31e-102 invchk=- t=19.7s
+F1 sf(1e-12, 0.01, 1) scipy=0.2414225927830619 ref=0.24142242497082003 ulp=3.13e+09 100v200=3.83e-102 invchk=- t=22.6s
+F1 sf(0.457088189614875, 0.3, 50) scipy=1.0 ref=0.99999205671765276 ulp=3.58e+10 100v200=1.27e-102 invchk=- t=16.5s
+F2 isf(0.5, 0.01, 1) scipy=0.0 ref=7.8886090522101294e-31 ulp=4.5e+15 100v200=2.88e-72 invchk=-3.54e-174 t=11.7s
+F2 isf(0.9, 0.01, 1) scipy=0.0 ref=9.9999999999998259e-101 ulp=4.5e+15 100v200=0.000114 invchk=-7.91e-106 t=9.7s
+F2 isf(0.29, 0.01, 1) scipy=1.3322676295501888e-15 ref=1.3360874108179045e-15 ulp=1.29e+13 100v200=2.43e-87 invchk=8.69e-190 t=24.9s
+F2 isf(0.999999938945977, 0.3, 50) scipy=0.0 ref=0.33040576701558991 ulp=4.5e+15 100v200=6.41e-80 invchk=1.06e-186 t=13.8s
+F3 ppf(0.9999999999522942, 1000000.0, 1) scipy=inf ref=37.581477866717871 ulp=inf 100v200=1.71e-87 invchk=-9.3e-197 t=14.0s
+F3 ppf(0.9999999999999627, 1000, 0.5) scipy=inf ref=1430.9155716763564 ulp=inf 100v200=1.22e-87 invchk=-3.85e-199 t=15.2s
+F3 ppf(0.99, 1000000.0, 1) scipy=18.41565979147438 ref=18.415659789766021 ulp=4.18e+05 100v200=2.02e-97 invchk=2.46e-196 t=17.4s
+F3 ppf(0.5, 1000000.0, 1) scipy=14.182023825183233 ref=14.182023825119509 ulp=2.02e+04 100v200=3.12e-97 invchk=-3.52e-196 t=15.7s
+F3 ppf(0.9999999999999997, 2, 0.01) scipy=3.2369281880503524e+156 ref=1.0669306428797774e+156 ulp=9.16e+15 100v200=1.21e-94 invchk=0.0 t=11.1s
+Traceback (most recent call last):
+  File "C:\Users\chbau\Documents\research\dist-accuracy\scratch\exponweib\verify\verify.py", line 69, in <module>
+    agree = mp.nstr(abs(r1-r2)/abs(r2), 3)
+                    ~~~~~~~~~~^~~~~~~~
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\mpmath\ctx_mp_python.py", line 286, in __truediv__
+    val = mpf_div(sval, oval, prec, rounding)
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\mpmath\libmp\libmpf.py", line 840, in mpf_div
+    if t == fzero: raise ZeroDivisionError
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+ZeroDivisionError
