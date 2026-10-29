@@ -1,0 +1,11 @@
+  ... self-checks ()
+  ... () pdf: 197 points, references 0.0 s
+  ... () logpdf: 197 points, references 0.0 s
+  ... () cdf: 197 points, references 0.0 s
+  ... () logcdf: 197 points, references 0.0 s
+  ... () sf: 197 points, references 0.0 s
+  ... () logsf: 197 points, references 0.0 s
+  ... () ppf: 93 points, references 0.0 s
+  ... () isf: 93 points, references 0.0 s
+  ... condition numbers for 0 points above 8 ulp
+  ... condition numbers done in 0.0 s

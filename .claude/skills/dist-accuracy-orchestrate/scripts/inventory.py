@@ -16,7 +16,9 @@ Usage
 -----
     python inventory.py                 # all continuous distributions, text
     python inventory.py fisk gamma      # selected distributions
-    python inventory.py --json out.json # also write machine-readable output
+    python inventory.py --json out.json # also write machine-readable output;
+                                        # entries already in out.json for other
+                                        # distributions are kept
     python inventory.py --list          # just the names, one per line
 """
 import argparse
@@ -199,9 +201,25 @@ def main():
     for i in infos:
         show(i)
     if a.json:
+        merged = merge_existing(a.json, infos)
         with open(a.json, "w") as f:
-            json.dump({"scipy_version": scipy.__version__, "distributions": infos}, f, indent=1)
-        print(f"wrote {a.json}")
+            json.dump({"scipy_version": scipy.__version__, "distributions": merged}, f, indent=1)
+        print(f"wrote {a.json} ({len(infos)} updated, {len(merged)} total)")
+
+
+def merge_existing(path, infos):
+    """Entries already in `path`, with those in `infos` added or replaced."""
+    try:
+        with open(path) as f:
+            old = json.load(f)["distributions"]
+    except FileNotFoundError:
+        old = []
+    by_name = {i["name"]: i for i in old}
+    by_name.update((i["name"], i) for i in infos)
+    stale = sorted(n for n, i in by_name.items() if i["scipy_version"] != scipy.__version__)
+    if stale:
+        print(f"note: kept entries from another SciPy version: {stale}")
+    return [by_name[n] for n in sorted(by_name)]
 
 
 if __name__ == "__main__":

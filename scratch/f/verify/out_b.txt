@@ -1,0 +1,4 @@
+F3 ppf(1e-170, 5, 10000.0) scipy=np.float64(nan) ref=6.4658457408727912e-69 ulp=inf 100vs200=1.25e-103 cdfcheck=0.0 t=0.0s
+F3 ppf(1e-300, 5, 10000.0) scipy=np.float64(nan) ref=6.4658457408727913e-121 ulp=inf 100vs200=1.04e-102 cdfcheck=1.63e-201 t=0.0s
+F3 ppf(1e-180, 10, 100) scipy=np.float64(nan) ref=5.0117986927556518e-37 ulp=inf 100vs200=2.05e-102 cdfcheck=-3.27e-201 t=0.0s
+F4 ppf(1e-153, 1, 10000.0) scipy=np.float64(2.225073858507201e-304) ref=1.5708748685746337e-306 ulp=6.33e+17 100vs200=2.67e-102 cdfcheck=0.0 t=0.0s

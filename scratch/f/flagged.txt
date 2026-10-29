@@ -1,0 +1,306 @@
+logpdf (29.0, 18.0) 0.8805 ref=0.0086775 val=0.008677497935480005 ulp=2.3e+03 moderate cond=32.7
+logpdf (29.0, 18.0) 1e+308 ref=-7080.69 val=-inf ulp=inf loss cond=0.00141
+cdf (1.0, 1.0) 1e+10 ref=0.999994 val=0.9999936338020129 ulp=1.2e+03 moderate cond=3.18e-06
+cdf (1.0, 1.0) 1e+20 ref=1 val=1.0 ulp=2.9e+05 moderate cond=3.18e-11
+sf (1.0, 1.0) 1e-20 ref=1 val=1.0 ulp=2.9e+05 moderate cond=3.18e-11
+sf (1.0, 1.0) 1e-16 ref=1 val=0.9999999905136262 ulp=1.4e+07 severe cond=3.18e-09
+sf (1.0, 1.0) 1e-10 ref=0.999994 val=0.9999936338020129 ulp=1.2e+03 moderate cond=3.18e-06
+logpdf (2.0, 0.01) 1e-120 ref=-2.006e-118 val=-1.1102230246251565e-15 ulp=2.5e+118 loss cond=1
+logpdf (2.0, 0.01) 1e-110 ref=-2.01e-108 val=-1.1102230246251565e-15 ulp=2.5e+108 loss cond=1
+logpdf (2.0, 0.01) 1e-100 ref=-2.01e-98 val=-1.1102230246251565e-15 ulp=2.5e+98 loss cond=1
+logpdf (2.0, 0.01) 1e-90 ref=-2.01e-88 val=-1.1102230246251565e-15 ulp=2.5e+88 loss cond=1
+logpdf (2.0, 0.01) 1e-80 ref=-2.01e-78 val=-1.1102230246251565e-15 ulp=2.5e+78 loss cond=1
+logpdf (2.0, 0.01) 1e-70 ref=-2.01e-68 val=-1.1102230246251565e-15 ulp=2.5e+68 loss cond=1
+logpdf (2.0, 0.01) 1e-60 ref=-2.01e-58 val=-1.1102230246251565e-15 ulp=2.5e+58 loss cond=1
+logpdf (2.0, 0.01) 1e-50 ref=-2.01e-48 val=-1.1102230246251565e-15 ulp=2.5e+48 loss cond=1
+logpdf (2.0, 0.01) 1e-40 ref=-2.01e-38 val=-1.1102230246251565e-15 ulp=2.5e+38 loss cond=1
+logpdf (2.0, 0.01) 1e-30 ref=-2.01e-28 val=-1.1102230246251565e-15 ulp=2.5e+28 loss cond=1
+logpdf (2.0, 0.01) 1e-20 ref=-2.01e-18 val=-1.1102230246251565e-15 ulp=2.5e+18 loss cond=1
+logpdf (2.0, 0.01) 5e-19 ref=-1.005e-16 val=-1.1102230246251565e-15 ulp=4.5e+16 loss cond=1
+logpdf (2.0, 0.01) 5e-13 ref=-1.005e-10 val=-1.005011629473529e-10 ulp=5.2e+10 severe cond=1
+logpdf (2.0, 0.01) 1e-10 ref=-2.01e-08 val=-2.0100000108769223e-08 ulp=6.9e+07 severe cond=1
+logpdf (2.0, 0.01) 1e+308 ref=-718.067 val=-inf ulp=inf loss cond=0.0014
+cdf (2.0, 0.01) 1e+308 ref=0.971914 val=1.0 ulp=1.3e+14 severe cond=0.000144
+sf (2.0, 0.01) 1e+308 ref=0.0280863 val=0.0 ulp=inf loss cond=0.005
+pdf (5.0, 10000.0) 1e-200 ref=7.43664e-300 val=7.436638328786163e-300 ulp=6.7e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-190 ref=7.43664e-285 val=7.436638328789324e-285 ulp=6.5e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-180 ref=7.43664e-270 val=7.436638328792486e-270 ulp=6.3e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-170 ref=7.43664e-255 val=7.436638328795648e-255 ulp=6.1e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-160 ref=7.43664e-240 val=7.436638328798809e-240 ulp=6e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-150 ref=7.43664e-225 val=7.436638328801971e-225 ulp=5.8e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-140 ref=7.43664e-210 val=7.436638328805132e-210 ulp=5.6e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-130 ref=7.43664e-195 val=7.436638328808295e-195 ulp=5.4e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-120 ref=7.43664e-180 val=7.436638328811456e-180 ulp=5.2e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-110 ref=7.43664e-165 val=7.436638328814617e-165 ulp=5e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-100 ref=7.43664e-150 val=7.436638328817779e-150 ulp=4.8e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-90 ref=7.43664e-135 val=7.436638328820941e-135 ulp=4.6e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-80 ref=7.43664e-120 val=7.436638328769993e-120 ulp=7.7e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-70 ref=7.43664e-105 val=7.436638328773155e-105 ulp=7.5e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-60 ref=7.43664e-90 val=7.436638328776317e-90 ulp=7.3e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-50 ref=7.43664e-75 val=7.436638328779479e-75 ulp=7.1e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-40 ref=7.43664e-60 val=7.43663832878264e-60 ulp=6.9e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-30 ref=7.43664e-45 val=7.436638328785802e-45 ulp=6.7e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-20 ref=7.43664e-30 val=7.436638328788964e-30 ulp=6.5e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 2e-13 ref=6.65153e-19 val=6.651531530886572e-19 ulp=7.3e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 1e-10 ref=7.43664e-15 val=7.43663832695243e-15 ulp=5.1e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 2e-07 ref=6.65153e-10 val=6.651528203500935e-10 ulp=4.7e+04 moderate cond=1.5
+pdf (5.0, 10000.0) 0.5 ref=0.752939 val=0.752939379643257 ulp=8.6e+03 moderate cond=0.25
+pdf (5.0, 10000.0) 1 ref=0.610055 val=0.6100551069473964 ulp=2.6e+03 moderate cond=1
+pdf (5.0, 10000.0) 1 ref=0.610055 val=0.6100551069473964 ulp=1.9e+03 moderate cond=1
+pdf (5.0, 10000.0) 1 ref=0.610055 val=0.6100551069385189 ulp=5.9e+04 moderate cond=1
+pdf (5.0, 10000.0) 1.5 ref=0.321148 val=0.32114832896618273 ulp=5.6e+03 moderate cond=2.25
+pdf (5.0, 10000.0) 2 ref=0.141726 val=0.14172584788392217 ulp=6.7e+03 moderate cond=3.5
+pdf (5.0, 10000.0) 2.5 ref=0.0567917 val=0.05679170267204217 ulp=7e+04 moderate cond=4.75
+pdf (5.0, 10000.0) 3 ref=0.0214123 val=0.021412284774588414 ulp=3.9e+04 moderate cond=5.99
+pdf (5.0, 10000.0) 3.5 ref=0.00774149 val=0.007741494788035903 ulp=1.2e+04 moderate cond=7.24
+pdf (5.0, 10000.0) 4 ref=0.0027145 val=0.002714499010544831 ulp=2.7e+04 moderate cond=8.49
+pdf (5.0, 10000.0) 4.5 ref=0.000929888 val=0.0009298880277171383 ulp=3.8e+04 moderate cond=9.73
+pdf (5.0, 10000.0) 5 ref=0.000312762 val=0.0003127621953142684 ulp=3.3e+04 moderate cond=11
+pdf (5.0, 10000.0) 5.5 ref=0.000103654 val=0.00010365392450725987 ulp=5.5e+04 moderate cond=12.2
+pdf (5.0, 10000.0) 6 ref=3.3938e-05 val=3.393798876758602e-05 ulp=2e+04 moderate cond=13.5
+pdf (5.0, 10000.0) 6.5 ref=1.09997e-05 val=1.0999722912077376e-05 ulp=5e+04 moderate cond=14.7
+pdf (5.0, 10000.0) 7 ref=3.53465e-06 val=3.534647920914447e-06 ulp=4.6e+04 moderate cond=15.9
+pdf (5.0, 10000.0) 7.5 ref=1.12749e-06 val=1.127491369838602e-06 ulp=4.6e+04 moderate cond=17.2
+pdf (5.0, 10000.0) 8 ref=3.57366e-07 val=3.573660683012087e-07 ulp=3.7e+04 moderate cond=18.4
+pdf (5.0, 10000.0) 8.5 ref=1.12642e-07 val=1.126415011727604e-07 ulp=1.4e+04 moderate cond=19.7
+pdf (5.0, 10000.0) 9 ref=3.53313e-08 val=3.533134339050293e-08 ulp=4e+04 moderate cond=20.9
+pdf (5.0, 10000.0) 9.5 ref=1.10342e-08 val=1.1034247246954582e-08 ulp=3.6e+04 moderate cond=22.1
+pdf (5.0, 10000.0) 10 ref=3.43283e-09 val=3.432833373792355e-09 ulp=2.8e+04 moderate cond=23.4
+logpdf (5.0, 10000.0) 2e-13 ref=-41.8543 val=-41.854269633338845 ulp=1.7e+03 moderate cond=0.0358
+logpdf (5.0, 10000.0) 1e-10 ref=-32.5324 val=-32.53235748595034 ulp=1.6e+03 moderate cond=0.0461
+logpdf (5.0, 10000.0) 2e-07 ref=-21.131 val=-21.131004296636092 ulp=2.2e+03 moderate cond=0.071
+logpdf (5.0, 10000.0) 0.5 ref=-0.283771 val=-0.28377055954479147 ulp=3e+04 moderate cond=0.88
+logpdf (5.0, 10000.0) 1 ref=-0.494206 val=-0.49420598663709825 ulp=5.2e+03 moderate cond=2.02
+logpdf (5.0, 10000.0) 1 ref=-0.494206 val=-0.49420598663709825 ulp=3.9e+03 moderate cond=2.02
+logpdf (5.0, 10000.0) 1 ref=-0.494206 val=-0.49420598665165016 ulp=1.2e+05 moderate cond=2.02
+logpdf (5.0, 10000.0) 1.5 ref=-1.13585 val=-1.1358521785732592 ulp=5e+03 moderate cond=1.98
+logpdf (5.0, 10000.0) 2 ref=-1.95386 val=-1.9538607361901086 ulp=3.4e+03 moderate cond=1.79
+logpdf (5.0, 10000.0) 2.5 ref=-2.86837 val=-2.86836504364328 ulp=2.5e+04 moderate cond=1.65
+logpdf (5.0, 10000.0) 3 ref=-3.84379 val=-3.8437904667734983 ulp=1e+04 moderate cond=1.56
+logpdf (5.0, 10000.0) 3.5 ref=-4.86116 val=-4.861160484957509 ulp=2.5e+03 moderate cond=1.49
+logpdf (5.0, 10000.0) 4 ref=-5.90915 val=-5.909147869126173 ulp=4.5e+03 moderate cond=1.44
+logpdf (5.0, 10000.0) 4.5 ref=-6.98045 val=-6.980446379369823 ulp=5.5e+03 moderate cond=1.39
+logpdf (5.0, 10000.0) 5 ref=-8.07007 val=-8.070067415566882 ulp=4.1e+03 moderate cond=1.36
+logpdf (5.0, 10000.0) 5.5 ref=-9.17445 val=-9.174452856728749 ulp=6e+03 moderate cond=1.33
+logpdf (5.0, 10000.0) 6 ref=-10.291 val=-10.290975558382343 ulp=1.9e+03 moderate cond=1.31
+logpdf (5.0, 10000.0) 6.5 ref=-11.4176 val=-11.41764047529432 ulp=4.4e+03 moderate cond=1.29
+logpdf (5.0, 10000.0) 7 ref=-12.5529 val=-12.552896861619956 ulp=3.7e+03 moderate cond=1.27
+logpdf (5.0, 10000.0) 7.5 ref=-13.6955 val=-13.695515419844014 ulp=3.4e+03 moderate cond=1.26
+logpdf (5.0, 10000.0) 8 ref=-14.8445 val=-14.844505179127736 ulp=2.5e+03 moderate cond=1.24
+logpdf (5.0, 10000.0) 9 ref=-17.1585 val=-17.158495352225145 ulp=2.3e+03 moderate cond=1.22
+logpdf (5.0, 10000.0) 9.5 ref=-18.3223 val=-18.322262014611624 ulp=2e+03 moderate cond=1.21
+logpdf (5.0, 10000.0) 10 ref=-19.4899 val=-19.489879860266228 ulp=1.4e+03 moderate cond=1.2
+logpdf (5.0, 10000.0) 1e+308 ref=-3.50866e+06 val=-inf ulp=inf loss cond=0.00143
+ppf (5.0, 10000.0) 1e-300 ref=6.46585e-121 val=nan ulp=inf loss cond=0.4
+ppf (5.0, 10000.0) 2.873e-288 ref=6.22241e-116 val=nan ulp=inf loss cond=0.4
+ppf (5.0, 10000.0) 8.254e-276 ref=5.98814e-111 val=nan ulp=inf loss cond=0.4
+ppf (5.0, 10000.0) 2.371e-263 ref=5.76269e-106 val=nan ulp=inf loss cond=0.4
+ppf (5.0, 10000.0) 6.813e-251 ref=5.54573e-101 val=nan ulp=inf loss cond=0.4
+ppf (5.0, 10000.0) 1.957e-238 ref=5.33694e-96 val=nan ulp=inf loss cond=0.4
+ppf (5.0, 10000.0) 5.623e-226 ref=5.136e-91 val=nan ulp=inf loss cond=0.4
+ppf (5.0, 10000.0) 1.616e-213 ref=4.94264e-86 val=nan ulp=inf loss cond=0.4
+ppf (5.0, 10000.0) 4.642e-201 ref=4.75655e-81 val=nan ulp=inf loss cond=0.4
+ppf (5.0, 10000.0) 1.334e-188 ref=4.57747e-76 val=nan ulp=inf loss cond=0.4
+ppf (5.0, 10000.0) 3.831e-176 ref=4.40513e-71 val=nan ulp=inf loss cond=0.4
+pdf (1000.0, 1000.0) 0.5 ref=3.34611e-25 val=3.3461104212354265e-25 ulp=1.9e+03 moderate cond=166
+pdf (1000.0, 1000.0) 0.5313 ref=5.15542e-21 val=5.1554219634392236e-21 ulp=3.6e+03 moderate cond=152
+pdf (1000.0, 1000.0) 0.7289 ref=3.39544e-05 val=3.3954417890127586e-05 ulp=3e+03 moderate cond=77.4
+pdf (1000.0, 1000.0) 0.8812 ref=0.969829 val=0.9698294429154984 ulp=7e+03 moderate cond=30.6
+pdf (1000.0, 1000.0) 0.9387 ref=4.075 val=4.075000176836776 ulp=4.4e+03 moderate cond=14.8
+pdf (1000.0, 1000.0) 0.9812 ref=6.14425 val=6.144247429184854 ulp=5.5e+03 moderate cond=3.74
+pdf (1000.0, 1000.0) 1 ref=6.30625 val=6.306254544589901 ulp=4.7e+03 moderate cond=1
+pdf (1000.0, 1000.0) 1 ref=6.30625 val=6.306254544584165 ulp=4.3e+03 moderate cond=1
+pdf (1000.0, 1000.0) 1 ref=6.30625 val=6.30625454457843 ulp=3.9e+03 moderate cond=1
+pdf (1000.0, 1000.0) 1.065 ref=3.59082 val=3.590816750333703 ulp=6.7e+03 moderate cond=16.8
+pdf (1000.0, 1000.0) 1.135 ref=0.753055 val=0.7530548078787265 ulp=3.3e+03 moderate cond=32.6
+pdf (1000.0, 1000.0) 1.372 ref=1.80395e-05 val=1.803949359151642e-05 ulp=1.8e+03 moderate cond=79.4
+pdf (1000.0, 1000.0) 1.5 ref=5.74509e-09 val=5.745088951539705e-09 ulp=5.5e+03 moderate cond=101
+pdf (1000.0, 1000.0) 1.882 ref=1.45519e-21 val=1.4551920793778457e-21 ulp=5.4e+03 moderate cond=154
+pdf (1000.0, 1000.0) 2 ref=8.36528e-26 val=8.365276053085683e-26 ulp=3.4e+03 moderate cond=168
+pdf (1000.0, 1000.0) 2.5 ref=2.15669e-44 val=2.1566870848783548e-44 ulp=3.8e+03 moderate cond=215
+pdf (1000.0, 1000.0) 3 ref=7.13316e-63 val=7.133159542294029e-63 ulp=6e+03 moderate cond=251
+pdf (1000.0, 1000.0) 3.5 ref=1.27999e-80 val=1.279992768301147e-80 ulp=3.6e+03 moderate cond=279
+pdf (1000.0, 1000.0) 4 ref=1.93954e-97 val=1.939538912504865e-97 ulp=5.2e+03 moderate cond=301
+pdf (1000.0, 1000.0) 4.5 ref=2.63101e-113 val=2.631007221886023e-113 ulp=5.2e+03 moderate cond=319
+pdf (1000.0, 1000.0) 5 ref=2.9144e-128 val=2.9143985393043833e-128 ulp=1.4e+03 moderate cond=334
+pdf (1000.0, 1000.0) 5.5 ref=2.27715e-142 val=2.2771549076889866e-142 ulp=3.8e+03 moderate cond=347
+pdf (1000.0, 1000.0) 6 ref=1.06955e-155 val=1.0695499893157967e-155 ulp=1.8e+03 moderate cond=358
+pdf (1000.0, 1000.0) 6.5 ref=2.58386e-168 val=2.5838585412927016e-168 ulp=1.1e+04 moderate cond=368
+pdf (1000.0, 1000.0) 7 ref=2.77781e-180 val=2.777807433145474e-180 ulp=1.4e+03 moderate cond=376
+pdf (1000.0, 1000.0) 7.5 ref=1.16523e-191 val=1.1652305936470458e-191 ulp=1.5e+04 moderate cond=383
+pdf (1000.0, 1000.0) 8 ref=1.69497e-202 val=1.6949669337434153e-202 ulp=1.5e+04 moderate cond=390
+pdf (1000.0, 1000.0) 8.5 ref=7.69495e-213 val=7.694950015729617e-213 ulp=4.7e+03 moderate cond=396
+pdf (1000.0, 1000.0) 9 ref=9.92612e-223 val=9.926116561190417e-223 ulp=1.2e+03 moderate cond=401
+pdf (1000.0, 1000.0) 9.5 ref=3.34616e-232 val=3.346163285203145e-232 ulp=4.4e+03 moderate cond=406
+pdf (1000.0, 1000.0) 10 ref=2.73579e-241 val=2.7357852411205212e-241 ulp=1.4e+03 moderate cond=410
+logpdf (1000.0, 1000.0) 0.8812 ref=-0.0306351 val=-0.03063505499085295 ulp=2.3e+05 moderate cond=998
+logpdf (1000.0, 1000.0) 0.9387 ref=1.40487 val=1.4048707900883528 ulp=3.2e+03 moderate cond=10.5
+logpdf (1000.0, 1000.0) 0.9812 ref=1.81552 val=1.815516266711711 ulp=3e+03 moderate cond=2.06
+logpdf (1000.0, 1000.0) 1 ref=1.84154 val=1.8415419257680696 ulp=2.6e+03 moderate cond=0.543
+logpdf (1000.0, 1000.0) 1 ref=1.84154 val=1.8415419257671601 ulp=2.3e+03 moderate cond=0.543
+logpdf (1000.0, 1000.0) 1 ref=1.84154 val=1.8415419257662506 ulp=2.1e+03 moderate cond=0.543
+logpdf (1000.0, 1000.0) 1.065 ref=1.27838 val=1.2783796836811234 ulp=5.2e+03 moderate cond=13.1
+logpdf (1000.0, 1000.0) 1.135 ref=-0.283617 val=-0.2836172678034927 ulp=1.2e+04 moderate cond=115
+logpdf (1000.0, 1000.0) 1e+308 ref=-354612 val=-inf ulp=inf loss cond=0.00141
+pdf (1000000.0, 2.0) 0.5 ref=0.541341 val=0.5413411324877702 ulp=3.8e+06 severe cond=4e-06
+pdf (1000000.0, 2.0) 1 ref=0.367879 val=0.36787907320373037 ulp=1.1e+06 severe cond=1
+pdf (1000000.0, 2.0) 1 ref=0.367879 val=0.36787907320373037 ulp=1.1e+06 severe cond=1
+pdf (1000000.0, 2.0) 1 ref=0.367879 val=0.36787907320373037 ulp=1.1e+06 severe cond=1
+pdf (1000000.0, 2.0) 1.5 ref=0.228185 val=0.22818518332048193 ulp=1.7e+06 severe cond=1.33
+pdf (1000000.0, 2.0) 2 ref=0.151633 val=0.15163255123422734 ulp=9.1e+05 moderate cond=1.5
+pdf (1000000.0, 2.0) 2.5 ref=0.107251 val=0.10725113865587756 ulp=2.9e+06 severe cond=1.6
+pdf (1000000.0, 2.0) 3 ref=0.0796145 val=0.07961454585295355 ulp=1.1e+06 severe cond=1.67
+pdf (1000000.0, 2.0) 3.5 ref=0.0613451 val=0.06134505509465768 ulp=5.7e+05 moderate cond=1.71
+pdf (1000000.0, 2.0) 4 ref=0.048675 val=0.048675027582335335 ulp=5.9e+06 severe cond=1.75
+pdf (1000000.0, 2.0) 4.5 ref=0.0395426 val=0.039542572151557855 ulp=2.9e+06 severe cond=1.78
+pdf (1000000.0, 2.0) 5 ref=0.0327492 val=0.0327492183264001 ulp=9.6e+05 moderate cond=1.8
+pdf (1000000.0, 2.0) 5.5 ref=0.0275621 val=0.02756207082953469 ulp=7.5e+05 moderate cond=1.82
+pdf (1000000.0, 2.0) 6 ref=0.0235134 val=0.02351337404197138 ulp=3.9e+06 severe cond=1.83
+pdf (1000000.0, 2.0) 6.5 ref=0.0202936 val=0.020293578102720033 ulp=4.2e+06 severe cond=1.85
+pdf (1000000.0, 2.0) 7 ref=0.0176914 val=0.017691381008744792 ulp=1.7e+06 severe cond=1.86
+pdf (1000000.0, 2.0) 7.5 ref=0.0155586 val=0.01555863289172023 ulp=5.5e+06 severe cond=1.87
+pdf (1000000.0, 2.0) 8 ref=0.013789 val=0.013789010863220026 ulp=2.6e+06 severe cond=1.87
+pdf (1000000.0, 2.0) 8.5 ref=0.0123046 val=0.012304630695500234 ulp=3.9e+06 severe cond=1.88
+pdf (1000000.0, 2.0) 9 ref=0.0110474 val=0.011047396646994449 ulp=3e+06 severe cond=1.89
+pdf (1000000.0, 2.0) 9.5 ref=0.00997327 val=0.009973268095731423 ulp=5.5e+06 severe cond=1.89
+pdf (1000000.0, 2.0) 10 ref=0.00904837 val=0.009048372442159303 ulp=9.5e+06 severe cond=1.9
+pdf (1000000.0, 2.0) 1e+10 ref=1e-20 val=9.999999975159063e-21 ulp=1.1e+07 severe cond=2
+pdf (1000000.0, 2.0) 1e+20 ref=1e-40 val=9.999999950318126e-41 ulp=2.2e+07 severe cond=2
+pdf (1000000.0, 2.0) 1e+30 ref=1e-60 val=1.0000000037235897e-60 ulp=1.7e+07 severe cond=2
+pdf (1000000.0, 2.0) 1e+40 ref=1e-80 val=9.999999900636252e-81 ulp=4.5e+07 severe cond=2
+pdf (1000000.0, 2.0) 1e+50 ref=1e-100 val=9.999999987554024e-101 ulp=5.6e+06 severe cond=2
+pdf (1000000.0, 2.0) 1e+60 ref=1e-120 val=1.0000000074471796e-120 ulp=3.4e+07 severe cond=2
+pdf (1000000.0, 2.0) 1e+70 ref=1e-140 val=9.999999937872149e-141 ulp=2.8e+07 severe cond=2
+pdf (1000000.0, 2.0) 1e+80 ref=1e-160 val=9.999999950284114e-161 ulp=2.2e+07 severe cond=2
+pdf (1000000.0, 2.0) 1e+90 ref=1e-180 val=9.99999996269608e-181 ulp=1.7e+07 severe cond=2
+pdf (1000000.0, 2.0) 1e+100 ref=1e-200 val=9.999999975108046e-201 ulp=1.1e+07 severe cond=2
+pdf (1000000.0, 2.0) 1e+110 ref=1e-220 val=1.0000000136531624e-220 ulp=6.1e+07 severe cond=2
+pdf (1000000.0, 2.0) 1e+120 ref=1e-240 val=1.000000014894359e-240 ulp=6.7e+07 severe cond=2
+pdf (1000000.0, 2.0) 1e+130 ref=1e-260 val=1.0000000012343944e-260 ulp=5.6e+06 severe cond=2
+pdf (1000000.0, 2.0) 1e+140 ref=1e-280 val=9.999999875744298e-281 ulp=5.6e+07 severe cond=2
+pdf (1000000.0, 2.0) 1e+150 ref=1e-300 val=1.0000000037167876e-300 ulp=1.7e+07 severe cond=2
+logpdf (1000000.0, 2.0) 0.5 ref=-0.613706 val=-0.6137056397274137 ulp=6.2e+06 severe cond=6.52e-06
+logpdf (1000000.0, 2.0) 1 ref=-1 val=-1.0000010002404451 ulp=1.1e+06 severe cond=1
+logpdf (1000000.0, 2.0) 1 ref=-1 val=-1.0000010002404451 ulp=1.1e+06 severe cond=1
+logpdf (1000000.0, 2.0) 1 ref=-1 val=-1.0000010002404451 ulp=1.1e+06 severe cond=1
+logpdf (1000000.0, 2.0) 1.5 ref=-1.4776 val=-1.4775977721437812 ulp=1.1e+06 severe cond=0.902
+logpdf (1000000.0, 2.0) 2 ref=-1.8863 val=-1.8862951109185815 ulp=4.8e+05 moderate cond=0.795
+logpdf (1000000.0, 2.0) 2.5 ref=-2.23258 val=-2.2325821043923497 ulp=1.3e+06 severe cond=0.717
+logpdf (1000000.0, 2.0) 3 ref=-2.53056 val=-2.5305584659799933 ulp=4.4e+05 moderate cond=0.659
+logpdf (1000000.0, 2.0) 3.5 ref=-2.79124 val=-2.7912407126277685 ulp=2e+05 moderate cond=0.614
+logpdf (1000000.0, 2.0) 4 ref=-3.02259 val=-3.0225891610607505 ulp=2e+06 severe cond=0.579
+logpdf (1000000.0, 2.0) 4.5 ref=-3.23038 val=-3.230377411469817 ulp=8.8e+05 moderate cond=0.55
+logpdf (1000000.0, 2.0) 5 ref=-3.41888 val=-3.418876185081899 ulp=2.8e+05 moderate cond=0.526
+logpdf (1000000.0, 2.0) 5.5 ref=-3.59131 val=-3.5913146967068315 ulp=2.1e+05 moderate cond=0.506
+logpdf (1000000.0, 2.0) 6 ref=-3.75019 val=-3.7501859115436673 ulp=1e+06 severe cond=0.489
+logpdf (1000000.0, 2.0) 6.5 ref=-3.89745 val=-3.8974507926031947 ulp=1.1e+06 severe cond=0.474
+logpdf (1000000.0, 2.0) 7 ref=-4.03468 val=-4.03467770665884 ulp=4.3e+05 moderate cond=0.46
+logpdf (1000000.0, 2.0) 7.5 ref=-4.16314 val=-4.163139624521136 ulp=1.3e+06 severe cond=0.448
+logpdf (1000000.0, 2.0) 8 ref=-4.28388 val=-4.283883318305016 ulp=6e+05 moderate cond=0.438
+logpdf (1000000.0, 2.0) 8.5 ref=-4.39778 val=-4.397779608145356 ulp=9e+05 moderate cond=0.428
+logpdf (1000000.0, 2.0) 9 ref=-4.50556 val=-4.505560476332903 ulp=6.7e+05 moderate cond=0.419
+logpdf (1000000.0, 2.0) 9.5 ref=-4.60785 val=-4.607846955768764 ulp=1.2e+06 severe cond=0.411
+logpdf (1000000.0, 2.0) 10 ref=-4.70517 val=-4.705170378088951 ulp=2e+06 severe cond=0.404
+logpdf (1000000.0, 2.0) 1e+10 ref=-46.0517 val=-46.05170186236501 ulp=2.3e+05 moderate cond=0.0434
+logpdf (1000000.0, 2.0) 1e+20 ref=-92.1034 val=-92.10340372473001 ulp=2.4e+05 moderate cond=0.0217
+logpdf (1000000.0, 2.0) 1e+30 ref=-138.155 val=-138.15510557591915 ulp=1.2e+05 moderate cond=0.0145
+logpdf (1000000.0, 2.0) 1e+40 ref=-184.207 val=-184.20680744946003 ulp=2.4e+05 moderate cond=0.0109
+logpdf (1000000.0, 2.0) 1e+50 ref=-230.259 val=-230.25850930064917 ulp=2.4e+04 moderate cond=0.00869
+logpdf (1000000.0, 2.0) 1e+60 ref=-276.31 val=-276.3102111518383 ulp=1.2e+05 moderate cond=0.00724
+logpdf (1000000.0, 2.0) 1e+70 ref=-322.362 val=-322.3619130253792 ulp=8.7e+04 moderate cond=0.0062
+logpdf (1000000.0, 2.0) 1e+80 ref=-368.414 val=-368.4136148840189 ulp=6.1e+04 moderate cond=0.00543
+logpdf (1000000.0, 2.0) 1e+90 ref=-414.465 val=-414.4653167426586 ulp=4.1e+04 moderate cond=0.00483
+logpdf (1000000.0, 2.0) 1e+100 ref=-460.517 val=-460.51701860129833 ulp=2.4e+04 moderate cond=0.00434
+logpdf (1000000.0, 2.0) 1e+110 ref=-506.569 val=-506.5687204450369 ulp=1.2e+05 moderate cond=0.00395
+logpdf (1000000.0, 2.0) 1e+120 ref=-552.62 val=-552.6204223036766 ulp=1.2e+05 moderate cond=0.00362
+logpdf (1000000.0, 2.0) 1e+130 ref=-598.672 val=-598.6721241772175 ulp=9.3e+03 moderate cond=0.00334
+logpdf (1000000.0, 2.0) 1e+140 ref=-644.724 val=-644.7238260507584 ulp=8.7e+04 moderate cond=0.0031
+logpdf (1000000.0, 2.0) 1e+150 ref=-690.776 val=-690.7755278944969 ulp=2.4e+04 moderate cond=0.0029
+logpdf (1000000.0, 2.0) 1e+160 ref=-736.827 val=-736.8272297680378 ulp=6.1e+04 moderate cond=0.00271
+logpdf (1000000.0, 2.0) 1e+170 ref=-782.879 val=-782.8789316117764 ulp=3.6e+04 moderate cond=0.00255
+logpdf (1000000.0, 2.0) 1e+180 ref=-828.931 val=-828.9306334853172 ulp=4.1e+04 moderate cond=0.00241
+logpdf (1000000.0, 2.0) 1e+190 ref=-874.982 val=-874.9823353290558 ulp=4.5e+04 moderate cond=0.00229
+logpdf (1000000.0, 2.0) 1e+200 ref=-921.034 val=-921.0340372025967 ulp=2.4e+04 moderate cond=0.00217
+logpdf (1000000.0, 2.0) 1e+210 ref=-967.086 val=-967.0857390463352 ulp=5.2e+04 moderate cond=0.00207
+logpdf (1000000.0, 2.0) 1e+220 ref=-1013.14 val=-1013.1374409198761 ulp=1.1e+04 moderate cond=0.00197
+logpdf (1000000.0, 2.0) 1e+230 ref=-1059.19 val=-1059.1891427636147 ulp=5.8e+04 moderate cond=0.00189
+logpdf (1000000.0, 2.0) 1e+240 ref=-1105.24 val=-1105.2408446073532 ulp=1.2e+05 moderate cond=0.00181
+logpdf (1000000.0, 2.0) 1e+250 ref=-1151.29 val=-1151.2925465106964 ulp=5.3e+04 moderate cond=0.00174
+logpdf (1000000.0, 2.0) 1e+260 ref=-1197.34 val=-1197.3442482948303 ulp=2.3e+05 moderate cond=0.00167
+logpdf (1000000.0, 2.0) 1e+270 ref=-1243.4 val=-1243.3959501385689 ulp=2.8e+05 moderate cond=0.00161
+logpdf (1000000.0, 2.0) 1e+280 ref=-1289.45 val=-1289.447652041912 ulp=1.2e+05 moderate cond=0.00155
+logpdf (1000000.0, 2.0) 1e+290 ref=-1335.5 val=-1335.4993539452553 ulp=2.9e+04 moderate cond=0.0015
+logpdf (1000000.0, 2.0) 1e+294 ref=-1353.92 val=-1353.920034646988 ulp=1.1e+05 moderate cond=0.00148
+logpdf (1000000.0, 2.0) 1e+300 ref=-1381.55 val=-1381.5510557889938 ulp=2.4e+04 moderate cond=0.00145
+logpdf (1000000.0, 2.0) 1.7e+302 ref=-1391.82 val=-1391.8226526379585 ulp=1.1e+05 moderate cond=0.00144
+logpdf (1000000.0, 2.0) 1e+308 ref=-1418.39 val=-inf ulp=inf loss cond=0.00141
+('cdf', (0.01, 3.0), 'ok') 87
+('cdf', (1.0, 1.0), 'moderate') 2
+('cdf', (1.0, 1.0), 'ok') 83
+('cdf', (2.0, 0.01), 'ok') 87
+('cdf', (2.0, 0.01), 'severe') 1
+('cdf', (5.0, 10000.0), 'minor') 10
+('cdf', (5.0, 10000.0), 'ok') 78
+('cdf', (29.0, 18.0), 'ok') 98
+('cdf', (1000.0, 1000.0), 'minor') 2
+('cdf', (1000.0, 1000.0), 'ok') 94
+('cdf', (1000000.0, 2.0), 'ok') 88
+('logpdf', (0.01, 3.0), 'ok') 87
+('logpdf', (1.0, 1.0), 'ok') 85
+('logpdf', (2.0, 0.01), 'loss') 13
+('logpdf', (2.0, 0.01), 'ok') 73
+('logpdf', (2.0, 0.01), 'severe') 2
+('logpdf', (5.0, 10000.0), 'loss') 1
+('logpdf', (5.0, 10000.0), 'minor') 31
+('logpdf', (5.0, 10000.0), 'moderate') 24
+('logpdf', (5.0, 10000.0), 'ok') 32
+('logpdf', (29.0, 18.0), 'loss') 1
+('logpdf', (29.0, 18.0), 'minor') 15
+('logpdf', (29.0, 18.0), 'moderate') 1
+('logpdf', (29.0, 18.0), 'ok') 81
+('logpdf', (1000.0, 1000.0), 'loss') 1
+('logpdf', (1000.0, 1000.0), 'minor') 17
+('logpdf', (1000.0, 1000.0), 'moderate') 8
+('logpdf', (1000.0, 1000.0), 'ok') 70
+('logpdf', (1000000.0, 2.0), 'loss') 1
+('logpdf', (1000000.0, 2.0), 'moderate') 42
+('logpdf', (1000000.0, 2.0), 'ok') 33
+('logpdf', (1000000.0, 2.0), 'severe') 12
+('pdf', (0.01, 3.0), 'minor') 39
+('pdf', (0.01, 3.0), 'ok') 48
+('pdf', (1.0, 1.0), 'minor') 42
+('pdf', (1.0, 1.0), 'ok') 43
+('pdf', (2.0, 0.01), 'minor') 30
+('pdf', (2.0, 0.01), 'ok') 58
+('pdf', (5.0, 10000.0), 'moderate') 44
+('pdf', (5.0, 10000.0), 'ok') 44
+('pdf', (29.0, 18.0), 'minor') 33
+('pdf', (29.0, 18.0), 'ok') 65
+('pdf', (1000.0, 1000.0), 'moderate') 31
+('pdf', (1000.0, 1000.0), 'ok') 65
+('pdf', (1000000.0, 2.0), 'moderate') 4
+('pdf', (1000000.0, 2.0), 'ok') 51
+('pdf', (1000000.0, 2.0), 'severe') 33
+('ppf', (0.01, 3.0), 'minor') 10
+('ppf', (0.01, 3.0), 'ok') 45
+('ppf', (1.0, 1.0), 'ok') 55
+('ppf', (2.0, 0.01), 'ok') 55
+('ppf', (5.0, 10000.0), 'loss') 11
+('ppf', (5.0, 10000.0), 'minor') 9
+('ppf', (5.0, 10000.0), 'ok') 35
+('ppf', (29.0, 18.0), 'minor') 1
+('ppf', (29.0, 18.0), 'ok') 54
+('ppf', (1000.0, 1000.0), 'minor') 4
+('ppf', (1000.0, 1000.0), 'ok') 51
+('ppf', (1000000.0, 2.0), 'ok') 55
+('sf', (0.01, 3.0), 'ok') 87
+('sf', (1.0, 1.0), 'moderate') 2
+('sf', (1.0, 1.0), 'ok') 82
+('sf', (1.0, 1.0), 'severe') 1
+('sf', (2.0, 0.01), 'loss') 1
+('sf', (2.0, 0.01), 'ok') 87
+('sf', (5.0, 10000.0), 'ok') 88
+('sf', (29.0, 18.0), 'ok') 98
+('sf', (1000.0, 1000.0), 'minor') 6
+('sf', (1000.0, 1000.0), 'ok') 90
+('sf', (1000000.0, 2.0), 'ok') 88

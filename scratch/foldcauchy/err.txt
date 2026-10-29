@@ -1,0 +1,26 @@
+  ... self-checks (4.71647)
+  ... self-checks (0)
+  ... self-checks (0.001)
+  ... (4.71647) pdf: 88 points, references 0.0 s
+  ... (4.71647) cdf: 88 points, references 0.0 s
+  ... (4.71647) sf: 88 points, references 0.0 s
+  ... (0) pdf: 82 points, references 0.0 s
+  ... (0) cdf: 82 points, references 0.0 s
+  ... (0) sf: 82 points, references 0.0 s
+  ... (0.001) pdf: 88 points, references 0.0 s
+  ... (0.001) cdf: 88 points, references 0.0 s
+  ... (0.001) sf: 88 points, references 0.0 s
+  ... (1) pdf: 85 points, references 0.0 s
+  ... (1) cdf: 85 points, references 0.0 s
+  ... (1) sf: 85 points, references 0.0 s
+  ... (1000) pdf: 88 points, references 0.0 s
+  ... (1000) cdf: 88 points, references 0.0 s
+  ... (1000) sf: 88 points, references 0.0 s
+  ... (1e+06) pdf: 88 points, references 0.0 s
+  ... (1e+06) cdf: 88 points, references 0.0 s
+  ... (1e+06) sf: 88 points, references 0.0 s
+  ... (1e+100) pdf: 86 points, references 0.0 s
+  ... (1e+100) cdf: 86 points, references 0.0 s
+  ... (1e+100) sf: 86 points, references 0.0 s
+  ... condition numbers for 242 points above 8 ulp
+  ... condition numbers done in 0.5 s

@@ -1,0 +1,55 @@
+  ... self-checks (29)
+  ... self-checks (1)
+  ... self-checks (0.1)
+  ... (29) pdf: 96 points, references 0.0 s
+  ... (29) logpdf: 96 points, references 0.0 s
+  ... (29) cdf: 96 points, references 0.0 s
+  ... (29) sf: 96 points, references 0.0 s
+  ... (29) ppf: 62 points, references 0.0 s
+  ... (29) isf: 62 points, references 0.0 s
+  ... (1) pdf: 96 points, references 0.0 s
+  ... (1) logpdf: 96 points, references 0.0 s
+  ... (1) cdf: 96 points, references 0.0 s
+  ... (1) sf: 96 points, references 0.0 s
+  ... (1) ppf: 62 points, references 0.0 s
+  ... (1) isf: 62 points, references 0.0 s
+  ... (0.1) pdf: 96 points, references 0.0 s
+  ... (0.1) logpdf: 96 points, references 0.0 s
+  ... (0.1) cdf: 96 points, references 0.0 s
+  ... (0.1) sf: 96 points, references 0.0 s
+  ... (0.1) ppf: 62 points, references 0.0 s
+  ... (0.1) isf: 62 points, references 0.0 s
+  ... (0.001) pdf: 96 points, references 0.0 s
+  ... (0.001) logpdf: 96 points, references 0.0 s
+  ... (0.001) cdf: 96 points, references 0.0 s
+  ... (0.001) sf: 96 points, references 0.0 s
+  ... (0.001) ppf: 62 points, references 0.0 s
+  ... (0.001) isf: 62 points, references 0.0 s
+  ... (1e-155) pdf: 88 points, references 0.0 s
+  ... (1e-155) logpdf: 88 points, references 0.0 s
+  ... (1e-155) cdf: 88 points, references 0.0 s
+  ... (1e-155) sf: 88 points, references 0.0 s
+  ... (1e-155) ppf: 62 points, references 0.0 s
+  ... (1e-155) isf: 62 points, references 0.0 s
+  ... (1000) pdf: 96 points, references 0.0 s
+  ... (1000) logpdf: 96 points, references 0.0 s
+  ... (1000) cdf: 96 points, references 0.0 s
+  ... (1000) sf: 96 points, references 0.0 s
+  ... (1000) ppf: 62 points, references 0.0 s
+  ... (1000) isf: 62 points, references 0.0 s
+  ... (1e+06) pdf: 96 points, references 0.0 s
+  ... (1e+06) logpdf: 96 points, references 0.0 s
+  ... (1e+06) cdf: 96 points, references 0.0 s
+  ... (1e+06) sf: 96 points, references 0.0 s
+  ... (1e+06) ppf: 62 points, references 0.0 s
+  ... (1e+06) isf: 62 points, references 0.0 s
+C:\Users\chbau\Documents\research\dist-accuracy\refs/fatiguelife_ref.py:69: RuntimeWarning: divide by zero encountered in divide
+  xs = np.where(t < 0, 4.0 / (np.sqrt(t * t + 4) - t) ** 2,
+  ... (1e+100) pdf: 94 points, references 0.0 s
+  ... (1e+100) logpdf: 94 points, references 0.0 s
+  ... (1e+100) cdf: 94 points, references 0.0 s
+  ... (1e+100) sf: 94 points, references 0.0 s
+  ... (1e+100) ppf: 62 points, references 0.0 s
+  ... (1e+100) isf: 62 points, references 0.0 s
+  ... condition numbers for 578 points above 8 ulp
+  ... condition numbers done in 678.7 s
