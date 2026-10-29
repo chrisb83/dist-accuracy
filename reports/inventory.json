@@ -2,144 +2,53 @@
  "scipy_version": "1.18.1",
  "distributions": [
   {
-   "name": "cosine",
+   "name": "exponnorm",
    "scipy_version": "1.18.1",
-   "class": "cosine_gen",
+   "class": "exponnorm_gen",
    "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
    "class_lines": [
-    1699,
-    1751
+    2162,
+    2259
    ],
    "implemented": {
     "pdf": {
-     "class": "cosine_gen",
+     "class": "exponnorm_gen",
      "lines": [
-      1723,
-      1725
+      2212,
+      2213
      ]
     },
     "logpdf": {
-     "class": "cosine_gen",
+     "class": "exponnorm_gen",
      "lines": [
-      1727,
-      1731
+      2215,
+      2226
      ]
     },
     "cdf": {
-     "class": "cosine_gen",
+     "class": "exponnorm_gen",
      "lines": [
-      1733,
-      1734
+      2228,
+      2239
      ]
     },
     "sf": {
-     "class": "cosine_gen",
+     "class": "exponnorm_gen",
      "lines": [
-      1736,
-      1737
-     ]
-    },
-    "ppf": {
-     "class": "cosine_gen",
-     "lines": [
-      1739,
-      1740
-     ]
-    },
-    "isf": {
-     "class": "cosine_gen",
-     "lines": [
-      1742,
-      1743
+      2241,
+      2252
      ]
     }
    },
    "inherited": {
     "logcdf": "log(cdf)",
-    "logsf": "log(sf)"
-   },
-   "shapes": [],
-   "example_params": [
-    []
-   ],
-   "support_for_example": [
-    -3.141592653589793,
-    3.141592653589793
-   ],
-   "get_support_overridden": false,
-   "pdf_in_docstring": [
-    "f(x) = \\frac{1}{2\\pi} (1+\\cos(x))"
-   ],
-   "helpers": [],
-   "special_functions": [
-    "scu._cosine_cdf",
-    "scu._cosine_invcdf"
-   ],
-   "base_classes": [],
-   "calls_into": [],
-   "light_review": false,
-   "related": []
-  },
-  {
-   "name": "dgamma",
-   "scipy_version": "1.18.1",
-   "class": "dgamma_gen",
-   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
-   "class_lines": [
-    1757,
-    1831
-   ],
-   "implemented": {
-    "pdf": {
-     "class": "dgamma_gen",
-     "lines": [
-      1797,
-      1800
-     ]
-    },
-    "logpdf": {
-     "class": "dgamma_gen",
-     "lines": [
-      1802,
-      1804
-     ]
-    },
-    "cdf": {
-     "class": "dgamma_gen",
-     "lines": [
-      1806,
-      1809
-     ]
-    },
-    "sf": {
-     "class": "dgamma_gen",
-     "lines": [
-      1811,
-      1814
-     ]
-    },
-    "ppf": {
-     "class": "dgamma_gen",
-     "lines": [
-      1819,
-      1822
-     ]
-    },
-    "isf": {
-     "class": "dgamma_gen",
-     "lines": [
-      1824,
-      1827
-     ]
-    }
-   },
-   "inherited": {
-    "logcdf": "log(cdf)",
-    "logsf": "log(sf)"
+    "logsf": "log(sf)",
+    "ppf": "numerical inversion of cdf",
+    "isf": "ppf(1 - q)"
    },
    "shapes": [
     {
-     "name": "a",
+     "name": "K",
      "domain": [
       5e-324,
       Infinity
@@ -153,7 +62,7 @@
    ],
    "example_params": [
     [
-     1.1023326088288166
+     1.5
     ]
    ],
    "support_for_example": [
@@ -162,155 +71,14 @@
    ],
    "get_support_overridden": false,
    "pdf_in_docstring": [
-    "f(x, a) = \\frac{1}{2\\Gamma(a)} |x|^{a-1} \\exp(-|x|)"
+    "f(x, K) = \\frac{1}{2K} \\exp\\left(\\frac{1}{2 K^2} - x / K \\right) \\text{erfc}\\left(-\\frac{x - 1/K}{\\sqrt{2}}\\right)"
    ],
-   "helpers": [],
+   "helpers": [
+    "_norm_cdf",
+    "_norm_logcdf"
+   ],
    "special_functions": [
-    "sc.gamma",
-    "sc.gammainc",
-    "sc.gammaincc",
-    "sc.gammainccinv",
-    "sc.gammaincinv",
-    "sc.gammaln",
-    "sc.xlogy",
-    "special.gamma"
-   ],
-   "base_classes": [],
-   "calls_into": [
-    "gamma"
-   ],
-   "light_review": false,
-   "related": [
-    "gamma"
-   ]
-  },
-  {
-   "name": "dpareto_lognorm",
-   "scipy_version": "1.18.1",
-   "class": "dpareto_lognorm_gen",
-   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
-   "class_lines": [
-    1837,
-    1969
-   ],
-   "implemented": {
-    "pdf": {
-     "class": "dpareto_lognorm_gen",
-     "lines": [
-      1955,
-      1956
-     ]
-    },
-    "logpdf": {
-     "class": "dpareto_lognorm_gen",
-     "lines": [
-      1918,
-      1928
-     ]
-    },
-    "cdf": {
-     "class": "dpareto_lognorm_gen",
-     "lines": [
-      1958,
-      1959
-     ]
-    },
-    "logcdf": {
-     "class": "dpareto_lognorm_gen",
-     "lines": [
-      1930,
-      1948
-     ]
-    },
-    "sf": {
-     "class": "dpareto_lognorm_gen",
-     "lines": [
-      1961,
-      1962
-     ]
-    },
-    "logsf": {
-     "class": "dpareto_lognorm_gen",
-     "lines": [
-      1950,
-      1951
-     ]
-    }
-   },
-   "inherited": {
-    "ppf": "numerical inversion of cdf",
-    "isf": "ppf(1 - q)"
-   },
-   "shapes": [
-    {
-     "name": "u",
-     "domain": [
-      -Infinity,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    },
-    {
-     "name": "s",
-     "domain": [
-      5e-324,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    },
-    {
-     "name": "a",
-     "domain": [
-      5e-324,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    },
-    {
-     "name": "b",
-     "domain": [
-      5e-324,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    }
-   ],
-   "example_params": [
-    [
-     3.0,
-     1.2,
-     1.5,
-     2.0
-    ]
-   ],
-   "support_for_example": [
-    0.0,
-    Infinity
-   ],
-   "get_support_overridden": false,
-   "pdf_in_docstring": [
-    "f(x, \\mu, \\sigma, \\alpha, \\beta) = \\frac{\\alpha \\beta}{(\\alpha + \\beta) x} \\phi\\left( \\frac{\\log x - \\mu}{\\sigma} \\right) \\left( R(y_1) + R(y_2) \\right)"
-   ],
-   "helpers": [],
-   "special_functions": [
-    "sc.logsumexp",
-    "scu._log1mexp"
+    "sc.erfcx"
    ],
    "base_classes": [],
    "calls_into": [],
@@ -318,53 +86,59 @@
    "related": []
   },
   {
-   "name": "pareto",
+   "name": "exponpow",
    "scipy_version": "1.18.1",
-   "class": "pareto_gen",
+   "class": "exponpow_gen",
    "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
    "class_lines": [
-    8211,
-    8366
+    2358,
+    2408
    ],
    "implemented": {
     "pdf": {
-     "class": "pareto_gen",
+     "class": "exponpow_gen",
      "lines": [
-      8236,
-      8238
+      2389,
+      2391
+     ]
+    },
+    "logpdf": {
+     "class": "exponpow_gen",
+     "lines": [
+      2393,
+      2396
      ]
     },
     "cdf": {
-     "class": "pareto_gen",
+     "class": "exponpow_gen",
      "lines": [
-      8240,
-      8241
+      2398,
+      2399
      ]
     },
     "sf": {
-     "class": "pareto_gen",
+     "class": "exponpow_gen",
      "lines": [
-      8246,
-      8247
+      2401,
+      2402
      ]
     },
     "ppf": {
-     "class": "pareto_gen",
+     "class": "exponpow_gen",
      "lines": [
-      8243,
-      8244
+      2407,
+      2408
      ]
     },
     "isf": {
-     "class": "pareto_gen",
+     "class": "exponpow_gen",
      "lines": [
-      8249,
-      8250
+      2404,
+      2405
      ]
     }
    },
    "inherited": {
-    "logpdf": "log(pdf)",
     "logcdf": "log(cdf)",
     "logsf": "log(sf)"
    },
@@ -384,21 +158,134 @@
    ],
    "example_params": [
     [
-     2.621716532144454
+     2.697119160358469
     ]
    ],
    "support_for_example": [
-    1.0,
+    0.0,
     Infinity
    ],
    "get_support_overridden": false,
    "pdf_in_docstring": [
-    "f(x, b) = \\frac{b}{x^{b+1}}"
+    "f(x, b) = b x^{b-1} \\exp(1 + x^b - \\exp(x^b))"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.expm1",
+    "sc.log1p",
+    "sc.xlogy"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "exponweib",
+   "scipy_version": "1.18.1",
+   "class": "exponweib_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    2283,
+    2352
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "exponweib_gen",
+     "lines": [
+      2329,
+      2332
+     ]
+    },
+    "logpdf": {
+     "class": "exponweib_gen",
+     "lines": [
+      2334,
+      2339
+     ]
+    },
+    "cdf": {
+     "class": "exponweib_gen",
+     "lines": [
+      2341,
+      2343
+     ]
+    },
+    "sf": {
+     "class": "exponweib_gen",
+     "lines": [
+      2348,
+      2349
+     ]
+    },
+    "ppf": {
+     "class": "exponweib_gen",
+     "lines": [
+      2345,
+      2346
+     ]
+    },
+    "isf": {
+     "class": "exponweib_gen",
+     "lines": [
+      2351,
+      2352
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "a",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     2.8923945291034436,
+     1.9505288745913174
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, a, c) = a c [1-\\exp(-x^c)]^{a-1} \\exp(-x^c) x^{c-1}",
+    "F(x, a, c) = [1-\\exp(-x^c)]^a"
    ],
    "helpers": [
-    "_check_fit_input_parameters"
+    "_pow1pm1"
    ],
-   "special_functions": [],
+   "special_functions": [
+    "sc.expm1",
+    "sc.log1p",
+    "sc.xlogy"
+   ],
    "base_classes": [],
    "calls_into": [],
    "light_review": false,

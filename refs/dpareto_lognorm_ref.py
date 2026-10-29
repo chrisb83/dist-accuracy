@@ -10,7 +10,8 @@ alpha, beta):
 
 phi(z) R(y) is evaluated as Phic(y) * exp((y^2 - z^2)/2), so nothing
 overflows. S is evaluated directly (not 1 - F) because in the right tail
-S ~ x**-a can be far below 10**-400. All functions use erfc only (fast).
+S ~ x**-a can be far below 10**-400; likewise F uses Phi(z) = Phic(-z),
+not 1 - Phic(z) (for large a, b Phi(z) matters in the far left tail). All functions use erfc only (fast).
 """
 import mpmath as mp
 
@@ -56,7 +57,8 @@ def pdf(x, u, s, a, b):
 
 def cdf(x, u, s, a, b):
     z, y1, y2 = _zy(x, u, s, a, b)
-    return 1 - _Phic(z) - (b * _phiR(z, y1) - a * _phiR(z, y2)) / (a + b)
+    # Phi(z) = Phic(-z) directly: 1 - Phic(z) would lose Phi(z) < 1e-400
+    return _Phic(-z) - (b * _phiR(z, y1) - a * _phiR(z, y2)) / (a + b)
 
 
 def sf(x, u, s, a, b):

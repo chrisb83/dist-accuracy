@@ -16,8 +16,9 @@ minor exponent-rounding error for b < 1. The cdf, written as `1 - x**(-b)`,
 cancels whenever `x**(-b)` is close to 1, i.e. b*log(x) small. For b of
 order 1 this only happens next to x = 1, where the cdf is ill-conditioned
 anyway, but for small b (below about 0.1) the loss goes beyond conditioning
-over the whole support: with b = 1e-17 the cdf is 0.0 for every x below
-about 6e4 and has only one or two correct digits up to 1e308. ppf forms
+over the whole support: with b = 1e-17 the cdf is 0.0 for x below about 257,
+1.11e-16 (still loss/severe) from there up to about 6e4, and has only one
+or two correct digits up to 1e308. ppf forms
 `1 - q` before raising it to `-1/b`, so the rounding of `1 - q` is
 amplified by 1/b: for b = 1e-8 and small q the error is up to 2.4e7 ulp, and
 for b = 1e-17 the result is completely wrong (66318.9 instead of 22026.5).
@@ -78,7 +79,7 @@ The fixes are standard (`-expm1(-b*log(x))`, `exp(-log1p(-q)/b)`).
   multiplies this relative error by 1/b (pattern 8, with pattern 6
   amplification). The condition number with respect to q is only
   q/((1-q)*b), so for small q and small b nearly all of the error is
-  beyond conditioning. For q < 1.1e-16 the result is exactly 1.0, although
+  beyond conditioning. For q < 2**-54 = 5.55e-17 the result is exactly 1.0, although
   the true quantile is `exp(q/b)` (2.718... for q = b = 1e-17).
 - **Regime:** q small (roughly q < 1e-6, the error is up to about (eps/4)/b = 2**-54/b
   relative, independent of q) and b small: up to ~250 ulp for b = 1e-3,

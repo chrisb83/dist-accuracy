@@ -44,3 +44,4 @@
   ... (-2, 0.5, 5, 0.5) sf: 95 points, references 0.0 s
   ... (-2, 0.5, 5, 0.5) logsf: 95 points, references 0.0 s
   ... condition numbers for 1950 points above 8 ulp
+  ... condition numbers done in 653.9 s

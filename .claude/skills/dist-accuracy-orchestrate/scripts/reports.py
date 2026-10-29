@@ -54,7 +54,8 @@ def parse(path):
             sev = cells[-1].lower()
             if sev not in SEVERITIES:
                 problems.append(f"{cells[0]}: severity '{cells[-1]}' not one of {SEVERITIES}")
-            findings.append({"id": cells[0], "methods": cells[1], "severity": sev})
+            findings.append({"id": cells[0], "methods": cells[1], "severity": sev,
+                             "error": cells[-2].lower()})
     counts = {s: sum(f["severity"] == s for f in findings) for s in SEVERITIES}
     worst = next((s for s in SEVERITIES if counts[s]), "none")
     methods = sorted({m.strip() for f in findings for m in f["methods"].split(",") if m.strip()})
@@ -64,7 +65,13 @@ def parse(path):
     ver = section(text, "## Verification")
     m = re.search(r"(\d+) of (\d+) verified", ver)
     verified = f"{m.group(1)}/{m.group(2)}" if m else ("pending" if "pending" in ver else "-")
-    light = "light review" in text.lower() or "not measured" in section(text, "## Findings").lower()
+    # Light reviews say so in the header or leave the reference/errors "not measured";
+    # a full review may still mention "not measured" for one regime in its Findings.
+    header = text.split("## Summary")[0].lower()
+    ref = re.search(r"\*\*reference:\*\*(.*)", header)
+    light = ("light review" in header
+             or bool(ref and "not measured" in ref.group(1))
+             or bool(findings and all("not measured" in f["error"] for f in findings)))
     return dict(name=os.path.basename(path)[:-3], problems=problems, findings=findings,
                 counts=counts, worst=worst, methods=methods, opportunities=len(opp),
                 shared=not (shared.lower().startswith("none") or shared == ""),
