@@ -1,0 +1,93 @@
+{
+ "scipy_version": "1.18.1",
+ "distributions": [
+  {
+   "name": "kappa3",
+   "scipy_version": "1.18.1",
+   "class": "kappa3_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    7532,
+    7606
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "kappa3_gen",
+     "lines": [
+      7568,
+      7570
+     ]
+    },
+    "cdf": {
+     "class": "kappa3_gen",
+     "lines": [
+      7572,
+      7573
+     ]
+    },
+    "sf": {
+     "class": "kappa3_gen",
+     "lines": [
+      7575,
+      7589
+     ]
+    },
+    "ppf": {
+     "class": "kappa3_gen",
+     "lines": [
+      7591,
+      7592
+     ]
+    },
+    "isf": {
+     "class": "kappa3_gen",
+     "lines": [
+      7594,
+      7597
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "a",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     1.0
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, a) = a (a + x^a)^{-(a + 1)/a}"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.expm1",
+    "sc.xlog1py"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  }
+ ]
+}

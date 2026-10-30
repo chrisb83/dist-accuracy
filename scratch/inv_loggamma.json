@@ -1,0 +1,104 @@
+{
+ "name": "loggamma",
+ "scipy_version": "1.18.1",
+ "class": "loggamma_gen",
+ "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+ "class_lines": [
+  6633,
+  6747
+ ],
+ "implemented": {
+  "pdf": {
+   "class": "loggamma_gen",
+   "lines": [
+    6675,
+    6677
+   ]
+  },
+  "logpdf": {
+   "class": "loggamma_gen",
+   "lines": [
+    6679,
+    6680
+   ]
+  },
+  "cdf": {
+   "class": "loggamma_gen",
+   "lines": [
+    6682,
+    6700
+   ]
+  },
+  "sf": {
+   "class": "loggamma_gen",
+   "lines": [
+    6711,
+    6716
+   ]
+  },
+  "ppf": {
+   "class": "loggamma_gen",
+   "lines": [
+    6702,
+    6709
+   ]
+  },
+  "isf": {
+   "class": "loggamma_gen",
+   "lines": [
+    6718,
+    6725
+   ]
+  }
+ },
+ "inherited": {
+  "logcdf": "log(cdf)",
+  "logsf": "log(sf)"
+ },
+ "shapes": [
+  {
+   "name": "c",
+   "domain": [
+    5e-324,
+    Infinity
+   ],
+   "inclusive": [
+    false,
+    false
+   ],
+   "integrality": false
+  }
+ ],
+ "example_params": [
+  [
+   0.4141193182605212
+  ]
+ ],
+ "support_for_example": [
+  -Infinity,
+  Infinity
+ ],
+ "get_support_overridden": false,
+ "pdf_in_docstring": [
+  "f(x, c) = \\frac{\\exp(c x - \\exp(x))} {\\Gamma(c)}"
+ ],
+ "helpers": [],
+ "special_functions": [
+  "sc.digamma",
+  "sc.gammainc",
+  "sc.gammaincc",
+  "sc.gammainccinv",
+  "sc.gammaincinv",
+  "sc.gammaln",
+  "sc.polygamma",
+  "special.gamma"
+ ],
+ "base_classes": [],
+ "calls_into": [
+  "norm"
+ ],
+ "light_review": false,
+ "related": [
+  "norm"
+ ]
+}

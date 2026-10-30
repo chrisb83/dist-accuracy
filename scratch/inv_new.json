@@ -1,0 +1,389 @@
+{
+ "scipy_version": "1.18.1",
+ "distributions": [
+  {
+   "name": "gibrat",
+   "scipy_version": "1.18.1",
+   "class": "gibrat_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    7061,
+    7119
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "gibrat_gen",
+     "lines": [
+      7091,
+      7093
+     ]
+    },
+    "logpdf": {
+     "class": "gibrat_gen",
+     "lines": [
+      7095,
+      7096
+     ]
+    },
+    "cdf": {
+     "class": "gibrat_gen",
+     "lines": [
+      7098,
+      7099
+     ]
+    },
+    "sf": {
+     "class": "gibrat_gen",
+     "lines": [
+      7104,
+      7105
+     ]
+    },
+    "ppf": {
+     "class": "gibrat_gen",
+     "lines": [
+      7101,
+      7102
+     ]
+    },
+    "isf": {
+     "class": "gibrat_gen",
+     "lines": [
+      7107,
+      7108
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [],
+   "example_params": [
+    []
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x) = \\frac{1}{x \\sqrt{2\\pi}} \\exp(-\\frac{1}{2} (\\log(x))^2)"
+   ],
+   "helpers": [
+    "_lognorm_logpdf",
+    "_norm_cdf",
+    "_norm_isf",
+    "_norm_ppf",
+    "_norm_sf"
+   ],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "loggamma",
+   "scipy_version": "1.18.1",
+   "class": "loggamma_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    6633,
+    6747
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "loggamma_gen",
+     "lines": [
+      6675,
+      6677
+     ]
+    },
+    "logpdf": {
+     "class": "loggamma_gen",
+     "lines": [
+      6679,
+      6680
+     ]
+    },
+    "cdf": {
+     "class": "loggamma_gen",
+     "lines": [
+      6682,
+      6700
+     ]
+    },
+    "sf": {
+     "class": "loggamma_gen",
+     "lines": [
+      6711,
+      6716
+     ]
+    },
+    "ppf": {
+     "class": "loggamma_gen",
+     "lines": [
+      6702,
+      6709
+     ]
+    },
+    "isf": {
+     "class": "loggamma_gen",
+     "lines": [
+      6718,
+      6725
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     0.4141193182605212
+    ]
+   ],
+   "support_for_example": [
+    -Infinity,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, c) = \\frac{\\exp(c x - \\exp(x))} {\\Gamma(c)}"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.digamma",
+    "sc.gammainc",
+    "sc.gammaincc",
+    "sc.gammainccinv",
+    "sc.gammaincinv",
+    "sc.gammaln",
+    "sc.polygamma",
+    "special.gamma"
+   ],
+   "base_classes": [],
+   "calls_into": [
+    "norm"
+   ],
+   "light_review": false,
+   "related": [
+    "norm"
+   ]
+  },
+  {
+   "name": "loglaplace",
+   "scipy_version": "1.18.1",
+   "class": "loglaplace_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    6753,
+    6847
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "loglaplace_gen",
+     "lines": [
+      6789,
+      6794
+     ]
+    },
+    "cdf": {
+     "class": "loglaplace_gen",
+     "lines": [
+      6796,
+      6797
+     ]
+    },
+    "sf": {
+     "class": "loglaplace_gen",
+     "lines": [
+      6799,
+      6800
+     ]
+    },
+    "ppf": {
+     "class": "loglaplace_gen",
+     "lines": [
+      6802,
+      6803
+     ]
+    },
+    "isf": {
+     "class": "loglaplace_gen",
+     "lines": [
+      6805,
+      6806
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     3.2505926592051435
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, c) = \\begin{cases}\\frac{c}{2} x^{ c-1} &\\text{for } 0 < x < 1\\\\ \\frac{c}{2} x^{-c-1} &\\text{for } x \\ge 1 \\end{cases}"
+   ],
+   "helpers": [
+    "_check_fit_input_parameters"
+   ],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "lognorm",
+   "scipy_version": "1.18.1",
+   "class": "lognorm_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    6860,
+    7055
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "lognorm_gen",
+     "lines": [
+      6912,
+      6914
+     ]
+    },
+    "logpdf": {
+     "class": "lognorm_gen",
+     "lines": [
+      6916,
+      6917
+     ]
+    },
+    "cdf": {
+     "class": "lognorm_gen",
+     "lines": [
+      6919,
+      6920
+     ]
+    },
+    "logcdf": {
+     "class": "lognorm_gen",
+     "lines": [
+      6922,
+      6923
+     ]
+    },
+    "sf": {
+     "class": "lognorm_gen",
+     "lines": [
+      6928,
+      6929
+     ]
+    },
+    "logsf": {
+     "class": "lognorm_gen",
+     "lines": [
+      6931,
+      6932
+     ]
+    },
+    "ppf": {
+     "class": "lognorm_gen",
+     "lines": [
+      6925,
+      6926
+     ]
+    },
+    "isf": {
+     "class": "lognorm_gen",
+     "lines": [
+      6934,
+      6935
+     ]
+    }
+   },
+   "inherited": {},
+   "shapes": [
+    {
+     "name": "s",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     0.9536822696057533
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, s) = \\frac{1}{s x \\sqrt{2\\pi}} \\exp\\left(-\\frac{\\log^2(x)}{2s^2}\\right)"
+   ],
+   "helpers": [
+    "_check_fit_input_parameters",
+    "_lognorm_logpdf",
+    "_norm_cdf",
+    "_norm_isf",
+    "_norm_logcdf",
+    "_norm_logsf",
+    "_norm_ppf",
+    "_norm_sf"
+   ],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  }
+ ]
+}

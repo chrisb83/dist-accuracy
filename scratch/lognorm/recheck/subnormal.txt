@@ -1,0 +1,240 @@
+== logpdf 5e-324 1
+  reference      -276351.989207767476670083  (float -276351.9892077675)
+  scipy 1.18.1   np.float64(-276352.1688815229)  2.9e+09 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-322 1
+  reference      -274129.3289967867010817906  (float -274129.3289967867)
+  scipy 1.18.1   np.float64(-274129.32634898537)  4.4e+07 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-320 1
+  reference      -270721.2831571448753447587  (float -270721.28315714485)
+  scipy 1.18.1   np.float64(-270721.28307521885)  1.4e+06 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-315 1
+  reference      -262316.0246414493397179027  (float -262316.02464144933)
+  scipy 1.18.1   np.float64(-262316.0246414489)        7 ulp  ok  [underflow encountered in multiply]
+== logpdf 1e-310 1
+  reference      -254043.3217681920770958404  (float -254043.32176819208)
+  scipy 1.18.1   np.float64(-254043.32176819208)        0 ulp  ok  [underflow encountered in multiply]
+== logpdf 5e-324 0.9536822696057533
+  reference      -303921.0855227776346988878  (float -303921.08552277763)
+  scipy 1.18.1   np.float64(-303921.3126212468)  3.4e+09 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-322 0.9536822696057533
+  reference      -301476.987481428533729277  (float -301476.98748142854)
+  scipy 1.18.1   np.float64(-301476.9914363464)  5.9e+07 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-320 0.9536822696057533
+  reference      -297729.4045811966367102426  (float -297729.40458119666)
+  scipy 1.18.1   np.float64(-297729.40449303796)  1.3e+06 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-315 0.9536822696057533
+  reference      -288486.7337894705325259809  (float -288486.7337894705)
+  scipy 1.18.1   np.float64(-288486.7337894707)     2.73 ulp  ok  [underflow encountered in multiply]
+== logpdf 1e-310 0.9536822696057533
+  reference      -279389.8070381550579846937  (float -279389.80703815504)
+  scipy 1.18.1   np.float64(-279389.80703815504)        0 ulp  ok  [underflow encountered in multiply]
+== logpdf 5e-324 0.001
+  reference      -277095509590.7267530560786  (float -277095509590.72675)
+  scipy 1.18.1   np.float64(inf)                 inf ulp  loss  [divide by zero encountered in log; underflow encountered in multiply]
+== logpdf 1e-322 0.001
+  reference      -274869853650.4681558430082  (float -274869853650.46817)
+  scipy 1.18.1   np.float64(inf)                 inf ulp  loss  [divide by zero encountered in log; underflow encountered in multiply]
+== logpdf 1e-320 0.001
+  reference      -271457190716.6865756397407  (float -271457190716.68658)
+  scipy 1.18.1   np.float64(-271457190716.67206)      241 ulp  minor  [underflow encountered in multiply]
+== logpdf 1e-315 0.001
+  reference      -263040419275.9076457601415  (float -263040419275.90765)
+  scipy 1.18.1   np.float64(-263040419275.90768)    0.523 ulp  ok  [underflow encountered in multiply]
+== logpdf 1e-310 0.001
+  reference      -254756203488.69682040791  (float -254756203488.6968)
+  scipy 1.18.1   np.float64(-254756203488.69684)    0.539 ulp  ok  [underflow encountered in multiply]
+== logpdf 5e-324 10
+  reference      -2029.736555116373988708245  (float -2029.736555116374)
+  scipy 1.18.1   np.float64(-2029.733907315043)  5.9e+09 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-322 10
+  reference      -2010.475727957384683908821  (float -2010.4757279573846)
+  scipy 1.18.1   np.float64(-2010.4750781587168)  1.5e+09 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-320 10
+  reference      -1980.966197330251258056491  (float -1980.9661973302514)
+  scipy 1.18.1   np.float64(-1980.9661942499051)  7.0e+06 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-315 10
+  reference      -1908.311419403663789285867  (float -1908.3114194036639)
+  scipy 1.18.1   np.float64(-1908.3114194036268)     87.5 ulp  minor  [underflow encountered in multiply]
+== logpdf 1e-310 10
+  reference      -1836.982186882914819207147  (float -1836.982186882915)
+  scipy 1.18.1   np.float64(-1836.982186882915)        0 ulp  ok  [underflow encountered in multiply]
+== logpdf 5e-324 30
+  reference      432.2360356274525972417411  (float 432.2360356274526)
+  scipy 1.18.1   np.float64(432.2386834287832)  2.8e+10 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-322 30
+  reference      431.7132544019589724475125  (float 431.713254401959)
+  scipy 1.18.1   np.float64(431.71323908587)  1.6e+08 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-320 30
+  reference      430.8880033544374729469401  (float 430.8880033544375)
+  scipy 1.18.1   np.float64(430.88800643478373)  3.2e+07 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-315 30
+  reference      428.7270350384305699277961  (float 428.7270350384306)
+  scipy 1.18.1   np.float64(428.72703503840194)      301 ulp  minor  [underflow encountered in multiply]
+== logpdf 1e-310 30
+  reference      426.4187937927461963298963  (float 426.4187937927462)
+  scipy 1.18.1   np.float64(426.4187937927462)        0 ulp  ok  [underflow encountered in multiply]
+== logpdf 5e-324 100
+  reference      711.2064121680729328783254  (float 711.2064121680729)
+  scipy 1.18.1   np.float64(711.205067948134)  8.5e+09 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-322 100
+  reference      708.4332454888443748428188  (float 708.4332454888444)
+  scipy 1.18.1   np.float64(708.4332966643276)  3.3e+08 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-320 100
+  reference      704.1574130258308775833538  (float 704.1574130258309)
+  scipy 1.18.1   np.float64(704.1574121640555)  5.5e+06 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-315 100
+  reference      693.4861535747288647731237  (float 693.4861535747289)
+  scipy 1.18.1   np.float64(693.4861535747265)     15.5 ulp  minor  [underflow encountered in multiply]
+== logpdf 1e-310 100
+  reference      682.8016496881126983320084  (float 682.8016496881127)
+  scipy 1.18.1   np.float64(682.8016496881127)        0 ulp  ok
+== logpdf 5e-324 1000
+  reference      736.3362825988532968670133  (float 736.3362825988532)
+  scipy 1.18.1   np.float64(736.3361343128818)  9.1e+08 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-322 1000
+  reference      733.3427759812425602031574  (float 733.3427759812425)
+  scipy 1.18.1   np.float64(733.3427673141118)  5.3e+07 ulp  severe  [underflow encountered in multiply]
+== logpdf 1e-320 1000
+  reference      728.7290898873275937125744  (float 728.7290898873276)
+  scipy 1.18.1   np.float64(728.7290898139753)  4.5e+05 ulp  moderate  [underflow encountered in multiply]
+== logpdf 1e-315 1000
+  reference      717.2245700624486860865358  (float 717.2245700624487)
+  scipy 1.18.1   np.float64(717.2245700624484)     2.14 ulp  ok  [underflow encountered in multiply]
+== logpdf 1e-310 1000
+  reference      705.7199288117588682802221  (float 705.7199288117589)
+  scipy 1.18.1   np.float64(705.7199288117589)        0 ulp  ok
+== logpdf 5e-324 1e10
+  reference      720.495282458236129961192  (float 720.4952824582361)
+  scipy 1.18.1   np.float64(720.4952824582485)     77.5 ulp  minor  [underflow encountered in multiply]
+== logpdf 1e-322 1e10
+  reference      717.4995501846821389900133  (float 717.4995501846821)
+  scipy 1.18.1   np.float64(717.4995501846826)     2.85 ulp  ok  [underflow encountered in multiply]
+== logpdf 1e-320 1e10
+  reference      712.8824514278287738544547  (float 712.8824514278288)
+  scipy 1.18.1   np.float64(712.8824514278288)        0 ulp  ok  [underflow encountered in multiply]
+== logpdf 1e-315 1e10
+  reference      701.3695148314975744457575  (float 701.3695148314976)
+  scipy 1.18.1   np.float64(701.3695148314976)        0 ulp  ok
+== logpdf 1e-310 1e10
+  reference      689.8565893650090329711223  (float 689.8565893650091)
+  scipy 1.18.1   np.float64(689.8565893650091)        0 ulp  ok
+== pdf 5e-324 1
+  reference      7.178340906868892603451975e-120019  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-322 1
+  reference      1.396654080178189135736525e-119053  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-320 1
+  reference      1.740167623720215397354913e-117573  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-315 1
+  reference      3.962629069140765102829115e-113923  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-310 1
+  reference      2.438887129958615000001584e-110330  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 5e-324 0.9536822696057533
+  reference      5.61853915027930659865897e-131992  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-322 0.9536822696057533
+  reference      1.614046341865435438049252e-130930  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-320 0.9536822696057533
+  reference      5.787487227233197943243781e-129303  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-315 0.9536822696057533
+  reference      6.359353113448945768489623e-125289  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-310 0.9536822696057533
+  reference      3.535927200456348257797337e-121338  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 5e-324 0.001
+  reference      3.782482234826251328629127e-120341050776  (float 0.0)
+  scipy 1.18.1   np.float64(inf)                   - ulp  ok  [divide by zero encountered in log; underflow encountered in multiply]
+== pdf 1e-322 0.001
+  reference      1.11501105973679800343869e-119374460682  (float 0.0)
+  scipy 1.18.1   np.float64(inf)                   - ulp  ok  [divide by zero encountered in log; underflow encountered in multiply]
+== pdf 1e-320 0.001
+  reference      6.086700730451097073656922e-117892360002  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-315 0.001
+  reference      9.027213700190286713113724e-114237002610  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-310 0.001
+  reference      1.725911839567144900301134e-110639213406  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 5e-324 10
+  reference      3.137721515057092531534132e-882  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-322 10
+  reference      7.269178738975160583322239e-874  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-320 10
+  reference      4.756764630280952562832643e-861  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-315 10
+  reference      1.701691384322927813736097e-829  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-310 10
+  reference      1.617234070799390993899619e-798  (float 0.0)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok  [underflow encountered in exp; underflow encountered in multiply]
+== pdf 5e-324 30
+  reference      5.220656903535348355479624e+187  (float 5.220656903535348e+187)
+  scipy 1.18.1   np.float64(5.2344984826200874e+187)  1.2e+13 ulp  severe  [underflow encountered in multiply]
+== pdf 1e-322 30
+  reference      3.095167462401832128609402e+187  (float 3.095167462401832e+187)
+  scipy 1.18.1   np.float64(3.0951200569045856e+187)  6.9e+10 ulp  severe  [underflow encountered in multiply]
+== pdf 1e-320 30
+  reference      1.356070208761891527673862e+187  (float 1.3560702087618916e+187)
+  scipy 1.18.1   np.float64(1.3560743859341214e+187)  1.4e+10 ulp  severe  [underflow encountered in multiply]
+== pdf 1e-315 30
+  reference      1.562376003216658149968797e+186  (float 1.562376003216658e+186)
+  scipy 1.18.1   np.float64(1.5623760031719222e+186)  1.3e+05 ulp  moderate  [underflow encountered in multiply]
+== pdf 1e-310 30
+  reference      1.553563910746100309261778e+185  (float 1.5535639107461004e+185)
+  scipy 1.18.1   np.float64(1.5535639107461285e+185)     81.4 ulp  minor  [underflow encountered in multiply]
+== pdf 5e-324 100
+  reference      7.464836480336726440281209e+308  (float inf)
+  scipy 1.18.1   np.float64(inf)                   - ulp  ok  [overflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-322 100
+  reference      4.662827107773954337875581e+307  (float 4.662827107773954e+307)
+  scipy 1.18.1   np.float64(4.6630657363103e+307)  2.3e+11 ulp  severe  [underflow encountered in multiply]
+== pdf 1e-320 100
+  reference      6.481549892115020545595191e+305  (float 6.481549892115021e+305)
+  scipy 1.18.1   np.float64(6.4815443064771415e+305)  3.9e+09 ulp  severe  [underflow encountered in multiply]
+== pdf 1e-315 100
+  reference      1.503868192198207048297814e+301  (float 1.503868192198207e+301)
+  scipy 1.18.1   np.float64(1.5038681921946094e+301) 1.08e+04 ulp  moderate  [underflow encountered in multiply]
+== pdf 1e-310 100
+  reference      3.443409663967108974205322e+296  (float 3.443409663967109e+296)
+  scipy 1.18.1   np.float64(3.4434096639669816e+296)      166 ulp  minor
+== pdf 5e-324 1000
+  reference      6.120464141437730064132199e+319  (float inf)
+  scipy 1.18.1   np.float64(inf)                   - ulp  ok  [overflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-322 1000
+  reference      3.067050679538730424814778e+318  (float inf)
+  scipy 1.18.1   np.float64(inf)                   - ulp  ok  [overflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-320 1000
+  reference      3.04104285563683215563909e+316  (float inf)
+  scipy 1.18.1   np.float64(inf)                   - ulp  ok  [overflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-315 1000
+  reference      3.066712501144204713549889e+311  (float inf)
+  scipy 1.18.1   np.float64(inf)                   - ulp  ok  [overflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-310 1000
+  reference      3.092223327318660566278646e+306  (float 3.0922233273186605e+306)
+  scipy 1.18.1   np.float64(3.092223327318774e+306)      165 ulp  minor
+== pdf 5e-324 1e10
+  reference      8.07468164928066935741841e+312  (float inf)
+  scipy 1.18.1   np.float64(inf)                   - ulp  ok  [overflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-322 1e10
+  reference      4.037340824640334768566521e+311  (float inf)
+  scipy 1.18.1   np.float64(inf)                   - ulp  ok  [overflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-320 1e10
+  reference      3.989467218024046350145608e+309  (float inf)
+  scipy 1.18.1   np.float64(inf)                   - ulp  ok  [overflow encountered in exp; underflow encountered in multiply]
+== pdf 1e-315 1e10
+  reference      3.989422810071521532086014e+304  (float 3.9894228100715214e+304)
+  scipy 1.18.1   np.float64(3.98942281007144e+304)     91.9 ulp  minor
+== pdf 1e-310 1e10
+  reference      3.989422804014328804052309e+299  (float 3.989422804014329e+299)
+  scipy 1.18.1   np.float64(3.989422804014539e+299)      238 ulp  minor

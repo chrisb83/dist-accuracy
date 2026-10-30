@@ -1,0 +1,8 @@
+|z| in [5,10): ndtr max 52 ulp, median 14, median/z^2 0.271
+|z| in [10,20): ndtr max 245 ulp, median 60, median/z^2 0.289
+|z| in [20,30): ndtr max 704 ulp, median 189, median/z^2 0.317
+|z| in [30,37.5): ndtr max 1026 ulp, median 367, median/z^2 0.312
+log_ndtr 10.0 33.36476075964857 ndtr(-z) 33.36476074249018
+log_ndtr 20.0 127.72055645560741 ndtr(-z) 127.72055645560741
+log_ndtr 30.0 256.1749797682302 ndtr(-z) 256.1749797682302
+log_ndtr 36.841361487904734 178.03392734284566 ndtr(-z) 178.03392734284566

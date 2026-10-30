@@ -1,0 +1,87 @@
+{
+ "name": "loglaplace",
+ "scipy_version": "1.18.1",
+ "class": "loglaplace_gen",
+ "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+ "class_lines": [
+  6753,
+  6847
+ ],
+ "implemented": {
+  "pdf": {
+   "class": "loglaplace_gen",
+   "lines": [
+    6789,
+    6794
+   ]
+  },
+  "cdf": {
+   "class": "loglaplace_gen",
+   "lines": [
+    6796,
+    6797
+   ]
+  },
+  "sf": {
+   "class": "loglaplace_gen",
+   "lines": [
+    6799,
+    6800
+   ]
+  },
+  "ppf": {
+   "class": "loglaplace_gen",
+   "lines": [
+    6802,
+    6803
+   ]
+  },
+  "isf": {
+   "class": "loglaplace_gen",
+   "lines": [
+    6805,
+    6806
+   ]
+  }
+ },
+ "inherited": {
+  "logpdf": "log(pdf)",
+  "logcdf": "log(cdf)",
+  "logsf": "log(sf)"
+ },
+ "shapes": [
+  {
+   "name": "c",
+   "domain": [
+    5e-324,
+    Infinity
+   ],
+   "inclusive": [
+    false,
+    false
+   ],
+   "integrality": false
+  }
+ ],
+ "example_params": [
+  [
+   3.2505926592051435
+  ]
+ ],
+ "support_for_example": [
+  0.0,
+  Infinity
+ ],
+ "get_support_overridden": false,
+ "pdf_in_docstring": [
+  "f(x, c) = \\begin{cases}\\frac{c}{2} x^{ c-1} &\\text{for } 0 < x < 1\\\\ \\frac{c}{2} x^{-c-1} &\\text{for } x \\ge 1 \\end{cases}"
+ ],
+ "helpers": [
+  "_check_fit_input_parameters"
+ ],
+ "special_functions": [],
+ "base_classes": [],
+ "calls_into": [],
+ "light_review": false,
+ "related": []
+}

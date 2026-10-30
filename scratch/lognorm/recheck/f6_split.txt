@@ -1,0 +1,15 @@
+method x s | z_dbl | total ulp | ndtr-at-zdbl ulp | arg-rounding ulp (F(zdbl) vs F(z))  | rel err of z
+cdf(1e-160, 10.0) z=np.float64(-36.841361487904734) total=754.5 special=178 (-178) arg=576.5 (-576.5) dz/z=+0.424 eps
+sf(1e+160, 10.0) z=np.float64(36.841361487904734) total=754.6 special=178 (-178) arg=576.6 (-576.6) dz/z=+0.424 eps
+logcdf(1e+160, 10.0) z=np.float64(36.841361487904734) total=754.6 special=178 (+178) arg=576.6 (+576.6) dz/z=+0.424 eps
+logsf(1e-160, 10.0) z=np.float64(-36.841361487904734) total=754.5 special=178 (+178) arg=576.5 (+576.5) dz/z=+0.424 eps
+cdf(1e-10, 1.0) z=np.float64(-23.025850929940457) total=346.9 special=302.1 (-302.1) arg=44.76 (-44.76) dz/z=+0.0843 eps
+cdf(9.357622968840175e-14, 1.0) z=np.float64(-30.0) total=259.2 special=256.2 (-256.2) arg=3.06 (-3.06) dz/z=+0.0034 eps
+cdf(0.00033546262790251185, 1.0) z=np.float64(-8.0) total=33.16 special=31.59 (-31.59) arg=1.57 (-1.57) dz/z=+0.0242 eps
+cdf(1e-140, 10.0) z=np.float64(-32.23619130191664) total=498.2 special=314.9 (-314.9) arg=183.3 (-183.3) dz/z=+0.176 eps
+cdf(1e-100, 10.0) z=np.float64(-23.025850929940457) total=343.3 special=302.1 (-302.1) arg=41.18 (-41.18) dz/z=+0.0775 eps
+cdf(1e-40, 10.0) z=np.float64(-9.210340371976184) total=47.88 special=11.75 (-11.75) arg=36.14 (-36.14) dz/z=+0.421 eps
+cdf(0.9920319148370607, 0.001) z=np.float64(-7.9999999999999725) total=21.82 special=14.97 (-14.97) arg=6.857 (-6.857) dz/z=+0.106 eps
+cdf(0.9801986733067553, 0.001) z=np.float64(-20.00000000000005) total=88.08 special=127.5 (-127.5) arg=39.38 (+39.38) dz/z=-0.0982 eps
+cdf(0.9704455335485082, 0.001) z=np.float64(-30.00000000000002) total=203.5 special=62.82 (+62.82) arg=140.7 (+140.7) dz/z=-0.156 eps
+cdf(0.9631944177208218, 0.001) z=np.float64(-37.49999999999995) total=595.1 special=207.5 (-207.5) arg=387.6 (-387.6) dz/z=+0.275 eps

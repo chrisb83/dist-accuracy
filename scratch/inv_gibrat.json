@@ -1,0 +1,82 @@
+{
+ "name": "gibrat",
+ "scipy_version": "1.18.1",
+ "class": "gibrat_gen",
+ "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+ "class_lines": [
+  7061,
+  7119
+ ],
+ "implemented": {
+  "pdf": {
+   "class": "gibrat_gen",
+   "lines": [
+    7091,
+    7093
+   ]
+  },
+  "logpdf": {
+   "class": "gibrat_gen",
+   "lines": [
+    7095,
+    7096
+   ]
+  },
+  "cdf": {
+   "class": "gibrat_gen",
+   "lines": [
+    7098,
+    7099
+   ]
+  },
+  "sf": {
+   "class": "gibrat_gen",
+   "lines": [
+    7104,
+    7105
+   ]
+  },
+  "ppf": {
+   "class": "gibrat_gen",
+   "lines": [
+    7101,
+    7102
+   ]
+  },
+  "isf": {
+   "class": "gibrat_gen",
+   "lines": [
+    7107,
+    7108
+   ]
+  }
+ },
+ "inherited": {
+  "logcdf": "log(cdf)",
+  "logsf": "log(sf)"
+ },
+ "shapes": [],
+ "example_params": [
+  []
+ ],
+ "support_for_example": [
+  0.0,
+  Infinity
+ ],
+ "get_support_overridden": false,
+ "pdf_in_docstring": [
+  "f(x) = \\frac{1}{x \\sqrt{2\\pi}} \\exp(-\\frac{1}{2} (\\log(x))^2)"
+ ],
+ "helpers": [
+  "_lognorm_logpdf",
+  "_norm_cdf",
+  "_norm_isf",
+  "_norm_ppf",
+  "_norm_sf"
+ ],
+ "special_functions": [],
+ "base_classes": [],
+ "calls_into": [],
+ "light_review": false,
+ "related": []
+}

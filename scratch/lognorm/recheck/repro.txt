@@ -1,0 +1,24 @@
+lognorm.logpdf(5e-324, 30.0)
+  cond (arg)     0.0004  (within conditioning: <= 8 ulp)
+  scipy 1.18.1   np.float64(432.2386834287832)  2.8e+10 ulp  severe  [underflow encountered in multiply]
+lognorm.logpdf(5e-324, 1.0)
+  cond (arg)     0.00269  (within conditioning: <= 8 ulp)
+  scipy 1.18.1   np.float64(-276352.1688815229)  2.9e+09 ulp  severe  [underflow encountered in multiply]
+lognorm.logpdf(1e-320, 10.0)
+  cond (arg)     0.00321  (within conditioning: <= 8 ulp)
+  scipy 1.18.1   np.float64(-1980.9661942499051)  7.0e+06 ulp  severe  [underflow encountered in multiply]
+lognorm.logpdf(1e-320, 1000.0)
+  cond (arg)     0.00137  (within conditioning: <= 8 ulp)
+  scipy 1.18.1   np.float64(728.7290898139753)  4.5e+05 ulp  moderate  [underflow encountered in multiply]
+lognorm.logpdf(1e-315, 30.0)
+  cond (arg)     0.000453  (within conditioning: <= 8 ulp)
+  scipy 1.18.1   np.float64(428.72703503840194)      301 ulp  minor  [underflow encountered in multiply]
+lognorm.pdf(5e-324, 30.0)
+  cond (arg)     0.173  (within conditioning: <= 8.17 ulp)
+  scipy 1.18.1   np.float64(5.2344984826200874e+187)  1.2e+13 ulp  severe  [underflow encountered in multiply]
+lognorm.pdf(1e-322, 100.0)
+  cond (arg)     0.926  (within conditioning: <= 8.93 ulp)
+  scipy 1.18.1   np.float64(4.6630657363103e+307)  2.3e+11 ulp  severe  [underflow encountered in multiply]
+lognorm.pdf(1e-315, 100.0)
+  cond (arg)     0.927  (within conditioning: <= 8.93 ulp)
+  scipy 1.18.1   np.float64(1.5038681921946094e+301) 1.08e+04 ulp  moderate  [underflow encountered in multiply]

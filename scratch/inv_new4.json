@@ -1,0 +1,74 @@
+{
+ "scipy_version": "1.18.1",
+ "distributions": [
+  {
+   "name": "moyal",
+   "scipy_version": "1.18.1",
+   "class": "moyal_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    7612,
+    7701
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "moyal_gen",
+     "lines": [
+      7663,
+      7664
+     ]
+    },
+    "cdf": {
+     "class": "moyal_gen",
+     "lines": [
+      7666,
+      7667
+     ]
+    },
+    "sf": {
+     "class": "moyal_gen",
+     "lines": [
+      7669,
+      7670
+     ]
+    },
+    "ppf": {
+     "class": "moyal_gen",
+     "lines": [
+      7672,
+      7673
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [],
+   "example_params": [
+    []
+   ],
+   "support_for_example": [
+    -Infinity,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x) = \\exp(-(x + \\exp(-x))/2) / \\sqrt{2\\pi}"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.erf",
+    "sc.erfc",
+    "sc.erfcinv",
+    "sc.zeta"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+  ... self-checks (1e-300)
+  ... self-checks (1e-310)
+  ... (1e-300) pdf: 179 points, references 0.7 s
+  ... (1e-300) logpdf: 179 points, references 0.7 s
+  ... (1e-300) cdf: 179 points, references 0.0 s
+  ... (1e-300) sf: 179 points, references 48.3 s
+  ... (1e-300) ppf: 65 points, references 8.3 s
+  ... (1e-300) isf: 65 points, references 9.9 s
+C:\Users\chbau\Documents\research\dist-accuracy\refs/loggamma_ref.py:127: RuntimeWarning: overflow encountered in divide
+  tail = np.array([-1.0, -10.0, -100.0, -300.0, -700.0]) / c
+  ... (1e-310) pdf: 176 points, references 0.6 s
+  ... (1e-310) logpdf: 176 points, references 0.5 s
+  ... (1e-310) cdf: 176 points, references 0.0 s
+  ... (1e-310) sf: 176 points, references 178.7 s
+  ... (1e-310) ppf: 65 points, references 1525.1 s
+  ... (1e-310) isf: 65 points, references 1208.1 s
+  ... condition numbers for 590 points above 8 ulp

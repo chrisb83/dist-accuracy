@@ -1,0 +1,86 @@
+{
+ "scipy_version": "1.18.1",
+ "distributions": [
+  {
+   "name": "maxwell",
+   "scipy_version": "1.18.1",
+   "class": "maxwell_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    7125,
+    7187
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "maxwell_gen",
+     "lines": [
+      7158,
+      7160
+     ]
+    },
+    "logpdf": {
+     "class": "maxwell_gen",
+     "lines": [
+      7162,
+      7165
+     ]
+    },
+    "cdf": {
+     "class": "maxwell_gen",
+     "lines": [
+      7167,
+      7168
+     ]
+    },
+    "sf": {
+     "class": "maxwell_gen",
+     "lines": [
+      7173,
+      7174
+     ]
+    },
+    "ppf": {
+     "class": "maxwell_gen",
+     "lines": [
+      7170,
+      7171
+     ]
+    },
+    "isf": {
+     "class": "maxwell_gen",
+     "lines": [
+      7176,
+      7177
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [],
+   "example_params": [
+    []
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x) = \\sqrt{2/\\pi}x^2 \\exp(-x^2/2)"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.gammainc",
+    "sc.gammaincc",
+    "sc.gammainccinv",
+    "sc.gammaincinv"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  }
+ ]
+}

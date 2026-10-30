@@ -1,0 +1,66 @@
+  ... self-checks ()
+  ... () pdf: 110 points, references 0.0 s
+  ... () cdf: 110 points, references 0.0 s
+  ... () sf: 110 points, references 0.5 s
+  ... () ppf: 81 points, references 6.5 s
+  ... () isf: 81 points, references 0.8 s
+  ... condition numbers for 17 points above 8 ulp
+  ... condition numbers done in 0.9 s
+levy: SciPy 1.18.1, mpmath 1.4.1, 400 digits
+implemented: ['pdf', 'cdf', 'sf', 'ppf', 'isf']; inherited: ['logpdf', 'logcdf', 'logsf']
+measured: ['pdf', 'cdf', 'sf', 'ppf', 'isf']
+parameter sets: ['()']
+
+Reference self-checks:
+  PASS: references agree with scipy in the bulk (where scipy is finite), are stable in precision and internally consistent
+
+method  region         n |   scipy 1.18.1: max ulp  median   loss severe moder. minor
+-------------------------------------------------------------------------------------
+pdf     low tail      10 |                     253     122      0      0      0      0
+        bulk          21 |                   0.968   0.559      0      0      0      0
+        high tail     20 |                   0.971       0      0      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): invalid value encountered in multiply; overflow encountered in divide; overflow encountered in multiply; underflow encountered in divide; underflow encountered in exp; underflow encountered in multiply
+cdf     low tail       8 |                     335     122      0      0      0      0
+        bulk          21 |                    6.24       0      0      0      0      0
+        high tail     41 |                       0       0      0      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): underflow encountered in divide
+sf      low tail      48 |                       0       0      0      0      0      0
+        bulk          21 |                    1.71       0      0      0      0      0
+        high tail     41 |                    1.14       0      0      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): underflow encountered in divide
+ppf     low tail      44 |                    2.35   0.685      0      0      0      0
+        bulk          20 |                    3.01    1.11      0      0      0      0
+        high tail     17 |                    1.65   0.622      0      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): underflow encountered in divide
+isf     low tail      22 |                    5.08   0.704      0      0      0      0
+        bulk          20 |                    1.93   0.634      0      0      0      0
+        high tail     17 |                    2.12   0.527      0      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): divide by zero encountered in divide; overflow encountered in divide; underflow encountered in square
+
+Points beyond conditioning (markdown, worst first per method):
+
+none
+
+Worst ulp per parameter set ('inf' = 0/inf/nan where the reference is finite):
+
+pdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     253         693
+
+cdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     335         705
+
+sf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                    1.71           0
+
+ppf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                    3.01           0
+
+isf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                    5.08           0
+
+done in 10 s
