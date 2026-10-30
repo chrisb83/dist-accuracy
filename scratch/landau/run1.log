@@ -1,0 +1,12 @@
+landau: SciPy 1.18.1, mpmath 1.4.1, 100 digits
+implemented: ['pdf', 'cdf', 'sf', 'ppf', 'isf']; inherited: ['logpdf', 'logcdf', 'logsf']
+measured: ['pdf', 'cdf', 'sf', 'ppf', 'isf']
+parameter sets: ['()']
+
+Reference self-checks:
+  ... self-checks ()
+  FAIL: ppf() at 1e-200: changes with precision (-4.8225530837815455631 vs -4.822553046512129924); raise DPS or use a better-conditioned reference formula
+
+  ... () pdf: 160 points, references 50.0 s
+  ... () cdf: 160 points, references 0.0 s
+  ... () sf: 160 points, references 0.0 s

@@ -1,0 +1,62 @@
+landau: SciPy 1.18.1, mpmath 1.4.1, 100 digits
+implemented: ['pdf', 'cdf', 'sf', 'ppf', 'isf']; inherited: ['logpdf', 'logcdf', 'logsf']
+measured: ['pdf', 'cdf', 'sf', 'ppf', 'isf']
+parameter sets: ['()']
+
+Reference self-checks:
+  ... self-checks ()
+  PASS: references agree with scipy in the bulk (where scipy is finite), are stable in precision and internally consistent
+
+  ... () pdf: 160 points, references 181.9 s
+  ... () cdf: 160 points, references 0.0 s
+  ... () sf: 160 points, references 0.0 s
+  ... () ppf: 67 points, references 208.0 s
+  ... () isf: 67 points, references 581.2 s
+  ... condition numbers for 19 points above 8 ulp
+  ... condition numbers done in 123.8 s
+method  region         n |   scipy 1.18.1: max ulp  median   loss severe moder. minor
+-------------------------------------------------------------------------------------
+pdf     low tail      11 |                     914     123      0      0      0      0
+        bulk          78 |                    1.09       0      0      0      0      0
+        high tail     19 |                   0.942       0      0      0      0      0
+cdf     low tail      10 |                     886    93.1      0      0      0      0
+        bulk          78 |                    1.37       0      0      0      0      0
+        high tail     36 |                       0       0      0      0      0      0
+sf      low tail      46 |                       0       0      0      0      0      0
+        bulk          78 |                   0.907       0      0      0      0      0
+        high tail     36 |                   0.936       0      0      0      0      0
+ppf     low tail      30 |                    1.58       0      0      0      0      0
+        bulk          20 |                    3.14       0      0      0      0      0
+        high tail     17 |                     1.1   0.644      0      0      0      0
+isf     low tail      30 |                   0.996       0      0      0      0      0
+        bulk          20 |                    3.14       0      0      0      0      0
+        high tail     17 |                    1.27   0.667      0      0      0      0
+
+Points beyond conditioning (markdown, worst first per method):
+
+none
+
+Worst ulp per parameter set ('inf' = 0/inf/nan where the reference is finite):
+
+pdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     914    5.65e+03
+
+cdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     886    3.04e+03
+
+sf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                   0.936           0
+
+ppf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                    3.14           0
+
+isf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                    3.14           0
+
+points written to scratch/landau/points.json
+done in 1655 s

@@ -1,0 +1,9 @@
+  ... () pdf: 159 points, references 0.0 s
+  ... () logpdf: 159 points, references 0.0 s
+  ... () cdf: 159 points, references 0.0 s
+  ... () sf: 159 points, references 0.0 s
+  ... () logsf: 159 points, references 0.0 s
+  ... () ppf: 65 points, references 0.0 s
+  ... () isf: 65 points, references 0.0 s
+  ... condition numbers for 20 points above 8 ulp
+  ... condition numbers done in 0.1 s

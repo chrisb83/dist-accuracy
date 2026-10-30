@@ -1,0 +1,10 @@
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\optimize\_zeros_py.py", line 858, in brentq
+    r = _zeros._brentq(f, a, b, xtol, rtol, maxiter, args, full_output, disp)
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\optimize\_zeros_py.py", line 115, in f_raise
+    raise err
+ValueError: The function value at x=nan is NaN; solver cannot continue.
+                  ~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py", line 5626, in _isf_scalar
+    left = xm - delta
+           ~~~^~~~~~~
+OverflowError: int too large to convert to float

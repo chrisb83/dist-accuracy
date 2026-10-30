@@ -1,0 +1,4 @@
+F2 pdf(19800.00005050505, 100, 0.01) scipy=nan ref=0.00020030735965664705 ulp=inf agree30=True
+F2 logpdf(19800.00005050505, 100, 0.01) scipy=nan ref=-8.5156575727990327 ulp=inf agree30=True
+F2 logpdf(50, -100, 0.01) scipy=nan ref=-1284.3303653200966 ulp=inf agree30=True
+F2 cdf(19800, 100, 0.01) scipy=nan ref=0.47330432028292778 ulp=inf agree30=True

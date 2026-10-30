@@ -1,0 +1,4 @@
+F2 | isf(0.29, 10, 9.99999) | -707.1062508697356 | 67.445903186346489 | rel100v200=5.36e-102 | scipy_ulp=5.17e+16 | analyst_rel=1.1e-7 | 349s | check sf(x)/q-1=0.0
+F2 | isf(0.57, 1000000.0, 500000.0) | -0.5773502691896271 | 0.57713110012905941 | rel100v200=3.53e-105 | scipy_ulp=9.01e+15 | analyst_rel=5.42e-17 | 311s | check sf(x)/q-1=0.0
+F2 | isf(0.3, 100000000.0, 0) | 0.0 | 5.2440051092179889e-5 | rel100v200=5.47e-102 | scipy_ulp=4.5e+15 | analyst_rel=2.81e-17 | 200s | check sf(x)/q-1=1.56e-61
+F4 | isf(0.3, 1e-170, 0) | 'ValueError: The function value at x=nan is NaN; solver cannot continue.' | 0.72654252800536094 | rel100v200=6.59e-102 | scipy_ulp=n/a | analyst_rel=5.51e-17 | 260s | check sf(x)/q-1=0.0

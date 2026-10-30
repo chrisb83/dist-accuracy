@@ -1,0 +1,77 @@
+  ... self-checks (0.145463)
+  ... self-checks (1)
+  ... self-checks (0.001)
+  ... (0.145463) ppf: 58 points, references 11.3 s
+  ... (1) ppf: 58 points, references 17.3 s
+  ... (0.001) ppf: 58 points, references 11.0 s
+  ... (1e-08) ppf: 58 points, references 28.3 s
+  ... (1e-20) ppf: 58 points, references 43.1 s
+  ... (1000) ppf: 58 points, references 10.9 s
+  ... (1e+08) ppf: 58 points, references 9.6 s
+  ... (1e+20) ppf: 58 points, references 11.7 s
+  ... condition numbers for 238 points above 8 ulp
+  ... condition numbers done in 583.6 s
+invgauss: SciPy 1.18.1, mpmath 1.4.1, 100 digits
+implemented: ['pdf', 'logpdf', 'cdf', 'logcdf', 'sf', 'logsf', 'ppf', 'isf']; inherited: []
+measured: ['ppf']
+parameter sets: ['(0.145463)', '(1)', '(0.001)', '(1e-08)', '(1e-20)', '(1000)', '(1e+08)', '(1e+20)']
+
+Reference self-checks:
+  FAIL: isf(0.145463) at 1e-200: changes with precision (9.899462559522133271 vs 19.418061854486160764); raise DPS or use a better-conditioned reference formula
+  FAIL: isf(1) at 1e-200: changes with precision (449.39856034885374277 vs 902.20099450938584537); raise DPS or use a better-conditioned reference formula
+  FAIL: isf(0.001) at 1e-200: changes with precision (1.0 vs 0.0025134287760388499037); raise DPS or use a better-conditioned reference formula
+
+method  region         n |   scipy 1.18.1: max ulp  median   loss severe moder. minor
+-------------------------------------------------------------------------------------
+ppf     low tail     192 |                     inf    1.34     47     24     16      7
+        bulk         168 |                     inf    1.43     21     20      6      8
+        high tail    104 |                 4.0e+21 5.6e+05     13     13      0      1
+        RuntimeWarning (scipy 1.18.1) in 5 parameter set(s): Error in function boost::math::quantile(const inverse_gaussian_distribution<double>&, %1%): Unable to locate solution in a reasonable time: either there is no answer to quantile or the answer is infinite.  Current best guess is %1%; underflow encountered in exp
+
+Points beyond conditioning (markdown, worst first per method):
+
+**ppf** (176 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (1e-20) | 1e-300 | 9.999999962952903e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 2.872984833353539e-288 | 9.999999963734903e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 8.254041852680545e-276 | 9.999999964534115e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 2.3713737056616554e-263 | 9.999999965351727e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 6.8129206905797616e-251 | 9.999999966189071e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 1.9573417814877456e-238 | 9.999999967047648e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 5.6234132519034905e-226 | 9.999999967929158e-21 | 0.0 | inf | loss | 3.12e-12 | 1 |
+| (1e-20) | 1.6155980984399093e-213 | 9.999999968835543e-21 | 0.0 | inf | loss | 3.21e-12 | 1 |
+| (1e-20) | 4.641588833612982e-201 | 9.999999969769034e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 1.333521432163324e-188 | 9.999999970732215e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 3.8311868495573715e-176 | 9.999999971728114e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 1.1006941712522576e-163 | 9.999999972760305e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 3.162277660168379e-151 | 9.999999973833068e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 9.085175756517067e-139 | 9.999999974951592e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 2.6101572156826508e-126 | 9.999999976122282e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 7.498942093324559e-114 | 9.999999977353188e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 2.1544346900319306e-101 | 9.999999978654667e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 6.1896581889128756e-89 | 9.999999980040438e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 1.778279410038923e-76 | 9.999999981529332e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 5.1089697745070394e-64 | 9.999999983148437e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 1.4677992676221335e-51 | 9.999999984939277e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 4.2169650342858224e-39 | 9.999999986971583e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 1.2115276586286942e-26 | 9.999999989380675e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 3.4807005884285624e-14 | 9.999999992511403e-21 | 0.0 | inf | loss | 0 | 0 |
+| (1e-20) | 0.01 | 9.999999997673652e-21 | 0.0 | inf | loss | 0 | 0 |
+
+Worst ulp per parameter set ('inf' = 0/inf/nan where the reference is finite):
+
+ppf:
+  shapes                        scipy 1.18.1  cond there
+  (0.145463)                        7.0e+266     0.00144
+  (1)                                     21     1.1e+08
+  (0.001)                            1.0e+12     1.1e+13
+  (1e-08)                            2.9e+09           0
+  (1e-20)                                inf           0
+  (1000)                            1.76e+04     1.6e+09
+  (1e+08)                            8.6e+08     2.5e+13
+  (1e+20)                            8.8e+14     6.0e+15
+
+points written to scratch/invgauss/runB.json
+done in 742 s

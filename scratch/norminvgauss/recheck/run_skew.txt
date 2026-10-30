@@ -1,0 +1,4 @@
+  ... self-checks (10, 9.99999)
+  ... self-checks (1, 0.999)
+  ... (10, 9.99999) cdf: 164 points, references 0.0 s
+  ... (10, 9.99999) sf: 164 points, references 2.2 s

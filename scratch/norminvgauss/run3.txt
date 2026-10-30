@@ -1,0 +1,4 @@
+  ... self-checks (1.25, 0.5)
+  ... self-checks (1, 0)
+  ... self-checks (1, 0.999)
+exit 143

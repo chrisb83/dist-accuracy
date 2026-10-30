@@ -1,0 +1,60 @@
+  ... self-checks (0.145463)
+  ... self-checks (1)
+  ... self-checks (0.001)
+  ... (0.145463) pdf: 99 points, references 0.0 s
+  ... (0.145463) logpdf: 99 points, references 0.0 s
+  ... (0.145463) cdf: 99 points, references 0.0 s
+  ... (0.145463) logcdf: 99 points, references 0.5 s
+  ... (0.145463) sf: 99 points, references 0.6 s
+  ... (0.145463) logsf: 99 points, references 0.6 s
+  ... (0.145463) ppf: 58 points, references 19.6 s
+  ... (0.145463) isf: 58 points, references 16.3 s
+  ... (1) pdf: 92 points, references 0.4 s
+  ... (1) logpdf: 92 points, references 0.5 s
+  ... (1) cdf: 92 points, references 0.0 s
+  ... (1) logcdf: 92 points, references 0.7 s
+  ... (1) sf: 92 points, references 0.5 s
+  ... (1) logsf: 92 points, references 0.6 s
+  ... (1) ppf: 58 points, references 17.9 s
+  ... (1) isf: 58 points, references 16.8 s
+  ... (0.001) pdf: 96 points, references 0.0 s
+  ... (0.001) logpdf: 96 points, references 0.0 s
+  ... (0.001) cdf: 96 points, references 0.0 s
+  ... (0.001) logcdf: 96 points, references 0.2 s
+  ... (0.001) sf: 96 points, references 0.2 s
+  ... (0.001) logsf: 96 points, references 0.2 s
+  ... (0.001) ppf: 58 points, references 10.6 s
+  ... (0.001) isf: 58 points, references 7.1 s
+invgauss: SciPy 1.18.1, mpmath 1.4.1, 400 digits
+implemented: ['pdf', 'logpdf', 'cdf', 'logcdf', 'sf', 'logsf', 'ppf', 'isf']; inherited: []
+measured: ['pdf', 'logpdf', 'cdf', 'logcdf', 'sf', 'logsf', 'ppf', 'isf']
+parameter sets: ['(0.145463)', '(1)', '(0.001)', '(1e-08)', '(1e-20)', '(1000)', '(1e+08)', '(1e+20)']
+
+Reference self-checks:
+  PASS: references agree with scipy in the bulk (where scipy is finite), are stable in precision and internally consistent
+
+Traceback (most recent call last):
+  File "C:\Users\chbau\Documents\research\dist-accuracy\.claude\skills\dist-accuracy-review\scripts\accuracy.py", line 780, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\chbau\Documents\research\dist-accuracy\.claude\skills\dist-accuracy-review\scripts\accuracy.py", line 755, in main
+    recs = run(mod, dist, impls, refs, methods, params, integral)
+  File "C:\Users\chbau\Documents\research\dist-accuracy\.claude\skills\dist-accuracy-review\scripts\accuracy.py", line 403, in run
+    outs[iname] = evaluate(d, m, args, shapes)
+                  ~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chbau\Documents\research\dist-accuracy\.claude\skills\dist-accuracy-review\scripts\accuracy.py", line 342, in evaluate
+    out = np.asarray(getattr(dist, method)(args, *shapes), dtype=float)
+                     ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_distn_infrastructure.py", line 2390, in isf
+    place(output, cond, self._isf(*goodargs) * scale + loc)
+                        ~~~~~~~~~^^^^^^^^^^^
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py", line 5120, in _isf
+    isf[i_nan] = super()._isf(x[i_nan], mu[i_nan])
+                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_distn_infrastructure.py", line 1076, in _isf
+    return self._ppf(1.0-q, *args)  # use correct _ppf for subclasses
+           ~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py", line 5106, in _ppf
+    ppf = np.asarray(scu._invgauss_ppf(x, mu, 1))
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^
+OverflowError: Error in function boost::math::quantile(const inverse_gaussian_distribution<double>&, %1%): probability parameter is 1, but must be < 1!

@@ -1,0 +1,54 @@
+geninvgauss: SciPy 1.18.1, mpmath 1.4.1, 100 digits
+implemented: ['pdf', 'logpdf', 'cdf']; inherited: ['logcdf', 'sf', 'logsf', 'ppf', 'isf']
+measured: ['cdf']
+parameter sets: ['(2.3, 1.5)', '(-0.5, 1)', '(0, 0.001)', '(0.5, 10000)']
+
+  ... (2.3, 1.5) cdf: 105 points, references 0.0 s
+  ... (-0.5, 1) cdf: 105 points, references 0.0 s
+  ... (0, 0.001) cdf: 105 points, references 0.0 s
+  ... (0.5, 10000) cdf: 105 points, references 0.0 s
+  ... condition numbers for 274 points above 8 ulp
+  ... condition numbers done in 650.6 s
+method  region         n |   scipy 1.18.1: max ulp  median   loss severe moder. minor
+-------------------------------------------------------------------------------------
+cdf     low tail       7 |                 4.0e+13 1.4e+08      0      4      1      2
+        bulk         132 |                 4.8e+05 1.22e+03      0      0     67     48
+        high tail    154 |                     inf 2.41e+03    125      4     16      4
+        RuntimeWarning (scipy 1.18.1) in 4 parameter set(s): underflow encountered in _cdf_single (vectorized)
+
+Points beyond conditioning (markdown, worst first per method):
+
+**cdf** (271 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (2.3, 1.5) | 10000000000.0 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+20 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+30 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+40 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+50 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+60 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+70 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+80 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+90 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+100 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+110 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+120 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+130 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+140 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+150 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+160 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+170 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+180 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+190 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+| (2.3, 1.5) | 1e+200 | 1.0 | 0.0 | inf | loss | 0 | 0 |
+
+Worst ulp per parameter set ('inf' = 0/inf/nan where the reference is finite):
+
+cdf:
+  shapes                        scipy 1.18.1  cond there
+  (2.3, 1.5)                             inf           0
+  (-0.5, 1)                              inf           0
+  (0, 0.001)                             inf           0
+  (0.5, 10000)                           inf           0
+

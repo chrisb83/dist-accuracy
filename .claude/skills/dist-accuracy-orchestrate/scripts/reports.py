@@ -70,7 +70,7 @@ def parse(path):
     header = text.split("## Summary")[0].lower()
     ref = re.search(r"\*\*reference:\*\*(.*)", header)
     light = ("light review" in header
-             or bool(ref and "not measured" in ref.group(1))
+             or bool(ref and ref.group(1).strip().startswith("not measured"))
              or bool(findings and all("not measured" in f["error"] for f in findings)))
     return dict(name=os.path.basename(path)[:-3], problems=problems, findings=findings,
                 counts=counts, worst=worst, methods=methods, opportunities=len(opp),

@@ -1,0 +1,8 @@
+  ... self-checks ()
+  ... () pdf: 177 points, references 0.4 s
+  ... () cdf: 177 points, references 0.0 s
+  ... () sf: 177 points, references 0.4 s
+  ... () ppf: 69 points, references 0.0 s
+  ... () isf: 69 points, references 0.0 s
+  ... condition numbers for 50 points above 8 ulp
+  ... condition numbers done in 0.1 s

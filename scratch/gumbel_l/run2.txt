@@ -1,0 +1,91 @@
+gumbel_l: SciPy 1.18.1, mpmath 1.4.1, 400 digits
+implemented: ['pdf', 'logpdf', 'cdf', 'sf', 'logsf', 'ppf', 'isf']; inherited: ['logcdf']
+measured: ['pdf', 'logpdf', 'cdf', 'sf', 'logsf', 'ppf', 'isf']
+parameter sets: ['()']
+
+Reference self-checks:
+  ... self-checks ()
+  PASS: references agree with scipy in the bulk (where scipy is finite), are stable in precision and internally consistent
+
+  ... () pdf: 159 points, references 1.3 s
+  ... () logpdf: 159 points, references 1.1 s
+  ... () cdf: 159 points, references 0.0 s
+  ... () sf: 159 points, references 1.5 s
+  ... () logsf: 159 points, references 0.9 s
+  ... () ppf: 65 points, references 0.1 s
+  ... () isf: 65 points, references 0.0 s
+  ... condition numbers for 20 points above 8 ulp
+  ... condition numbers done in 0.1 s
+method  region         n |   scipy 1.18.1: max ulp  median   loss severe moder. minor
+-------------------------------------------------------------------------------------
+pdf     low tail       9 |                    2.97    1.07      0      0      0      0
+        bulk          71 |                    1.58       0      0      0      0      0
+        high tail      8 |                     315    35.7      0      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): overflow encountered in exp; underflow encountered in exp
+logpdf  low tail      40 |                       0       0      0      0      0      0
+        bulk          71 |                   0.582       0      0      0      0      0
+        high tail     17 |                   0.739       0      0      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): overflow encountered in exp; underflow encountered in exp
+cdf     low tail       9 |                       1       0      0      0      0      0
+        bulk          71 |                    1.58       0      0      0      0      0
+        high tail     48 |                       0       0      0      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): overflow encountered in exp; underflow encountered in exp
+sf      low tail      40 |                       0       0      0      0      0      0
+        bulk          71 |                    0.68       0      0      0      0      0
+        high tail      8 |                     186    35.8      0      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): overflow encountered in exp; underflow encountered in exp
+logsf   low tail       9 |                       0       0      0      0      0      0
+        bulk          71 |                     0.5       0      0      0      0      0
+        high tail     17 |                       0       0      0      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): overflow encountered in exp; underflow encountered in exp
+ppf     low tail      25 |                       0       0      0      0      0      0
+        bulk          25 |                     inf       0      1      0      0      0
+        high tail     15 |                   0.712       0      0      0      0      0
+isf     low tail      25 |                   0.735       0      0      0      0      0
+        bulk          25 |                     inf       0      1      0      0      0
+        high tail     15 |                       0       0      0      0      0      0
+
+Points beyond conditioning (markdown, worst first per method):
+
+**ppf** (1 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| () | 0.6321205588285577 | -3.3784855259134224e-17 | 0.0 | inf | loss | 5.1e+16 | 0 |
+
+**isf** (1 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| () | 0.36787944117144233 | -3.3784855259134224e-17 | 0.0 | inf | loss | 3.0e+16 | 0 |
+
+Worst ulp per parameter set ('inf' = 0/inf/nan where the reference is finite):
+
+pdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     315    4.57e+03
+
+logpdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                   0.739           0
+
+cdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                    1.58           0
+
+sf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     186    4.63e+03
+
+logsf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     0.5           0
+
+ppf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     inf     5.1e+16
+
+isf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     inf     3.0e+16
+

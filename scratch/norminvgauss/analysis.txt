@@ -1,0 +1,148 @@
+pdf (0.001, 0.0) {'ok': 162}
+    bulk max ulp 1.747596214347808 median 0.0
+pdf (1.0, 0.0) {'ok': 150}
+    bulk max ulp 1.950737249403125 median 0.0
+pdf (1.0, 0.999) {'ok': 151, 'minor': 7, 'moderate': 2}
+    moderate args 99999.99999999991 599999.9999999994
+    minor args 22.34390577008708 3195.6477594267058
+    bulk max ulp 204.589707694641 median 0.6238970642039658
+pdf (1.25, 0.5) {'ok': 163, 'minor': 1}
+    minor args 133.33333333333334 133.33333333333334
+    bulk max ulp 3.6890723285838747 median 0.9938090554059811
+pdf (2.0, -1.5) {'ok': 163, 'minor': 1}
+    minor args -1200.0 -1200.0
+    bulk max ulp 7.327286084869183 median 1.4957551131848295
+pdf (10.0, 9.99999) {'ok': 147, 'minor': 9, 'moderate': 6, 'severe': 2}
+    severe args 10000000.000378577 60000000.002271466
+    moderate args 2490.9175923537605 179088.24039927218
+    minor args 0.31622776601683794 707.1062508697358
+    bulk max ulp 453813.18031039444 median 24.37586598401916
+pdf (10000.0, 0.0) {'ok': 141, 'moderate': 15}
+    moderate args -0.3 0.3
+    bulk max ulp 7392.153415380913 median 0.8020909704103978
+pdf (1000000.0, 500000.0) {'ok': 152, 'moderate': 12}
+    moderate args 0.5401260748255418 0.6145744635537097
+    bulk max ulp 548647.8255070808 median 197120.69329695794
+cdf (0.001, 0.0) {'ok': 73, 'severe': 4, 'moderate': 3, 'minor': 82}
+    severe args -600000.0 -316.2277660168379
+    moderate args -158.11388300841895 -94.86832980505137
+    minor args -31.622776601683796 948.6832980505138
+    bulk max ulp 4047.2798797366186 median 16.0
+cdf (1.0, 0.0) {'ok': 67, 'severe': 4, 'moderate': 7, 'minor': 72}
+    severe args -600.0 -10.0
+    moderate args -9.0 10.0
+    minor args -3.0 8.0
+    bulk max ulp 483527.3413370518 median 23.999999997500144
+cdf (1.0, 0.999) {'ok': 72, 'severe': 15, 'minor': 73}
+    severe args -300.1500750375187 -2.0
+    minor args -1.0 3195.6477594267058
+    bulk max ulp 353.76691595791345 median 143.49547091632607
+cdf (1.25, 0.5) {'ok': 137, 'severe': 12, 'minor': 15}
+    severe args -342.85714285714283 -4.0
+    minor args -3.0 10.630222175367567
+    bulk max ulp 409.9370398497936 median 0.0
+cdf (2.0, -1.5) {'ok': 74, 'severe': 4, 'moderate': 5, 'minor': 81}
+    severe args -1200.0 -14.278617040691717
+    moderate args -10.0 -7.0
+    minor args -6.0 3.0
+    bulk max ulp 305497.4799471523 median 12.147130288011192
+cdf (10.0, 9.99999) {'ok': 134, 'moderate': 12, 'severe': 6, 'minor': 12}
+    severe args -2.0 179088.24039927218
+    moderate args -30.0000150000075 60167.48430033722
+    minor args 1e-10 30437.29527560348
+    bulk max ulp 1094154512339.3486 median 118.88441044484165
+cdf (10000.0, 0.0) {'ok': 84, 'severe': 3, 'minor': 67, 'moderate': 2}
+    severe args -0.3 -0.06
+    moderate args -0.01 0.06
+    minor args -0.05 0.01
+    bulk max ulp 1378.8282124354032 median 36.0
+cdf (1000000.0, 500000.0) {'ok': 153, 'loss': 1, 'severe': 3, 'moderate': 6, 'minor': 1}
+    loss args 0.5401260748255418 0.5401260748255418
+    severe args 0.5649422044015977 0.5835543015836397
+    moderate args 0.5736278497532173 0.5785910756684285
+    minor args 0.5810726886260341 0.5810726886260341
+    bulk max ulp 451994.0811989555 median 120947.02818028933
+sf (0.001, 0.0) {'ok': 73, 'minor': 82, 'moderate': 3, 'severe': 4}
+    severe args 316.2277660168379 600000.0
+    moderate args 94.86832980505137 158.11388300841895
+    minor args -948.6832980505138 31.622776601683796
+    bulk max ulp 4047.2798797366186 median 16.0
+sf (1.0, 0.0) {'ok': 67, 'moderate': 7, 'minor': 72, 'severe': 4}
+    severe args 10.0 600.0
+    moderate args -10.0 9.0
+    minor args -8.0 3.0
+    bulk max ulp 483527.3413370518 median 23.999999997500144
+sf (1.0, 0.999) {'ok': 68, 'minor': 81, 'moderate': 9, 'severe': 2}
+    severe args 99999.99999999991 599999.9999999994
+    moderate args 9.0 3195.6477594267058
+    minor args -10.0 8.0
+    bulk max ulp 39343.395910879415 median 279.5629411999453
+sf (1.25, 0.5) {'ok': 139, 'minor': 8, 'moderate': 11, 'severe': 6}
+    severe args 9.0 800.0
+    moderate args -6.0 8.0
+    minor args -8.0 -0.5829428590175736
+    bulk max ulp 3007.0588029484775 median 0.753288096695382
+sf (2.0, -1.5) {'ok': 140, 'severe': 15, 'minor': 5, 'moderate': 4}
+    severe args -14.278617040691717 171.42857142857142
+    moderate args -7.0 2.1213203435596424
+    minor args -10.0 -1.0
+    bulk max ulp 3390.5897491404685 median 0.921840425771517
+sf (10.0, 9.99999) {'ok': 71, 'loss': 2, 'minor': 83, 'severe': 4, 'moderate': 4}
+    loss args -707.1062508697358 179088.24039927218
+    severe args 707.1062508697358 60000000.002271466
+    moderate args 2490.9175923537605 30437.29527560348
+    minor args -30.0000150000075 10.0
+    bulk max ulp 12228200553660.93 median 509.20434169901597
+sf (10000.0, 0.0) {'ok': 84, 'moderate': 2, 'minor': 67, 'severe': 3}
+    severe args 0.06 0.3
+    moderate args -0.06 0.01
+    minor args -0.01 0.05
+    bulk max ulp 1378.8282124354032 median 36.0
+sf (1000000.0, 500000.0) {'ok': 80, 'loss': 72, 'moderate': 10, 'severe': 2}
+    loss args -0.5773502691896257 0.6145744635537097
+    severe args 0.5835543015836397 0.5897583339776538
+    moderate args 0.5401260748255418 0.5810726886260341
+    bulk max ulp 201944.52574390918 median 86017.7981943976
+isf (0.001, 0.0) {'severe': 38, 'minor': 17, 'moderate': 3, 'loss': 1, 'ok': 2}
+    loss args 0.49999999999999994 0.49999999999999994
+    severe args 1e-300 0.9999999999999627
+    moderate args 0.4995000000000018 0.9991516571017559
+    minor args 0.01 0.9907894468231052
+    bulk max ulp 1.8472389657359658e+17 median 108.59995599029818
+isf (1.0, 0.0) {'severe': 33, 'minor': 15, 'moderate': 5, 'loss': 1, 'ok': 7}
+    loss args 0.49999999999999994 0.49999999999999994
+    severe args 1e-300 0.9999999999522942
+    moderate args 0.4994999999999974 0.99999280314327
+    minor args 0.01 0.9199999999999999
+    bulk max ulp inf median 46.33194060644619
+isf (1.0, 0.999) {'severe': 39, 'moderate': 22}
+    severe args 1e-300 0.9999999999999997
+    moderate args 0.01 0.9999218629262349
+    bulk max ulp 281277416101.7542 median 5770.038797212529
+isf (1.25, 0.5) {'severe': 27, 'minor': 8, 'ok': 24, 'moderate': 2}
+    severe args 1e-300 0.9999999943765867
+    moderate args 0.9999218629262349 0.99999280314327
+    minor args 0.01 0.9907894468231052
+    bulk max ulp 486374720.57298744 median 107.2855143009156
+isf (2.0, -1.5) {'moderate': 23, 'severe': 13, 'ok': 19, 'minor': 6}
+    severe args 5.1089697745070394e-64 0.9999999999522942
+    moderate args 1e-300 0.99999280314327
+    minor args 0.57 0.9
+    bulk max ulp 1788717695.3753102 median 12.840307604831052
+isf (10.0, 9.99999) {'severe': 26, 'moderate': 5, 'loss': 25, 'minor': 4}
+    loss args 0.21999999999999997 0.9999999999999997
+    severe args 1e-300 0.15
+    moderate args 0.01 0.9199999999999999
+    minor args 0.42999999999999994 0.8499999999999999
+    bulk max ulp inf median 1521383445936.0442
+isf (10000.0, 0.0) {'severe': 37, 'minor': 14, 'moderate': 4, 'loss': 1, 'ok': 5}
+    loss args 0.49999999999999994 0.49999999999999994
+    severe args 1e-300 0.9999999999999966
+    moderate args 0.36 0.6399999999999999
+    minor args 0.01 0.9991516571017559
+    bulk max ulp inf median 913.2151922798616
+isf (1000000.0, 500000.0) {'severe': 24, 'minor': 9, 'loss': 22}
+    loss args 0.57 0.9999999999999997
+    severe args 1e-300 3.4807005884285624e-14
+    minor args 0.01 0.49999999999999994
+    bulk max ulp inf median inf

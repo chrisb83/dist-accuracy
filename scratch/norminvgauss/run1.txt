@@ -1,0 +1,22 @@
+  ... self-checks (1.25, 0.5)
+  ... self-checks (1, 0)
+  ... self-checks (1, 0.999)
+  ... (1.25, 0.5) pdf: 164 points, references 0.7 s
+  ... (1.25, 0.5) cdf: 164 points, references 0.0 s
+  ... (1.25, 0.5) sf: 164 points, references 0.0 s
+  ... (1.25, 0.5) isf: 61 points, references 107.6 s
+  ... (1, 0) pdf: 150 points, references 0.6 s
+  ... (1, 0) cdf: 150 points, references 0.0 s
+  ... (1, 0) sf: 150 points, references 0.0 s
+  ... (1, 0) isf: 61 points, references 90.0 s
+  ... (1, 0.999) pdf: 160 points, references 0.7 s
+  ... (1, 0.999) cdf: 160 points, references 0.0 s
+  ... (1, 0.999) sf: 160 points, references 0.0 s
+  ... (1, 0.999) isf: 61 points, references 347.4 s
+  ... (2, -1.5) pdf: 164 points, references 0.7 s
+  ... (2, -1.5) cdf: 164 points, references 0.0 s
+  ... (2, -1.5) sf: 164 points, references 0.0 s
+  ... (2, -1.5) isf: 61 points, references 114.5 s
+  ... (10000, 0) pdf: 156 points, references 0.4 s
+  ... (10000, 0) cdf: 156 points, references 0.0 s
+  ... (10000, 0) sf: 156 points, references 0.0 s

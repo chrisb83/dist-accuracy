@@ -1,0 +1,5 @@
+norminvgauss: SciPy 1.18.1, mpmath 1.4.1, 100 digits
+implemented: ['pdf', 'cdf', 'sf', 'isf']; inherited: ['logpdf', 'logcdf', 'logsf', 'ppf']
+measured: ['isf']
+parameter sets: ['(10, 9.99999)', '(1, 0.999)']
+

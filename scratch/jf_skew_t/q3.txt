@@ -1,0 +1,56 @@
+  ... self-checks (2, 0.5)
+  ... (2, 0.5) ppf: 64 points, references 5.7 s
+  ... condition numbers for 24 points above 8 ulp
+  ... condition numbers done in 88.7 s
+jf_skew_t: SciPy 1.18.1, mpmath 1.4.1, 400 digits
+implemented: ['pdf', 'cdf', 'sf', 'ppf']; inherited: ['logpdf', 'logcdf', 'logsf', 'isf']
+measured: ['ppf']
+parameter sets: ['(2, 0.5)']
+
+Reference self-checks:
+  PASS: references agree with scipy in the bulk (where scipy is finite), are stable in precision and internally consistent
+
+method  region         n |   scipy 1.18.1: max ulp  median   loss severe moder. minor
+-------------------------------------------------------------------------------------
+ppf     low tail      26 |                    1.01       0      0      0      0      0
+        bulk          21 |                1.34e+03    3.26      0      0      2      3
+        high tail     17 |                     inf 5.3e+09     11      5      1      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): Error in function boost::math::ibeta<double>(%1%, %1%, %1%): Root finding evaluation exceeded %1% iterations, giving up now.; divide by zero encountered in divide
+
+Points beyond conditioning (markdown, worst first per method):
+
+**ppf** (22 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (2, 0.5) | 0.9999999943765867 | 210877995.49606496 | inf | inf | loss | 1.8e+08 | 19.9 |
+| (2, 0.5) | 0.9999999994820525 | 2289525884.3206606 | inf | inf | loss | 1.9e+09 | 22.3 |
+| (2, 0.5) | 0.9999999999 | 11858540244.451403 | inf | inf | loss | 1.0e+10 | 24 |
+| (2, 0.5) | 0.9999999999522942 | 24857630438.687508 | inf | inf | loss | 2.1e+10 | 24.7 |
+| (2, 0.5) | 0.9999999999956061 | 269884639284.9955 | inf | inf | loss | 2.3e+11 | 27.1 |
+| (2, 0.5) | 0.9999999999995953 | 2930377055962.2134 | inf | inf | loss | 2.5e+12 | 29.5 |
+| (2, 0.5) | 0.9999999999999627 | 31789358241018.656 | inf | inf | loss | 2.7e+13 | 31.9 |
+| (2, 0.5) | 0.99999999999999 | 118680270766469.64 | inf | inf | loss | 1.0e+14 | 33.2 |
+| (2, 0.5) | 0.9999999999999966 | 344555624805879.6 | inf | inf | loss | 2.9e+14 | 34.2 |
+| (2, 0.5) | 0.9999999999999997 | 3560408122994089.5 | 0.0 | inf | loss | 3.0e+15 | 36.6 |
+| (2, 0.5) | 0.9999999999999999 | 1.0681224368982268e+16 | inf | inf | loss | 9.0e+15 | 37.7 |
+| (2, 0.5) | 0.999999938945977 | 19423030.052661173 | 19372660.347704943 | 1.2e+13 | severe | 1.6e+07 | 17.5 |
+| (2, 0.5) | 0.999999 | 1185854.122528076 | 1185883.6972670723 | 1.1e+11 | severe | 1.0e+06 | 14.7 |
+| (2, 0.5) | 0.9999993371296838 | 1788968.5110264388 | 1788965.535883416 | 7.5e+09 | severe | 1.5e+06 | 15.2 |
+| (2, 0.5) | 0.99999280314327 | 164773.8960216709 | 164773.78206629044 | 3.1e+09 | severe | 1.4e+05 | 12.8 |
+| (2, 0.5) | 0.9999218629262349 | 15176.587239857225 | 15176.587393729962 | 4.6e+07 | severe | 1.28e+04 | 10.4 |
+| (2, 0.5) | 0.9991516571017559 | 1397.8468254052727 | 1397.8468254379052 | 1.1e+05 | moderate | 1.18e+03 | 8.01 |
+| (2, 0.5) | 0.9907894468231052 | 128.74060072808993 | 128.74060072812813 | 1.34e+03 | moderate | 108 | 5.62 |
+| (2, 0.5) | 0.99 | 118.57574942564533 | 118.57574942561588 | 1.12e+03 | moderate | 99 | 5.54 |
+| (2, 0.5) | 0.9199999999999999 | 14.74571421163199 | 14.745714211631876 | 34.7 | minor | 11.6 | 3.49 |
+| (2, 0.5) | 0.9 | 11.761598587454069 | 11.761598587454017 | 19.7 | minor | 9.15 | 3.28 |
+| (2, 0.5) | 0.15 | 0.18629116037987542 | 0.1862911603798762 | 18.8 | minor | 4.12 | 11 |
+
+Worst ulp per parameter set ('inf' = 0/inf/nan where the reference is finite):
+
+ppf:
+  shapes                        scipy 1.18.1  cond there
+  (2, 0.5)                               inf     1.8e+08
+
+points written to scratch/jf_skew_t/q3.json
+done in 99 s

@@ -1,0 +1,51 @@
+  ... self-checks (1.25, 0.5)
+  ... self-checks (1, 0)
+  ... self-checks (1, 0.999)
+  ... (1.25, 0.5) pdf: 164 points, references 0.0 s
+  ... (1.25, 0.5) cdf: 164 points, references 0.0 s
+  ... (1.25, 0.5) sf: 164 points, references 0.0 s
+  ... (1.25, 0.5) isf: 61 points, references 0.0 s
+  ... (1, 0) pdf: 150 points, references 0.0 s
+  ... (1, 0) cdf: 150 points, references 0.0 s
+  ... (1, 0) sf: 150 points, references 0.0 s
+  ... (1, 0) isf: 61 points, references 0.0 s
+  ... (1, 0.999) pdf: 160 points, references 0.0 s
+  ... (1, 0.999) cdf: 160 points, references 0.0 s
+  ... (1, 0.999) sf: 160 points, references 0.0 s
+  ... (1, 0.999) isf: 61 points, references 0.0 s
+  ... (2, -1.5) pdf: 164 points, references 0.0 s
+  ... (2, -1.5) cdf: 164 points, references 0.0 s
+  ... (2, -1.5) sf: 164 points, references 0.0 s
+  ... (2, -1.5) isf: 61 points, references 0.0 s
+  ... (10000, 0) pdf: 156 points, references 0.0 s
+  ... (10000, 0) cdf: 156 points, references 0.0 s
+  ... (10000, 0) sf: 156 points, references 0.0 s
+  ... (10000, 0) isf: 61 points, references 0.0 s
+  ... (0.001, 0) pdf: 162 points, references 0.0 s
+  ... (0.001, 0) cdf: 162 points, references 0.0 s
+  ... (0.001, 0) sf: 162 points, references 0.0 s
+  ... (0.001, 0) isf: 61 points, references 0.0 s
+  ... (10, 9.99999) pdf: 164 points, references 0.0 s
+  ... (10, 9.99999) cdf: 164 points, references 0.0 s
+  ... (10, 9.99999) sf: 164 points, references 0.0 s
+  ... (10, 9.99999) isf: 60 points, references 0.0 s
+  ... (1e+06, 500000) pdf: 164 points, references 0.0 s
+  ... (1e+06, 500000) cdf: 164 points, references 0.0 s
+  ... (1e+06, 500000) sf: 164 points, references 0.0 s
+  ... (1e+06, 500000) isf: 55 points, references 0.0 s
+  ... condition numbers for 1602 points above 8 ulp
+  ... condition numbers done in 1852.3 s
+Windows fatal exception: code 0xc06d007f
+
+Current thread 0x00009874 (most recent call first):
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\matplotlib\bezier.py", line 310 in __call__
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\matplotlib\axes\_base.py", line 2593 in _update_patch_limits
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\matplotlib\axes\_base.py", line 2566 in add_patch
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\matplotlib\axes\_axes.py", line 1043 in axhspan
+  File "C:\Users\chbau\Documents\research\dist-accuracy\.claude\skills\dist-accuracy-review\scripts\accuracy.py", line 657 in plot
+  File "C:\Users\chbau\Documents\research\dist-accuracy\.claude\skills\dist-accuracy-review\scripts\accuracy.py", line 769 in main
+  File "C:\Users\chbau\Documents\research\dist-accuracy\.claude\skills\dist-accuracy-review\scripts\accuracy.py", line 780 in <module>
+
+Current thread's C stack trace (most recent call first):
+  <cannot get C stack on this system>
+exit 127

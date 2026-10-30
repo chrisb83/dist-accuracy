@@ -1,0 +1,4 @@
+  ... (0.145463) isf: 58 points, references 0.0 s
+  ... (1) isf: 58 points, references 0.0 s
+  ... (1000) isf: 58 points, references 14.6 s
+  ... condition numbers for 70 points above 8 ulp
