@@ -1,0 +1,9 @@
+cdf(-3.3, 1.7e-5) | np.float64(0.00048337587448659563)  1.7e+05 ulp  moderate | ref 0.0004833758745046659 | cond 11.8 | conds 9.99e-05 | rc 0 | 10s
+cdf(0.1, 1.7e-5) | np.float64(0.5398289507309657) 1.89e+04 ulp  moderate | ref 0.5398289507286944 | cond 0.0735 | conds 2.06e-06 | rc 0 | 10s
+sf(3.3, 1.7e-5) | np.float64(0.00048347241301976323) 9.18e+04 ulp  moderate | ref 0.00048347241300990686 | cond 11.8 | conds 9.98e-05 | rc 0 | 10s
+cdf(-3.3, 1e-3) | np.float64(0.00048058952721282533)     4.57 ulp  ok | ref 0.00048058952721282485 | cond 11.8 | conds 0.00589 | rc 0 | 10s
+cdf(0.1, 1e-3) | np.float64(0.5398933336507576)        0 ulp  ok | ref 0.5398933336507576 | cond 0.0735 | conds 0.000121 | rc 0 | 9s
+sf(2.7, -1e-3) | np.float64(0.0034560548810995766)      1.7 ulp  ok | ref 0.003456054881099578 | cond 8.13 | conds 0.00316 | rc 0 | 10s
+ppf(0.3, 1.7e-5) | np.float64(-0.5244025668653194)  1.2e+05 ulp  moderate | ref -0.5244025668792529 | cond 1.65 | conds 3.92e-06 | rc 0 | 28s
+ppf(0.7, -1.7e-5) | np.float64(0.5244025668653194)  1.2e+05 ulp  moderate | ref 0.5244025668792527 | cond 3.84 | conds 3.92e-06 | rc 0 | 29s
+ppf(0.45, 1e-3) | np.float64(-0.1258253756288923) 1.57e+03 ulp  moderate | ref -0.1258253756288485 | cond 9.04 | conds 0.0013 | rc 0 | 35s

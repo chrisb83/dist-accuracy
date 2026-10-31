@@ -1,0 +1,80 @@
+powernorm.pdf(40.0, 0.001)
+  reference      0.0179016885094605335754895  (float 0.017901688509460535)
+  cond (arg)     0.602  (within conditioning: <= 8.6 ulp)
+  cond (shapes)  0.195  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss  [divide by zero encountered in power; invalid value encountered in multiply; underflow encountered in exp]
+powernorm.pdf(37.0, 0.001)
+  reference      0.01858986348252511416504572  (float 0.018589863482525115)
+  cond (arg)     0.371  (within conditioning: <= 8.37 ulp)
+  cond (shapes)  0.311  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.01858986348252721)      508 ulp  minor
+powernorm.pdf(38.0, 0.5)
+  reference      3.22967623610521933038658e-157  (float 3.2296762361052196e-157)
+  cond (arg)     722  (within conditioning: <= 730 ulp)
+  cond (shapes)  362  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(inf)                 inf ulp  loss  [divide by zero encountered in power; underflow encountered in divide; underflow encountered in exp; underflow encountered in multiply]
+powernorm.pdf(1000.0, 1e-08)
+  reference      0.000009950133963265065933306764  (float 9.950133963265067e-06)
+  cond (arg)     0.99  (within conditioning: <= 8.99 ulp)
+  cond (shapes)  0.995  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss  [divide by zero encountered in power; invalid value encountered in multiply; underflow encountered in exp]
+powernorm.logpdf(100000.0, 1e-08)
+  reference      -56.90775540320077806003347  (float -56.90775540320078)
+  cond (arg)     1.74  (within conditioning: <= 9.74 ulp)
+  cond (shapes)  0.861  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-56.90775489807129)  4.0e+07 ulp  severe
+powernorm.logpdf(10000000000.0, 1e-08)
+  reference      -499999999995.3948405147402  (float -499999999995.39484)
+  cond (arg)     2  (within conditioning: <= 10 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-499999997952.0)  1.8e+07 ulp  severe
+powernorm.logpdf(1e+100, 0.001)
+  reference      -5.00000000000000026311232e+196  (float -5.000000000000001e+196)
+  cond (arg)     2  (within conditioning: <= 10 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-4.999999999998013e+196) 1.79e+03 ulp  moderate
+powernorm.logpdf(1e+155, 0.001)
+  reference      unavailable  (float nan)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                   - ulp  ok  [invalid value encountered in add; overflow encountered in square]
+powernorm.logpdf(1.4e+154, 0.5)
+  reference      -4.899999999999999736888351e+307  (float -4.9e+307)
+  cond (arg)     2  (within conditioning: <= 10 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-inf)                inf ulp  loss  [overflow encountered in square]
+powernorm.logpdf(-1.4e+154, 4.445365225459078)
+  reference      -9.799999999999999473776701e+307  (float -9.8e+307)
+  cond (arg)     2  (within conditioning: <= 10 ulp)
+  cond (shapes)  1.02e-308  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-inf)                inf ulp  loss  [overflow encountered in square]
+powernorm.pdf(-6.0, 1000000.0)
+  reference      0.0060698914208803002989054  (float 0.0060698914208803)
+  cond (arg)     36  (within conditioning: <= 44 ulp)
+  cond (shapes)  0.999  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.006069891420544109)  2.5e+05 ulp  moderate
+powernorm.pdf(-6.0, 10000.0)
+  reference      0.00006075822912203763045223121  (float 6.075822912203763e-05)
+  cond (arg)     36  (within conditioning: <= 44 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(6.0758229122003986e-05) 2.49e+03 ulp  moderate
+powernorm.sf(0.3, 50.0)
+  reference      1.282929384082433827115077e-21  (float 1.2829293840824338e-21)
+  cond (arg)     15  (within conditioning: <= 23 ulp)
+  cond (shapes)  48.1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.282929384082448e-21)     50.2 ulp  minor
+powernorm.sf(-1e-10, 50.0)
+  reference      8.88178423243444480850534e-16  (float 8.881784232434445e-16)
+  cond (arg)     3.99e-09  (within conditioning: <= 8 ulp)
+  cond (shapes)  34.7  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(8.881784232434541e-16)       49 ulp  minor
+powernorm.logcdf(-40.0, 4.445365225459078)
+  reference      -803.1165799827057062675626  (float -803.1165799827057)
+  cond (arg)     1.99  (within conditioning: <= 9.99 ulp)
+  cond (shapes)  0.00125  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-inf)                inf ulp  loss
+powernorm.logpdf(-2.0, 50.0)
+  reference      -0.1345480848957376179630515  (float -0.1345480848957376)
+  cond (arg)     10.5  (within conditioning: <= 18.5 ulp)
+  cond (shapes)  1.12  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-0.134548084895737)     20.4 ulp  minor

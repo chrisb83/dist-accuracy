@@ -1,0 +1,10 @@
+  ... self-checks (0.1)
+  ... self-checks (-2)
+  ... self-checks (1)
+  ... (0.1) ppf: 65 points, references 16.7 s
+  ... (-2) ppf: 65 points, references 5.5 s
+  ... (1) ppf: 65 points, references 5.7 s
+  ... (-0.1) ppf: 65 points, references 32.4 s
+  ... (10) ppf: 65 points, references 26.4 s
+  ... (-100) ppf: 65 points, references 278.4 s
+  ... condition numbers for 108 points above 8 ulp

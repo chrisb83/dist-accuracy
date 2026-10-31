@@ -1,0 +1,48 @@
+== ppf 1e-300 1 1
+  reference      -6.647612765794012688125078e+298  (float -6.647612765794013e+298)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  scipy 1.18.1   np.float64(-1.3407807929942603e+154)  4.5e+15 ulp  loss
+== isf 1e-300 1 1
+  reference      8.643606884608054627668804e+299  (float 8.643606884608054e+299)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  scipy 1.18.1   np.float64(1.3407807929942603e+154)  4.5e+15 ulp  loss
+== ppf 3.481e-14 0.5 5
+  reference      -6093325092628.500080246482  (float -6093325092628.5)
+  cond (arg)     2  (within conditioning: <= 10 ulp)
+  scipy 1.18.1   np.float64(-6093324983307.059)  8.1e+07 ulp  severe
+== ppf 1e-300 1e6 2
+  reference      -35.05848447364943494450485  (float -35.058484473649436)
+  cond (arg)     0.00077  (within conditioning: <= 8 ulp)
+  scipy 1.18.1   np.float64(-8.761810522124264)  3.4e+15 ulp  severe
+== ppf 3.481e-14 1e6 2
+  reference      -5.488642946457839736211772  (float -5.48864294645784)
+  cond (arg)     0.0239  (within conditioning: <= 8.02 ulp)
+  scipy 1.18.1   np.float64(-5.4886136305315425)  2.4e+10 ulp  severe
+== isf 1e-300 1e6 2
+  reference      39.06123139155965699517693  (float 39.06123139155966)
+  cond (arg)     0.000691  (within conditioning: <= 8 ulp)
+  scipy 1.18.1   np.float64(38.94287354630109)  1.4e+13 ulp  severe
+== isf 0.9999999994820525 1e6 2
+  reference      -4.103805730707064400774787  (float -4.103805730707064)
+  cond (arg)     7.5e+07  (within conditioning: <= 7.5e+07 ulp)
+  scipy 1.18.1   np.float64(-4.103801921317024)  4.2e+09 ulp  severe
+== isf 1.212e-26 5 -3
+  reference      33467.14352194842726350785  (float 33467.14352194843)
+  cond (arg)     0.2  (within conditioning: <= 8.2 ulp)
+  scipy 1.18.1   np.float64(33467.14352571071)  5.1e+05 ulp  moderate
+== ppf 1e-300 10 1e-8
+  reference      -2.564525710633498747663028e+30  (float -2.5645257106334987e+30)
+  cond (arg)     0.1  (within conditioning: <= 8.1 ulp)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss
+== ppf 0.78 1e6 2
+  reference      2.772195390825210156558379  (float 2.77219539082521)
+  cond (arg)     0.95  (within conditioning: <= 8.95 ulp)
+  scipy 1.18.1   np.float64(2.772195390817912) 1.19e+04 ulp  moderate
+== sf 38 1e6 2
+  reference      6.679566181144653171790379e-284  (float 6.679566181144653e-284)
+  cond (arg)     1.37e+03  (within conditioning: <= 1.38e+03 ulp)
+  scipy 1.18.1   np.float64(6.679566177308012e-284)  2.6e+06 ulp  severe
+== sf 38.94287354630109 1e6 2
+  reference      7.953452836473855205958075e-299  (float 7.953452836473855e-299)
+  cond (arg)     1.44e+03  (within conditioning: <= 1.45e+03 ulp)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss

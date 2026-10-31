@@ -1,0 +1,33 @@
+  ... self-checks (4)
+  ... self-checks (1)
+  ... self-checks (10)
+  ... (4) pdf: 170 points, references 0.0 s
+  ... (4) logpdf: 170 points, references 0.0 s
+  ... (4) cdf: 170 points, references 0.0 s
+  ... (4) sf: 170 points, references 6.5 s
+  ... (1) pdf: 160 points, references 0.0 s
+  ... (1) logpdf: 160 points, references 0.0 s
+  ... (1) cdf: 160 points, references 0.0 s
+  ... (1) sf: 160 points, references 4.7 s
+  ... (10) pdf: 164 points, references 0.0 s
+  ... (10) logpdf: 164 points, references 0.0 s
+  ... (10) cdf: 164 points, references 0.0 s
+  ... (10) sf: 164 points, references 6.0 s
+  ... (100) pdf: 174 points, references 0.0 s
+  ... (100) logpdf: 174 points, references 0.0 s
+  ... (100) cdf: 174 points, references 0.0 s
+  ... (100) sf: 174 points, references 7.4 s
+  ... (10000) pdf: 176 points, references 0.0 s
+  ... (10000) logpdf: 176 points, references 0.0 s
+  ... (10000) cdf: 176 points, references 0.0 s
+  ... (10000) sf: 176 points, references 7.5 s
+  ... (1e-08) pdf: 176 points, references 0.0 s
+  ... (1e-08) logpdf: 176 points, references 0.0 s
+  ... (1e-08) cdf: 176 points, references 0.0 s
+  ... (1e-08) sf: 176 points, references 5.0 s
+  ... (-4) pdf: 170 points, references 0.0 s
+  ... (-4) logpdf: 170 points, references 0.0 s
+  ... (-4) cdf: 170 points, references 0.0 s
+  ... (-4) sf: 170 points, references 6.5 s
+  ... condition numbers for 286 points above 8 ulp
+  ... condition numbers done in 287.2 s

@@ -1,0 +1,567 @@
+{
+ "scipy_version": "1.18.1",
+ "distributions": [
+  {
+   "name": "powerlognorm",
+   "scipy_version": "1.18.1",
+   "class": "powerlognorm_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    8922,
+    8974
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "powerlognorm_gen",
+     "lines": [
+      8953,
+      8954
+     ]
+    },
+    "logpdf": {
+     "class": "powerlognorm_gen",
+     "lines": [
+      8956,
+      8959
+     ]
+    },
+    "cdf": {
+     "class": "powerlognorm_gen",
+     "lines": [
+      8961,
+      8962
+     ]
+    },
+    "sf": {
+     "class": "powerlognorm_gen",
+     "lines": [
+      8967,
+      8968
+     ]
+    },
+    "logsf": {
+     "class": "powerlognorm_gen",
+     "lines": [
+      8970,
+      8971
+     ]
+    },
+    "ppf": {
+     "class": "powerlognorm_gen",
+     "lines": [
+      8964,
+      8965
+     ]
+    },
+    "isf": {
+     "class": "powerlognorm_gen",
+     "lines": [
+      8973,
+      8974
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "s",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     2.1413923530064087,
+     0.44639540782048337
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, c, s) = \\frac{c}{x s} \\phi(\\log(x)/s) (\\Phi(-\\log(x)/s))^{c-1}"
+   ],
+   "helpers": [
+    "_norm_logcdf",
+    "_norm_logpdf",
+    "_norm_ppf"
+   ],
+   "special_functions": [
+    "sc.expm1"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "powernorm",
+   "scipy_version": "1.18.1",
+   "class": "powernorm_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    8980,
+    9031
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "powernorm_gen",
+     "lines": [
+      9011,
+      9013
+     ]
+    },
+    "logpdf": {
+     "class": "powernorm_gen",
+     "lines": [
+      9015,
+      9016
+     ]
+    },
+    "cdf": {
+     "class": "powernorm_gen",
+     "lines": [
+      9018,
+      9019
+     ]
+    },
+    "sf": {
+     "class": "powernorm_gen",
+     "lines": [
+      9024,
+      9025
+     ]
+    },
+    "logsf": {
+     "class": "powernorm_gen",
+     "lines": [
+      9027,
+      9028
+     ]
+    },
+    "ppf": {
+     "class": "powernorm_gen",
+     "lines": [
+      9021,
+      9022
+     ]
+    },
+    "isf": {
+     "class": "powernorm_gen",
+     "lines": [
+      9030,
+      9031
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     4.445365225459078
+    ]
+   ],
+   "support_for_example": [
+    -Infinity,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, c) = c \\phi(x) (\\Phi(-x))^{c-1}"
+   ],
+   "helpers": [
+    "_norm_cdf",
+    "_norm_logcdf",
+    "_norm_logpdf",
+    "_norm_pdf",
+    "_norm_ppf"
+   ],
+   "special_functions": [
+    "sc.expm1"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "rayleigh",
+   "scipy_version": "1.18.1",
+   "class": "rayleigh_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    9101,
+    9219
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "rayleigh_gen",
+     "lines": [
+      9131,
+      9133
+     ]
+    },
+    "logpdf": {
+     "class": "rayleigh_gen",
+     "lines": [
+      9135,
+      9136
+     ]
+    },
+    "cdf": {
+     "class": "rayleigh_gen",
+     "lines": [
+      9138,
+      9139
+     ]
+    },
+    "sf": {
+     "class": "rayleigh_gen",
+     "lines": [
+      9144,
+      9145
+     ]
+    },
+    "logsf": {
+     "class": "rayleigh_gen",
+     "lines": [
+      9147,
+      9148
+     ]
+    },
+    "ppf": {
+     "class": "rayleigh_gen",
+     "lines": [
+      9141,
+      9142
+     ]
+    },
+    "isf": {
+     "class": "rayleigh_gen",
+     "lines": [
+      9150,
+      9151
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)"
+   },
+   "shapes": [],
+   "example_params": [
+    []
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x) = x \\exp(-x^2/2)"
+   ],
+   "helpers": [
+    "_check_fit_input_parameters",
+    "_get_left_bracket"
+   ],
+   "special_functions": [
+    "sc.expm1",
+    "sc.log1p"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "rdist",
+   "scipy_version": "1.18.1",
+   "class": "rdist_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    9037,
+    9095
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "rdist_gen",
+     "lines": [
+      9075,
+      9076
+     ]
+    },
+    "logpdf": {
+     "class": "rdist_gen",
+     "lines": [
+      9078,
+      9079
+     ]
+    },
+    "cdf": {
+     "class": "rdist_gen",
+     "lines": [
+      9081,
+      9082
+     ]
+    },
+    "sf": {
+     "class": "rdist_gen",
+     "lines": [
+      9084,
+      9085
+     ]
+    },
+    "ppf": {
+     "class": "rdist_gen",
+     "lines": [
+      9087,
+      9088
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     1.6
+    ]
+   ],
+   "support_for_example": [
+    -1.0,
+    1.0
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, c) = \\frac{(1-x^2)^{c/2-1}}{B(1/2, c/2)}"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.beta"
+   ],
+   "base_classes": [],
+   "calls_into": [
+    "beta"
+   ],
+   "light_review": false,
+   "related": [
+    "beta",
+    "semicircular"
+   ]
+  },
+  {
+   "name": "recipinvgauss",
+   "scipy_version": "1.18.1",
+   "class": "recipinvgauss_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    9534,
+    9585
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "recipinvgauss_gen",
+     "lines": [
+      9560,
+      9563
+     ]
+    },
+    "logpdf": {
+     "class": "recipinvgauss_gen",
+     "lines": [
+      9565,
+      9570
+     ]
+    },
+    "cdf": {
+     "class": "recipinvgauss_gen",
+     "lines": [
+      9572,
+      9576
+     ]
+    },
+    "sf": {
+     "class": "recipinvgauss_gen",
+     "lines": [
+      9578,
+      9582
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)",
+    "ppf": "numerical inversion of cdf",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "mu",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     0.6300426780936912
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, \\mu) = \\frac{1}{\\sqrt{2\\pi x}} \\exp\\left(\\frac{-(1-\\mu x)^2}{2\\mu^2x}\\right)"
+   ],
+   "helpers": [
+    "_norm_cdf"
+   ],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "rice",
+   "scipy_version": "1.18.1",
+   "class": "rice_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    9337,
+    9397
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "rice_gen",
+     "lines": [
+      9383,
+      9390
+     ]
+    },
+    "cdf": {
+     "class": "rice_gen",
+     "lines": [
+      9377,
+      9378
+     ]
+    },
+    "ppf": {
+     "class": "rice_gen",
+     "lines": [
+      9380,
+      9381
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "sf": "1 - cdf",
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "b",
+     "domain": [
+      0.0,
+      Infinity
+     ],
+     "inclusive": [
+      true,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     0.7749725210111873
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, b) = x \\exp(- \\frac{x^2 + b^2}{2}) I_0(x b)"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.chndtr",
+    "sc.chndtrix",
+    "sc.gamma",
+    "sc.hyp1f1",
+    "sc.i0e",
+    "special.i0"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  }
+ ]
+}

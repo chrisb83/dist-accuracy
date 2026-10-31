@@ -1,0 +1,84 @@
+== cdf -1e300 1 1
+  reference      6.647612765794012505676902e-302  (float 6.647612765794012e-302)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+== cdf -1.4e154 0.5 5
+  reference      7.262182859450631529958057e-85  (float 7.262182859450632e-85)
+  cond (arg)     0.5  (within conditioning: <= 8.5 ulp)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+== sf 1.4e154 0.5 5
+  reference      1.466612427906321330655612e-77  (float 1.4666124279063214e-77)
+  cond (arg)     0.5  (within conditioning: <= 8.5 ulp)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+== sf 1e200 1 1
+  reference      8.643606884608055105884736e-201  (float 8.643606884608055e-201)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+== cdf 1e-130 1 1
+  reference      0.1586552539314570514147675  (float 0.15865525393145705)
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss
+== sf -1e-130 1 1
+  reference      0.8413447460685429485852325  (float 0.8413447460685429)
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss  [Error in function cdf(non_central_beta_distribution<double>, %1%): Series did not converge, closest value was %1%]
+== pdf 1e-8 14 0.24045031331198066
+  reference      0.3807208851930976938461546  (float 0.3807208851930977)
+  cond (arg)     2.45e-09  (within conditioning: <= 8 ulp)
+  scipy 1.18.1   np.float64(0.3807208842611732)  1.1e+07 ulp  severe
+== pdf 1e-10 30 20
+  reference      5.475140076443983177415923e-88  (float 5.475140076443983e-88)
+  cond (arg)     2.02e-09  (within conditioning: <= 8 ulp)
+  scipy 1.18.1   np.float64(5.475140065402087e-88)  9.1e+06 ulp  severe
+== pdf 2 1e12 2
+  reference      0.398942280400934000089445  (float 0.398942280400934)
+  cond (arg)     3e-12  (within conditioning: <= 8 ulp)
+  scipy 1.18.1   np.float64(0.3989599313703442)  2.0e+11 ulp  severe
+== pdf 1 1e6 2
+  reference      0.241970724519077816119172  (float 0.2419707245190778)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  scipy 1.18.1   np.float64(0.241970724529031)  1.9e+05 ulp  moderate
+== pdf 5 1e15 2
+  reference      0.004431848411938211040629302  (float 0.004431848411938211)
+  cond (arg)     15  (within conditioning: <= 23 ulp)
+  scipy 1.18.1   np.float64(0.004234632584836879)  2.0e+14 ulp  severe
+== pdf -5 300 2
+  reference      2.277290956000705856500857e-11  (float 2.277290956000706e-11)
+  cond (arg)     31.9  (within conditioning: <= 39.9 ulp)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss
+== pdf -6 1e6 2
+  reference      5.055074534637102674178585e-15  (float 5.055074534637103e-15)
+  cond (arg)     48  (within conditioning: <= 56 ulp)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss  [Error in function boost::math::quadrature::exp_sinh<double>::integrate: The exp_sinh quadrature evaluated your function at a singular point and returned %1%. Please ensure your function evaluates to a finite number over its entire domain.]
+== pdf 1.3e154 0.5 5
+  reference      5.853752476881288323809273e-232  (float 5.853752476881288e-232)
+  cond (arg)     1.5  (within conditioning: <= 9.5 ulp)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss
+== pdf -1e200 0.5 5
+  reference      4.296365319596844297164262e-308  (float 4.296365319596844e-308)
+  cond (arg)     1.5  (within conditioning: <= 9.5 ulp)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss
+== pdf 1e10 30 20
+  reference      2.985253784063394984256302e-264  (float 2.985253784063395e-264)
+  cond (arg)     31  (within conditioning: <= 39 ulp)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+== pdf 3e9 30 20
+  reference      4.833061941834159013171532e-248  (float 4.833061941834159e-248)
+  cond (arg)     31  (within conditioning: <= 39 ulp)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+== pdf 1e50 5 -3
+  reference      2.54428557901247225513217e-303  (float 2.5442855790124722e-303)
+  cond (arg)     6  (within conditioning: <= 14 ulp)
+  scipy 1.18.1   np.float64(2.5442855808253672e-303)  3.2e+06 ulp  severe
+== pdf -1 10 8
+  reference      4.071456983629179454708399e-18  (float 4.071456983629179e-18)
+  cond (arg)     5.99  (within conditioning: <= 14 ulp)
+  scipy 1.18.1   np.float64(4.07145699218661e-18)  9.5e+06 ulp  severe
+== sf 4 1e6 2
+  reference      0.02275061786789689483558201  (float 0.022750617867896894)
+  cond (arg)     9.49  (within conditioning: <= 17.5 ulp)
+  scipy 1.18.1   np.float64(0.022750617867801966) 1.88e+04 ulp  moderate
+== cdf 3 1e6 2
+  reference      0.8413440201576851033061809  (float 0.8413440201576851)
+  cond (arg)     0.863  (within conditioning: <= 8.86 ulp)
+  scipy 1.18.1   np.float64(0.841344020157246) 2.35e+03 ulp  moderate

@@ -1,0 +1,8 @@
+F1 cdf(1e+20, 1e+160) scipy=np.float64(0.0) ref=6.3661977236758133e-301 ulp=4.5e+15 agree30=True
+F1 cdf(1e+300, 1e+160) scipy=np.float64(0.0) ref=1.0 ulp=4.5e+15 agree30=True
+F1 cdf(1e+160, 1e+160) scipy=np.float64(0.0) ref=0.5 ulp=4.5e+15 agree30=True
+F2 cdf(5e+153, 1e+154) scipy=np.float64(0.5) ref=3.8705616707222366e-155 ulp=5.82e+169 agree30=True
+F2 cdf(3.5, 1e+154) scipy=np.float64(6.684507609859605e-308) ref=2.2281692032865345e-308 ulp=9.01e+15 agree30=True
+F2 cdf(9.9999999e+153, 1e+154) scipy=np.float64(1.0) ref=1.5915497289599643e-147 ulp=2.83e+162 agree30=True
+F3 cdf(1, 1e-160) scipy=np.float64(0.0) ref=1.0 ulp=4.5e+15 agree30=True
+F3 cdf(1e-300, 1e-160) scipy=np.float64(0.0) ref=9.0031631615713903e-221 ulp=4.5e+15 agree30=True

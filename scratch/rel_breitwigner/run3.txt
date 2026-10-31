@@ -1,0 +1,162 @@
+  ... self-checks (36.5452)
+  ... self-checks (1)
+  ... self-checks (0.001)
+  ... (36.5452) pdf: 97 points, references 0.0 s
+  ... (36.5452) cdf: 97 points, references 0.0 s
+  ... (1) pdf: 88 points, references 0.0 s
+  ... (1) cdf: 88 points, references 0.0 s
+  ... (0.001) pdf: 92 points, references 0.0 s
+  ... (0.001) cdf: 92 points, references 0.0 s
+  ... (1e-08) pdf: 93 points, references 0.0 s
+  ... (1e-08) cdf: 93 points, references 0.0 s
+  ... (1000) pdf: 96 points, references 0.0 s
+  ... (1000) cdf: 96 points, references 0.0 s
+  ... (1e+06) pdf: 97 points, references 0.0 s
+  ... (1e+06) cdf: 97 points, references 0.0 s
+  ... (1e+20) pdf: 88 points, references 0.0 s
+  ... (1e+20) cdf: 88 points, references 0.0 s
+  ... (1e-160) pdf: 89 points, references 0.0 s
+  ... (1e-160) cdf: 89 points, references 0.0 s
+  ... (1e-154) pdf: 90 points, references 0.0 s
+  ... (1e-154) cdf: 90 points, references 0.0 s
+  ... (1e-150) pdf: 89 points, references 0.0 s
+  ... (1e-150) cdf: 89 points, references 0.0 s
+  ... (1e+150) pdf: 88 points, references 0.0 s
+  ... (1e+150) cdf: 88 points, references 0.0 s
+  ... (1e+152) pdf: 89 points, references 0.0 s
+  ... (1e+152) cdf: 89 points, references 0.0 s
+  ... (1e+154) pdf: 89 points, references 0.0 s
+  ... (1e+154) cdf: 89 points, references 0.0 s
+  ... (1e+160) pdf: 88 points, references 0.0 s
+  ... (1e+160) cdf: 88 points, references 0.0 s
+  ... condition numbers for 320 points above 8 ulp
+  ... condition numbers done in 2.0 s
+rel_breitwigner: SciPy 1.18.1, mpmath 1.4.1, 400 digits
+implemented: ['pdf', 'cdf']; inherited: ['logpdf', 'logcdf', 'sf', 'logsf', 'ppf', 'isf']
+measured: ['pdf', 'cdf']
+parameter sets: ['(36.5452)', '(1)', '(0.001)', '(1e-08)', '(1000)', '(1e+06)', '(1e+20)', '(1e-160)', '(1e-154)', '(1e-150)', '(1e+150)', '(1e+152)', '(1e+154)', '(1e+160)']
+
+Reference self-checks:
+  PASS: references agree with scipy in the bulk (where scipy is finite), are stable in precision and internally consistent
+
+method  region         n |   scipy 1.18.1: max ulp  median   loss severe moder. minor
+-------------------------------------------------------------------------------------
+pdf     low tail     514 |                     inf    0.61     59      0      0      0
+        bulk          80 |                     inf    0.62      1      0      0      0
+        high tail    217 |                     inf   0.601     68      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 12 parameter set(s): invalid value encountered in divide; overflow encountered in divide; overflow encountered in multiply; overflow encountered in square; underflow encountered in divide; underflow encountered in multiply; underflow encountered in square
+cdf     low tail     498 |                     inf    0.62     79      0      0      0
+        bulk          80 |                     inf    2.02      2      0      0      0
+        high tail    543 |                     inf       0     77      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 9 parameter set(s): overflow encountered in divide; overflow encountered in multiply; overflow encountered in square; underflow encountered in arctan; underflow encountered in divide; underflow encountered in multiply; underflow encountered in square
+
+Points beyond conditioning (markdown, worst first per method):
+
+**pdf** (128 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (0.001) | 4.035066294374852e+75 | 1.0734343612857905e-307 | 0.0 | inf | loss | 4 | 1.5 |
+| (1e-08) | 1.2760000000000002e+73 | 3.396193458123959e-305 | 0.0 | inf | loss | 4 | 1.5 |
+| (1e-160) | 1e-300 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-290 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-280 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-270 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-260 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-250 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-240 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-230 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-220 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-210 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-200 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-190 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-180 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-170 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1.0000000000000001e-163 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 5e-161 | 9.00316316157106e+79 | nan | inf | loss | 7.5e-321 | 0.5 |
+| (1e-160) | 9.9999999e-161 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1e-160 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 1.0000000099999999e-160 | 9.00316316157106e+79 | nan | inf | loss | 0 | 0.5 |
+| (1e-160) | 2e-160 | 9.00316316157106e+79 | nan | inf | loss | 4.8e-319 | 0.5 |
+| (1e-160) | 1e-157 | 9.00316316157106e+79 | nan | inf | loss | 4e-308 | 0.5 |
+| (1e-160) | 1e-150 | 9.00316316157106e+79 | nan | inf | loss | 4e-280 | 0.5 |
+| (1e-160) | 1e-140 | 9.00316316157106e+79 | nan | inf | loss | 4e-240 | 0.5 |
+| (1e-160) | 1e-130 | 9.00316316157106e+79 | nan | inf | loss | 4e-200 | 0.5 |
+| (1e-160) | 1e-120 | 9.00316316157106e+79 | nan | inf | loss | 4e-160 | 0.5 |
+| (1e-160) | 1e-110 | 9.00316316157106e+79 | nan | inf | loss | 4e-120 | 0.5 |
+| (1e-160) | 1e-100 | 9.00316316157106e+79 | nan | inf | loss | 4e-80 | 0.5 |
+| (1e-160) | 1e-90 | 9.00316316157106e+79 | nan | inf | loss | 4e-40 | 0.5 |
+
+**cdf** (158 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (1e-160) | 1e-300 | 9.00316316157106e-221 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-290 | 9.003163161571062e-211 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-280 | 9.00316316157106e-201 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-270 | 9.003163161571061e-191 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-260 | 9.00316316157106e-181 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-250 | 9.003163161571062e-171 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-240 | 9.00316316157106e-161 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-230 | 9.003163161571062e-151 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-220 | 9.003163161571061e-141 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-210 | 9.003163161571061e-131 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-200 | 9.00316316157106e-121 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-190 | 9.003163161571061e-111 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-180 | 9.003163161571061e-101 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-170 | 9.003163161571061e-91 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1.0000000000000001e-163 | 9.00316316157106e-84 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 5e-161 | 4.50158158078553e-81 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 9.9999999e-161 | 9.003163071539428e-81 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-160 | 9.00316316157106e-81 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1.0000000099999999e-160 | 9.003163251602692e-81 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 2e-160 | 1.800632632314212e-80 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-157 | 9.00316316157106e-78 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-150 | 9.003163161571062e-71 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-140 | 9.003163161571061e-61 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-130 | 9.003163161571062e-51 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-120 | 9.003163161571061e-41 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-110 | 9.003163161571061e-31 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-100 | 9.003163161571061e-21 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-90 | 9.003163161571061e-11 | 0.0 | inf | loss | 1 | 0.5 |
+| (1e-160) | 1e-80 | 0.7805499261695901 | 0.0 | inf | loss | 0.577 | 0.288 |
+| (1e-160) | 1e-70 | 1.0 | 0.0 | inf | loss | 9e-31 | 4.5e-31 |
+
+Worst ulp per parameter set ('inf' = 0/inf/nan where the reference is finite):
+
+pdf:
+  shapes                        scipy 1.18.1  cond there
+  (36.5452)                             1.99           0
+  (1)                                   1.74           0
+  (0.001)                                inf           4
+  (1e-08)                                inf           4
+  (1000)                                1.67           0
+  (1e+06)                              0.982           0
+  (1e+20)                               1.22           0
+  (1e-160)                               inf           0
+  (1e-154)                               inf           0
+  (1e-150)                               inf           4
+  (1e+150)                              1.06           0
+  (1e+152)                             0.716           0
+  (1e+154)                             0.914           0
+  (1e+160)                               inf     2.0e+08
+
+cdf:
+  shapes                        scipy 1.18.1  cond there
+  (36.5452)                             37.7          45
+  (1)                                   1.65           0
+  (0.001)                               1.07           0
+  (1e-08)                               1.19           0
+  (1000)                                 318    1.44e+03
+  (1e+06)                            5.9e+05     1.3e+06
+  (1e+20)                            1.7e+07     1.0e+08
+  (1e-160)                               inf           1
+  (1e-154)                              1.57           0
+  (1e-150)                              1.04           0
+  (1e+150)                           2.9e+07     1.0e+08
+  (1e+152)                           4.5e+15    1.3e+152
+  (1e+154)                          5.8e+169        1.46
+  (1e+160)                               inf           1
+
+points written to scratch/rel_breitwigner/all.json
+done in 4 s

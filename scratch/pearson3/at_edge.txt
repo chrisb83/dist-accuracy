@@ -1,0 +1,25 @@
+pearson3.sf(-0.2, 10.0)
+  reference      1.0  (float 1.0)
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  0  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.7914348179019166)  9.4e+14 ulp  severe
+pearson3.cdf(0.2, -10.0)
+  reference      1.0  (float 1.0)
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  0  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.7914348179019166)  9.4e+14 ulp  severe
+pearson3.sf(-0.0002, 10000.0)
+  reference      1.0  (float 1.0)
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  0  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.0)                   0 ulp  ok
+pearson3.ppf(1e-20, -2.0)
+  reference      -45.05170185988091373520656  (float -45.051701859880914)
+  cond (arg)     0.0222  (within conditioning: <= 8.02 ulp)
+  cond (shapes)  0.848  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-inf)                inf ulp  loss
+pearson3.ppf(1e-10, -100.0)
+  reference      -629.8777668133502843010595  (float -629.8777668133503)
+  cond (arg)     0.0739  (within conditioning: <= 8.07 ulp)
+  cond (shapes)  0.852  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-629.8777629620296)  2.8e+07 ulp  severe

@@ -1,0 +1,14 @@
+  ... self-checks (27, 27, 0)
+  ... self-checks (1, 1, 1e-20)
+  ... self-checks (10, 20, 10000)
+  ... (27, 27, 0) pdf: 85 points, references 0.0 s
+  ... (27, 27, 0) cdf: 85 points, references 0.0 s
+  ... (27, 27, 0) sf: 85 points, references 0.1 s
+  ... (1, 1, 1e-20) pdf: 85 points, references 0.0 s
+  ... (1, 1, 1e-20) cdf: 85 points, references 0.0 s
+  ... (1, 1, 1e-20) sf: 85 points, references 0.2 s
+  ... (10, 20, 10000) pdf: 90 points, references 23.8 s
+  ... (10, 20, 10000) cdf: 90 points, references 0.0 s
+  ... (10, 20, 10000) sf: 90 points, references 28.4 s
+  ... condition numbers for 158 points above 8 ulp
+  ... condition numbers done in 67.6 s

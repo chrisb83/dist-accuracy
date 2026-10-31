@@ -1,0 +1,66 @@
+== ppf 1e-100 10 300
+  reference      0.0000005568011423095473569571696  (float 5.568011423095474e-07)
+  cond (arg)     0.2  (within conditioning: <= 8.2 ulp)
+  cond (shapes)  46.8  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.9780664303673066)  7.9e+21 ulp  loss
+== ppf 1e-200 10 300
+  reference      5.568018915428152519208668e-27  (float 5.568018915428153e-27)
+  cond (arg)     0.2  (within conditioning: <= 8.2 ulp)
+  cond (shapes)  92.9  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.9780664303673063)  7.9e+41 ulp  loss
+== isf 1e-300 10 300
+  reference      2970.940173404153263928732  (float 2970.9401734041535)
+  cond (arg)     0.000988  (within conditioning: <= 8 ulp)
+  cond (shapes)  0.322  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2424.37535139129)  8.3e+14 ulp  severe
+== isf 1e-300 5 60
+  reference      2014.903798767566729113198  (float 2014.9037987675667)
+  cond (arg)     0.0012  (within conditioning: <= 8 ulp)
+  cond (shapes)  0.177  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1758.866323029844)  5.7e+14 ulp  severe
+== isf 5.623413251903491e-226 10 300
+  reference      2454.025608933003080093698  (float 2454.0256089330032)
+  cond (arg)     0.00126  (within conditioning: <= 8 ulp)
+  cond (shapes)  0.354  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2424.3753513912907)  5.4e+13 ulp  severe
+== ppf 2.872984833353539e-288 21 1.0560465975116415
+  reference      4.09080466710395975719978e-27  (float 4.09080466710396e-27)
+  cond (arg)     0.0952  (within conditioning: <= 8.1 ulp)
+  cond (shapes)  63.9  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(4.090804663422376e-27)  4.1e+06 ulp  severe
+== ppf 1.9573417814877456e-238 5 60
+  reference      4.343711058954297275904656e-90  (float 4.343711058954297e-90)
+  cond (arg)     0.4  (within conditioning: <= 8.4 ulp)
+  cond (shapes)  220  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(4.343711049196645e-90)  1.0e+07 ulp  severe
+== ppf 5.1089697745070394e-64 0.5 1
+  reference      6.79573801175686842887339e-253  (float 6.795738011756869e-253)
+  cond (arg)     4  (within conditioning: <= 12 ulp)
+  cond (shapes)  583  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(6.795738147512616e-253)  9.0e+07 ulp  severe
+== ppf 0.9999999999999627 10 300
+  reference      625.7516930967009461995714  (float 625.7516930967009)
+  cond (arg)     2.8e+11  (within conditioning: <= 2.8e+11 ulp)
+  cond (shapes)  0.704  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(625.5876162789734)  1.2e+12 ulp  severe
+== ppf 0.9999999943765867 10 300
+  reference      540.7832882408492661980655  (float 540.7832882408493)
+  cond (arg)     2.6e+06  (within conditioning: <= 2.6e+06 ulp)
+  cond (shapes)  0.758  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(540.7832874895618)  6.3e+06 ulp  severe
+== ppf 1e-150 2 1e-10
+  reference      2.000000000100000012593216e-150  (float 2.0000000001e-150)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  cond (shapes)  346  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2.0000000001e-150)        0 ulp  ok
+done
+== isf 0.9999999999999966 1000 1
+  reference      691.1214607045797417561344  (float 691.1214607045797)
+  cond (arg)     1.9e+12  (within conditioning: <= 1.9e+12 ulp)
+  cond (shapes)  1.2  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(691.7229901020223)  3.9e+12 ulp  severe
+== isf 0.9999999999522942 10 300
+  reference      124.7205889346129824963218  (float 124.72058893461298)
+  cond (arg)     5.6e+08  (within conditioning: <= 5.6e+08 ulp)
+  cond (shapes)  1.58  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(124.72060706263865)  6.5e+08 ulp  severe

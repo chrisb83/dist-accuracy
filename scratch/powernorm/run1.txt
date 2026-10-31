@@ -1,0 +1,23 @@
+  ... self-checks (4.44537)
+  ... self-checks (0.001)
+  ... self-checks (1e-08)
+  ... (4.44537) pdf: 166 points, references 0.8 s
+  ... (4.44537) logpdf: 166 points, references 0.3 s
+  ... (4.44537) cdf: 166 points, references 0.0 s
+  ... (4.44537) sf: 166 points, references 0.3 s
+  ... (4.44537) logsf: 166 points, references 0.3 s
+  ... (4.44537) ppf: 66 points, references 8.4 s
+  ... (4.44537) isf: 66 points, references 2.7 s
+  ... (0.001) pdf: 166 points, references 1.0 s
+  ... (0.001) logpdf: 166 points, references 0.4 s
+  ... (0.001) cdf: 166 points, references 0.0 s
+  ... (0.001) sf: 166 points, references 0.4 s
+  ... (0.001) logsf: 166 points, references 0.4 s
+  ... (0.001) ppf: 66 points, references 375.2 s
+  ... (0.001) isf: 66 points, references 5.7 s
+  ... (1e-08) pdf: 166 points, references 0.9 s
+  ... (1e-08) logpdf: 166 points, references 0.3 s
+  ... (1e-08) cdf: 166 points, references 0.0 s
+  ... (1e-08) sf: 166 points, references 0.3 s
+  ... (1e-08) logsf: 166 points, references 0.4 s
+aborted run (summary exit marker)

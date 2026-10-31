@@ -1,0 +1,9 @@
+  ... self-checks (2, 1000)
+  ... self-checks (2, 99999)
+  ... self-checks (2, 100000)
+  ... (2, 1000) pdf: 92 points, references 0.1 s
+  ... (2, 1000) cdf: 92 points, references 0.0 s
+  ... (2, 99999) pdf: 92 points, references 0.1 s
+  ... (2, 99999) cdf: 92 points, references 0.0 s
+  ... (2, 100000) pdf: 92 points, references 0.1 s
+  ... (2, 100000) cdf: 92 points, references 0.0 s

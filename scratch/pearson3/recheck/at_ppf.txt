@@ -1,0 +1,66 @@
+pearson3.ppf(0.5, 1.59e-05)
+  reference      -0.000002649999999990074905567612  (float -2.649999999990075e-06)
+  cond (arg)     4.7e+05  (within conditioning: <= 4.7e+05 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+  time 40s
+pearson3.ppf(1e-10, 1.59e-05)
+  reference      -6.361236316133916384042014  (float -6.361236316133916)
+  cond (arg)     0.0241  (within conditioning: <= 8.02 ulp)
+  cond (shapes)  1.64e-05  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-6.361340902404056)  7.4e+10 ulp  severe
+  time 47s
+pearson3.ppf(0.999, -1.59e-05)
+  reference      3.09020964991202432667479  (float 3.0902096499120244)
+  cond (arg)     96  (within conditioning: <= 104 ulp)
+  cond (shapes)  7.33e-06  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(3.090232306167813)  3.3e+10 ulp  severe
+  time 42s
+pearson3.ppf(1e-10, 1.6e-05)
+  reference      -6.361235658360998002428223  (float -6.361235658360998)
+  cond (arg)     0.0241  (within conditioning: <= 8.02 ulp)
+  cond (shapes)  1.65e-05  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-6.170308521192055)  1.4e+14 ulp  severe
+  time 47s
+pearson3.ppf(1e-10, 0.001)
+  reference      -6.354764605279945878187458  (float -6.354764605279946)
+  cond (arg)     0.0241  (within conditioning: <= 8.02 ulp)
+  cond (shapes)  0.00103  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-6.354625999210839)  9.8e+10 ulp  severe
+  time 59s
+pearson3.ppf(0.9999999999, -0.001)
+  reference      6.354764592600245186510975  (float 6.354764592600246)
+  cond (arg)     2.4e+08  (within conditioning: <= 2.4e+08 ulp)
+  cond (shapes)  0.00103  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(6.3546259865292996)  9.8e+10 ulp  severe
+  time 44s
+pearson3.ppf(0.5, 1.6e-05)
+  reference      -0.000002666666666656552965747815  (float -2.666666666656553e-06)
+  cond (arg)     4.7e+05  (within conditioning: <= 4.7e+05 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-2.6666675694286823e-06)  1.5e+09 ulp  severe
+  time 33s
+pearson3.ppf(0.3, 1.7e-05)
+  reference      -0.5244025668792528933988692  (float -0.5244025668792529)
+  cond (arg)     1.65  (within conditioning: <= 9.65 ulp)
+  cond (shapes)  3.92e-06  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-0.5244025668653194)  1.2e+05 ulp  moderate
+  time 30s
+pearson3.ppf(0.7, -1.7e-05)
+  reference      0.5244025668792527337435185  (float 0.5244025668792527)
+  cond (arg)     3.84  (within conditioning: <= 11.8 ulp)
+  cond (shapes)  3.92e-06  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.5244025668653194)  1.2e+05 ulp  moderate
+  time 30s
+pearson3.ppf(0.5, 0.001)
+  reference      -0.0001666666641975306423093398  (float -0.00016666666419753065)
+  cond (arg)     7.52e+03  (within conditioning: <= 7.53e+03 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-0.0001666666641995107) 5.35e+04 ulp  moderate
+  time 32s
+pearson3.ppf(0.45, 0.001)
+  reference      -0.1258253756288484819023033  (float -0.1258253756288485)
+  cond (arg)     9.04  (within conditioning: <= 17 ulp)
+  cond (shapes)  0.0013  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-0.1258253756288923) 1.57e+03 ulp  moderate
+  time 33s

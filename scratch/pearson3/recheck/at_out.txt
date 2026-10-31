@@ -1,0 +1,80 @@
+pearson3.cdf(-30.0, -1.59e-05)
+  reference      5.270585181789969471158807e-198  (float 5.270585181789969e-198)
+  cond (arg)     901  (within conditioning: <= 909 ulp)
+  scipy 1.18.1   np.float64(4.906713927147908e-198)  3.1e+14 ulp  severe
+pearson3.ppf(0.999, -1.59e-05)
+  reference      3.09020964991202432667479  (float 3.0902096499120244)
+  cond (arg)     96  (within conditioning: <= 104 ulp)
+  scipy 1.18.1   np.float64(3.090232306167813)  3.3e+10 ulp  severe
+pearson3.sf(30.0, 1.59e-05)
+  reference      5.270585181789969471158807e-198  (float 5.270585181789969e-198)
+  cond (arg)     901  (within conditioning: <= 909 ulp)
+  scipy 1.18.1   np.float64(4.906713927147908e-198)  3.1e+14 ulp  severe
+pearson3.cdf(-10.0, 1.59e-05)
+  reference      7.59969175991572587967183e-24  (float 7.599691759915726e-24)
+  cond (arg)     101  (within conditioning: <= 109 ulp)
+  scipy 1.18.1   np.float64(7.61985302416047e-24)  1.2e+13 ulp  severe
+pearson3.sf(10.0, 1.59e-05)
+  reference      7.640065359910357123057871e-24  (float 7.640065359910357e-24)
+  cond (arg)     101  (within conditioning: <= 109 ulp)
+  scipy 1.18.1   np.float64(7.61985302416047e-24)  1.2e+13 ulp  severe
+pearson3.cdf(-3.0, 1.59e-05)
+  reference      0.001349804077984344433185915  (float 0.0013498040779843445)
+  cond (arg)     9.85  (within conditioning: <= 17.8 ulp)
+  scipy 1.18.1   np.float64(0.0013498980316300933)  3.1e+11 ulp  severe
+pearson3.cdf(1.0, 1.59e-05)
+  reference      0.8413447460710917932951709  (float 0.8413447460710918)
+  cond (arg)     0.288  (within conditioning: <= 8.29 ulp)
+  scipy 1.18.1   np.float64(0.8413447460685429) 1.36e+04 ulp  moderate
+pearson3.cdf(-3.0, 1.6e-05)
+  reference      0.001349803487090662255782665  (float 0.0013498034870906622)
+  cond (arg)     9.85  (within conditioning: <= 17.8 ulp)
+  scipy 1.18.1   np.float64(0.001349803487090662)    0.723 ulp  ok
+pearson3.cdf(1.0, 1.6e-05)
+  reference      0.8413447460711239549637152  (float 0.841344746071124)
+  cond (arg)     0.288  (within conditioning: <= 8.29 ulp)
+  scipy 1.18.1   np.float64(0.8413447460711239)    0.594 ulp  ok
+pearson3.cdf(-5.0, 1.6e-05)
+  reference      0.0000002865564347539120049699313  (float 2.86556434753912e-07)
+  cond (arg)     25.9  (within conditioning: <= 33.9 ulp)
+  scipy 1.18.1   np.float64(2.286372405384866e-08)  4.1e+15 ulp  severe
+pearson3.cdf(-8.0, 1.6e-05)
+  reference      6.212478139376239337428899e-16  (float 6.212478139376239e-16)
+  cond (arg)     65  (within conditioning: <= 73 ulp)
+  scipy 1.18.1   np.float64(7.580778291177065e-17)  4.0e+15 ulp  severe
+pearson3.cdf(-12.0, 1.6e-05)
+  reference      1.768315475069688412978094e-33  (float 1.7683154750696884e-33)
+  cond (arg)     145  (within conditioning: <= 153 ulp)
+  scipy 1.18.1   np.float64(3.1117072979251298e-34)  3.7e+15 ulp  severe
+pearson3.sf(8.0, -1.6e-05)
+  reference      6.212478139376239337428899e-16  (float 6.212478139376239e-16)
+  cond (arg)     65  (within conditioning: <= 73 ulp)
+  scipy 1.18.1   np.float64(7.580778291177065e-17)  4.0e+15 ulp  severe
+pearson3.cdf(-6.0, 0.001)
+  reference      9.516967803091506421696477e-10  (float 9.516967803091505e-10)
+  cond (arg)     37.1  (within conditioning: <= 45.1 ulp)
+  scipy 1.18.1   np.float64(9.504772918692302e-10)  5.8e+12 ulp  severe
+pearson3.cdf(-10.0, 0.001)
+  reference      6.446330247393282010519694e-24  (float 6.446330247393282e-24)
+  cond (arg)     101  (within conditioning: <= 109 ulp)
+  scipy 1.18.1   np.float64(6.446173433922907e-24)  1.1e+11 ulp  severe
+pearson3.sf(10.0, -0.001)
+  reference      6.446330247393282010519694e-24  (float 6.446330247393282e-24)
+  cond (arg)     101  (within conditioning: <= 109 ulp)
+  scipy 1.18.1   np.float64(6.446173433922907e-24)  1.1e+11 ulp  severe
+pearson3.cdf(0.1, 0.001)
+  reference      0.5398933336507576599491878  (float 0.5398933336507576)
+  cond (arg)     0.0735  (within conditioning: <= 8.07 ulp)
+  scipy 1.18.1   np.float64(0.5398933336507576)        0 ulp  ok
+pearson3.cdf(-3.3, 1.7e-05)
+  reference      0.000483375874504665896533624  (float 0.0004833758745046659)
+  cond (arg)     11.8  (within conditioning: <= 19.8 ulp)
+  scipy 1.18.1   np.float64(0.00048337587448659563)  1.7e+05 ulp  moderate
+pearson3.sf(3.3, 1.7e-05)
+  reference      0.0004834724130099068523730566  (float 0.00048347241300990686)
+  cond (arg)     11.8  (within conditioning: <= 19.8 ulp)
+  scipy 1.18.1   np.float64(0.00048347241301976323) 9.18e+04 ulp  moderate
+pearson3.cdf(0.1, 1.7e-05)
+  reference      0.5398289507286944060688313  (float 0.5398289507286944)
+  cond (arg)     0.0735  (within conditioning: <= 8.07 ulp)
+  scipy 1.18.1   np.float64(0.5398289507309657) 1.89e+04 ulp  moderate

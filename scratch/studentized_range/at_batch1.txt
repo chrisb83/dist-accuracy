@@ -1,0 +1,45 @@
+studentized_range.pdf(1e-06, 3.0, 10.0)
+  reference      0.0000005513288954216082482641791  (float 5.513288954216082e-07)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(5.51328895407424e-07)  1.2e+05 ulp  moderate  [underflow encountered in _single_pdf (vectorized)]
+studentized_range.cdf(0.0001, 3.0, 10.0)
+  reference      2.756644472514553055918101e-9  (float 2.756644472514553e-09)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2.7566444648004866e-09)  1.3e+07 ulp  severe  [underflow encountered in _single_cdf (vectorized)]
+studentized_range.cdf(1e-06, 3.0, 10.0)
+  reference      2.756644477108500557323712e-13  (float 2.7566444771085006e-13)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2.7566794247777153e-13)  5.7e+10 ulp  severe  [underflow encountered in _single_cdf (vectorized)]
+studentized_range.pdf(0.0001, 3.0, 10.0)
+  reference      0.00005513288935840290947946726  (float 5.513288935840291e-05)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(5.513288935839346e-05)      772 ulp  minor  [underflow encountered in _single_pdf (vectorized)]
+studentized_range.pdf(1e-09, 3.0, 10.0)
+  reference      5.513288954217920836651912e-10  (float 5.51328895421792e-10)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(5.513288569888619e-10)  3.1e+08 ulp  severe  [underflow encountered in _single_pdf (vectorized)]
+studentized_range.cdf(1e-08, 3.0, 10.0)
+  reference      2.756644477108960316964681e-17  (float 2.7566444771089602e-17)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2.7566793994803397e-17)  5.7e+10 ulp  severe  [underflow encountered in _single_cdf (vectorized)]
+studentized_range.pdf(3.0, 1.9, 10.0)
+  reference      0.06347525568314378886423488  (float 0.06347525568314379)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss  [divide by zero encountered in _single_pdf (vectorized); invalid value encountered in _single_pdf (vectorized); underflow encountered in _single_pdf (vectorized)]
+studentized_range.cdf(5.0, 100.0, 10.0)
+  reference      0.4488077766220492974109179  (float 0.4488077766220493)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.44880777662205135)     20.6 ulp  minor  [underflow encountered in _single_cdf (vectorized)]
+studentized_range.pdf(5.0, 100.0, 10.0)
+  reference      0.309340496731692479481742  (float 0.3093404967316925)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.3093404967317003)      113 ulp  minor  [underflow encountered in _single_pdf (vectorized)]

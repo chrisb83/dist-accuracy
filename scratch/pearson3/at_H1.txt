@@ -1,0 +1,17 @@
+pdf(0.0, 1.59e-5) | np.float64(0.3989422804014327) 2.37e+04 ulp  moderate | ref 0.3989422803993315 | cond 0 | conds 1.05e-11 | rc 0 | 4s
+pdf(3.0, 1.59e-5) | np.float64(0.004431848411938009)  2.1e+11 ulp  severe | ref 0.004432059811714105 | cond 9 | conds 4.77e-05 | rc 0 | 3s
+pdf(10.0, -1.59e-5) | np.float64(7.694598626706409e-23)  1.2e+13 ulp  severe | ref 7.674843871548535e-23 | cond 100 | conds 0.00257 | rc 0 | 4s
+logpdf(10.0, 1.59e-5) | np.float64(-50.918938533204674)  2.3e+11 ulp  severe | ref -50.916368188046185 | cond 1.96 | conds 5.05e-05 | rc 0 | 3s
+logpdf(38.0, 1.59e-5) | np.float64(-722.9189385332162)  9.0e+11 ulp  severe  [underflow encountered in divide; underflow encountered in exp] | ref -722.7738627260784 | cond 2 | conds 0.000201 | rc 0 | 3s
+logpdf(40.0, 1.59e-5) | np.float64(-inf)                inf ulp  loss  [divide by zero encountered in log; underflow encountered in exp] | ref -800.749696921971 | cond 2 | conds 0.000211 | rc 0 | 4s
+logpdf(100.0, 1.59e-5) | np.float64(-inf)                inf ulp  loss  [divide by zero encountered in log; underflow encountered in exp] | ref -4998.27131227561 | cond 2 | conds 0.000529 | rc 0 | 3s
+cdf(-3.0, 1.59e-5) | np.float64(0.0013498980316300933)  3.1e+11 ulp  severe | ref 0.0013498040779843445 | cond 9.85 | conds 6.96e-05 | rc 0 | 11s
+cdf(1.0, 1.59e-5) | np.float64(0.8413447460685429) 1.36e+04 ulp  moderate | ref 0.8413447460710918 | cond 0.288 | conds 6.06e-12 | rc 0 | 9s
+cdf(-10.0, 1.59e-5) | np.float64(7.61985302416047e-24)  1.2e+13 ulp  severe | ref 7.599691759915726e-24 | cond 101 | conds 0.00265 | rc 0 | 10s
+cdf(-30.0, -1.59e-5) | np.float64(4.906713927147908e-198)  3.1e+14 ulp  severe | ref 5.270585181761525e-198 | cond 901 | conds 0.0715 | rc 0 | 4s
+sf(10.0, 1.59e-5) | np.float64(7.61985302416047e-24)  1.2e+13 ulp  severe | ref 7.640065359910357e-24 | cond 101 | conds 0.00265 | rc 0 | 9s
+sf(30.0, 1.59e-5) | np.float64(4.906713927147908e-198)        - ulp  ok | ref 0.0 | cond - | conds - | rc 0 | 4s
+sf(30.0, 1.59e-5) | np.float64(4.906713927147908e-198)  3.1e+14 ulp  severe | ref 5.270585181761525e-198 | cond 901 | conds 0.0715 | rc 0 | 4s
+ppf(0.5, 1.59e-5) | np.float64(0.0)                 inf ulp  loss | ref -2.649999999990075e-06 | cond 4.7e+05 | conds 1 | rc 0 | 30s
+ppf(1e-10, 1.59e-5) | np.float64(-6.361340902404056)  7.4e+10 ulp  severe | ref -6.361236316133916 | cond 0.0241 | conds 1.64e-05 | rc 0 | 34s
+ppf(0.999, -1.59e-5) | np.float64(3.090232306167813)  3.3e+10 ulp  severe | ref 3.0902096499120244 | cond 96 | conds 7.33e-06 | rc 0 | 34s

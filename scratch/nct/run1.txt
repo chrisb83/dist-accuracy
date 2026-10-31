@@ -1,0 +1,44 @@
+  ... self-checks (14, 0.24045)
+  ... self-checks (1, 1)
+  ... self-checks (5, -3)
+  ... (14, 0.24045) pdf: 153 points, references 0.0 s
+  ... (14, 0.24045) cdf: 153 points, references 0.0 s
+  ... (14, 0.24045) sf: 153 points, references 0.0 s
+  ... (14, 0.24045) ppf: 55 points, references 0.0 s
+  ... (14, 0.24045) isf: 55 points, references 0.0 s
+  ... (1, 1) pdf: 150 points, references 0.1 s
+  ... (1, 1) cdf: 150 points, references 0.0 s
+  ... (1, 1) sf: 150 points, references 2.3 s
+  ... (1, 1) ppf: 55 points, references 16.8 s
+  ... (1, 1) isf: 55 points, references 14.7 s
+  ... (5, -3) pdf: 150 points, references 0.1 s
+  ... (5, -3) cdf: 150 points, references 0.0 s
+  ... (5, -3) sf: 150 points, references 2.6 s
+  ... (5, -3) ppf: 55 points, references 25.2 s
+  ... (5, -3) isf: 55 points, references 35.5 s
+  ... (0.5, 5) pdf: 151 points, references 0.3 s
+  ... (0.5, 5) cdf: 151 points, references 0.0 s
+  ... (0.5, 5) sf: 151 points, references 5.9 s
+  ... (0.5, 5) ppf: 55 points, references 63.1 s
+  ... (0.5, 5) isf: 55 points, references 78.9 s
+  ... (30, 20) pdf: 153 points, references 0.5 s
+  ... (30, 20) cdf: 153 points, references 0.0 s
+  ... (30, 20) sf: 153 points, references 18.0 s
+  ... (30, 20) ppf: 55 points, references 140.5 s
+  ... (30, 20) isf: 55 points, references 121.6 s
+  ... (10, 30) pdf: 153 points, references 0.6 s
+  ... (10, 30) cdf: 153 points, references 0.0 s
+  ... (10, 30) sf: 153 points, references 23.7 s
+  ... (10, 30) ppf: 55 points, references 172.5 s
+  ... (10, 30) isf: 55 points, references 198.9 s
+  ... (1e+06, 2) pdf: 150 points, references 1.7 s
+  ... (1e+06, 2) cdf: 150 points, references 0.0 s
+  ... (1e+06, 2) sf: 150 points, references 4.0 s
+  ... (1e+06, 2) ppf: 55 points, references 74.0 s
+  ... (1e+06, 2) isf: 55 points, references 92.5 s
+  ... (10, 1e-08) pdf: 153 points, references 0.1 s
+  ... (10, 1e-08) cdf: 153 points, references 0.0 s
+  ... (10, 1e-08) sf: 153 points, references 0.8 s
+  ... (10, 1e-08) ppf: 55 points, references 7.1 s
+  ... (10, 1e-08) isf: 55 points, references 7.0 s
+  ... condition numbers for 785 points above 8 ulp

@@ -1,0 +1,5 @@
+  ... (4) isf: 55 points, references 0.0 s
+  ... (1) isf: 55 points, references 0.0 s
+  ... condition numbers for 28 points above 8 ulp
+  ... condition numbers done in 388.7 s
+exit 0

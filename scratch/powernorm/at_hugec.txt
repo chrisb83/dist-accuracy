@@ -1,0 +1,20 @@
+powernorm.cdf(-38.0, 10000000000.0)
+  reference      2.88542836006878430835097e-306  (float 2.8854283600687844e-306)
+  cond (arg)     1.44e+03  (within conditioning: <= 1.45e+03 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+powernorm.cdf(-38.5, 1e+20)
+  reference      1.4081824631705174617701e-304  (float 1.4081824631705175e-304)
+  cond (arg)     1.48e+03  (within conditioning: <= 1.49e+03 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+powernorm.logsf(-38.5, 1e+20)
+  reference      -1.4081824631705174617701e-304  (float -1.4081824631705175e-304)
+  cond (arg)     1.48e+03  (within conditioning: <= 1.49e+03 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-0.0)                inf ulp  loss
+powernorm.pdf(-38.5, 1e+20)
+  reference      5.425155181336590183321126e-303  (float 5.4251551813365905e-303)
+  cond (arg)     1.48e+03  (within conditioning: <= 1.49e+03 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(5.434722104253712e-303)  7.9e+12 ulp  severe  [underflow encountered in divide; underflow encountered in exp]

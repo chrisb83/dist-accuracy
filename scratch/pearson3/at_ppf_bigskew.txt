@@ -1,0 +1,8 @@
+ppf(1e-20, 10) | np.float64(-0.20000000000000004)    0.625 ulp  ok | ref -0.2 | cond 0 | conds 1 | rc 0 | 8s
+ppf(1e-3, 10) | np.float64(-0.20000000000000004)    0.625 ulp  ok | ref -0.2 | cond 0 | conds 1 | rc 0 | 8s
+ppf(0.5, 10) | np.float64(-0.19999991359176583)    0.625 ulp  ok | ref -0.1999999135917658 | cond 1.08e-05 | conds 1 | rc 0 | 5s
+ppf(0.999, 10) | np.float64(12.550028433332209)     1.27 ulp  ok | ref 12.550028433332212 | cond 306 | conds 0.377 | rc 0 | 7s
+ppf(1e-20, -100) | np.float64(-inf)                inf ulp  loss | ref -1732.7870700640706 | cond 0.0281 | conds 0.944 | rc 0 | 9s
+ppf(1e-3, -100) | np.float64(-2.394722194430382)       10 ulp  ok | ref -2.394722194430387 | cond 2.65 | conds 4.28 | rc 0 | 7s
+ppf(0.5, -100) | np.float64(0.02)                  0 ulp  ok | ref 0.02 | cond 0 | conds 1 | rc 0 | 6s
+ppf(0.999999, -100) | np.float64(0.02)                  0 ulp  ok | ref 0.02 | cond 0 | conds 1 | rc 0 | 6s

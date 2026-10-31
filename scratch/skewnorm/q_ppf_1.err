@@ -1,0 +1,5 @@
+  ... (4) ppf: 55 points, references 0.0 s
+  ... (1) ppf: 55 points, references 0.0 s
+  ... condition numbers for 64 points above 8 ulp
+  ... condition numbers done in 1007.6 s
+exit 0

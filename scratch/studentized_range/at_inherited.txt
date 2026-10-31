@@ -1,0 +1,28 @@
+studentized_range.sf(30.0, 2.0, 10.0)
+  reference      1.205821159427653792978303e-9  (float 1.2058211594276538e-09)
+  cond (arg)     9.8  (within conditioning: <= 17.8 ulp)
+  scipy 1.18.1   np.float64(1.2058192222497155e-09)  7.2e+09 ulp  severe  [underflow encountered in _single_cdf (vectorized)]
+studentized_range.sf(1000.0, 2.0, 10.0)
+  reference      7.874278165216990496157883e-25  (float 7.874278165216991e-25)
+  cond (arg)     10  (within conditioning: <= 18 ulp)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss  [underflow encountered in _single_cdf (vectorized)]
+studentized_range.logcdf(1e-20, 2.0, 10.0)
+  reference      -46.64902562175189333534819  (float -46.649025621751896)
+  cond (arg)     0.0214  (within conditioning: <= 8.02 ulp)
+  scipy 1.18.1   np.float64(-inf)                inf ulp  loss  [underflow encountered in _single_cdf (vectorized)]
+studentized_range.logsf(1000.0, 2.0, 10.0)
+  reference      -55.50102580590037007331938  (float -55.50102580590037)
+  cond (arg)     0.18  (within conditioning: <= 8.18 ulp)
+  scipy 1.18.1   np.float64(-inf)                inf ulp  loss  [underflow encountered in _single_cdf (vectorized)]
+studentized_range.logpdf(100000.0, 2.0, 10.0)
+  reference      -110.7629763829965417462374  (float -110.76297638299654)
+  cond (arg)     0.0993  (within conditioning: <= 8.1 ulp)
+  scipy 1.18.1   np.float64(-inf)                inf ulp  loss  [underflow encountered in _single_pdf (vectorized)]
+studentized_range.ppf(1e-12, 2.0, 10.0)
+  reference      1.817248895999829050054584e-12  (float 1.817248895999829e-12)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  scipy 1.18.1   np.float64(1.8172364301147584e-12)  3.1e+10 ulp  severe  [underflow encountered in _single_cdf (vectorized)]
+studentized_range.isf(1e-12, 2.0, 10.0)
+  reference      61.4573437422923952944247  (float 61.457343742292394)
+  cond (arg)     0.1  (within conditioning: <= 8.1 ulp)
+  scipy 1.18.1   np.float64(61.44520617839392)  8.9e+11 ulp  severe  [underflow encountered in _single_cdf (vectorized)]

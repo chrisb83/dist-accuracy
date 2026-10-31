@@ -1,0 +1,451 @@
+{
+ "scipy_version": "1.18.1",
+ "distributions": [
+  {
+   "name": "nakagami",
+   "scipy_version": "1.18.1",
+   "class": "nakagami_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    7707,
+    7804
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "nakagami_gen",
+     "lines": [
+      7745,
+      7746
+     ]
+    },
+    "logpdf": {
+     "class": "nakagami_gen",
+     "lines": [
+      7748,
+      7752
+     ]
+    },
+    "cdf": {
+     "class": "nakagami_gen",
+     "lines": [
+      7754,
+      7755
+     ]
+    },
+    "sf": {
+     "class": "nakagami_gen",
+     "lines": [
+      7760,
+      7761
+     ]
+    },
+    "ppf": {
+     "class": "nakagami_gen",
+     "lines": [
+      7757,
+      7758
+     ]
+    },
+    "isf": {
+     "class": "nakagami_gen",
+     "lines": [
+      7763,
+      7764
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "nu",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     4.967379486666624
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, \\nu) = \\frac{2 \\nu^\\nu}{\\Gamma(\\nu)} x^{2\\nu-1} \\exp(-\\nu x^2)"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.digamma",
+    "sc.gammainc",
+    "sc.gammaincc",
+    "sc.gammainccinv",
+    "sc.gammaincinv",
+    "sc.gammaln",
+    "sc.poch",
+    "sc.xlogy"
+   ],
+   "base_classes": [],
+   "calls_into": [
+    "norm"
+   ],
+   "light_review": false,
+   "related": [
+    "norm"
+   ]
+  },
+  {
+   "name": "ncf",
+   "scipy_version": "1.18.1",
+   "class": "ncf_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    7923,
+    8016
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "ncf_gen",
+     "lines": [
+      7984,
+      7985
+     ]
+    },
+    "cdf": {
+     "class": "ncf_gen",
+     "lines": [
+      7987,
+      7988
+     ]
+    },
+    "sf": {
+     "class": "ncf_gen",
+     "lines": [
+      7994,
+      7995
+     ]
+    },
+    "ppf": {
+     "class": "ncf_gen",
+     "lines": [
+      7990,
+      7992
+     ]
+    },
+    "isf": {
+     "class": "ncf_gen",
+     "lines": [
+      7997,
+      7999
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "dfn",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "dfd",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "nc",
+     "domain": [
+      0.0,
+      Infinity
+     ],
+     "inclusive": [
+      true,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     27.0,
+     27.0,
+     0.41578441799226107
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, n_1, n_2, \\lambda) = \\exp\\left(\\frac{\\lambda}{2} + \\lambda n_1 \\frac{x}{2(n_1 x + n_2)} \\right) n_1^{n_1/2} n_2^{n_2/2} x^{n_1/2 - 1} \\\\ (n_2 + n_1 x)^{-(n_1 + n_2)/2} \\gamma(n_1/2) \\gamma(1 + n_2/2) \\\\ \\frac{L^{\\frac{n_1}{2}-1}_{n_2/2} \\left(-\\lambda n_1 \\frac{x}{2(n_1 x + n_2)}\\right)} {B(n_1/2, n_2/2) \\gamma\\left(\\frac{n_1 + n_2}{2}\\right)}"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.gammaln",
+    "sc.hyp1f1",
+    "sc.ncfdtr",
+    "sc.ncfdtri",
+    "scu._ncf_isf",
+    "scu._ncf_kurtosis_excess",
+    "scu._ncf_mean",
+    "scu._ncf_pdf",
+    "scu._ncf_sf",
+    "scu._ncf_skewness",
+    "scu._ncf_variance"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "ncx2",
+   "scipy_version": "1.18.1",
+   "class": "ncx2_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    7827,
+    7917
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "ncx2_gen",
+     "lines": [
+      7878,
+      7881
+     ]
+    },
+    "logpdf": {
+     "class": "ncx2_gen",
+     "lines": [
+      7874,
+      7876
+     ]
+    },
+    "cdf": {
+     "class": "ncx2_gen",
+     "lines": [
+      7883,
+      7886
+     ]
+    },
+    "sf": {
+     "class": "ncx2_gen",
+     "lines": [
+      7893,
+      7896
+     ]
+    },
+    "ppf": {
+     "class": "ncx2_gen",
+     "lines": [
+      7888,
+      7891
+     ]
+    },
+    "isf": {
+     "class": "ncx2_gen",
+     "lines": [
+      7898,
+      7901
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "df",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "nc",
+     "domain": [
+      0.0,
+      Infinity
+     ],
+     "inclusive": [
+      true,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     21.0,
+     1.0560465975116415
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, k, \\lambda) = \\frac{1}{2} \\exp(-(\\lambda+x)/2) (x/\\lambda)^{(k-2)/4} I_{(k-2)/2}(\\sqrt{\\lambda x})"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.chndtr",
+    "sc.chndtrix",
+    "scu._ncx2_isf",
+    "scu._ncx2_pdf",
+    "scu._ncx2_sf",
+    "special.iv"
+   ],
+   "base_classes": [],
+   "calls_into": [
+    "chi2"
+   ],
+   "light_review": false,
+   "related": [
+    "chi2"
+   ]
+  },
+  {
+   "name": "t",
+   "scipy_version": "1.18.1",
+   "class": "t_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    8022,
+    8131
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "t_gen",
+     "lines": [
+      8059,
+      8063
+     ]
+    },
+    "logpdf": {
+     "class": "t_gen",
+     "lines": [
+      8065,
+      8075
+     ]
+    },
+    "cdf": {
+     "class": "t_gen",
+     "lines": [
+      8077,
+      8078
+     ]
+    },
+    "sf": {
+     "class": "t_gen",
+     "lines": [
+      8080,
+      8081
+     ]
+    },
+    "ppf": {
+     "class": "t_gen",
+     "lines": [
+      8083,
+      8084
+     ]
+    },
+    "isf": {
+     "class": "t_gen",
+     "lines": [
+      8086,
+      8087
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "df",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     2.7433514990818093
+    ]
+   ],
+   "support_for_example": [
+    -Infinity,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, \\nu) = \\frac{\\Gamma((\\nu+1)/2)} {\\sqrt{\\pi \\nu} \\Gamma(\\nu/2)} (1+x^2/\\nu)^{-(\\nu+1)/2}"
+   ],
+   "helpers": [
+    "_lazyselect"
+   ],
+   "special_functions": [
+    "sc.beta",
+    "sc.digamma",
+    "sc.poch",
+    "sc.stdtr",
+    "sc.stdtrit",
+    "special.gamma"
+   ],
+   "base_classes": [],
+   "calls_into": [
+    "norm"
+   ],
+   "light_review": false,
+   "related": [
+    "norm"
+   ]
+  }
+ ]
+}

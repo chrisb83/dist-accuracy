@@ -1,0 +1,22 @@
+  ... self-checks (0.774973)
+  ... self-checks (1e-05)
+  ... self-checks (0)
+  ... (0.774973) pdf: 97 points, references 0.2 s
+  ... (0.774973) cdf: 97 points, references 0.0 s
+  ... (0.774973) ppf: 55 points, references 3.6 s
+  ... (1e-05) pdf: 97 points, references 0.3 s
+  ... (1e-05) cdf: 97 points, references 0.0 s
+  ... (1e-05) ppf: 55 points, references 1.9 s
+  ... (0) pdf: 95 points, references 0.0 s
+  ... (0) cdf: 95 points, references 0.0 s
+  ... (0) ppf: 55 points, references 0.2 s
+  ... (3) pdf: 96 points, references 0.3 s
+  ... (3) cdf: 96 points, references 0.0 s
+  ... (3) ppf: 55 points, references 5.8 s
+  ... (15) pdf: 98 points, references 0.3 s
+  ... (15) cdf: 98 points, references 0.0 s
+  ... (15) ppf: 55 points, references 75.7 s
+  ... (40) pdf: 101 points, references 0.3 s
+  ... (40) cdf: 101 points, references 0.0 s
+  ... (40) ppf: 55 points, references 213.3 s
+  ... condition numbers for 239 points above 8 ulp

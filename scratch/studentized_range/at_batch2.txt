@@ -1,0 +1,15 @@
+studentized_range.pdf(1.0, 1.5, 1000000.0)
+  reference      0.3034741138986431944131156  (float 0.3034741138986432)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss  [divide by zero encountered in _single_pdf (vectorized); invalid value encountered in _single_pdf (vectorized); underflow encountered in _single_pdf (vectorized)]
+studentized_range.cdf(7.0, 1000.0, 10.0)
+  reference      unavailable  (float nan)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.5716708517365563)        - ulp  ok  [underflow encountered in _single_cdf (vectorized)]
+studentized_range.pdf(7.0, 1000.0, 10.0)
+  reference      unavailable  (float nan)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.22596539819688524)        - ulp  ok  [underflow encountered in _single_pdf (vectorized)]

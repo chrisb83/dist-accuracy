@@ -1,0 +1,33 @@
+  ... self-checks (27, 27, 0.415784)
+  ... self-checks (2, 3, 10)
+  ... self-checks (1, 1, 1)
+  ... (27, 27, 0.415784) pdf: 85 points, references 0.3 s
+  ... (27, 27, 0.415784) cdf: 85 points, references 0.0 s
+  ... (27, 27, 0.415784) sf: 85 points, references 0.8 s
+  ... (27, 27, 0.415784) ppf: 55 points, references 10.6 s
+  ... (2, 3, 10) pdf: 90 points, references 0.4 s
+  ... (2, 3, 10) cdf: 90 points, references 0.0 s
+  ... (2, 3, 10) sf: 90 points, references 1.2 s
+  ... (2, 3, 10) ppf: 55 points, references 11.5 s
+  ... (1, 1, 1) pdf: 85 points, references 0.3 s
+  ... (1, 1, 1) cdf: 85 points, references 0.0 s
+  ... (1, 1, 1) sf: 85 points, references 0.6 s
+  ... (1, 1, 1) ppf: 55 points, references 9.4 s
+  ... (5, 0.5, 2) pdf: 91 points, references 0.3 s
+  ... (5, 0.5, 2) cdf: 91 points, references 0.0 s
+  ... (5, 0.5, 2) sf: 91 points, references 0.7 s
+  ... (5, 0.5, 2) ppf: 55 points, references 16.5 s
+  ... (0.5, 10, 200) pdf: 91 points, references 1.1 s
+  ... (0.5, 10, 200) cdf: 91 points, references 0.0 s
+  ... (0.5, 10, 200) sf: 91 points, references 4.2 s
+  ... (0.5, 10, 200) ppf: 55 points, references 33.0 s
+  ... (100, 1000, 50) pdf: 90 points, references 1.3 s
+  ... (100, 1000, 50) cdf: 90 points, references 0.0 s
+  ... (100, 1000, 50) sf: 90 points, references 2.2 s
+  ... (100, 1000, 50) ppf: 55 points, references 29.3 s
+  ... (10, 20, 1e-08) pdf: 90 points, references 0.2 s
+  ... (10, 20, 1e-08) cdf: 90 points, references 0.0 s
+  ... (10, 20, 1e-08) sf: 90 points, references 0.6 s
+  ... (10, 20, 1e-08) ppf: 55 points, references 7.6 s
+  ... condition numbers for 412 points above 8 ulp
+  ... condition numbers done in 843.0 s

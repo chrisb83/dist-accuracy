@@ -1,0 +1,218 @@
+  ... self-checks (4.44537)
+  ... self-checks (0.001)
+  ... self-checks (1e-08)
+  ... (4.44537) pdf: 166 points, references 1.4 s
+  ... (4.44537) logpdf: 166 points, references 0.6 s
+  ... (4.44537) cdf: 166 points, references 0.0 s
+  ... (4.44537) sf: 166 points, references 1.6 s
+  ... (4.44537) logsf: 166 points, references 0.5 s
+  ... (0.001) pdf: 166 points, references 1.5 s
+  ... (0.001) logpdf: 166 points, references 0.6 s
+  ... (0.001) cdf: 166 points, references 0.0 s
+  ... (0.001) sf: 166 points, references 1.4 s
+  ... (0.001) logsf: 166 points, references 0.5 s
+  ... (1e-08) pdf: 166 points, references 1.6 s
+  ... (1e-08) logpdf: 166 points, references 0.5 s
+  ... (1e-08) cdf: 166 points, references 0.0 s
+  ... (1e-08) sf: 166 points, references 1.5 s
+  ... (1e-08) logsf: 166 points, references 0.5 s
+  ... (0.5) pdf: 166 points, references 1.4 s
+  ... (0.5) logpdf: 166 points, references 0.5 s
+  ... (0.5) cdf: 166 points, references 0.0 s
+  ... (0.5) sf: 166 points, references 1.4 s
+  ... (0.5) logsf: 166 points, references 0.6 s
+  ... (1) pdf: 166 points, references 1.5 s
+  ... (1) logpdf: 166 points, references 0.5 s
+  ... (1) cdf: 166 points, references 0.0 s
+  ... (1) sf: 166 points, references 1.3 s
+  ... (1) logsf: 166 points, references 0.4 s
+  ... (50) pdf: 166 points, references 1.5 s
+  ... (50) logpdf: 166 points, references 0.5 s
+  ... (50) cdf: 166 points, references 0.0 s
+  ... (50) sf: 166 points, references 1.5 s
+  ... (50) logsf: 166 points, references 0.5 s
+  ... (10000) pdf: 166 points, references 1.4 s
+  ... (10000) logpdf: 166 points, references 0.6 s
+  ... (10000) cdf: 166 points, references 0.0 s
+  ... (10000) sf: 166 points, references 1.3 s
+  ... (10000) logsf: 166 points, references 0.5 s
+  ... (1e+06) pdf: 166 points, references 1.6 s
+  ... (1e+06) logpdf: 166 points, references 0.6 s
+  ... (1e+06) cdf: 166 points, references 0.0 s
+  ... (1e+06) sf: 166 points, references 1.5 s
+  ... (1e+06) logsf: 166 points, references 0.5 s
+  ... condition numbers for 312 points above 8 ulp
+  ... condition numbers done in 33.7 s
+powernorm: SciPy 1.18.1, mpmath 1.4.1, 400 digits
+implemented: ['pdf', 'logpdf', 'cdf', 'sf', 'logsf', 'ppf', 'isf']; inherited: ['logcdf']
+measured: ['pdf', 'logpdf', 'cdf', 'sf', 'logsf']
+parameter sets: ['(4.44537)', '(0.001)', '(1e-08)', '(0.5)', '(1)', '(50)', '(10000)', '(1e+06)']
+
+Reference self-checks:
+  PASS: references agree with scipy in the bulk (where scipy is finite), are stable in precision and internally consistent
+  NOTE: pdf(0.001): scipy returns nan in the bulk where the reference is 0.0067800431559541805 (x = 67.78568559660262); likely a scipy problem - verify with --at, then report it
+  NOTE: pdf(1e-08): scipy returns nan in the bulk where the reference is 4.131390808007018e-05 (x = 4590.434013274605); likely a scipy problem - verify with --at, then report it
+
+method  region         n |   scipy 1.18.1: max ulp  median   loss severe moder. minor
+-------------------------------------------------------------------------------------
+pdf     low tail     224 |                     inf   0.797      7      0      6      8
+        bulk         237 |                     inf       0      8      0      2      8
+        high tail    110 |                     inf       0      6      0      0      3
+        RuntimeWarning (scipy 1.18.1) in 8 parameter set(s): divide by zero encountered in power; invalid value encountered in multiply; overflow encountered in power; overflow encountered in square; underflow encountered in divide; underflow encountered in exp; underflow encountered in multiply; underflow encountered in power; underflow encountered in square
+logpdf  low tail     376 |                     inf       0      8      0      0      6
+        bulk         237 |                     924   0.544      0      0      0     13
+        high tail    461 |                     inf   0.592      6     17      5     13
+        RuntimeWarning (scipy 1.18.1) in 8 parameter set(s): invalid value encountered in add; invalid value encountered in multiply; overflow encountered in multiply; overflow encountered in square; underflow encountered in square
+cdf     low tail     224 |                     257   0.705      0      0      0      0
+        bulk         237 |                    10.9       0      0      0      0      0
+        high tail    595 |                       0       0      0      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 4 parameter set(s): overflow encountered in multiply
+sf      low tail     376 |                     0.5       0      0      0      0      0
+        bulk         237 |                    4.08       0      0      0      0      0
+        high tail    109 |                     739       4      0      0      0      5
+        RuntimeWarning (scipy 1.18.1) in 8 parameter set(s): overflow encountered in multiply; underflow encountered in exp
+logsf   low tail     224 |                     257   0.537      0      0      0      0
+        bulk         237 |                    10.2       0      0      0      0      0
+        high tail    461 |                     inf   0.565      2      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 4 parameter set(s): overflow encountered in multiply
+
+Points beyond conditioning (markdown, worst first per method):
+
+**pdf** (48 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (0.001) | 37.6 | 0.018472506450969425 | inf | inf | loss | 0.416 | 0.289 |
+| (0.001) | 38.0 | 0.018388404386955586 | inf | inf | loss | 0.446 | 0.273 |
+| (0.001) | 38.5 | 0.018276872941363913 | nan | inf | loss | 0.485 | 0.254 |
+| (0.001) | 39.0 | 0.018158429254000515 | nan | inf | loss | 0.523 | 0.235 |
+| (0.001) | 40.0 | 0.017901688509460535 | nan | inf | loss | 0.602 | 0.195 |
+| (0.001) | 60.0 | 0.009871073255392548 | nan | inf | loss | 2.6 | 0.805 |
+| (0.001) | 100.0 | 0.0006701497744033167 | nan | inf | loss | 9 | 4.01 |
+| (0.001) | 1000.0 | 7.069039237996224e-218 | nan | inf | loss | 999 | 499 |
+| (1e-08) | 37.6 | 3.7626290568513357e-07 | inf | inf | loss | 0.999 | 1 |
+| (1e-08) | 38.0 | 3.8026003184902093e-07 | inf | inf | loss | 0.999 | 1 |
+| (1e-08) | 38.5 | 3.852565181181995e-07 | nan | inf | loss | 0.999 | 1 |
+| (1e-08) | 39.0 | 3.9025308842723174e-07 | nan | inf | loss | 0.999 | 1 |
+| (1e-08) | 40.0 | 4.0024646804224603e-07 | nan | inf | loss | 0.999 | 1 |
+| (1e-08) | 60.0 | 6.00155741212129e-07 | nan | inf | loss | 0.999 | 1 |
+| (1e-08) | 100.0 | 1.00004992101625e-06 | nan | inf | loss | 1 | 1 |
+| (1e-08) | 1000.0 | 9.950133963265067e-06 | nan | inf | loss | 0.99 | 0.995 |
+| (1e-08) | 100000.0 | 1.9287496083772477e-25 | nan | inf | loss | 99 | 49 |
+| (0.5) | 38.0 | 3.2296762361052196e-157 | inf | inf | loss | 722 | 362 |
+| (0.5) | 38.5 | 2.285876189271622e-161 | inf | inf | loss | 741 | 372 |
+| (0.5) | 39.0 | 1.4276545350872575e-165 | nan | inf | loss | 760 | 382 |
+| (0.5) | 40.0 | 3.8264652815897937e-174 | nan | inf | loss | 800 | 401 |
+| (1e+06) | -6.0 | 0.0060698914208803 | 0.006069891420544109 | 2.5e+05 | moderate | 36 | 0.999 |
+| (1e+06) | -7.0 | 9.134708717654002e-06 | 9.134708717173893e-06 | 2.4e+05 | moderate | 49 | 1 |
+| (1e+06) | -5.0 | 1.1161895513847035 | 1.1161895513352105 | 2.0e+05 | moderate | 17.6 | 0.713 |
+| (1e+06) | -8.0 | 5.052271080393898e-09 | 5.052271080171408e-09 | 2.0e+05 | moderate | 64 | 1 |
+
+**logpdf** (68 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (4.44537) | -1.4e+154 | -9.8e+307 | -inf | inf | loss | 2 | 1.02e-308 |
+| (0.001) | -1.4e+154 | -9.8e+307 | -inf | inf | loss | 2 | 1.02e-308 |
+| (0.001) | 1.4e+154 | -9.8e+304 | -inf | inf | loss | 2 | 1 |
+| (0.001) | 1e+155 | -5e+306 | nan | inf | loss | 2 | 1 |
+| (1e-08) | -1.4e+154 | -9.8e+307 | -inf | inf | loss | 2 | 1.02e-308 |
+| (1e-08) | 1.4e+154 | -9.8e+299 | -inf | inf | loss | 2 | 1 |
+| (1e-08) | 1e+155 | -5e+301 | nan | inf | loss | 2 | 1 |
+| (0.5) | -1.4e+154 | -9.8e+307 | -inf | inf | loss | 2 | 1.02e-308 |
+| (0.5) | 1.4e+154 | -4.9e+307 | -inf | inf | loss | 2 | 1 |
+| (1) | -1.4e+154 | -9.8e+307 | -inf | inf | loss | 2 | 1.02e-308 |
+| (1) | 1.4e+154 | -9.8e+307 | -inf | inf | loss | 2 | 1 |
+| (50) | -1.4e+154 | -9.8e+307 | -inf | inf | loss | 2 | 1.02e-308 |
+| (10000) | -1.4e+154 | -9.8e+307 | -inf | inf | loss | 2 | 1.02e-308 |
+| (1e+06) | -1.4e+154 | -9.8e+307 | -inf | inf | loss | 2 | 1.02e-308 |
+| (1e-08) | 1e+140 | -5e+271 | -4.99999978169636e+271 | 2.0e+08 | severe | 2 | 1 |
+| (1e-08) | 1e+150 | -5e+291 | -4.999999854832012e+291 | 1.3e+08 | severe | 2 | 1 |
+| (1e-08) | 1e+100 | -5e+191 | -4.9999998974594864e+191 | 9.2e+07 | severe | 2 | 1 |
+| (1e-08) | 1e+60 | -5e+111 | -4.999999926988368e+111 | 6.6e+07 | severe | 2 | 1 |
+| (1e-08) | 1e+70 | -5.000000000000001e+131 | -4.9999999446761766e+131 | 5.0e+07 | severe | 2 | 1 |
+| (1e-08) | 1e+30 | -5.0000000000000006e+51 | -4.999999948887345e+51 | 4.6e+07 | severe | 2 | 1 |
+| (1e-08) | 1e+20 | -5e+31 | -5.000000045014186e+31 | 4.1e+07 | severe | 2 | 1 |
+| (1e-08) | 100000.0 | -56.90775540320078 | -56.90775489807129 | 4.0e+07 | severe | 1.74 | 0.861 |
+| (1e-08) | 1e+110 | -5.0000000000000005e+211 | -4.999999961825986e+211 | 3.4e+07 | severe | 2 | 1 |
+| (1e-08) | 1e+130 | -5e+251 | -5.000000034754922e+251 | 3.1e+07 | severe | 2 | 1 |
+| (1e-08) | 10000000000.0 | -499999999995.39484 | -499999997952.0 | 1.8e+07 | severe | 2 | 1 |
+
+**sf** (5 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (50) | 0.3 | 1.2829293840824338e-21 | 1.282929384082448e-21 | 50.2 | minor | 15 | 48.1 |
+| (50) | -1e-10 | 8.881784232434445e-16 | 8.881784232434541e-16 | 49 | minor | 3.99e-09 | 34.7 |
+| (50) | 0.001 | 8.534291268603965e-16 | 8.534291268604011e-16 | 24.5 | minor | 0.0399 | 34.7 |
+| (50) | 1e-08 | 8.881780653682704e-16 | 8.881780653682744e-16 | 20.5 | minor | 3.99e-07 | 34.7 |
+| (50) | -1e-08 | 8.881787740321187e-16 | 8.881787740321223e-16 | 18 | minor | 3.99e-07 | 34.7 |
+
+**logsf** (2 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (0.001) | 1e+155 | -5e+306 | -inf | inf | loss | 2 | 1 |
+| (1e-08) | 1e+155 | -5e+301 | -inf | inf | loss | 2 | 1 |
+
+Worst ulp per parameter set ('inf' = 0/inf/nan where the reference is finite):
+
+pdf:
+  shapes                        scipy 1.18.1  cond there
+  (4.44537)                              116         448
+  (0.001)                                inf       0.416
+  (1e-08)                                inf       0.999
+  (0.5)                                  inf         722
+  (1)                                    228    1.41e+03
+  (50)                                   403         844
+  (10000)                           2.49e+03          36
+  (1e+06)                            2.5e+05          36
+
+logpdf:
+  shapes                        scipy 1.18.1  cond there
+  (4.44537)                              inf           2
+  (0.001)                                inf           2
+  (1e-08)                                inf           2
+  (0.5)                                  inf           2
+  (1)                                    inf           2
+  (50)                                   inf           2
+  (10000)                                inf           2
+  (1e+06)                                inf           2
+
+cdf:
+  shapes                        scipy 1.18.1  cond there
+  (4.44537)                              256         901
+  (0.001)                                256         901
+  (1e-08)                                256         901
+  (0.5)                                  256         901
+  (1)                                    256         901
+  (50)                                   257         901
+  (10000)                                256         901
+  (1e+06)                                257         901
+
+sf:
+  shapes                        scipy 1.18.1  cond there
+  (4.44537)                              251         289
+  (0.001)                                258       1e+03
+  (1e-08)                               23.1         100
+  (0.5)                                  399         742
+  (1)                                    739    1.37e+03
+  (50)                                   231         845
+  (10000)                                530     1.1e+03
+  (1e+06)                                255         535
+
+logsf:
+  shapes                        scipy 1.18.1  cond there
+  (4.44537)                              256         901
+  (0.001)                                inf           2
+  (1e-08)                                inf           2
+  (0.5)                                  256         901
+  (1)                                    256         901
+  (50)                                   257         901
+  (10000)                                256         901
+  (1e+06)                                257         901
+
+Reference unavailable (points skipped): cdf: 120 x OverflowError; pdf: 120 x OverflowError; logpdf: 120 x OverflowError; sf: 120 x OverflowError; logsf: 120 x OverflowError
+
+points written to scratch/powernorm/run_x.json
+done in 92 s

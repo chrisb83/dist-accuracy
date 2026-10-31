@@ -1,0 +1,367 @@
+_pdf	np.float64(-1e+300)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+290)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+280)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+270)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+260)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+250)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+240)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+230)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+220)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1.0000000000000001e+210)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+200)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+190)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+180)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+170)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+160)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1.4e+154)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1.4e+154)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+160)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+170)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+180)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+190)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+200)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1.0000000000000001e+210)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+220)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+230)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+240)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+250)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+260)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+270)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+280)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+290)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+300)	np.float64(1.0)	np.float64(1.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1.3e+154)	np.float64(5.0)	np.float64(-3.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1.3e+154)	np.float64(5.0)	np.float64(-3.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+300)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+290)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+280)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+270)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+260)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+250)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+240)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+230)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+220)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1.0000000000000001e+210)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+200)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+190)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+180)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+170)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+160)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1.4e+154)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1.3e+154)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1.3e+154)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1.4e+154)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+160)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+170)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+180)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+190)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+200)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1.0000000000000001e+210)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+220)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+230)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+240)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+250)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+260)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+270)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+280)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+290)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1e+300)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1.3e+154)	np.float64(30.0)	np.float64(20.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1.3e+154)	np.float64(30.0)	np.float64(20.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1.3e+154)	np.float64(10.0)	np.float64(30.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1.3e+154)	np.float64(10.0)	np.float64(30.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+300)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+290)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+280)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+270)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+260)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+250)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+240)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+230)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+220)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.0000000000000001e+210)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+200)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+190)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+180)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+170)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+160)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.4e+154)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.3e+154)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+150)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+140)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+130)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+120)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+110)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+100)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+90)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+80)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+70)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+60)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+50)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+40)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+30)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+20)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-10000000000.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1000.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-100.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-10.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-9.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-8.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-7.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-6.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-5.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1000.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(10000000000.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+20)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+30)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+40)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+50)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+60)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+70)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+80)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+90)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+100)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+110)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+120)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+130)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+140)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+150)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.3e+154)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.4e+154)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+160)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+170)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+180)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+190)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+200)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.0000000000000001e+210)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+220)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+230)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+240)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+250)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+260)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+270)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+280)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+290)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+300)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+290)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+280)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+270)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+260)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+250)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+240)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+230)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+220)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.0000000000000001e+210)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+200)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+190)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+180)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+170)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+160)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.4e+154)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.3e+154)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+150)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+140)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+130)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+120)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+110)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+100)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+90)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+80)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+70)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+60)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+50)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+40)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+30)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+20)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-10000000000.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1000.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-100.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-10.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-9.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-8.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-7.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-6.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-5.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1000.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(10000000000.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+20)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+30)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+40)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+50)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+60)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+70)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+80)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+90)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+100)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+110)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+120)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+130)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+140)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+150)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.3e+154)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.4e+154)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+160)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+170)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+180)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+190)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+200)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.0000000000000001e+210)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+220)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+230)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+240)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+250)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+260)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+270)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+280)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+290)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.3e+154)	np.float64(10.0)	np.float64(8.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1.3e+154)	np.float64(10.0)	np.float64(8.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1.3e+154)	np.float64(10.0)	np.float64(-8.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(1.3e+154)	np.float64(10.0)	np.float64(-8.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+300)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+290)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+280)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+270)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+260)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+250)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+240)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+230)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+220)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.0000000000000001e+210)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+200)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+190)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+180)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+170)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+160)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.4e+154)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.3e+154)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+150)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+140)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+130)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+120)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+110)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+100)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+90)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+80)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+70)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+60)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+50)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+40)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+30)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+20)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-10000000000.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1000.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-100.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-10.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-9.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-8.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-7.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-6.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-5.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1000.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(10000000000.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+20)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+30)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+40)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+50)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+60)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+70)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+80)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+90)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+100)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+110)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+120)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+130)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+140)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+150)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.3e+154)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.4e+154)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+160)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+170)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+180)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+190)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+200)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.0000000000000001e+210)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+220)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+230)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+240)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+250)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+260)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+270)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+280)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+290)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+300)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+290)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+280)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+270)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+260)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+250)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+240)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+230)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+220)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.0000000000000001e+210)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+200)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+190)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+180)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+170)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+160)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.4e+154)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1.3e+154)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+150)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+140)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+130)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+120)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+110)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+100)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+90)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+80)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+70)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+60)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+50)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+40)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+30)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1e+20)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-10000000000.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-1000.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-100.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-10.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-9.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-8.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-7.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-6.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-5.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1000.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(10000000000.0)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+20)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+30)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+40)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+50)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+60)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+70)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+80)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+90)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+100)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+110)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+120)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+130)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+140)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+150)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.3e+154)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.4e+154)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+160)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+170)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+180)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+190)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+200)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.0000000000000001e+210)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+220)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+230)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+240)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+250)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+260)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+270)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+280)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1e+290)	np.float64(1000000000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(-6.0)	np.float64(1000000.0)	np.float64(2.0)	OverflowError: Error in function boost::math::tgamma<double>(%1%): Result of tgamma is too large to represent.
+_pdf	np.float64(1.3e+154)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error
+_pdf	np.float64(-1e+200)	np.float64(0.5)	np.float64(5.0)	OverflowError: Error in function ibeta_derivative<double>(%1%,%1%,%1%): Overflow Error

@@ -1,0 +1,89 @@
+  ... self-checks (1e+06, 2)
+  ... self-checks (1e+12, 2)
+  ... self-checks (300, 2)
+  ... (1e+06, 2) pdf: 150 points, references 8.0 s
+  ... (1e+12, 2) pdf: 150 points, references 7.8 s
+  ... (300, 2) pdf: 150 points, references 0.1 s
+  ... condition numbers for 72 points above 8 ulp
+  ... condition numbers done in 1.0 s
+nct: SciPy 1.18.1, mpmath 1.4.1, 100 digits
+implemented: ['pdf', 'cdf', 'sf', 'ppf', 'isf']; inherited: ['logpdf', 'logcdf', 'logsf']
+measured: ['pdf']
+parameter sets: ['(1e+06, 2)', '(1e+12, 2)', '(300, 2)']
+
+Reference self-checks:
+  FAIL: logpdf(1e+06, 2) at -1e+290: changes with precision (-660841234.31348936341 vs -660841136.29252698969); raise DPS or use a better-conditioned reference formula
+  FAIL: logpdf(1e+06, 2) at 1e+290: changes with precision (-660841244.15617090345 vs -660841144.82210738686); raise DPS or use a better-conditioned reference formula
+  FAIL: logcdf(1e+06, 2) at -1e+290: changes with precision ((-660840619.45838818377 + 3.1415926535897932385j) vs -660840515.84074073802); raise DPS or use a better-conditioned reference formula
+  FAIL: logsf(1e+06, 2) at 1e+290: changes with precision (-660840629.82613775783 vs -660840524.81912568176); raise DPS or use a better-conditioned reference formula
+  FAIL: pdf(1e+12, 2): reference disagrees with scipy at every bulk point (check the parametrization): x, scipy, ref = (0.7184484344554138, 0.1754908248466157, 0.17549833193250108)
+  FAIL: logpdf(1e+12, 2): reference disagrees with scipy at every bulk point (check the parametrization): x, scipy, ref = (0.7184484344554138, -1.740168517519131, -1.7401257407794994)
+  FAIL: logpdf(1e+12, 2) at -1e+290: changes with precision (-653934166405228.08287 vs (-653934166404517.08387 + 3.1415926535897932385j)); raise DPS or use a better-conditioned reference formula
+  FAIL: logpdf(1e+12, 2) at 1e+290: changes with precision (-653934166405308.71966 vs -653934166404588.46038); raise DPS or use a better-conditioned reference formula
+  FAIL: logcdf(1e+12, 2) at -1e+290: changes with precision ((-653934166404903.36511 + 3.1415926535897932385j) vs -653934166404171.13646); raise DPS or use a better-conditioned reference formula
+  FAIL: logsf(1e+12, 2) at 1e+290: changes with precision (-653934166404976.50618 vs -653934166404242.98849); raise DPS or use a better-conditioned reference formula
+
+method  region         n |   scipy 1.18.1: max ulp  median   loss severe moder. minor
+-------------------------------------------------------------------------------------
+pdf     low tail      28 |                     inf 3.4e+06     19      5      4      0
+        bulk         207 |                 2.0e+11       0      0      8     14      8
+        high tail     15 |                 2.2e+11 7.72e+04      0      5      5      1
+        RuntimeWarning (scipy 1.18.1) in 3 parameter set(s): Error in function boost::math::quadrature::exp_sinh<double>::integrate: The exp_sinh quadrature evaluated your function at a singular point and returned %1%. Please ensure your function evaluates to a finite number over its entire domain.
+
+Points beyond conditioning (markdown, worst first per method):
+
+**pdf** (69 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (1e+06, 2) | -10.0 | 2.1540050933858334e-32 | nan | inf | loss | 120 | 24 |
+| (1e+06, 2) | -9.0 | 2.1239208535906673e-27 | nan | inf | loss | 99 | 22 |
+| (1e+06, 2) | -8.0 | 7.706639917860428e-23 | nan | inf | loss | 80 | 20 |
+| (1e+06, 2) | -7.0 | 1.0289687700997403e-18 | nan | inf | loss | 63 | 18 |
+| (1e+06, 2) | -6.0 | 5.055074534637103e-15 | nan | inf | loss | 48 | 16 |
+| (1e+06, 2) | -5.0 | 9.137378949161317e-12 | nan | inf | loss | 35 | 14 |
+| (1e+12, 2) | -10.0 | 2.146383743271454e-32 | nan | inf | loss | 120 | 24 |
+| (1e+12, 2) | -9.0 | 2.118819258605114e-27 | nan | inf | loss | 99 | 22 |
+| (1e+12, 2) | -8.0 | 7.694598638738848e-23 | nan | inf | loss | 80 | 20 |
+| (1e+12, 2) | -7.0 | 1.0279773581578616e-18 | nan | inf | loss | 63 | 18 |
+| (1e+12, 2) | -6.0 | 5.05227108633964e-15 | nan | inf | loss | 48 | 16 |
+| (1e+12, 2) | -5.0 | 9.134720411022797e-12 | nan | inf | loss | 35 | 14 |
+| (300, 2) | -100.0 | 1.5274518960889497e-247 | nan | inf | loss | 293 | 437 |
+| (300, 2) | -10.0 | 3.2184497635597063e-28 | nan | inf | loss | 87.9 | 28.7 |
+| (300, 2) | -9.0 | 1.8130866038818312e-24 | nan | inf | loss | 76.2 | 25.3 |
+| (300, 2) | -8.0 | 7.16215200336621e-21 | nan | inf | loss | 64.6 | 22.1 |
+| (300, 2) | -7.0 | 1.8285566473157996e-17 | nan | inf | loss | 53.2 | 19.3 |
+| (300, 2) | -6.0 | 2.768884348565546e-14 | nan | inf | loss | 42.2 | 16.7 |
+| (300, 2) | -5.0 | 2.277290956000706e-11 | nan | inf | loss | 31.9 | 14.3 |
+| (1e+12, 2) | 9.0 | 9.134720417097387e-12 | 9.134284154126893e-12 | 2.2e+11 | severe | 63 | 14 |
+| (1e+12, 2) | 6.0 | 0.000133830225782116 | 0.00013382408335023296 | 2.1e+11 | severe | 24 | 8 |
+| (1e+12, 2) | -4.0 | 6.075882850635935e-09 | 6.075609010125856e-09 | 2.0e+11 | severe | 24 | 12 |
+| (1e+12, 2) | 4.0 | 0.05399096651371446 | 0.053988533150125174 | 2.0e+11 | severe | 8 | 4 |
+| (1e+12, 2) | 1.0 | 0.24197072451914334 | 0.2419599690890265 | 2.0e+11 | severe | 1 | 2 |
+| (1e+12, 2) | -1.0 | 0.004431848411942439 | 0.004431651419368342 | 2.0e+11 | severe | 3 | 6 |
+| (1e+12, 2) | 2.0 | 0.398942280400934 | 0.3989599313703442 | 2.0e+11 | severe | 3e-12 | 2.25e-12 |
+| (1e+12, 2) | -2.0 | 0.00013383022576659169 | 0.00013383614700715054 | 2.0e+11 | severe | 8 | 8 |
+| (1e+12, 2) | 3.0 | 0.2419707245189014 | 0.24198138031894417 | 2.0e+11 | severe | 3 | 2 |
+| (1e+12, 2) | -3.0 | 1.4867195148086337e-06 | 1.4867849862755227e-06 | 2.0e+11 | severe | 15 | 10 |
+| (1e+12, 2) | 7.0 | 1.4867195151580128e-06 | 1.486782526315493e-06 | 1.9e+11 | severe | 35 | 10 |
+| (1e+12, 2) | 8.0 | 6.0758828531513505e-09 | 6.076136594785468e-09 | 1.9e+11 | severe | 48 | 12 |
+| (1e+12, 2) | -0.5 | 0.01752830049356443 | 0.017528105710131518 | 5.0e+10 | severe | 1.25 | 5 |
+| (1e+12, 2) | 0.5 | 0.12951759566589374 | 0.12951615640018097 | 5.0e+10 | severe | 0.75 | 3 |
+| (1e+12, 2) | 10.0 | 5.0522710913919105e-15 | 5.052250190095921e-15 | 1.9e+10 | severe | 80 | 16 |
+| (1e+12, 2) | 5.0 | 0.004431848412141872 | 0.0044318438284844715 | 4.7e+09 | severe | 15 | 6 |
+| (300, 2) | -4.0 | 9.323974222700357e-09 | 9.323974210072416e-09 | 6.1e+06 | severe | 22.6 | 12.1 |
+| (1e+06, 2) | -4.0 | 6.0766955434627115e-09 | 6.076695548049948e-09 | 3.4e+06 | severe | 24 | 12 |
+| (300, 2) | -1e-10 | 0.05394599285520141 | 0.053945992865999604 | 9.0e+05 | moderate | 2e-10 | 4 |
+| (300, 2) | 1e-10 | 0.0539459928767978 | 0.053945992865999604 | 9.0e+05 | moderate | 2e-10 | 4 |
+| (1e+06, 2) | -1e-10 | 0.05399095300464992 | 0.053990953015448116 | 9.0e+05 | moderate | 2e-10 | 4 |
+
+Worst ulp per parameter set ('inf' = 0/inf/nan where the reference is finite):
+
+pdf:
+  shapes                        scipy 1.18.1  cond there
+  (1e+06, 2)                             inf         120
+  (1e+12, 2)                             inf         120
+  (300, 2)                               inf         293
+
+points written to scratch/nct/runpdf.json
+done in 177 s

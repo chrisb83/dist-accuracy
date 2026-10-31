@@ -1,0 +1,8 @@
+pdf(2, 1e12, 2) scipy=0.3989599313703442 ref=0.398942280400934 ulp=1.99e+11 stab=2.2e-96
+pdf(5, 1e15, 2) scipy=0.004234632584836879 ref=0.004431848411938211 ulp=2.0e+14 stab=4.5e-92
+C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py:8184: RuntimeWarning: Error in function boost::math::quadrature::exp_sinh<double>::integrate: The exp_sinh quadrature evaluated your function at a singular point and returned %1%. Please ensure your function evaluates to a finite number over its entire domain.
+  return scu._nct_pdf(x, df, nc)
+pdf(-6, 1e6, 2) scipy='OverflowError' ref=5.0550745346371027e-15 ulp=inf stab=8.6e-101
+sf(4, 1e6, 2) scipy=0.022750617867801966 ref=0.022750617867896895 ulp=1.88e+4 stab=8.2e-101
+cdf(3, 1e6, 2) scipy=0.841344020157246 ref=0.8413440201576851 ulp=2.35e+3 stab=9.6e-101
+sf(38.94287354630109, 1e6, 2) scipy=0.0 ref=7.9534528364728753e-299 ulp=4.5e+15 stab=4.2e-99

@@ -1,0 +1,328 @@
+{
+ "scipy_version": "1.18.1",
+ "distributions": [
+  {
+   "name": "rel_breitwigner",
+   "scipy_version": "1.18.1",
+   "class": "rel_breitwigner_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    12473,
+    12618
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "rel_breitwigner_gen",
+     "lines": [
+      12541,
+      12547
+     ]
+    },
+    "cdf": {
+     "class": "rel_breitwigner_gen",
+     "lines": [
+      12549,
+      12558
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "sf": "1 - cdf",
+    "logsf": "log(sf)",
+    "ppf": "numerical inversion of cdf",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "rho",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     36.545206797050334
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, \\rho) = \\frac{k}{(x^2 - \\rho^2)^2 + \\rho^2}"
+   ],
+   "helpers": [
+    "_check_fit_input_parameters"
+   ],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "skewcauchy",
+   "scipy_version": "1.18.1",
+   "class": "skewcauchy_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    9654,
+    9718
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "skewcauchy_gen",
+     "lines": [
+      9694,
+      9695
+     ]
+    },
+    "cdf": {
+     "class": "skewcauchy_gen",
+     "lines": [
+      9697,
+      9700
+     ]
+    },
+    "ppf": {
+     "class": "skewcauchy_gen",
+     "lines": [
+      9702,
+      9706
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "sf": "1 - cdf",
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "a",
+     "domain": [
+      -0.9999999999999999,
+      0.9999999999999999
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     0.5
+    ]
+   ],
+   "support_for_example": [
+    -Infinity,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x) = \\frac{1}{\\pi \\left(\\frac{x^2}{\\left(a\\, \\text{sign}(x) + 1 \\right)^2} + 1 \\right)}"
+   ],
+   "helpers": [],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "skewnorm",
+   "scipy_version": "1.18.1",
+   "class": "skewnorm_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    9724,
+    9946
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "skewnorm_gen",
+     "lines": [
+      9760,
+      9764
+     ]
+    },
+    "logpdf": {
+     "class": "skewnorm_gen",
+     "lines": [
+      9766,
+      9770
+     ]
+    },
+    "cdf": {
+     "class": "skewnorm_gen",
+     "lines": [
+      9772,
+      9780
+     ]
+    },
+    "sf": {
+     "class": "skewnorm_gen",
+     "lines": [
+      9785,
+      9788
+     ]
+    },
+    "ppf": {
+     "class": "skewnorm_gen",
+     "lines": [
+      9782,
+      9783
+     ]
+    },
+    "isf": {
+     "class": "skewnorm_gen",
+     "lines": [
+      9790,
+      9791
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "a",
+     "domain": [
+      -Infinity,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     4.0
+    ]
+   ],
+   "support_for_example": [
+    -Infinity,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [],
+   "helpers": [
+    "_check_fit_input_parameters",
+    "_norm_cdf",
+    "_norm_logcdf",
+    "_norm_logpdf",
+    "_norm_pdf"
+   ],
+   "special_functions": [
+    "sc.gamma",
+    "scu._skewnorm_cdf",
+    "scu._skewnorm_isf",
+    "scu._skewnorm_ppf",
+    "special.factorial2"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "studentized_range",
+   "scipy_version": "1.18.1",
+   "class": "studentized_range_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    12274,
+    12466
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "studentized_range_gen",
+     "lines": [
+      12414,
+      12437
+     ]
+    },
+    "cdf": {
+     "class": "studentized_range_gen",
+     "lines": [
+      12439,
+      12466
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "sf": "1 - cdf",
+    "logsf": "log(sf)",
+    "ppf": "numerical inversion of cdf",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "k",
+     "domain": [
+      1.0000000000000002,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "df",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     3.0,
+     10.0
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x; k, \\nu) = \\frac{k(k-1)\\nu^{\\nu/2}}{\\Gamma(\\nu/2) 2^{\\nu/2-1}} \\int_{0}^{\\infty} \\int_{-\\infty}^{\\infty} s^{\\nu} e^{-\\nu s^2/2} \\phi(z) \\phi(sx + z) [\\Phi(sx + z) - \\Phi(z)]^{k-2} \\,dz \\,ds"
+   ],
+   "helpers": [],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": true,
+   "related": []
+  }
+ ]
+}

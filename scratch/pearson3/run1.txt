@@ -1,0 +1,44 @@
+  ... self-checks (0.1)
+  ... self-checks (-2)
+  ... self-checks (1)
+  ... (0.1) pdf: 160 points, references 0.0 s
+  ... (0.1) logpdf: 160 points, references 0.0 s
+  ... (0.1) cdf: 160 points, references 0.0 s
+  ... (0.1) sf: 160 points, references 1.9 s
+  ... (0.1) ppf: 65 points, references 19.7 s
+  ... (-2) pdf: 160 points, references 0.2 s
+  ... (-2) logpdf: 160 points, references 0.0 s
+  ... (-2) cdf: 160 points, references 0.0 s
+  ... (-2) sf: 160 points, references 0.4 s
+  ... (-2) ppf: 65 points, references 0.7 s
+  ... (1) pdf: 160 points, references 0.0 s
+  ... (1) logpdf: 160 points, references 0.0 s
+  ... (1) cdf: 160 points, references 0.0 s
+  ... (1) sf: 160 points, references 0.4 s
+  ... (1) ppf: 65 points, references 1.1 s
+  ... (-0.1) pdf: 160 points, references 0.1 s
+  ... (-0.1) logpdf: 160 points, references 0.0 s
+  ... (-0.1) cdf: 160 points, references 0.0 s
+  ... (-0.1) sf: 160 points, references 3.9 s
+  ... (-0.1) ppf: 65 points, references 23.2 s
+  ... (0.01) pdf: 162 points, references 0.0 s
+  ... (0.01) logpdf: 162 points, references 0.0 s
+  ... (0.01) cdf: 162 points, references 0.0 s
+  ... (0.01) sf: 162 points, references 13.2 s
+  ... (0.01) ppf: 65 points, references 212.4 s
+  ... (-0.01) pdf: 162 points, references 0.0 s
+  ... (-0.01) logpdf: 162 points, references 0.0 s
+  ... (-0.01) cdf: 162 points, references 0.0 s
+  ... (-0.01) sf: 162 points, references 11.9 s
+  ... (-0.01) ppf: 65 points, references 525.1 s
+  ... (10) pdf: 161 points, references 0.0 s
+  ... (10) logpdf: 161 points, references 0.0 s
+  ... (10) cdf: 161 points, references 0.0 s
+  ... (10) sf: 161 points, references 3.5 s
+  ... (10) ppf: 65 points, references 64.2 s
+  ... (-100) pdf: 162 points, references 0.0 s
+  ... (-100) logpdf: 162 points, references 0.0 s
+  ... (-100) cdf: 162 points, references 0.0 s
+  ... (-100) sf: 162 points, references 5.1 s
+  ... (-100) ppf: 65 points, references 144.9 s
+  ... condition numbers for 1076 points above 8 ulp

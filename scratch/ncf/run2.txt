@@ -1,0 +1,108 @@
+ncf: SciPy 1.18.1, mpmath 1.4.1, 100 digits
+implemented: ['pdf', 'cdf', 'sf', 'ppf', 'isf']; inherited: ['logpdf', 'logcdf', 'logsf']
+measured: ['pdf', 'cdf', 'sf']
+parameter sets: ['(27, 27, 0)', '(1, 1, 1e-20)', '(10, 20, 10000)']
+
+Reference self-checks:
+  WARN: logcdf(27, 27, 0): reference disagrees with scipy at some bulk points (scipy inaccuracy or reference error; check with --at): x, scipy, ref = (1.6493925290854148, 0.6418538861723948, -0.1053605156578263)
+  FAIL: sf(27, 27, 0): reference disagrees with scipy at every bulk point (check the parametrization): x, scipy, ref = (0.606283818051788, -0.1000000000000001, 0.9)
+  NOTE: logsf(27, 27, 0): scipy returns nan in the bulk where the reference is -2.302585092994046 (x = 1.6493925290854148); likely a scipy problem - verify with --at, then report it
+  WARN: cdf(1, 1, 1e-20): reference disagrees with scipy at some bulk points (scipy inaccuracy or reference error; check with --at): x, scipy, ref = (39.86345818906142, 1.0, 0.9)
+
+method  region         n |   scipy 1.18.1: max ulp  median   loss severe moder. minor
+-------------------------------------------------------------------------------------
+pdf     low tail      32 |                     6.8   0.611      0      0      0      0
+        bulk          27 |                     374    0.68      0      0      0      1
+        high tail     52 |                     inf      15     27      9      2      1
+cdf     low tail      32 |                     inf    0.62     11      0      0      0
+        bulk          27 |                 3.5e+15 1.2e+15      0     19      0      0
+        high tail    121 |                 2.9e+11       0      0      4      1      1
+sf      low tail     112 |                     inf       0     41      0      0      0
+        bulk          27 |                     inf    1.68      6      0      0      0
+        high tail     62 |                     inf   0.563     20      0      0      4
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): Error in function cdf(non_central_beta_distribution<double>, %1%): Series did not converge, closest value was %1%
+
+Points beyond conditioning (markdown, worst first per method):
+
+**pdf** (40 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (27, 27, 0) | 1e+16 | 1.3783246012784462e-224 | 0.0 | inf | loss | 14.5 | 478 |
+| (27, 27, 0) | 1e+20 | 1.37832460127845e-282 | 0.0 | inf | loss | 14.5 | 602 |
+| (1, 1, 1e-20) | 1e+16 | 3.1830988618379066e-25 | 0.0 | inf | loss | 1.5 | 17.4 |
+| (1, 1, 1e-20) | 1e+20 | 3.1830988618379067e-31 | 0.0 | inf | loss | 1.5 | 22 |
+| (1, 1, 1e-20) | 1e+30 | 3.1830988618379067e-46 | 0.0 | inf | loss | 1.5 | 33.5 |
+| (1, 1, 1e-20) | 1e+40 | 3.1830988618379065e-61 | 0.0 | inf | loss | 1.5 | 45.1 |
+| (1, 1, 1e-20) | 1e+50 | 3.1830988618379065e-76 | 0.0 | inf | loss | 1.5 | 56.6 |
+| (1, 1, 1e-20) | 1e+60 | 3.183098861837907e-91 | 0.0 | inf | loss | 1.5 | 68.1 |
+| (1, 1, 1e-20) | 1e+70 | 3.1830988618379064e-106 | 0.0 | inf | loss | 1.5 | 79.6 |
+| (1, 1, 1e-20) | 1e+80 | 3.183098861837907e-121 | 0.0 | inf | loss | 1.5 | 91.1 |
+| (1, 1, 1e-20) | 1e+90 | 3.183098861837907e-136 | 0.0 | inf | loss | 1.5 | 103 |
+| (1, 1, 1e-20) | 1e+100 | 3.183098861837907e-151 | 0.0 | inf | loss | 1.5 | 114 |
+| (1, 1, 1e-20) | 1e+110 | 3.1830988618379067e-166 | 0.0 | inf | loss | 1.5 | 126 |
+| (1, 1, 1e-20) | 1e+120 | 3.1830988618379066e-181 | 0.0 | inf | loss | 1.5 | 137 |
+| (1, 1, 1e-20) | 1e+130 | 3.1830988618379064e-196 | 0.0 | inf | loss | 1.5 | 149 |
+
+**cdf** (36 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (1, 1, 1e-20) | 1e-300 | 6.366197723675813e-151 | nan | inf | loss | 0.5 | 345 |
+| (1, 1, 1e-20) | 1e-290 | 6.366197723675813e-146 | nan | inf | loss | 0.5 | 334 |
+| (1, 1, 1e-20) | 1e-280 | 6.366197723675813e-141 | nan | inf | loss | 0.5 | 322 |
+| (1, 1, 1e-20) | 1e-270 | 6.366197723675813e-136 | nan | inf | loss | 0.5 | 311 |
+| (1, 1, 1e-20) | 1e-260 | 6.366197723675814e-131 | nan | inf | loss | 0.5 | 299 |
+| (1, 1, 1e-20) | 1e-250 | 6.366197723675814e-126 | nan | inf | loss | 0.5 | 288 |
+| (1, 1, 1e-20) | 1e-240 | 6.366197723675813e-121 | nan | inf | loss | 0.5 | 276 |
+| (1, 1, 1e-20) | 1e-230 | 6.366197723675814e-116 | nan | inf | loss | 0.5 | 265 |
+| (1, 1, 1e-20) | 1e-220 | 6.366197723675813e-111 | nan | inf | loss | 0.5 | 253 |
+| (1, 1, 1e-20) | 1e-210 | 6.366197723675814e-106 | nan | inf | loss | 0.5 | 242 |
+| (1, 1, 1e-20) | 1e-200 | 6.366197723675814e-101 | nan | inf | loss | 0.5 | 230 |
+| (1, 1, 1e-20) | 1.5 | 0.564094216848975 | 1.0 | 3.5e+15 | severe | 0.276 | 0.469 |
+| (1, 1, 1e-20) | 2.0 | 0.6081734479693928 | 1.0 | 2.9e+15 | severe | 0.247 | 0.435 |
+| (1, 1, 1e-20) | 2.5 | 0.6409829640286239 | 1.0 | 2.5e+15 | severe | 0.224 | 0.412 |
+| (1, 1, 1e-20) | 3.0 | 0.6666666666666666 | 1.0 | 2.3e+15 | severe | 0.207 | 0.394 |
+
+**sf** (71 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| (27, 27, 0) | 1e-300 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-290 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-280 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-270 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-260 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-250 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-240 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-230 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-220 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-210 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-200 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-190 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-180 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-170 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+| (27, 27, 0) | 1e-160 | 1.0 | -0.0 | inf | loss | 0 | 0 |
+
+Worst ulp per parameter set ('inf' = 0/inf/nan where the reference is finite):
+
+pdf:
+  shapes                        scipy 1.18.1  cond there
+  (27, 27, 0)                            inf        14.5
+  (1, 1, 1e-20)                          inf         1.5
+  (10, 20, 10000)                        inf          11
+
+cdf:
+  shapes                        scipy 1.18.1  cond there
+  (27, 27, 0)                           10.1        13.5
+  (1, 1, 1e-20)                          inf         0.5
+  (10, 20, 10000)                         31    1.67e-09
+
+sf:
+  shapes                        scipy 1.18.1  cond there
+  (27, 27, 0)                            inf           0
+  (1, 1, 1e-20)                          inf           0
+  (10, 20, 10000)                        213          10
+
+points written to scratch/ncf/run2.json
+done in 571 s
