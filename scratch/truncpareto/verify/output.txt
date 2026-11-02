@@ -1,0 +1,35 @@
+F1 pdf(5, -1000, 5) scipy=np.float64(nan) ref=200.0 ulp=inf agree30=True
+F1 pdf(4.99, -440.5, 5) scipy=np.float64(inf) ref=36.546753516811604 ulp=inf agree30=True
+F1 logpdf(1, -1000, 5) scipy=np.float64(-inf) ref=-1602.5301571551182 ulp=inf agree30=True
+F1 cdf(3, -1000, 5) scipy=np.float64(nan) ref=1.4166102623834862e-222 ulp=inf agree30=True dcdf/pdf-1=1.66e-75 cdf+sf-1=0.0
+F1 logcdf(1.000000000001, -1000, 5) scipy=np.float64(-inf) ref=-1630.1610893739163 ulp=inf agree30=True dcdf/pdf-1=1.66e-75 cdf+sf-1=0.0
+F1 sf(4.9999999996, -1000, 5) scipy=np.float64(nan) ref=8.0000003422429236e-8 ulp=inf agree30=True dcdf/pdf-1=1.66e-75 cdf+sf-1=1.1e-198
+F1 ppf(0.5, -1000, 5) scipy=np.float64(inf) ref=4.9965354649522626 ulp=inf agree30=True resid=-2.21e-99
+F1 isf(0.5, -1000, 5) scipy=np.float64(nan) ref=4.9965354649522626 ulp=inf agree30=True resid=2.38e-99
+F1 pdf(1e+100, -2, 1e+200) scipy=np.float64(0.0) ref=2.0000000000000002e-300 ulp=4.5e+15 agree30=True
+F1 logpdf(1, -2, 1e+200) scipy=np.float64(-inf) ref=-920.34089001705833 ulp=inf agree30=True
+F1 cdf(1e+100, -2, 1e+200) scipy=np.float64(0.0) ref=1.0000000000000001e-200 ulp=4.5e+15 agree30=True dcdf/pdf-1=0.0 cdf+sf-1=0.0
+F1 logsf(1e+100, -2, 1e+200) scipy=np.float64(-0.0) ref=-1.0000000000000001e-200 ulp=4.5e+15 agree30=True dcdf/pdf-1=-1.0 cdf+sf-1=0.0
+F1 ppf(0.5, -2, 1e+200) scipy=np.float64(inf) ref=7.071067811865475e+199 ulp=inf agree30=True resid=1.45e-99
+F2 cdf(1.000000000001, 1e-08, 5) scipy=np.float64(0.0) ref=6.2139017659725677e-13 ulp=4.5e+15 agree30=True dcdf/pdf-1=3.33e-81 cdf+sf-1=0.0
+F2 logcdf(1.000000000001, 1e-08, 5) scipy=np.float64(-inf) ref=-28.106817206578051 ulp=inf agree30=True dcdf/pdf-1=3.33e-81 cdf+sf-1=0.0
+F2 logsf(1.000000000001, 1e-08, 5) scipy=np.float64(0.0) ref=-6.2139017659744983e-13 ulp=4.5e+15 agree30=True dcdf/pdf-1=3.33e-81 cdf+sf-1=0.0
+F2 sf(4.9999999996, 1e-08, 5) scipy=np.float64(0.0) ref=4.9706798479515825e-11 ulp=4.5e+15 agree30=True dcdf/pdf-1=3.33e-81 cdf+sf-1=-8.17e-202
+F2 logsf(4.9999999996, 1e-08, 5) scipy=np.float64(-inf) ref=-23.724879401848599 ulp=inf agree30=True dcdf/pdf-1=3.33e-81 cdf+sf-1=-8.17e-202
+F2 logcdf(4.9999999996, 1e-08, 5) scipy=np.float64(0.0) ref=-4.9706798480751208e-11 ulp=4.5e+15 agree30=True dcdf/pdf-1=3.33e-81 cdf+sf-1=-8.17e-202
+F2 logcdf(1.000000000001, -1e-08, 5) scipy=np.float64(-inf) ref=-28.10681722267243 ulp=inf agree30=True dcdf/pdf-1=3.33e-81 cdf+sf-1=-8.17e-202
+F3 logsf(2.1064414349807272, 1000, 5) scipy=np.float64(-744.4400719213812) ref=-745.00000000000007 ulp=3.38e+12 agree30=True dcdf/pdf-1=1.67e-75 cdf+sf-1=0.0
+F3 logsf(2.2, 1000, 5) scipy=np.float64(-inf) ref=-788.45736036427025 ulp=inf agree30=True dcdf/pdf-1=1.67e-75 cdf+sf-1=0.0
+F3 logsf(2.4000000000000004, 1000, 5) scipy=np.float64(-inf) ref=-875.46873735390008 ulp=inf agree30=True dcdf/pdf-1=1.67e-75 cdf+sf-1=0.0
+F4 pdf(1, 1e-08, 5) scipy=np.float64(0.6213349416500269) ref=0.62133493955961182 ulp=1.52e+07 agree30=True
+F4 pdf(1, -1e-08, 5) scipy=np.float64(0.6213349330778372) ref=0.62133492955961182 ulp=2.55e+07 agree30=True
+F4 pdf(1, 2, 1.00000001) scipy=np.float64(100000002.82819323) ref=100000002.1077471 ulp=3.24e+07 agree30=True
+F4 logpdf(1, -1e-08, 5) scipy=np.float64(-0.47588499771193493) ref=-0.47588500337430019 ulp=5.36e+07 agree30=True
+F4 cdf(4.999999949999999, 1e-08, 5) scipy=np.float64(1.0) ref=0.9999999937866506 ulp=2.8e+07 agree30=True dcdf/pdf-1=3.33e-81 cdf+sf-1=0.0
+F4 sf(1.00000001, 1e-08, 5) scipy=np.float64(0.9999999931017964) ref=0.99999999378665067 ulp=3.08e+06 agree30=True dcdf/pdf-1=3.33e-81 cdf+sf-1=-1.63e-201
+F4 pdf(3, 1e-05, 5) scipy=np.float64(0.20711103616377133) ref=0.2071110361645481 ulp=1.69e+04 agree30=True
+F4 pdf(1.00005, 2, 1.0001) scipy=np.float64(9999.999950009716) ref=9999.9999500060977 ulp=1.63e+03 agree30=True
+F5 ppf(0.01, 1e-08, 5) scipy=np.float64(1.0162245935641185) ref=1.016224591137026 ulp=1.08e+07 agree30=True resid=-6.41e-95
+F5 ppf(0.5, -1e-08, 5) scipy=np.float64(2.2360679745509757) ref=2.2360679847398715 ulp=2.05e+07 agree30=True resid=-5.88e-94
+F5 isf(1e-300, 1e-08, 5) scipy=np.float64(4.9999999729260916) ref=5.0 ulp=2.44e+07 agree30=True resid=-2.19e-94
+F5 ppf(0.5, 0.001, 5) scipy=np.float64(2.2353440866019896) ref=2.2353440866019195 ulp=141 agree30=True resid=-5.93e-100

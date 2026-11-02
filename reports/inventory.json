@@ -3021,6 +3021,88 @@
    "related": []
   },
   {
+   "name": "gibrat",
+   "scipy_version": "1.18.1",
+   "class": "gibrat_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    7061,
+    7119
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "gibrat_gen",
+     "lines": [
+      7091,
+      7093
+     ]
+    },
+    "logpdf": {
+     "class": "gibrat_gen",
+     "lines": [
+      7095,
+      7096
+     ]
+    },
+    "cdf": {
+     "class": "gibrat_gen",
+     "lines": [
+      7098,
+      7099
+     ]
+    },
+    "sf": {
+     "class": "gibrat_gen",
+     "lines": [
+      7104,
+      7105
+     ]
+    },
+    "ppf": {
+     "class": "gibrat_gen",
+     "lines": [
+      7101,
+      7102
+     ]
+    },
+    "isf": {
+     "class": "gibrat_gen",
+     "lines": [
+      7107,
+      7108
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [],
+   "example_params": [
+    []
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x) = \\frac{1}{x \\sqrt{2\\pi}} \\exp(-\\frac{1}{2} (\\log(x))^2)"
+   ],
+   "helpers": [
+    "_lognorm_logpdf",
+    "_norm_cdf",
+    "_norm_isf",
+    "_norm_ppf",
+    "_norm_sf"
+   ],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
    "name": "gompertz",
    "scipy_version": "1.18.1",
    "class": "gompertz_gen",
@@ -4136,6 +4218,94 @@
    "related": []
   },
   {
+   "name": "kappa3",
+   "scipy_version": "1.18.1",
+   "class": "kappa3_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    7532,
+    7606
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "kappa3_gen",
+     "lines": [
+      7568,
+      7570
+     ]
+    },
+    "cdf": {
+     "class": "kappa3_gen",
+     "lines": [
+      7572,
+      7573
+     ]
+    },
+    "sf": {
+     "class": "kappa3_gen",
+     "lines": [
+      7575,
+      7589
+     ]
+    },
+    "ppf": {
+     "class": "kappa3_gen",
+     "lines": [
+      7591,
+      7592
+     ]
+    },
+    "isf": {
+     "class": "kappa3_gen",
+     "lines": [
+      7594,
+      7597
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "a",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     1.0
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, a) = a (a + x^a)^{-(a + 1)/a}"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.expm1",
+    "sc.xlog1py"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
    "name": "kappa4",
    "scipy_version": "1.18.1",
    "class": "kappa4_gen",
@@ -4639,660 +4809,6 @@
    "related": []
   },
   {
-   "name": "logistic",
-   "scipy_version": "1.18.1",
-   "class": "logistic_gen",
-   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
-   "class_lines": [
-    6514,
-    6627
-   ],
-   "implemented": {
-    "pdf": {
-     "class": "logistic_gen",
-     "lines": [
-      6544,
-      6546
-     ]
-    },
-    "logpdf": {
-     "class": "logistic_gen",
-     "lines": [
-      6548,
-      6550
-     ]
-    },
-    "cdf": {
-     "class": "logistic_gen",
-     "lines": [
-      6552,
-      6553
-     ]
-    },
-    "logcdf": {
-     "class": "logistic_gen",
-     "lines": [
-      6555,
-      6556
-     ]
-    },
-    "sf": {
-     "class": "logistic_gen",
-     "lines": [
-      6561,
-      6562
-     ]
-    },
-    "logsf": {
-     "class": "logistic_gen",
-     "lines": [
-      6564,
-      6565
-     ]
-    },
-    "ppf": {
-     "class": "logistic_gen",
-     "lines": [
-      6558,
-      6559
-     ]
-    },
-    "isf": {
-     "class": "logistic_gen",
-     "lines": [
-      6567,
-      6568
-     ]
-    }
-   },
-   "inherited": {},
-   "shapes": [],
-   "example_params": [
-    []
-   ],
-   "support_for_example": [
-    -Infinity,
-    Infinity
-   ],
-   "get_support_overridden": false,
-   "pdf_in_docstring": [
-    "f(x) = \\frac{\\exp(-x)} {(1+\\exp(-x))^2}"
-   ],
-   "helpers": [
-    "_check_fit_input_parameters"
-   ],
-   "special_functions": [
-    "sc.expit",
-    "sc.log1p",
-    "sc.log_expit",
-    "sc.logit"
-   ],
-   "base_classes": [],
-   "calls_into": [],
-   "light_review": false,
-   "related": []
-  },
-  {
-   "name": "mielke",
-   "scipy_version": "1.18.1",
-   "class": "mielke_gen",
-   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
-   "class_lines": [
-    7193,
-    7252
-   ],
-   "implemented": {
-    "pdf": {
-     "class": "mielke_gen",
-     "lines": [
-      7232,
-      7233
-     ]
-    },
-    "logpdf": {
-     "class": "mielke_gen",
-     "lines": [
-      7235,
-      7238
-     ]
-    },
-    "cdf": {
-     "class": "mielke_gen",
-     "lines": [
-      7240,
-      7241
-     ]
-    },
-    "ppf": {
-     "class": "mielke_gen",
-     "lines": [
-      7243,
-      7245
-     ]
-    }
-   },
-   "inherited": {
-    "logcdf": "log(cdf)",
-    "sf": "1 - cdf",
-    "logsf": "log(sf)",
-    "isf": "ppf(1 - q)"
-   },
-   "shapes": [
-    {
-     "name": "k",
-     "domain": [
-      5e-324,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    },
-    {
-     "name": "s",
-     "domain": [
-      5e-324,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    }
-   ],
-   "example_params": [
-    [
-     10.4,
-     4.6
-    ]
-   ],
-   "support_for_example": [
-    0.0,
-    Infinity
-   ],
-   "get_support_overridden": false,
-   "pdf_in_docstring": [
-    "f(x, k, s) = \\frac{k x^{k-1}}{(1+x^s)^{1+k/s}}"
-   ],
-   "helpers": [],
-   "special_functions": [
-    "sc.gamma"
-   ],
-   "base_classes": [],
-   "calls_into": [],
-   "light_review": false,
-   "related": []
-  },
-  {
-   "name": "norminvgauss",
-   "scipy_version": "1.18.1",
-   "class": "norminvgauss_gen",
-   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
-   "class_lines": [
-    5516,
-    5653
-   ],
-   "implemented": {
-    "pdf": {
-     "class": "norminvgauss_gen",
-     "lines": [
-      5585,
-      5589
-     ]
-    },
-    "cdf": {
-     "class": "norminvgauss_gen",
-     "lines": [
-      5591,
-      5592
-     ]
-    },
-    "sf": {
-     "class": "norminvgauss_gen",
-     "lines": [
-      5594,
-      5595
-     ]
-    },
-    "isf": {
-     "class": "norminvgauss_gen",
-     "lines": [
-      5597,
-      5637
-     ]
-    }
-   },
-   "inherited": {
-    "logpdf": "log(pdf)",
-    "logcdf": "log(cdf)",
-    "logsf": "log(sf)",
-    "ppf": "numerical inversion of cdf"
-   },
-   "shapes": [
-    {
-     "name": "a",
-     "domain": [
-      5e-324,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    },
-    {
-     "name": "b",
-     "domain": [
-      -Infinity,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    }
-   ],
-   "example_params": [
-    [
-     1.25,
-     0.5
-    ]
-   ],
-   "support_for_example": [
-    -Infinity,
-    Infinity
-   ],
-   "get_support_overridden": false,
-   "pdf_in_docstring": [
-    "f(x, a, b) = \\frac{a \\, K_1(a \\sqrt{1 + x^2})}{\\pi \\sqrt{1 + x^2}} \\, \\exp(\\sqrt{a^2 - b^2} + b x)",
-    "g(x, \\alpha, \\beta, \\delta, \\mu) = \\frac{\\alpha\\delta K_1\\left(\\alpha\\sqrt{\\delta^2 + (x - \\mu)^2}\\right)} {\\pi \\sqrt{\\delta^2 + (x - \\mu)^2}} \\, e^{\\delta \\sqrt{\\alpha^2 - \\beta^2} + \\beta (x - \\mu)}"
-   ],
-   "helpers": [],
-   "special_functions": [
-    "sc.k1e",
-    "special.k1"
-   ],
-   "base_classes": [],
-   "calls_into": [],
-   "light_review": false,
-   "related": []
-  },
-  {
-   "name": "pareto",
-   "scipy_version": "1.18.1",
-   "class": "pareto_gen",
-   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
-   "class_lines": [
-    8211,
-    8366
-   ],
-   "implemented": {
-    "pdf": {
-     "class": "pareto_gen",
-     "lines": [
-      8236,
-      8238
-     ]
-    },
-    "cdf": {
-     "class": "pareto_gen",
-     "lines": [
-      8240,
-      8241
-     ]
-    },
-    "sf": {
-     "class": "pareto_gen",
-     "lines": [
-      8246,
-      8247
-     ]
-    },
-    "ppf": {
-     "class": "pareto_gen",
-     "lines": [
-      8243,
-      8244
-     ]
-    },
-    "isf": {
-     "class": "pareto_gen",
-     "lines": [
-      8249,
-      8250
-     ]
-    }
-   },
-   "inherited": {
-    "logpdf": "log(pdf)",
-    "logcdf": "log(cdf)",
-    "logsf": "log(sf)"
-   },
-   "shapes": [
-    {
-     "name": "b",
-     "domain": [
-      5e-324,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    }
-   ],
-   "example_params": [
-    [
-     2.621716532144454
-    ]
-   ],
-   "support_for_example": [
-    1.0,
-    Infinity
-   ],
-   "get_support_overridden": false,
-   "pdf_in_docstring": [
-    "f(x, b) = \\frac{b}{x^{b+1}}"
-   ],
-   "helpers": [
-    "_check_fit_input_parameters"
-   ],
-   "special_functions": [],
-   "base_classes": [],
-   "calls_into": [],
-   "light_review": false,
-   "related": []
-  },
-  {
-   "name": "weibull_max",
-   "scipy_version": "1.18.1",
-   "class": "weibull_max_gen",
-   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
-   "class_lines": [
-    3006,
-    3074
-   ],
-   "implemented": {
-    "pdf": {
-     "class": "weibull_max_gen",
-     "lines": [
-      3046,
-      3048
-     ]
-    },
-    "logpdf": {
-     "class": "weibull_max_gen",
-     "lines": [
-      3050,
-      3051
-     ]
-    },
-    "cdf": {
-     "class": "weibull_max_gen",
-     "lines": [
-      3053,
-      3054
-     ]
-    },
-    "logcdf": {
-     "class": "weibull_max_gen",
-     "lines": [
-      3056,
-      3057
-     ]
-    },
-    "sf": {
-     "class": "weibull_max_gen",
-     "lines": [
-      3059,
-      3060
-     ]
-    },
-    "ppf": {
-     "class": "weibull_max_gen",
-     "lines": [
-      3062,
-      3063
-     ]
-    }
-   },
-   "inherited": {
-    "logsf": "log(sf)",
-    "isf": "ppf(1 - q)"
-   },
-   "shapes": [
-    {
-     "name": "c",
-     "domain": [
-      5e-324,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    }
-   ],
-   "example_params": [
-    [
-     2.8687961709100187
-    ]
-   ],
-   "support_for_example": [
-    -Infinity,
-    0.0
-   ],
-   "get_support_overridden": false,
-   "pdf_in_docstring": [
-    "f(x, c) = c (-x)^{c-1} \\exp(-(-x)^c)"
-   ],
-   "helpers": [],
-   "special_functions": [
-    "sc.expm1",
-    "sc.gamma",
-    "sc.xlogy"
-   ],
-   "base_classes": [],
-   "calls_into": [],
-   "light_review": false,
-   "related": []
-  },
-  {
-   "name": "weibull_min",
-   "scipy_version": "1.18.1",
-   "class": "weibull_min_gen",
-   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
-   "class_lines": [
-    2731,
-    2889
-   ],
-   "implemented": {
-    "pdf": {
-     "class": "weibull_min_gen",
-     "lines": [
-      2779,
-      2781
-     ]
-    },
-    "logpdf": {
-     "class": "weibull_min_gen",
-     "lines": [
-      2783,
-      2784
-     ]
-    },
-    "cdf": {
-     "class": "weibull_min_gen",
-     "lines": [
-      2786,
-      2787
-     ]
-    },
-    "sf": {
-     "class": "weibull_min_gen",
-     "lines": [
-      2792,
-      2793
-     ]
-    },
-    "logsf": {
-     "class": "weibull_min_gen",
-     "lines": [
-      2795,
-      2796
-     ]
-    },
-    "ppf": {
-     "class": "weibull_min_gen",
-     "lines": [
-      2789,
-      2790
-     ]
-    },
-    "isf": {
-     "class": "weibull_min_gen",
-     "lines": [
-      2798,
-      2799
-     ]
-    }
-   },
-   "inherited": {
-    "logcdf": "log(cdf)"
-   },
-   "shapes": [
-    {
-     "name": "c",
-     "domain": [
-      5e-324,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    }
-   ],
-   "example_params": [
-    [
-     1.7866166930421596
-    ]
-   ],
-   "support_for_example": [
-    0.0,
-    Infinity
-   ],
-   "get_support_overridden": false,
-   "pdf_in_docstring": [
-    "f(x, c) = c x^{c-1} \\exp(-x^c)"
-   ],
-   "helpers": [
-    "_check_fit_input_parameters"
-   ],
-   "special_functions": [
-    "sc.expm1",
-    "sc.gamma",
-    "sc.log1p",
-    "sc.xlogy"
-   ],
-   "base_classes": [],
-   "calls_into": [],
-   "light_review": false,
-   "related": [
-    "dweibull"
-   ]
-  },
-  {
-   "name": "gibrat",
-   "scipy_version": "1.18.1",
-   "class": "gibrat_gen",
-   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
-   "class_lines": [
-    7061,
-    7119
-   ],
-   "implemented": {
-    "pdf": {
-     "class": "gibrat_gen",
-     "lines": [
-      7091,
-      7093
-     ]
-    },
-    "logpdf": {
-     "class": "gibrat_gen",
-     "lines": [
-      7095,
-      7096
-     ]
-    },
-    "cdf": {
-     "class": "gibrat_gen",
-     "lines": [
-      7098,
-      7099
-     ]
-    },
-    "sf": {
-     "class": "gibrat_gen",
-     "lines": [
-      7104,
-      7105
-     ]
-    },
-    "ppf": {
-     "class": "gibrat_gen",
-     "lines": [
-      7101,
-      7102
-     ]
-    },
-    "isf": {
-     "class": "gibrat_gen",
-     "lines": [
-      7107,
-      7108
-     ]
-    }
-   },
-   "inherited": {
-    "logcdf": "log(cdf)",
-    "logsf": "log(sf)"
-   },
-   "shapes": [],
-   "example_params": [
-    []
-   ],
-   "support_for_example": [
-    0.0,
-    Infinity
-   ],
-   "get_support_overridden": false,
-   "pdf_in_docstring": [
-    "f(x) = \\frac{1}{x \\sqrt{2\\pi}} \\exp(-\\frac{1}{2} (\\log(x))^2)"
-   ],
-   "helpers": [
-    "_lognorm_logpdf",
-    "_norm_cdf",
-    "_norm_isf",
-    "_norm_ppf",
-    "_norm_sf"
-   ],
-   "special_functions": [],
-   "base_classes": [],
-   "calls_into": [],
-   "light_review": false,
-   "related": []
-  },
-  {
    "name": "loggamma",
    "scipy_version": "1.18.1",
    "class": "loggamma_gen",
@@ -5395,6 +4911,100 @@
    "related": [
     "norm"
    ]
+  },
+  {
+   "name": "logistic",
+   "scipy_version": "1.18.1",
+   "class": "logistic_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    6514,
+    6627
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "logistic_gen",
+     "lines": [
+      6544,
+      6546
+     ]
+    },
+    "logpdf": {
+     "class": "logistic_gen",
+     "lines": [
+      6548,
+      6550
+     ]
+    },
+    "cdf": {
+     "class": "logistic_gen",
+     "lines": [
+      6552,
+      6553
+     ]
+    },
+    "logcdf": {
+     "class": "logistic_gen",
+     "lines": [
+      6555,
+      6556
+     ]
+    },
+    "sf": {
+     "class": "logistic_gen",
+     "lines": [
+      6561,
+      6562
+     ]
+    },
+    "logsf": {
+     "class": "logistic_gen",
+     "lines": [
+      6564,
+      6565
+     ]
+    },
+    "ppf": {
+     "class": "logistic_gen",
+     "lines": [
+      6558,
+      6559
+     ]
+    },
+    "isf": {
+     "class": "logistic_gen",
+     "lines": [
+      6567,
+      6568
+     ]
+    }
+   },
+   "inherited": {},
+   "shapes": [],
+   "example_params": [
+    []
+   ],
+   "support_for_example": [
+    -Infinity,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x) = \\frac{\\exp(-x)} {(1+\\exp(-x))^2}"
+   ],
+   "helpers": [
+    "_check_fit_input_parameters"
+   ],
+   "special_functions": [
+    "sc.expit",
+    "sc.log1p",
+    "sc.log_expit",
+    "sc.logit"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
   },
   {
    "name": "loglaplace",
@@ -5595,6 +5205,106 @@
    "related": []
   },
   {
+   "name": "lomax",
+   "scipy_version": "1.18.1",
+   "class": "lomax_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    8372,
+    8426
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "lomax_gen",
+     "lines": [
+      8399,
+      8401
+     ]
+    },
+    "logpdf": {
+     "class": "lomax_gen",
+     "lines": [
+      8403,
+      8404
+     ]
+    },
+    "cdf": {
+     "class": "lomax_gen",
+     "lines": [
+      8406,
+      8407
+     ]
+    },
+    "sf": {
+     "class": "lomax_gen",
+     "lines": [
+      8409,
+      8410
+     ]
+    },
+    "logsf": {
+     "class": "lomax_gen",
+     "lines": [
+      8412,
+      8413
+     ]
+    },
+    "ppf": {
+     "class": "lomax_gen",
+     "lines": [
+      8415,
+      8416
+     ]
+    },
+    "isf": {
+     "class": "lomax_gen",
+     "lines": [
+      8418,
+      8419
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     1.8771398388773268
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, c) = \\frac{c}{(1+x)^{c+1}}"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.expm1",
+    "sc.log1p"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
    "name": "maxwell",
    "scipy_version": "1.18.1",
    "class": "maxwell_gen",
@@ -5676,59 +5386,65 @@
    "related": []
   },
   {
-   "name": "kappa3",
+   "name": "mielke",
    "scipy_version": "1.18.1",
-   "class": "kappa3_gen",
+   "class": "mielke_gen",
    "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
    "class_lines": [
-    7532,
-    7606
+    7193,
+    7252
    ],
    "implemented": {
     "pdf": {
-     "class": "kappa3_gen",
+     "class": "mielke_gen",
      "lines": [
-      7568,
-      7570
+      7232,
+      7233
+     ]
+    },
+    "logpdf": {
+     "class": "mielke_gen",
+     "lines": [
+      7235,
+      7238
      ]
     },
     "cdf": {
-     "class": "kappa3_gen",
+     "class": "mielke_gen",
      "lines": [
-      7572,
-      7573
-     ]
-    },
-    "sf": {
-     "class": "kappa3_gen",
-     "lines": [
-      7575,
-      7589
+      7240,
+      7241
      ]
     },
     "ppf": {
-     "class": "kappa3_gen",
+     "class": "mielke_gen",
      "lines": [
-      7591,
-      7592
-     ]
-    },
-    "isf": {
-     "class": "kappa3_gen",
-     "lines": [
-      7594,
-      7597
+      7243,
+      7245
      ]
     }
    },
    "inherited": {
-    "logpdf": "log(pdf)",
     "logcdf": "log(cdf)",
-    "logsf": "log(sf)"
+    "sf": "1 - cdf",
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
    },
    "shapes": [
     {
-     "name": "a",
+     "name": "k",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "s",
      "domain": [
       5e-324,
       Infinity
@@ -5742,7 +5458,8 @@
    ],
    "example_params": [
     [
-     1.0
+     10.4,
+     4.6
     ]
    ],
    "support_for_example": [
@@ -5751,12 +5468,11 @@
    ],
    "get_support_overridden": false,
    "pdf_in_docstring": [
-    "f(x, a) = a (a + x^a)^{-(a + 1)/a}"
+    "f(x, k, s) = \\frac{k x^{k-1}}{(1+x^s)^{1+k/s}}"
    ],
    "helpers": [],
    "special_functions": [
-    "sc.expm1",
-    "sc.xlog1py"
+    "sc.gamma"
    ],
    "base_classes": [],
    "calls_into": [],
@@ -6060,6 +5776,114 @@
    "related": []
   },
   {
+   "name": "nct",
+   "scipy_version": "1.18.1",
+   "class": "nct_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    8137,
+    8205
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "nct_gen",
+     "lines": [
+      8183,
+      8184
+     ]
+    },
+    "cdf": {
+     "class": "nct_gen",
+     "lines": [
+      8186,
+      8187
+     ]
+    },
+    "sf": {
+     "class": "nct_gen",
+     "lines": [
+      8192,
+      8194
+     ]
+    },
+    "ppf": {
+     "class": "nct_gen",
+     "lines": [
+      8189,
+      8190
+     ]
+    },
+    "isf": {
+     "class": "nct_gen",
+     "lines": [
+      8196,
+      8198
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "df",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "nc",
+     "domain": [
+      -Infinity,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     14.0,
+     0.24045031331198066
+    ]
+   ],
+   "support_for_example": [
+    -Infinity,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "X = \\frac{Y + c}{\\sqrt{V/k}}"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.nctdtr",
+    "sc.nctdtrit",
+    "scu._nct_isf",
+    "scu._nct_kurtosis_excess",
+    "scu._nct_mean",
+    "scu._nct_pdf",
+    "scu._nct_sf",
+    "scu._nct_skewness",
+    "scu._nct_variance"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
    "name": "ncx2",
    "scipy_version": "1.18.1",
    "class": "ncx2_gen",
@@ -6175,263 +5999,53 @@
    ]
   },
   {
-   "name": "t",
+   "name": "norminvgauss",
    "scipy_version": "1.18.1",
-   "class": "t_gen",
+   "class": "norminvgauss_gen",
    "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
    "class_lines": [
-    8022,
-    8131
+    5516,
+    5653
    ],
    "implemented": {
     "pdf": {
-     "class": "t_gen",
+     "class": "norminvgauss_gen",
      "lines": [
-      8059,
-      8063
-     ]
-    },
-    "logpdf": {
-     "class": "t_gen",
-     "lines": [
-      8065,
-      8075
+      5585,
+      5589
      ]
     },
     "cdf": {
-     "class": "t_gen",
+     "class": "norminvgauss_gen",
      "lines": [
-      8077,
-      8078
+      5591,
+      5592
      ]
     },
     "sf": {
-     "class": "t_gen",
+     "class": "norminvgauss_gen",
      "lines": [
-      8080,
-      8081
-     ]
-    },
-    "ppf": {
-     "class": "t_gen",
-     "lines": [
-      8083,
-      8084
+      5594,
+      5595
      ]
     },
     "isf": {
-     "class": "t_gen",
+     "class": "norminvgauss_gen",
      "lines": [
-      8086,
-      8087
-     ]
-    }
-   },
-   "inherited": {
-    "logcdf": "log(cdf)",
-    "logsf": "log(sf)"
-   },
-   "shapes": [
-    {
-     "name": "df",
-     "domain": [
-      5e-324,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    }
-   ],
-   "example_params": [
-    [
-     2.7433514990818093
-    ]
-   ],
-   "support_for_example": [
-    -Infinity,
-    Infinity
-   ],
-   "get_support_overridden": false,
-   "pdf_in_docstring": [
-    "f(x, \\nu) = \\frac{\\Gamma((\\nu+1)/2)} {\\sqrt{\\pi \\nu} \\Gamma(\\nu/2)} (1+x^2/\\nu)^{-(\\nu+1)/2}"
-   ],
-   "helpers": [
-    "_lazyselect"
-   ],
-   "special_functions": [
-    "sc.beta",
-    "sc.digamma",
-    "sc.poch",
-    "sc.stdtr",
-    "sc.stdtrit",
-    "special.gamma"
-   ],
-   "base_classes": [],
-   "calls_into": [
-    "norm"
-   ],
-   "light_review": false,
-   "related": [
-    "norm"
-   ]
-  },
-  {
-   "name": "lomax",
-   "scipy_version": "1.18.1",
-   "class": "lomax_gen",
-   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
-   "class_lines": [
-    8372,
-    8426
-   ],
-   "implemented": {
-    "pdf": {
-     "class": "lomax_gen",
-     "lines": [
-      8399,
-      8401
-     ]
-    },
-    "logpdf": {
-     "class": "lomax_gen",
-     "lines": [
-      8403,
-      8404
-     ]
-    },
-    "cdf": {
-     "class": "lomax_gen",
-     "lines": [
-      8406,
-      8407
-     ]
-    },
-    "sf": {
-     "class": "lomax_gen",
-     "lines": [
-      8409,
-      8410
-     ]
-    },
-    "logsf": {
-     "class": "lomax_gen",
-     "lines": [
-      8412,
-      8413
-     ]
-    },
-    "ppf": {
-     "class": "lomax_gen",
-     "lines": [
-      8415,
-      8416
-     ]
-    },
-    "isf": {
-     "class": "lomax_gen",
-     "lines": [
-      8418,
-      8419
-     ]
-    }
-   },
-   "inherited": {
-    "logcdf": "log(cdf)"
-   },
-   "shapes": [
-    {
-     "name": "c",
-     "domain": [
-      5e-324,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    }
-   ],
-   "example_params": [
-    [
-     1.8771398388773268
-    ]
-   ],
-   "support_for_example": [
-    0.0,
-    Infinity
-   ],
-   "get_support_overridden": false,
-   "pdf_in_docstring": [
-    "f(x, c) = \\frac{c}{(1+x)^{c+1}}"
-   ],
-   "helpers": [],
-   "special_functions": [
-    "sc.expm1",
-    "sc.log1p"
-   ],
-   "base_classes": [],
-   "calls_into": [],
-   "light_review": false,
-   "related": []
-  },
-  {
-   "name": "nct",
-   "scipy_version": "1.18.1",
-   "class": "nct_gen",
-   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
-   "class_lines": [
-    8137,
-    8205
-   ],
-   "implemented": {
-    "pdf": {
-     "class": "nct_gen",
-     "lines": [
-      8183,
-      8184
-     ]
-    },
-    "cdf": {
-     "class": "nct_gen",
-     "lines": [
-      8186,
-      8187
-     ]
-    },
-    "sf": {
-     "class": "nct_gen",
-     "lines": [
-      8192,
-      8194
-     ]
-    },
-    "ppf": {
-     "class": "nct_gen",
-     "lines": [
-      8189,
-      8190
-     ]
-    },
-    "isf": {
-     "class": "nct_gen",
-     "lines": [
-      8196,
-      8198
+      5597,
+      5637
      ]
     }
    },
    "inherited": {
     "logpdf": "log(pdf)",
     "logcdf": "log(cdf)",
-    "logsf": "log(sf)"
+    "logsf": "log(sf)",
+    "ppf": "numerical inversion of cdf"
    },
    "shapes": [
     {
-     "name": "df",
+     "name": "a",
      "domain": [
       5e-324,
       Infinity
@@ -6443,7 +6057,7 @@
      "integrality": false
     },
     {
-     "name": "nc",
+     "name": "b",
      "domain": [
       -Infinity,
       Infinity
@@ -6457,8 +6071,8 @@
    ],
    "example_params": [
     [
-     14.0,
-     0.24045031331198066
+     1.25,
+     0.5
     ]
    ],
    "support_for_example": [
@@ -6467,20 +6081,101 @@
    ],
    "get_support_overridden": false,
    "pdf_in_docstring": [
-    "X = \\frac{Y + c}{\\sqrt{V/k}}"
+    "f(x, a, b) = \\frac{a \\, K_1(a \\sqrt{1 + x^2})}{\\pi \\sqrt{1 + x^2}} \\, \\exp(\\sqrt{a^2 - b^2} + b x)",
+    "g(x, \\alpha, \\beta, \\delta, \\mu) = \\frac{\\alpha\\delta K_1\\left(\\alpha\\sqrt{\\delta^2 + (x - \\mu)^2}\\right)} {\\pi \\sqrt{\\delta^2 + (x - \\mu)^2}} \\, e^{\\delta \\sqrt{\\alpha^2 - \\beta^2} + \\beta (x - \\mu)}"
    ],
    "helpers": [],
    "special_functions": [
-    "sc.nctdtr",
-    "sc.nctdtrit",
-    "scu._nct_isf",
-    "scu._nct_kurtosis_excess",
-    "scu._nct_mean",
-    "scu._nct_pdf",
-    "scu._nct_sf",
-    "scu._nct_skewness",
-    "scu._nct_variance"
+    "sc.k1e",
+    "special.k1"
    ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "pareto",
+   "scipy_version": "1.18.1",
+   "class": "pareto_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    8211,
+    8366
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "pareto_gen",
+     "lines": [
+      8236,
+      8238
+     ]
+    },
+    "cdf": {
+     "class": "pareto_gen",
+     "lines": [
+      8240,
+      8241
+     ]
+    },
+    "sf": {
+     "class": "pareto_gen",
+     "lines": [
+      8246,
+      8247
+     ]
+    },
+    "ppf": {
+     "class": "pareto_gen",
+     "lines": [
+      8243,
+      8244
+     ]
+    },
+    "isf": {
+     "class": "pareto_gen",
+     "lines": [
+      8249,
+      8250
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "b",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     2.621716532144454
+    ]
+   ],
+   "support_for_example": [
+    1.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, b) = \\frac{b}{x^{b+1}}"
+   ],
+   "helpers": [
+    "_check_fit_input_parameters"
+   ],
+   "special_functions": [],
    "base_classes": [],
    "calls_into": [],
    "light_review": false,
@@ -7168,6 +6863,75 @@
    "related": []
   },
   {
+   "name": "rel_breitwigner",
+   "scipy_version": "1.18.1",
+   "class": "rel_breitwigner_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    12473,
+    12618
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "rel_breitwigner_gen",
+     "lines": [
+      12541,
+      12547
+     ]
+    },
+    "cdf": {
+     "class": "rel_breitwigner_gen",
+     "lines": [
+      12549,
+      12558
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "sf": "1 - cdf",
+    "logsf": "log(sf)",
+    "ppf": "numerical inversion of cdf",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "rho",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     36.545206797050334
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, \\rho) = \\frac{k}{(x^2 - \\rho^2)^2 + \\rho^2}"
+   ],
+   "helpers": [
+    "_check_fit_input_parameters"
+   ],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
    "name": "rice",
    "scipy_version": "1.18.1",
    "class": "rice_gen",
@@ -7242,75 +7006,6 @@
     "sc.i0e",
     "special.i0"
    ],
-   "base_classes": [],
-   "calls_into": [],
-   "light_review": false,
-   "related": []
-  },
-  {
-   "name": "rel_breitwigner",
-   "scipy_version": "1.18.1",
-   "class": "rel_breitwigner_gen",
-   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
-   "class_lines": [
-    12473,
-    12618
-   ],
-   "implemented": {
-    "pdf": {
-     "class": "rel_breitwigner_gen",
-     "lines": [
-      12541,
-      12547
-     ]
-    },
-    "cdf": {
-     "class": "rel_breitwigner_gen",
-     "lines": [
-      12549,
-      12558
-     ]
-    }
-   },
-   "inherited": {
-    "logpdf": "log(pdf)",
-    "logcdf": "log(cdf)",
-    "sf": "1 - cdf",
-    "logsf": "log(sf)",
-    "ppf": "numerical inversion of cdf",
-    "isf": "ppf(1 - q)"
-   },
-   "shapes": [
-    {
-     "name": "rho",
-     "domain": [
-      5e-324,
-      Infinity
-     ],
-     "inclusive": [
-      false,
-      false
-     ],
-     "integrality": false
-    }
-   ],
-   "example_params": [
-    [
-     36.545206797050334
-    ]
-   ],
-   "support_for_example": [
-    0.0,
-    Infinity
-   ],
-   "get_support_overridden": false,
-   "pdf_in_docstring": [
-    "f(x, \\rho) = \\frac{k}{(x^2 - \\rho^2)^2 + \\rho^2}"
-   ],
-   "helpers": [
-    "_check_fit_input_parameters"
-   ],
-   "special_functions": [],
    "base_classes": [],
    "calls_into": [],
    "light_review": false,
@@ -7568,6 +7263,1196 @@
    "base_classes": [],
    "calls_into": [],
    "light_review": true,
+   "related": []
+  },
+  {
+   "name": "t",
+   "scipy_version": "1.18.1",
+   "class": "t_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    8022,
+    8131
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "t_gen",
+     "lines": [
+      8059,
+      8063
+     ]
+    },
+    "logpdf": {
+     "class": "t_gen",
+     "lines": [
+      8065,
+      8075
+     ]
+    },
+    "cdf": {
+     "class": "t_gen",
+     "lines": [
+      8077,
+      8078
+     ]
+    },
+    "sf": {
+     "class": "t_gen",
+     "lines": [
+      8080,
+      8081
+     ]
+    },
+    "ppf": {
+     "class": "t_gen",
+     "lines": [
+      8083,
+      8084
+     ]
+    },
+    "isf": {
+     "class": "t_gen",
+     "lines": [
+      8086,
+      8087
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "df",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     2.7433514990818093
+    ]
+   ],
+   "support_for_example": [
+    -Infinity,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, \\nu) = \\frac{\\Gamma((\\nu+1)/2)} {\\sqrt{\\pi \\nu} \\Gamma(\\nu/2)} (1+x^2/\\nu)^{-(\\nu+1)/2}"
+   ],
+   "helpers": [
+    "_lazyselect"
+   ],
+   "special_functions": [
+    "sc.beta",
+    "sc.digamma",
+    "sc.poch",
+    "sc.stdtr",
+    "sc.stdtrit",
+    "special.gamma"
+   ],
+   "base_classes": [],
+   "calls_into": [
+    "norm"
+   ],
+   "light_review": false,
+   "related": [
+    "norm"
+   ]
+  },
+  {
+   "name": "trapezoid",
+   "scipy_version": "1.18.1",
+   "class": "trapezoid_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    9952,
+    10060
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "trapezoid_gen",
+     "lines": [
+      9993,
+      10002
+     ]
+    },
+    "cdf": {
+     "class": "trapezoid_gen",
+     "lines": [
+      10004,
+      10012
+     ]
+    },
+    "ppf": {
+     "class": "trapezoid_gen",
+     "lines": [
+      10014,
+      10020
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "sf": "1 - cdf",
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      0.0,
+      1.0
+     ],
+     "inclusive": [
+      true,
+      true
+     ],
+     "integrality": false
+    },
+    {
+     "name": "d",
+     "domain": [
+      0.0,
+      1.0
+     ],
+     "inclusive": [
+      true,
+      true
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     0.2,
+     0.8
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    1.0
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [],
+   "helpers": [
+    "_lazyselect"
+   ],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "triang",
+   "scipy_version": "1.18.1",
+   "class": "triang_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    10066,
+    10136
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "triang_gen",
+     "lines": [
+      10097,
+      10112
+     ]
+    },
+    "cdf": {
+     "class": "triang_gen",
+     "lines": [
+      10114,
+      10124
+     ]
+    },
+    "ppf": {
+     "class": "triang_gen",
+     "lines": [
+      10126,
+      10127
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "sf": "1 - cdf",
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      0.0,
+      1.0
+     ],
+     "inclusive": [
+      true,
+      true
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     0.15785029824528218
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    1.0
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [],
+   "helpers": [
+    "_lazyselect"
+   ],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "truncexpon",
+   "scipy_version": "1.18.1",
+   "class": "truncexpon_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    10142,
+    10202
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "truncexpon_gen",
+     "lines": [
+      10170,
+      10172
+     ]
+    },
+    "logpdf": {
+     "class": "truncexpon_gen",
+     "lines": [
+      10174,
+      10175
+     ]
+    },
+    "cdf": {
+     "class": "truncexpon_gen",
+     "lines": [
+      10177,
+      10178
+     ]
+    },
+    "sf": {
+     "class": "truncexpon_gen",
+     "lines": [
+      10183,
+      10184
+     ]
+    },
+    "ppf": {
+     "class": "truncexpon_gen",
+     "lines": [
+      10180,
+      10181
+     ]
+    },
+    "isf": {
+     "class": "truncexpon_gen",
+     "lines": [
+      10186,
+      10187
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)",
+    "logsf": "log(sf)"
+   },
+   "shapes": [
+    {
+     "name": "b",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     4.690772545681048
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    4.690772545681048
+   ],
+   "get_support_overridden": true,
+   "pdf_in_docstring": [
+    "f(x, b) = \\frac{\\exp(-x)}{1 - \\exp(-b)}"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.expm1",
+    "sc.gammainc1",
+    "sc.gamman",
+    "sc.log1p"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "truncnorm",
+   "scipy_version": "1.18.1",
+   "class": "truncnorm_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    10259,
+    10494
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "truncnorm_gen",
+     "lines": [
+      10341,
+      10342
+     ]
+    },
+    "logpdf": {
+     "class": "truncnorm_gen",
+     "lines": [
+      10344,
+      10345
+     ]
+    },
+    "cdf": {
+     "class": "truncnorm_gen",
+     "lines": [
+      10347,
+      10348
+     ]
+    },
+    "logcdf": {
+     "class": "truncnorm_gen",
+     "lines": [
+      10350,
+      10356
+     ]
+    },
+    "sf": {
+     "class": "truncnorm_gen",
+     "lines": [
+      10358,
+      10359
+     ]
+    },
+    "logsf": {
+     "class": "truncnorm_gen",
+     "lines": [
+      10361,
+      10367
+     ]
+    },
+    "ppf": {
+     "class": "truncnorm_gen",
+     "lines": [
+      10378,
+      10404
+     ]
+    },
+    "isf": {
+     "class": "truncnorm_gen",
+     "lines": [
+      10406,
+      10433
+     ]
+    }
+   },
+   "inherited": {},
+   "shapes": [
+    {
+     "name": "a",
+     "domain": [
+      -Infinity,
+      Infinity
+     ],
+     "inclusive": [
+      true,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "b",
+     "domain": [
+      -Infinity,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      true
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     -1.0978730080013919,
+     2.730675410903198
+    ],
+    [
+     0.1,
+     2.0
+    ]
+   ],
+   "support_for_example": [
+    -1.0978730080013919,
+    2.730675410903198
+   ],
+   "get_support_overridden": true,
+   "pdf_in_docstring": [],
+   "helpers": [
+    "_log_diff",
+    "_log_gauss_mass",
+    "_log_sum",
+    "_norm_cdf",
+    "_norm_logcdf",
+    "_norm_logpdf",
+    "_norm_pdf"
+   ],
+   "special_functions": [
+    "sc.ndtri_exp"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "truncpareto",
+   "scipy_version": "1.18.1",
+   "class": "truncpareto_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    10501,
+    10849
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "truncpareto_gen",
+     "lines": [
+      10569,
+      10572
+     ]
+    },
+    "logpdf": {
+     "class": "truncpareto_gen",
+     "lines": [
+      10574,
+      10576
+     ]
+    },
+    "cdf": {
+     "class": "truncpareto_gen",
+     "lines": [
+      10581,
+      10583
+     ]
+    },
+    "logcdf": {
+     "class": "truncpareto_gen",
+     "lines": [
+      10585,
+      10587
+     ]
+    },
+    "sf": {
+     "class": "truncpareto_gen",
+     "lines": [
+      10596,
+      10598
+     ]
+    },
+    "logsf": {
+     "class": "truncpareto_gen",
+     "lines": [
+      10600,
+      10602
+     ]
+    },
+    "ppf": {
+     "class": "truncpareto_gen",
+     "lines": [
+      10592,
+      10594
+     ]
+    },
+    "isf": {
+     "class": "truncpareto_gen",
+     "lines": [
+      10607,
+      10609
+     ]
+    }
+   },
+   "inherited": {},
+   "shapes": [
+    {
+     "name": "b",
+     "domain": [
+      -Infinity,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "c",
+     "domain": [
+      1.0000000000000002,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     1.8,
+     5.3
+    ],
+    [
+     2.0,
+     5.0
+    ],
+    [
+     -2.0,
+     5.0
+    ]
+   ],
+   "support_for_example": [
+    1.0,
+    5.3
+   ],
+   "get_support_overridden": true,
+   "pdf_in_docstring": [
+    "f(x, b, c) = \\frac{b}{1 - c^{-b}} \\frac{1}{x^{b+1}}",
+    "f(x; a, l, h) = \\frac{a}{h^a - l^a} x^{a-1}"
+   ],
+   "helpers": [
+    "_check_fit_input_parameters"
+   ],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "truncweibull_min",
+   "scipy_version": "1.18.1",
+   "class": "truncweibull_min_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    2895,
+    2999
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "truncweibull_min_gen",
+     "lines": [
+      2956,
+      2958
+     ]
+    },
+    "logpdf": {
+     "class": "truncweibull_min_gen",
+     "lines": [
+      2960,
+      2962
+     ]
+    },
+    "cdf": {
+     "class": "truncweibull_min_gen",
+     "lines": [
+      2964,
+      2967
+     ]
+    },
+    "logcdf": {
+     "class": "truncweibull_min_gen",
+     "lines": [
+      2969,
+      2972
+     ]
+    },
+    "sf": {
+     "class": "truncweibull_min_gen",
+     "lines": [
+      2974,
+      2977
+     ]
+    },
+    "logsf": {
+     "class": "truncweibull_min_gen",
+     "lines": [
+      2979,
+      2982
+     ]
+    },
+    "ppf": {
+     "class": "truncweibull_min_gen",
+     "lines": [
+      2989,
+      2992
+     ]
+    },
+    "isf": {
+     "class": "truncweibull_min_gen",
+     "lines": [
+      2984,
+      2987
+     ]
+    }
+   },
+   "inherited": {},
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "a",
+     "domain": [
+      0.0,
+      Infinity
+     ],
+     "inclusive": [
+      true,
+      false
+     ],
+     "integrality": false
+    },
+    {
+     "name": "b",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     2.5,
+     0.25,
+     1.75
+    ]
+   ],
+   "support_for_example": [
+    0.25,
+    1.75
+   ],
+   "get_support_overridden": true,
+   "pdf_in_docstring": [
+    "f(x, a, b, c) = \\frac{c x^{c-1} \\exp(-x^c)}{\\exp(-a^c) - \\exp(-b^c)}",
+    "a = (u_l - loc)/scale b = (u_r - loc)/scale"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.gamma",
+    "sc.gammainc",
+    "sc.xlogy"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "tukeylambda",
+   "scipy_version": "1.18.1",
+   "class": "tukeylambda_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    10856,
+    10915
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "tukeylambda_gen",
+     "lines": [
+      10893,
+      10898
+     ]
+    },
+    "cdf": {
+     "class": "tukeylambda_gen",
+     "lines": [
+      10900,
+      10901
+     ]
+    },
+    "ppf": {
+     "class": "tukeylambda_gen",
+     "lines": [
+      10903,
+      10904
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "sf": "1 - cdf",
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "lam",
+     "domain": [
+      -Infinity,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     3.1321477856738267
+    ]
+   ],
+   "support_for_example": [
+    -0.3192697370711285,
+    0.3192697370711285
+   ],
+   "get_support_overridden": true,
+   "pdf_in_docstring": [],
+   "helpers": [
+    "_tlkurt",
+    "_tlvar"
+   ],
+   "special_functions": [
+    "sc.boxcox",
+    "sc.boxcox1p",
+    "sc.tklmbda"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "wald",
+   "scipy_version": "1.18.1",
+   "class": "wald_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    11386,
+    11444
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "wald_gen",
+     "lines": [
+      11415,
+      11417
+     ]
+    },
+    "logpdf": {
+     "class": "wald_gen",
+     "lines": [
+      11431,
+      11432
+     ]
+    },
+    "cdf": {
+     "class": "wald_gen",
+     "lines": [
+      11419,
+      11420
+     ]
+    },
+    "logcdf": {
+     "class": "wald_gen",
+     "lines": [
+      11434,
+      11435
+     ]
+    },
+    "sf": {
+     "class": "wald_gen",
+     "lines": [
+      11422,
+      11423
+     ]
+    },
+    "logsf": {
+     "class": "wald_gen",
+     "lines": [
+      11437,
+      11438
+     ]
+    },
+    "ppf": {
+     "class": "wald_gen",
+     "lines": [
+      11425,
+      11426
+     ]
+    },
+    "isf": {
+     "class": "wald_gen",
+     "lines": [
+      11428,
+      11429
+     ]
+    }
+   },
+   "inherited": {},
+   "shapes": [],
+   "example_params": [
+    []
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x) = \\frac{1}{\\sqrt{2\\pi x^3}} \\exp(- \\frac{ (x-1)^2 }{ 2x })"
+   ],
+   "helpers": [],
+   "special_functions": [],
+   "base_classes": [
+    "invgauss_gen"
+   ],
+   "calls_into": [
+    "invgauss"
+   ],
+   "light_review": false,
+   "related": [
+    "invgauss"
+   ]
+  },
+  {
+   "name": "weibull_max",
+   "scipy_version": "1.18.1",
+   "class": "weibull_max_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    3006,
+    3074
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "weibull_max_gen",
+     "lines": [
+      3046,
+      3048
+     ]
+    },
+    "logpdf": {
+     "class": "weibull_max_gen",
+     "lines": [
+      3050,
+      3051
+     ]
+    },
+    "cdf": {
+     "class": "weibull_max_gen",
+     "lines": [
+      3053,
+      3054
+     ]
+    },
+    "logcdf": {
+     "class": "weibull_max_gen",
+     "lines": [
+      3056,
+      3057
+     ]
+    },
+    "sf": {
+     "class": "weibull_max_gen",
+     "lines": [
+      3059,
+      3060
+     ]
+    },
+    "ppf": {
+     "class": "weibull_max_gen",
+     "lines": [
+      3062,
+      3063
+     ]
+    }
+   },
+   "inherited": {
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     2.8687961709100187
+    ]
+   ],
+   "support_for_example": [
+    -Infinity,
+    0.0
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, c) = c (-x)^{c-1} \\exp(-(-x)^c)"
+   ],
+   "helpers": [],
+   "special_functions": [
+    "sc.expm1",
+    "sc.gamma",
+    "sc.xlogy"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": []
+  },
+  {
+   "name": "weibull_min",
+   "scipy_version": "1.18.1",
+   "class": "weibull_min_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    2731,
+    2889
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "weibull_min_gen",
+     "lines": [
+      2779,
+      2781
+     ]
+    },
+    "logpdf": {
+     "class": "weibull_min_gen",
+     "lines": [
+      2783,
+      2784
+     ]
+    },
+    "cdf": {
+     "class": "weibull_min_gen",
+     "lines": [
+      2786,
+      2787
+     ]
+    },
+    "sf": {
+     "class": "weibull_min_gen",
+     "lines": [
+      2792,
+      2793
+     ]
+    },
+    "logsf": {
+     "class": "weibull_min_gen",
+     "lines": [
+      2795,
+      2796
+     ]
+    },
+    "ppf": {
+     "class": "weibull_min_gen",
+     "lines": [
+      2789,
+      2790
+     ]
+    },
+    "isf": {
+     "class": "weibull_min_gen",
+     "lines": [
+      2798,
+      2799
+     ]
+    }
+   },
+   "inherited": {
+    "logcdf": "log(cdf)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      Infinity
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     1.7866166930421596
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    Infinity
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, c) = c x^{c-1} \\exp(-x^c)"
+   ],
+   "helpers": [
+    "_check_fit_input_parameters"
+   ],
+   "special_functions": [
+    "sc.expm1",
+    "sc.gamma",
+    "sc.log1p",
+    "sc.xlogy"
+   ],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
+   "related": [
+    "dweibull"
+   ]
+  },
+  {
+   "name": "wrapcauchy",
+   "scipy_version": "1.18.1",
+   "class": "wrapcauchy_gen",
+   "source_file": "C:\\Users\\chbau\\miniforge-pypy3\\envs\\ds\\Lib\\site-packages\\scipy\\stats\\_continuous_distns.py",
+   "class_lines": [
+    11450,
+    11515
+   ],
+   "implemented": {
+    "pdf": {
+     "class": "wrapcauchy_gen",
+     "lines": [
+      11478,
+      11480
+     ]
+    },
+    "cdf": {
+     "class": "wrapcauchy_gen",
+     "lines": [
+      11482,
+      11493
+     ]
+    },
+    "ppf": {
+     "class": "wrapcauchy_gen",
+     "lines": [
+      11495,
+      11499
+     ]
+    }
+   },
+   "inherited": {
+    "logpdf": "log(pdf)",
+    "logcdf": "log(cdf)",
+    "sf": "1 - cdf",
+    "logsf": "log(sf)",
+    "isf": "ppf(1 - q)"
+   },
+   "shapes": [
+    {
+     "name": "c",
+     "domain": [
+      5e-324,
+      0.9999999999999999
+     ],
+     "inclusive": [
+      false,
+      false
+     ],
+     "integrality": false
+    }
+   ],
+   "example_params": [
+    [
+     0.031071279018614728
+    ]
+   ],
+   "support_for_example": [
+    0.0,
+    6.283185307179586
+   ],
+   "get_support_overridden": false,
+   "pdf_in_docstring": [
+    "f(x, c) = \\frac{1-c^2}{2\\pi (1+c^2 - 2c \\cos(x))}"
+   ],
+   "helpers": [],
+   "special_functions": [],
+   "base_classes": [],
+   "calls_into": [],
+   "light_review": false,
    "related": []
   }
  ]

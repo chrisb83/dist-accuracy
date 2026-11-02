@@ -1,0 +1,115 @@
+tukeylambda.cdf(-100000.0, -1.0)
+  reference      0.000009999900000000009999999998  (float 9.99990000000001e-06)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  cond (shapes)  10.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(9.999899994284078e-06)  2.6e+06 ulp  severe
+tukeylambda.cdf(-1e+300, -1.0)
+  reference      9.999999999999999474952397e-301  (float 1e-300)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  cond (shapes)  690  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(7.105427357601002e-15) 3.2e+301 ulp  loss
+tukeylambda.cdf(-0.4999999, 2.0)
+  reference      0.0000001000000000028755664516211  (float 1.0000000000287557e-07)
+  cond (arg)     5.0e+06  (within conditioning: <= 5.0e+06 ulp)
+  cond (shapes)  5.0e+06  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.0000000116860974e-07)  5.2e+07 ulp  severe
+tukeylambda.cdf(-0.019999, 50.0)
+  reference      0.000001000024500809113901695463  (float 1.000024500809114e-06)
+  cond (arg)     2e+04  (within conditioning: <= 2e+04 ulp)
+  cond (shapes)  2e+04  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.000024504094199e-06)  1.5e+07 ulp  severe
+tukeylambda.cdf(-0.3, 2.0)
+  reference      0.2000000000000000111022302  (float 0.2)
+  cond (arg)     1.5  (within conditioning: <= 9.5 ulp)
+  cond (shapes)  1.89  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.19999999999999574)     96.2 ulp  minor
+tukeylambda.cdf(-6.0, 0.14)
+  reference      0.000002066032387570323875103713  (float 2.066032387570324e-06)
+  cond (arg)     37.5  (within conditioning: <= 45.5 ulp)
+  cond (shapes)  24.4  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2.066032386949246e-06)  1.4e+06 ulp  severe
+tukeylambda.cdf(-10.0, 1e-05)
+  reference      0.00004537517475312456001494801  (float 4.537517475312456e-05)
+  cond (arg)     10  (within conditioning: <= 18 ulp)
+  cond (shapes)  0.0005  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(4.5397868702434395e-05)  2.3e+12 ulp  severe
+tukeylambda.cdf(10.0, 1e-05)
+  reference      0.9999546248252468754399851  (float 0.9999546248252469)
+  cond (arg)     0.000454  (within conditioning: <= 8 ulp)
+  cond (shapes)  2.27e-08  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.9999546021312976)  1.0e+08 ulp  severe
+tukeylambda.cdf(-30.0, 1e-05)
+  reference      9.315599883522394876330653e-14  (float 9.315599883522394e-14)
+  cond (arg)     30  (within conditioning: <= 38 ulp)
+  cond (shapes)  0.0045  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(9.3576229688393e-14)  2.0e+13 ulp  severe
+tukeylambda.cdf(-500.0, 0.001)
+  reference      9.33263618503212917621761e-302  (float 9.332636185032129e-302)
+  cond (arg)     1e+03  (within conditioning: <= 1.01e+03 ulp)
+  cond (shapes)  307  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(7.105427357601002e-15) 3.4e+302 ulp  loss
+tukeylambda.pdf(100.0, 0.0)
+  reference      3.720075976020835962959696e-44  (float 3.720075976020836e-44)
+  cond (arg)     100  (within conditioning: <= 108 ulp)
+  cond (shapes)  0  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss  [divide by zero encountered in power]
+tukeylambda.pdf(30.0, 0.14)
+  reference      0.0  (float 0.0)
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                   - ulp  ok
+tukeylambda.pdf(-1e+150, -1.0)
+  reference      1.000000000000000038328808e-300  (float 1e-300)
+  cond (arg)     2  (within conditioning: <= 10 ulp)
+  cond (shapes)  343  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(5.048709793414476e-29) 2.3e+287 ulp  loss
+tukeylambda.pdf(-10.0, 1e-05)
+  reference      0.00004537765342667211191424181  (float 4.5377653426672114e-05)
+  cond (arg)     10  (within conditioning: <= 18 ulp)
+  cond (shapes)  0.0004  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(4.54003473582049e-05)  2.3e+12 ulp  severe
+tukeylambda.pdf(-0.0199, 50.0)
+  reference      1.004924376068820352593869  (float 1.0049243760688205)
+  cond (arg)     0.98  (within conditioning: <= 8.98 ulp)
+  cond (shapes)  0.98  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.0049243760684752) 1.55e+03 ulp  moderate
+tukeylambda.pdf(-6.0, 0.14)
+  reference      0.00001291255902905127605968098  (float 1.2912559029051275e-05)
+  cond (arg)     32.2  (within conditioning: <= 40.2 ulp)
+  cond (shapes)  19.2  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.2912559025713061e-05)  1.2e+06 ulp  severe
+tukeylambda.pdf(0.3192697370711285, 3.1321477856738267)
+  reference      1.000000000000000031600011  (float 1.0)
+  cond (arg)     0.681  (within conditioning: <= 8.68 ulp)
+  cond (shapes)  0.681  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+tukeylambda.cdf(-0.3192697370711285, 3.1321477856738267)
+  reference      1.482074131281874309550893e-17  (float 1.4820741312818743e-17)
+  cond (arg)     2.2e+16  (within conditioning: <= 2.2e+16 ulp)
+  cond (shapes)  2.2e+16  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+tukeylambda.ppf(0.49, 50.0)
+  reference      -4.134325502367792286515114e-17  (float -4.134325502367792e-17)
+  cond (arg)     63.4  (within conditioning: <= 71.4 ulp)
+  cond (shapes)  34.4  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-4.163336342344337e-17)  3.2e+13 ulp  severe
+tukeylambda.ppf(0.5000000001, 50.0)
+  reference      3.552713972753348822558825e-25  (float 3.5527139727533488e-25)
+  cond (arg)     5.0e+09  (within conditioning: <= 5.0e+09 ulp)
+  cond (shapes)  34.7  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+tukeylambda.ppf(0.5000000000000001, 3.1321477856738267)
+  reference      5.065237188887399464794091e-17  (float 5.065237188887399e-17)
+  cond (arg)     4.5e+15  (within conditioning: <= 4.5e+15 ulp)
+  cond (shapes)  2.17  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+tukeylambda.ppf(1e-100, -3.0)
+  reference      -3.333333333333333133414335e+299  (float -3.333333333333333e+299)
+  cond (arg)     3  (within conditioning: <= 11 ulp)
+  cond (shapes)  690  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-3.3333333333336335e+299)      406 ulp  minor
+tukeylambda.ppf(1e-300, -1.0)
+  reference      -9.999999999999999749409082e+299  (float -9.999999999999999e+299)
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  cond (shapes)  690  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-9.999999999999763e+299)      106 ulp  minor
