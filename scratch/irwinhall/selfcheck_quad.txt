@@ -1,0 +1,4 @@
+Self-check FAIL (n=3, integral of pdf vs cdf on [0.843433,1.5] and [1.5,2.15657]):
+mp.quad without breakpoints: integral/diff - 1 = 1.6352e-9, 1.6385e-9
+mp.quad with knot breakpoint (1 resp. 2): 0.0, 0.0
+-> quadrature error from the pdf's kink at the integer knots, not a reference error.

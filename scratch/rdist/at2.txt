@@ -1,0 +1,24 @@
+== cdf 3e-9 1e8
+rdist.cdf(3e-09, 100000000.0)
+  reference      0.5000119682683803270690447  (float 0.5000119682683803)
+  cond (arg)     2.39e-05  (within conditioning: <= 8 ulp)
+  cond (shapes)  1.2e-05  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.5000119682682618) 1.07e+03 ulp  moderate
+== sf 3e-9 1e8
+rdist.sf(3e-09, 100000000.0)
+  reference      0.4999880317316196729309553  (float 0.49998803173161965)
+  cond (arg)     2.39e-05  (within conditioning: <= 8 ulp)
+  cond (shapes)  1.2e-05  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.4999880317317383) 1.07e+03 ulp  moderate
+== cdf 1e-8 1e6
+rdist.cdf(1e-08, 1000000.0)
+  reference      0.5000039894218065922602984  (float 0.5000039894218066)
+  cond (arg)     7.98e-06  (within conditioning: <= 8 ulp)
+  cond (shapes)  3.99e-06  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.5000039894217645)      379 ulp  minor
+1000000.0 1e-08 candidate 0.185 ulp
+1000000.0 -1e-08 candidate 0.185 ulp
+100000000.0 3e-09 candidate 0.178 ulp
+100000000.0 1e-07 candidate 0.0761 ulp
+1000.0 0.0316069770620507 candidate 0.536 ulp
+1000000.0 -0.000999999500000375 candidate 2.61 ulp

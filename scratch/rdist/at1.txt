@@ -1,0 +1,126 @@
+== cdf 1e-8 1e8
+rdist.cdf(1e-08, 100000000.0)
+  reference      0.5000398942278739173201819  (float 0.5000398942278739)
+  cond (arg)     7.98e-05  (within conditioning: <= 8 ulp)
+  cond (shapes)  3.99e-05  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.5000398942278734)        4 ulp  ok
+== cdf 1e-8 1e6
+rdist.cdf(1e-08, 1000000.0)
+  reference      0.5000039894218065922602984  (float 0.5000039894218066)
+  cond (arg)     7.98e-06  (within conditioning: <= 8 ulp)
+  cond (shapes)  3.99e-06  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.5000039894217645)      379 ulp  minor
+== pdf 0.0 1000
+rdist.pdf(0.0, 1000.0)
+  reference      12.61250908918040095342084  (float 12.612509089180401)
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  0.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(12.612509089175546) 1.73e+03 ulp  moderate
+== pdf 0.0 1e6
+rdist.pdf(0.0, 1000000.0)
+  reference      398.9421806658750445436228  (float 398.94218066587507)
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  0.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(398.94218034735945)  3.6e+06 ulp  severe
+== pdf 0.9999999999999999 1.6
+rdist.pdf(0.9999999999999999, 1.6)
+  reference      587.6498321743347161409927  (float 587.6498321743347)
+  cond (arg)     1.8e+15  (within conditioning: <= 1.8e+15 ulp)
+  cond (shapes)  28.2  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(inf)                 inf ulp  loss
+== sf 0.9999999999999999 3
+rdist.sf(0.9999999999999999, 3.0)
+  reference      7.021327110271799573932908e-25  (float 7.021327110271799e-25)
+  cond (arg)     1.4e+16  (within conditioning: <= 1.4e+16 ulp)
+  cond (shapes)  54.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+== cdf 0.9999999999999999 0.001
+rdist.cdf(0.9999999999999999, 0.001)
+  reference      0.5092702664161428735519774  (float 0.5092702664161429)
+  cond (arg)     4.3e+12  (within conditioning: <= 4.3e+12 ulp)
+  cond (shapes)  0.018  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.0)             4.3e+15 ulp  severe
+== logpdf 0.9999999999999999 1000
+rdist.logpdf(0.9999999999999999, 1000.0)
+  reference      -17983.24835206313285405749  (float -17983.248352063132)
+  cond (arg)     2.5e+14  (within conditioning: <= 2.5e+14 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-inf)                inf ulp  loss
+== logpdf 0.0 1e6
+rdist.logpdf(0.0, 1000000.0)
+  reference      5.988816495777464310315311  (float 5.988816495777464)
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  0.0835  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(5.988816494979064)  6.0e+05 ulp  moderate
+== logpdf 0.0632139541241014 1000
+rdist.logpdf(0.0632139541241014, 1000.0)
+  reference      0.536688438990317058806208  (float 0.536688438990317)
+  cond (arg)     7.46  (within conditioning: <= 15.5 ulp)
+  cond (shapes)  2.8  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.5366884389897583) 4.69e+03 ulp  moderate
+== logpdf -0.19999999999999996 10
+rdist.logpdf(-0.19999999999999996, 10.0)
+  reference      0.04410721626505014295530563  (float 0.044107216265050146)
+  cond (arg)     7.56  (within conditioning: <= 15.6 ulp)
+  cond (shapes)  7.27  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.044107216265050764)     63.1 ulp  minor
+== cdf -0.029999985000011248 1e6
+rdist.cdf(-0.029999985000011248, 1000000.0)
+  reference      4.00856982229355317728332e-198  (float 4.008569822293553e-198)
+  cond (arg)     902  (within conditioning: <= 910 ulp)
+  cond (shapes)  451  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(4.0085698223056e-198) 1.35e+04 ulp  moderate
+== sf 0.029999985000011248 1e6
+rdist.sf(0.029999985000011248, 1000000.0)
+  reference      4.00856982229355317728332e-198  (float 4.008569822293553e-198)
+  cond (arg)     902  (within conditioning: <= 910 ulp)
+  cond (shapes)  451  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(4.0085698223056e-198) 1.35e+04 ulp  moderate
+== ppf 0.4999999999999999 3
+rdist.ppf(0.4999999999999999, 3.0)
+  reference      -1.74393424900431594973962e-16  (float -1.743934249004316e-16)
+  cond (arg)     4.5e+15  (within conditioning: <= 4.5e+15 ulp)
+  cond (shapes)  0.579  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(2.842170943040401e-14)      inf ulp  loss
+== ppf 0.5000000000000001 1.6
+rdist.ppf(0.5000000000000001, 1.6)
+  reference      2.552722276281082705601704e-16  (float 2.5527222762810825e-16)
+  cond (arg)     4.5e+15  (within conditioning: <= 4.5e+15 ulp)
+  cond (shapes)  0.637  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+== ppf 0.49999999999999 1e6
+rdist.ppf(0.49999999999999, 1000000.0)
+  reference      -2.504625408360864050584696e-17  (float -2.504625408360864e-17)
+  cond (arg)     5.0e+13  (within conditioning: <= 5.0e+13 ulp)
+  cond (shapes)  0.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+== ppf 0.4999 1e6
+rdist.ppf(0.4999, 1000000.0)
+  reference      -0.0000002506628927537189101884806  (float -2.5066289275371893e-07)
+  cond (arg)     5e+03  (within conditioning: <= 5.01e+03 ulp)
+  cond (shapes)  0.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-2.506628926646215e-07)  1.6e+06 ulp  severe
+== ppf 0.6 1e6
+rdist.ppf(0.6, 1000000.0)
+  reference      0.0002533471624073246938965386  (float 0.0002533471624073247)
+  cond (arg)     6.13  (within conditioning: <= 14.1 ulp)
+  cond (shapes)  0.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.00025334716240710264) 3.95e+03 ulp  moderate
+== ppf 0.4 1e3
+rdist.ppf(0.4, 1000.0)
+  reference      -0.008013413319785391488215378  (float -0.008013413319785391)
+  cond (arg)     4.09  (within conditioning: <= 12.1 ulp)
+  cond (shapes)  0.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-0.008013413319785223)     94.6 ulp  minor
+== ppf 1e-100 1000
+rdist.ppf(1e-100, 1000.0)
+  reference      -0.6034405413117793910611047  (float -0.6034405413117794)
+  cond (arg)     0.00174  (within conditioning: <= 8 ulp)
+  cond (shapes)  0.396  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(-0.6034405413117238)      415 ulp  minor
+== pdf -0.8 1000
+rdist.pdf(-0.8, 1000.0)
+  reference      4.963058280593386746823436e-221  (float 4.963058280593386e-221)
+  cond (arg)     1.77e+03  (within conditioning: <= 1.78e+03 ulp)
+  cond (shapes)  510  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(4.963058280590591e-221) 2.54e+03 ulp  moderate

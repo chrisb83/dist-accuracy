@@ -1,0 +1,101 @@
+  ... self-checks ()
+  ... () pdf: 217 points, references 1.7 s
+  ... () logpdf: 217 points, references 0.0 s
+  ... () cdf: 217 points, references 0.0 s
+  ... () logcdf: 217 points, references 0.6 s
+  ... () sf: 217 points, references 0.5 s
+  ... () logsf: 217 points, references 0.6 s
+  ... () ppf: 88 points, references 7.2 s
+  ... () isf: 88 points, references 4.8 s
+  ... condition numbers for 98 points above 8 ulp
+  ... condition numbers done in 2.7 s
+norm: SciPy 1.18.1, mpmath 1.4.1, 400 digits
+implemented: ['pdf', 'logpdf', 'cdf', 'logcdf', 'sf', 'logsf', 'ppf', 'isf']; inherited: []
+measured: ['pdf', 'logpdf', 'cdf', 'logcdf', 'sf', 'logsf', 'ppf', 'isf']
+parameter sets: ['()']
+
+Reference self-checks:
+  PASS: references agree with scipy in the bulk (where scipy is finite), are stable in precision and internally consistent
+
+method  region         n |   scipy 1.18.1: max ulp  median   loss severe moder. minor
+-------------------------------------------------------------------------------------
+pdf     low tail      22 |                     124    0.82      0      0      0      0
+        bulk          87 |                    1.23       0      0      0      0      0
+        high tail     22 |                     124    0.82      0      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): overflow encountered in square; underflow encountered in divide; underflow encountered in exp; underflow encountered in square
+logpdf  low tail      50 |                     inf       0      4      0      0      0
+        bulk          87 |                   0.738   0.544      0      0      0      0
+        high tail     50 |                     inf       0      4      0      0      0
+        RuntimeWarning (scipy 1.18.1) in 1 parameter set(s): overflow encountered in square; underflow encountered in square
+cdf     low tail      22 |                     513    32.8      0      0      0      0
+        bulk          87 |                    4.34       0      0      0      0      0
+        high tail     65 |                       0       0      0      0      0      0
+logcdf  low tail      50 |                    1.97   0.581      0      0      0      0
+        bulk          87 |                    4.34       0      0      0      0      0
+        high tail     22 |                     513    32.8      0      0      0      0
+sf      low tail      50 |                       0       0      0      0      0      0
+        bulk          87 |                    4.34       0      0      0      0      0
+        high tail     22 |                     513    32.8      0      0      0      0
+        ?             15 |                       0       0      0      0      0      0
+logsf   low tail      22 |                     513    32.8      0      0      0      0
+        bulk          87 |                    4.34       0      0      0      0      0
+        high tail     50 |                    1.97   0.581      0      0      0      0
+ppf     low tail      37 |                   0.998       0      0      0      0      0
+        bulk          32 |                    1.93       0      0      0      0      0
+        high tail     18 |                    1.06   0.257      0      0      0      0
+isf     low tail      37 |                   0.998       0      0      0      0      0
+        bulk          32 |                    1.93       0      0      0      0      0
+        high tail     18 |                    1.06   0.257      0      0      0      0
+
+Points beyond conditioning (markdown, worst first per method):
+
+**logpdf** (8 points)
+
+| shapes | arg | reference | scipy 1.18.1 value | scipy 1.18.1 ulp | scipy 1.18.1 severity | cond (arg) | cond (shapes) |
+|---|---|---|---|---|---|---|---|
+| () | -1.89e+154 | -1.78605e+308 | -inf | inf | loss | 2 | 0 |
+| () | -1.8e+154 | -1.62e+308 | -inf | inf | loss | 2 | 0 |
+| () | -1.5e+154 | -1.1250000000000002e+308 | -inf | inf | loss | 2 | 0 |
+| () | -1.35e+154 | -9.1125e+307 | -inf | inf | loss | 2 | 0 |
+| () | 1.35e+154 | -9.1125e+307 | -inf | inf | loss | 2 | 0 |
+| () | 1.5e+154 | -1.1250000000000002e+308 | -inf | inf | loss | 2 | 0 |
+| () | 1.8e+154 | -1.62e+308 | -inf | inf | loss | 2 | 0 |
+| () | 1.89e+154 | -1.78605e+308 | -inf | inf | loss | 2 | 0 |
+
+Worst ulp per parameter set ('inf' = 0/inf/nan where the reference is finite):
+
+pdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     124    1.37e+03
+
+logpdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     inf           2
+
+cdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     513         677
+
+logcdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     513         677
+
+sf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     513         677
+
+logsf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                     513         677
+
+ppf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                    1.93           0
+
+isf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                    1.93           0
+
+Reference unavailable (points skipped): cdf: 15 x OverflowError; logcdf: 15 x OverflowError; sf: 15 x OverflowError; logsf: 15 x OverflowError
+
+done in 21 s

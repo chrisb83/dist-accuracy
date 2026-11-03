@@ -1,0 +1,24 @@
+(0.5, 1.5, -0.5) -1e+300 cdf ValueError integrand peak unresolved (width 8.16e-1 0.07
+(0.5, 1.5, -0.5) -1e+300 sf 1.0 0.12
+(0.5, 1.5, -0.5) -1e+20 cdf ValueError value below the normal range (log integr 0.05
+(0.5, 1.5, -0.5) -1e+20 sf 1.0 0.12
+(0.5, 1.5, -0.5) -1000000000.0 cdf ValueError value below the normal range (log integr 0.04
+(0.5, 1.5, -0.5) -1000000000.0 sf 1.0 0.14
+(0.5, 1.5, -0.5) -300.0 cdf 5.607058692e-132 0.46
+(0.5, 1.5, -0.5) -300.0 sf 1.0 0.25
+(0.5, 1.5, -0.5) 1000000000.0 cdf 1.0 0.13
+(0.5, 1.5, -0.5) 1000000000.0 sf ValueError value below the normal range (log integr 0.06
+(0.5, 1.5, -0.5) 1e+20 cdf 1.0 0.13
+(0.5, 1.5, -0.5) 1e+20 sf ValueError value below the normal range (log integr 0.06
+(0.5, 1.5, -0.5) 1e+300 cdf 1.0 0.13
+(0.5, 1.5, -0.5) 1e+300 sf ValueError integrand peak unresolved (width 8.16e-1 0.06
+(-1.0, 1.0, 1.0) -1e+300 cdf ValueError integrand peak unresolved (width 1.0e-15 0.06
+(-1.0, 1.0, 1.0) -1e+300 sf 1.0 3.73
+(-1.0, 1.0, 1.0) -1e+20 cdf ValueError value below the normal range (log integr 0.06
+(-1.0, 1.0, 1.0) -1e+20 sf 1.0 4.19
+(-1.0, 1.0, 1.0) -1000000000.0 cdf ValueError value below the normal range (log integr 0.08
+(-1.0, 1.0, 1.0) -1000000000.0 sf 1.0 4.41
+(-1.0, 1.0, 1.0) -300.0 cdf 7.349891297e-267 0.24
+(-1.0, 1.0, 1.0) -300.0 sf 1.0 4.35
+(-1.0, 1.0, 1.0) 1000000000.0 cdf RuntimeError trapezoid did not converge 106.71
+(-1.0, 1.0, 1.0) 1000000000.0 sf RuntimeError integration range too wide 0.07

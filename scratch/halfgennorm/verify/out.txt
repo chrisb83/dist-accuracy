@@ -1,0 +1,46 @@
+scipy 1.18.1
+cdf(1e-300, 2) scipy=np.float64(0.0) ref=1.1283791670955126e-300 ulp=4.5e+15 agree30=True 
+cdf(1e-300, 20) scipy=np.float64(0.0) ref=1.0272168652716764e-300 ulp=4.5e+15 agree30=True 
+cdf(0.4, 1000) scipy=np.float64(0.0) ref=0.4002306238979976 ulp=4.5e+15 agree30=True quad_rel=2.64e-52
+cdf(0.99, 1000000.0) scipy=np.float64(0.0) ref=0.9900005714428589 ulp=4.5e+15 agree30=True 
+cdf(0.5, 1e+300) scipy=np.float64(0.0) ref=0.5 ulp=4.5e+15 agree30=True 
+sf(0.99, 1000000.0) scipy=np.float64(1.0) ref=0.009999428557141076 ulp=4.46e+17 agree30=True 
+sf(0.5, 1e+300) scipy=np.float64(1.0) ref=0.5 ulp=4.5e+15 agree30=True 
+sf(0.4, 1000) scipy=np.float64(1.0) ref=0.5997693761020024 ulp=3.01e+15 agree30=True quad_rel=9.38e-52
+sf(1e-08, 1000) scipy=np.float64(1.0) ref=0.9999999899942345 ulp=4.51e+07 agree30=True quad_rel=3.34e-52
+cdf(1e-160, 2) scipy=np.float64(1.128372886058438e-160) ref=1.1283791670955126e-160 ulp=2.51e+10 agree30=True 
+cdf(1.3998449603822993e-16, 20) scipy=np.float64(1.43794437275433e-16) ref=1.4379443520702595e-16 ulp=6.48e+07 agree30=True quad_rel=9.65e-52
+cdf(0.48186080160065803, 1000) scipy=np.float64(0.4821386232802579) ref=0.4821386231415514 ulp=1.3e+06 agree30=True quad_rel=1.33e-53
+ppf(1e-300, 2) scipy=np.float64(0.0) ref=8.86226925452758e-301 ulp=4.5e+15 agree30=True invchk=0.0
+ppf(1e-17, 20) scipy=np.float64(0.0) ref=9.735042655627758e-18 ulp=4.5e+15 agree30=True invchk=1.13e-201
+ppf(0.3, 1000) scipy=np.float64(0.0) ref=0.2998271317453786 ulp=4.5e+15 agree30=True invchk=0.0
+isf(0.7, 1000) scipy=np.float64(0.0) ref=0.29982713174537867 ulp=4.5e+15 agree30=True invchk=1.36e-201
+ppf(0.7, 1000000.0) scipy=np.float64(0.0) ref=0.6999995959497268 ulp=4.5e+15 agree30=True invchk=1.17e-201
+isf(0.3, 1000000.0) scipy=np.float64(0.0) ref=0.6999995959497269 ulp=4.5e+15 agree30=True invchk=0.0
+Traceback (most recent call last):
+  File "C:\Users\chbau\Documents\research\dist-accuracy\scratch\halfgennorm\verify\verify.py", line 52, in <module>
+    mp.mp.dps = 100; r1 = ref(m, arg, b)
+                          ~~~^^^^^^^^^^^
+  File "C:\Users\chbau\Documents\research\dist-accuracy\scratch\halfgennorm\verify\verify.py", line 47, in ref
+    if m == 'ppf': return ppf(arg, b)
+                          ~~~^^^^^^^^
+  File "C:\Users\chbau\Documents\research\dist-accuracy\scratch\halfgennorm\verify\verify.py", line 30, in ppf
+    lx = mp.findroot(g, mp.log(x0), tol=mp.mpf(10)**(-mp.mp.dps+10))
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\mpmath\calculus\optimization.py", line 970, in findroot
+    for x, error in iterations:
+                    ^^^^^^^^^^
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\mpmath\calculus\optimization.py", line 90, in __iter__
+    f1 = f(x1)
+  File "C:\Users\chbau\Documents\research\dist-accuracy\scratch\halfgennorm\verify\verify.py", line 29, in <lambda>
+    g = lambda lx: mp.log(cdf(mp.exp(lx), b)) - mp.log(tgt)
+                          ~~~^^^^^^^^^^^^^^^
+  File "C:\Users\chbau\Documents\research\dist-accuracy\scratch\halfgennorm\verify\verify.py", line 11, in cdf
+    return x*mp.exp(-y)*mp.hyp1f1(1, a+1, y)/mp.gamma(a+1)
+             ~~~~~~^^^^
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\mpmath\ctx_mp_python.py", line 1166, in f
+    return ctx.make_mpf(mpf_f(x._mpf_, prec, rounding))
+                        ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\mpmath\libmp\libelefun.py", line 1198, in mpf_exp
+    t = man << offset
+        ~~~~^^~~~~~~~
+OverflowError: too many digits in integer

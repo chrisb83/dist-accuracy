@@ -1,0 +1,36 @@
+crystalball.pdf(-2.0, 1.0, 150.0) | ref 0.08231975971863677) | cond 1.99 | np.float64(nan)                 inf ulp  loss  [invalid value encountered in multiply; overflow encountered in power; underflow encountered in power]
+crystalball.cdf(-2.0, 1.0, 150.0) | ref 0.08342472293633658) | cond 1.97 | np.float64(nan)                 inf ulp  loss  [invalid value encountered in multiply; overflow encountered in power; underflow encountered in power]
+crystalball.sf(-2.0, 1.0, 150.0) | ref 0.9165752770636634) | cond 0.18 | np.float64(nan)                 inf ulp  loss  [invalid value encountered in multiply; overflow encountered in power; underflow encountered in power]
+crystalball.pdf(-1.0, 1.0, 1000.0) | ref 0.22331134576235845) | cond 1 | np.float64(nan)                 inf ulp  loss  [invalid value encountered in multiply; overflow encountered in power; underflow encountered in power]
+crystalball.pdf(-1e+140, 1e-150, 3.0) | ref 6.666666666e-151) | cond 1e-10 | np.float64(nan)                 inf ulp  loss  [invalid value encountered in multiply; overflow encountered in power; underflow encountered in power]
+crystalball.cdf(-1e+140, 1e-150, 3.0) | ref 0.9999999999333333) | cond 6.67e-11 | np.float64(inf)                 inf ulp  loss  [overflow encountered in power]
+crystalball.sf(-1e+140, 1e-150, 3.0) | ref 6.666666666333334e-11) | cond 1 | np.float64(-inf)                inf ulp  loss  [overflow encountered in power]
+crystalball.cdf(-1e+200, 1e-150, 3.0) | ref 9e-100) | cond 2 | np.float64(nan)                 inf ulp  loss  [invalid value encountered in multiply; overflow encountered in power; underflow encountered in power]
+crystalball.pdf(-140.0, 1.0, 140.0) | ref 2.6402624657544074e-43) | cond 70.3 | np.float64(0.0)                 inf ulp  loss  [underflow encountered in power]
+crystalball.pdf(-54.06977288832496, 1.0, 140.0) | ref 6.4008191994632504e-21) | cond 39.2 | np.float64(6.400747940312173e-21)  5.0e+10 ulp  severe  [underflow encountered in power]
+crystalball.cdf(-54.06977288832496, 1.0, 140.0) | ref 8.890681360716545e-21) | cond 38.9 | np.float64(8.890691125982136e-21)  4.9e+09 ulp  severe  [underflow encountered in power]
+crystalball.pdf(-2511863.4315095823, 2.0, 50.0) | ref 4.238805774333309e-252) | cond 50 | np.float64(4.238758584483167e-252)  5.0e+10 ulp  severe  [underflow encountered in power]
+crystalball.cdf(-2511863.4315095823, 2.0, 50.0) | ref 2.1729385123167972e-247) | cond 49 | np.float64(2.1729385123613467e-247) 9.23e+04 ulp  moderate  [underflow encountered in power]
+crystalball.pdf(-15848908.924611142, 2.0, 50.0) | ref 4.238805774333402e-292) | cond 50 | np.float64(0.0)                 inf ulp  loss  [underflow encountered in power]
+crystalball.ppf(0.1, 1.0, 150.0) | ref -1.8164536051069315) | cond 0.557 | np.float64(-inf)                inf ulp  loss  [divide by zero encountered in power; underflow encountered in power]
+crystalball.ppf(0.001, 1e-150, 3.0) | ref -9.186832980505138e+151) | cond 0.516 | np.float64(-inf)                inf ulp  loss  [divide by zero encountered in power; underflow encountered in power]
+crystalball.ppf(1e-300, 2.0, 50.0) | ref -30797172.66009173) | cond 0.0204 | np.float64(-inf)                inf ulp  loss  [divide by zero encountered in power; underflow encountered in multiply]
+crystalball.ppf(6.8129206905797616e-251, 2.0, 50.0) | ref -2961426.760601957) | cond 0.0204 | np.float64(-2961426.776870402)  2.5e+07 ulp  severe  [underflow encountered in divide; underflow encountered in multiply]
+crystalball.ppf(1e-300, 1.0, 140.0) | ref -19801.47048966306) | cond 0.00724 | np.float64(-inf)                inf ulp  loss  [divide by zero encountered in power; underflow encountered in multiply]
+crystalball.sf(-1.0, 1e-10, 2.0) | ref 1.1266570685621474e-10) | cond 0.444 | np.float64(1.1266576560586827e-10)  2.3e+09 ulp  severe
+crystalball.sf(-1e-09, 1e-10, 2.0) | ref 6.266570691184802e-11) | cond 7.98e-10 | np.float64(6.266576146884972e-11)  3.9e+09 ulp  severe
+crystalball.sf(-2.0, 0.001, 3.0) | ref 0.0021657346829684976) | cond 0.614 | np.float64(0.0021657346829683233)      363 ulp  minor
+crystalball.sf(-2.0, 0.5, 1.001) | ref 0.0015385495969047586) | cond 0.371 | np.float64(0.0015385495969050256)      781 ulp  minor
+crystalball.logpdf(-1.5, 1.0, 1000000.0) | ref -1.9989648504154947) | cond 0.75 | np.float64(-1.998964852480873)  4.7e+06 ulp  severe
+crystalball.logpdf(-1.000000001, 1.0, 1000000.0) | ref -1.498964976415453) | cond 0.667 | np.float64(-1.498964977278098)  2.6e+06 ulp  severe
+crystalball.logpdf(-1.5, 1.0, 1000.0) | ref -1.9990633535733158) | cond 0.75 | np.float64(-1.9990633535739164) 1.35e+03 ulp  moderate
+crystalball.logpdf(-1.5, 1.0, 140.0) | ref -1.9996796410219748) | cond 0.747 | np.float64(-1.9996796410221078)      300 ulp  minor
+crystalball.logpdf(1.5e+154, 2.0, 3.0) | ref -1.1250000000000002e+308) | cond 2 | np.float64(-inf)                inf ulp  loss  [overflow encountered in square]
+crystalball.ppf(0.5, 10.0, 3.0) | ref -4.915554340282728e-24) | cond 2.5e+23 | np.float64(0.0)                 inf ulp  loss
+crystalball.ppf(0.49999999999999994, 10.0, 3.0) | ref -1.391458261491427e-16) | cond 9.0e+15 | np.float64(0.0)                 inf ulp  loss
+crystalball.ppf(0.9999999999995953, 1.0, 150.0) | ref 7.148377040565187) | cond 4.7e+10 | np.float64(7.148293886221173)  5.2e+10 ulp  severe
+crystalball.ppf(0.9999999999999966, 1.0, 150.0) | ref 7.776293155470988) | cond 4.7e+12 | np.float64(7.767681015116431)  5.0e+12 ulp  severe
+crystalball.ppf(0.49999999999999994, 0.5, 1.001) | ref -8.046623125845372e+300) | cond 1e+03 | np.float64(-8.046623125847387e+300) 1.13e+03 ulp  moderate
+crystalball.ppf(0.21999999999999997, 1.0, 140.0) | ref -1.0208765072839139) | cond 0.987 | np.float64(-1.0208765072839583)      196 ulp  minor
+crystalball.ppf(0.01, 2.0, 50.0) | ref -2.519873607926667) | cond 0.207 | np.float64(-2.519873607926659)     14.3 ulp  minor
+crystalball.pdf(-1.000000001, 1.0, 140.0) | ref 0.22300292768129773) | cond 1 | np.float64(0.22300292768130012)     48.2 ulp  minor

@@ -1,0 +1,45 @@
+  ... self-checks ()
+  ... () pdf: 58 points, references 0.0 s
+  ... () cdf: 58 points, references 0.0 s
+  ... () ppf: 62 points, references 0.0 s
+  ... condition numbers for 0 points above 8 ulp
+  ... condition numbers done in 0.0 s
+uniform: SciPy 1.18.1, mpmath 1.4.1, 400 digits
+implemented: ['pdf', 'cdf', 'ppf']; inherited: ['logpdf', 'logcdf', 'sf', 'logsf', 'isf']
+measured: ['pdf', 'cdf', 'ppf']
+parameter sets: ['()']
+
+Reference self-checks:
+  PASS: references agree with scipy in the bulk (where scipy is finite), are stable in precision and internally consistent
+
+method  region         n |   scipy 1.18.1: max ulp  median   loss severe moder. minor
+-------------------------------------------------------------------------------------
+pdf     low tail      34 |                       0       0      0      0      0      0
+        bulk          19 |                       0       0      0      0      0      0
+        high tail      5 |                       0       0      0      0      0      0
+cdf     low tail      33 |                       0       0      0      0      0      0
+        bulk          19 |                       0       0      0      0      0      0
+        high tail      5 |                       0       0      0      0      0      0
+ppf     low tail      26 |                       0       0      0      0      0      0
+        bulk          19 |                       0       0      0      0      0      0
+        high tail     17 |                       0       0      0      0      0      0
+
+Points beyond conditioning (markdown, worst first per method):
+
+none
+
+Worst ulp per parameter set ('inf' = 0/inf/nan where the reference is finite):
+
+pdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                       0           0
+
+cdf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                       0           0
+
+ppf:
+  shapes                        scipy 1.18.1  cond there
+  ()                                       0           0
+
+done in 0 s

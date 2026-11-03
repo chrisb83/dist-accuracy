@@ -1,0 +1,8 @@
+scipy 1.18.1
+ppf(1e-160, 2) scipy=np.float64(8.863206964116216e-161) ref=8.86226925452758e-161 ulp=4.77e+11 agree30=True invchk=0.0
+ppf(0.48, 1000) scipy=np.float64(0.4797234079228047) ref=0.47972341079260583 ulp=2.69e+07 agree30=True invchk=0.0
+logpdf(0.5, 1e+300) scipy=np.float64(0.0) ref=-0.0 ulp=nan agree30=True 
+logpdf(0.5, 1000000.0) scipy=np.float64(5.772148430338575e-07) ref=5.772148424349001e-07 ulp=4.67e+06 agree30=True 
+logpdf(0.99, 1000) scipy=np.float64(0.0005332223508727733) ref=0.0005332223508727117 ulp=520 agree30=True 
+logpdf(0.5, 1000) scipy=np.float64(0.0005763935982834312) ref=0.0005763935982833696 ulp=481 agree30=True 
+logpdf(0.5, 100) scipy=np.float64(0.00569030794606995) ref=0.005690307946069646 ulp=241 agree30=True 

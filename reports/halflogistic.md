@@ -76,7 +76,9 @@ none
 
 ## Existing GitHub issues
 
-not checked
+- PR #18002: ENH: override halflogistic sf and isf - the sf/isf overrides reviewed here; no open accuracy issue found
+
+(web search; gh unavailable)
 
 ## Verification
 

@@ -1,0 +1,5 @@
+isf(1e-20, 1e6): scipy np.float64(1.0) ref 0.0092621437525438904 (4.82e+17 ulp); -ppf(q): np.float64(0.009262143752543972) (39.7 ulp)
+isf(1e-10, 3): scipy np.float64(0.9999996972174823) ref 0.99999969721749898 (75.2 ulp); -ppf(q): np.float64(0.9999996972174989) (0.226 ulp)
+logcdf(-0.05, 1e6): scipy np.float64(-inf) ref -1256.3964694498814 (inf ulp)
+logsf(0.05, 1e6): scipy np.float64(-inf) ref -1256.3964694498814 (inf ulp)
+logcdf(-0.9, 1000): scipy np.float64(-inf) ref -834.63354303100137 (inf ulp)

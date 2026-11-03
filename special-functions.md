@@ -19,12 +19,16 @@ ordinary parameters); **medium** = tails or large-but-plausible parameters;
 |---|---|---|---|---|---|
 | `ndtr` (and `0.5*erfc`) | Not correctly rounded in the far left tail: up to 52 / 245 / 704 / 1026 ulp for \|z\| in [5,10) / [10,20) / [20,30) / [30,37.5), median ~0.3 z**2 ulp (one ulp of the internal exponent z**2/2). Within ndtr's own conditioning, but amplified wherever a tail is subtracted. | `ndtr(-30)` 256 ulp off at an exact argument | medium | exponnorm F2 (6.3e7 ulp after cancellation), lognorm F6, gibrat F3, powernorm, powerlognorm, skewnorm, recipinvgauss, t | verified; no issue found. Fix direction: `0.5*erfcx(-x/sqrt 2)*exp(-x**2/2)` with x**2/2 split exactly |
 | `log_ndtr(z)`, z > 0 | Has exactly the error of `ndtr(-z)` (z < 0 is accurate, <= 1.8 ulp) | - | medium | lognorm F6 (logcdf right / logsf left tail) | verified |
-| `igam_fac` (prefactor of `gammainc`/`gammaincc`) | For \|a - x\| > 0.4a computes `exp(a*log(x) - x - lgam(a))`; the cancelling exponent costs ~a*log(x)*eps | `gamma.sf(2000, 1000)` 2.0e3 ulp; `cdf(1e-280, 1)` 241 ulp | medium (minor-moderate size) | gamma F6, chi F9, chi2 F6, nakagami F9, maxwell F1 (a = 1.5, 200 ulp), dgamma F7 | verified. Fix: Lanczos prefactor branch for all a > ~20 |
+| `igam_fac` (prefactor of `gammainc`/`gammaincc`) | For \|a - x\| > 0.4a computes `exp(a*log(x) - x - lgam(a))`; the cancelling exponent costs ~a*log(x)*eps | `gamma.sf(2000, 1000)` 2.0e3 ulp; `cdf(1e-280, 1)` 241 ulp | medium (minor-moderate size) | gamma F6, chi F9, chi2 F6, nakagami F9, maxwell F1 (a = 1.5, 200 ulp), dgamma F7, halfgennorm F4 (646 ulp) | verified. Fix: Lanczos prefactor branch for all a > ~20 |
 | `igami` (`gammaincinv`/`gammainccinv`), a << 1 | The final Newton step on P amplifies the rounding of a large exponent; ~3.6x the conditioning | `gamma.ppf(0.5, 1e-3)` 3.6e3 ulp | medium | gamma F5, chi F8, chi2 F5, dgamma F6, nakagami F8, maxwell F2 | verified. Fix: last Newton step on log P for a < 1 |
-| `gammaincc(0.5, x)` | 42-118 ulp off for x in [0.5, 1] | - | low (minor) | gengamma; would reach chi2 with df = 1 | measured, minor |
+| `gammaincc(0.5, x)` | 42-118 ulp off for x in [0.5, 1] | - | low (minor) | gengamma; halfgennorm (`sf(1, 2)` 117 ulp); would reach chi2 with df = 1 | measured, minor |
 | `gammainc`/`gammaincinv`/`gammainccinv`, subnormal a | `gammainc` returns 0, the inverses nan; `gammainc(1e-300, 0.37)` = 1.000000000000019 > 1 | - | low | loggamma F1/F6 | verified; cephes path not traced |
 | `gammaincc(1e-310, 1)` | Returns a negative value (-5.77e-311) | - | low | dgamma | suspected only |
 | `gammaln(a)`, subnormal a | Returns inf for a <~ 5.6e-309 (true ~709-744) | - | low | dgamma F5, loggamma F1; every `gammaln(shape)` logpdf | verified; no issue found |
+| `gammainc(1.5, z)`, tiny z | 13.7 ulp at z = 1e-20, 127 at 1e-50, 430 at 1e-200 (checked only at a = 1.5) | - | low (minor) | argus F6 (383 ulp in sf for chi <= 1e-3) | measured, minor; fix direction `z**a exp(-z) hyp1f1(1, a+1, z)/Gamma(a+1)` |
+| `tklmbda` (Tukey-lambda cdf) | Bisection stops at an absolute tolerance (~1e-14): the left tail is pinned at 2**-47 = 7.1e-15, the bulk is 10-100 ulp off, and up to 5e7 ulp near the support ends for lam > 0. For 0 < \|lam\| < 1e-4 it substitutes the logistic cdf (relative error up to ~5e-3) | `tukeylambda.cdf(-1e300, -1)` = 7.1e-15 vs 1e-300 | high (bulk errors at every lam; the only scipy.stats caller is tukeylambda, whose pdf is built from it) | tukeylambda F1-F3 | verified; #21370 (open) |
+| `expm1`, subnormal x | Not exact: `sc.expm1(-1e-312)` = -1.000000000003e-312 (`np.expm1` is exact) | - | low | truncexpon F4 (2.2e4 ulp in cdf for subnormal x) | verified; no issue found. Fix: return x for \|x\| < ~1e-300 |
+| `boxcox(q, lam)`, lam < 0, tiny q | `expm1(lam*log(q))` amplifies the rounding of the product (~400 ulp) | - | low (minor) | tukeylambda F7 (ppf) | measured, minor |
 | `betaln` (`lbeta`) | Up to 6.9e5 ulp when a >> b but a < 1e6*b (4e4 ulp at (1e6, 2)); the asymptotic branch beyond 1e6*b is fine | `betaln(1000, 0.5)` 7.7e-13 absolute | medium | beta F4, betaprime F2/F3, f, rdist | verified |
 
 ## Boost.Math (via `scipy.special` ufuncs and `scu._*` wrappers)
@@ -32,9 +36,10 @@ ordinary parameters); **medium** = tails or large-but-plausible parameters;
 | Function | Problem | Example | Relevance | Seen in | Status |
 |---|---|---|---|---|---|
 | `ibeta_inv` (`betaincinv`, `betainccinv`, `fdtri`, `scu._beta_ppf`) | Hits its iteration cap and returns the last iterate or nan (with a RuntimeWarning), in irregular bands of small q; also clamps subnormal roots to DBL_MIN | `beta.ppf(1e-9, 0.5, 2)`; `betaprime.ppf(q, 2, 10)` constant 8.196e-53 for q <= 7.5e-114; `f.ppf(1e-153, 1, 1e4)` = 2.2e-304 vs 1.57e-306 | high (q = 1e-9 is ordinary) | beta F1/F3/F5-F7, betaprime F1, f F3/F4, jf_skew_t F8/F12 | verified. Related: boostorg/math #1511 (another case, fixed upstream), SciPy #12796 (fixed 1.12) |
+| `ibeta_inv` near p = 1/2 (`scu._beta_ppf`, `betaincinv`) | Absolute error up to ~129 ulp(0.5) at a = b = 1.5, q = 0.4999999999999999. Elsewhere it is small: 0.06-4 ulp(0.5) for a = 0.25 and 0.8, and <= ~0.7 ulp(0.5) for a >= 500 | - | low (the losses in `rdist`/`semicircular` ppf come from SciPy's `2p - 1` step, not from Boost) | semicircular F2, rdist F1 (Shared code) | verified (rdist verifier); no issue found |
 | `ibeta_derivative` (`scu._beta_pdf`) | Raises Python `OverflowError` for x <~ 1e-308 instead of returning a value | `beta.pdf` raises where the true pdf is 1.2e155 | low (but a crash) | beta F2 | verified |
 | `ibetac` at a = b = 0.5 (`betaincc(0.5, 0.5, z)`) | Argument effectively rounded via `1 - z`: 1.4e7 ulp at z = 1e-16, exactly 1.0 at z = 1e-20 | - | medium | f F7 (dfn = dfd = 1); beta.sf, betaprime at (0.5, 0.5) by construction | verified; no issue found |
-| `ibeta` near DBL_MIN / large shapes | `betainc` up to 8.7e7 ulp near DBL_MIN; prefactor error at large shapes | - | low / medium | jf_skew_t F10, beta F8, f F8 | verified |
+| `ibeta` near DBL_MIN / large shapes | `betainc` up to 8.7e7 ulp near DBL_MIN; prefactor error at large shapes | - | low / medium | jf_skew_t F10, beta F8, f F8, rdist F4 (up to 1.35e4 ulp in cdf/sf at c = 1e6, about half from Boost) | verified |
 | `fisher_f` (`fdtr`, `fdtrc`) | `n*x` overflows inside Boost: sf 0 where the true value is a normal double | `f.sf(1e308, 2, 0.01)` = 0 | low | f F2 | verified |
 | `students_t` (`stdtr`, `stdtrit`; also used by the t-tests in `_stats_py`/`_mstats_basic`) | `stdtr` exactly 0/1 for \|x\| > 1.34e154 (wrong for df <~ 2), 1.4e7 ulp near 0 at df == 1; `stdtrit` caps at sqrt(df/DBL_MIN) for small df, ~2x off beyond 1e50 then +inf with the wrong sign, 2.1e3 ulp for 2 < df < 3 | `t.cdf(-1e300, 0.001)` = 0 vs 0.2496; `t.ppf(0.29, 0.001)` = -2.1e152 vs -5.9e234; `t.ppf(1e-308, 2.74)` = +inf | medium (df == 1 near 0 and 2 < df < 3 are ordinary) | t F1, F4-F8 | verified. The 2 < df < 3 band matches Boost Trac #4504 (fixed 2010), possibly a remnant |
 | `non_central_f` (`ncfdtr`, `ncfdtri`, `scu._ncf_*`) | sf at nc = 0 returns -cdf (negative) for every x; dfn + dfd = 2: nan in the left tail, 1.0/0.0 in the bulk for tiny nc; isf raises `OverflowError` for results >= ~2e16; series non-convergence at dfd = 1000 (sf 0); ~t ulp right-tail loss | `ncf.sf(x, dfn, dfd, 0)` < 0 | high (nc = 0 and the bulk) | ncf F1-F8 | verified. #14901 (closed) covers only warnings |
@@ -48,7 +53,7 @@ ordinary parameters); **medium** = tails or large-but-plausible parameters;
 
 | Function | Problem | Example | Relevance | Seen in | Status |
 |---|---|---|---|---|---|
-| `kv`, `kve` | nan for x >= 2**30 - 0.5 (AMOS range limit) | `kve(0.5, 1073741823.5)` = nan | low-medium | geninvgauss F3 (logpdf/pdf/cdf nan; warning says "Infinite values") | verified; no issue found |
+| `kve` | nan from the largest double below 2**30 on (AMOS range limit); `kve(0.5, 2**30 - 0.5)` is still finite (3.82e-5). `kv` returns 0 there, which is the correct underflow | `kve(0.5, 1073741823.9999999)` = nan | low-medium | geninvgauss F3 (logpdf/pdf/cdf nan; the warning says "Infinite values"); genhyperbolic F1-F4 (the nan inside quad becomes cdf = sf = 1.0, INDEX item 25) | verified; no issue found |
 | `ive` | nan without a warning for z > 2**30 at every order | `ive(9.5, 1e10)` = nan | low-medium | ncx2 F4; `argus._stats` also calls it (not measured) | verified |
 
 `sc.k1e` (cephes) has no such limit and is accurate from 1e-300 to 1e300.
@@ -60,6 +65,7 @@ ordinary parameters); **medium** = tails or large-but-plausible parameters;
 | `inv_boxcox1p` | Returns x when \|lmbda*x\| < 1e-154 (the lmbda -> 0 limit is `expm1(x)`) | `genpareto.cdf(2, 1e-300)` = 2.0 vs 0.865 | low (tiny lmbda), but the result exceeds 1 | genpareto F1 | verified; no issue found (#25190 only renames it) |
 | `hyp2f1` (backend not checked) | Gamma(a-c)/Gamma(c-a) terms cancel for c ~ a and large z (1.6e11 ulp); ~c ulp for large c (2e6 ulp at c ~ 100); inf/nan where finite | - | medium | gausshyper F3-F5 | verified; F5 matches #26089 (closed) |
 | `beta` (backend not checked) | Up to 9.6e5 ulp for large or unbalanced shapes (1.09e6 at (2, 1e6)); underflows to 0 where `betaln` is finite | `sc.beta(1000, 5)` 2.6e3 ulp | medium | gausshyper F2/F7, jf_skew_t F11 | verified |
+| `poch(a, 0.5)` (backend not checked) | 138 to 9.35e3 ulp off for a = 50 to 5000 (< 1 ulp at a = 5 and a >= 5e4) | - | low (no reviewed distribution calls it; it came up when testing a fix for rdist F3) | rdist (side note) | suspected only (not verified) |
 | `ndtri_exp` | 2.5e3 ulp at y = -6.9e5 (plain Python check, not the harness) | - | low | powernorm (proposed fix for its F1-F3) | suspected only |
 
 ## NumPy (not SciPy)
@@ -70,8 +76,9 @@ ordinary parameters); **medium** = tails or large-but-plausible parameters;
 
 ## Checked and accurate
 
-`log1p`, `expm1`, `xlogy`, `xlog1py`, `erfcx`, `log_ndtr` (z < 0), `ndtri`,
-`k1e`, `i0e`, `lambertw`, `boxcox`, `boxcox1p`, `inv_boxcox`, Boost
+`log1p`, `expm1` (except subnormal x, see above), `xlogy`, `xlog1py`,
+`erfcx`, `log_ndtr` (z < 0), `ndtri`, `k1e`, `i0e`, `lambertw`, `boxcox`
+(except the minor lam < 0 case above), `boxcox1p`, `inv_boxcox`, Boost
 `_cauchy_ppf`/`_cauchy_isf` (<= 0.96 ulp), the `cosine` ufuncs, Boost
 `landau_distribution` (0 findings), `cmath.sqrt`. In most reviews the
 problem was the arguments passed in, not the special function.
@@ -87,5 +94,12 @@ problem was the arguments passed in, not the special function.
 4. Cephes `igam_fac` and `igami` (small a) - clear fix directions, moderate
    sizes.
 5. `students_t` at df == 1 and 2 < df < 3; inverse-Gaussian quantiles.
-6. The rest (subnormal arguments, AMOS 2**30 limit, `powm1`,
-   `inv_boxcox1p`, NumPy `sqrt`) as low-priority reports.
+6. Boost `ibeta_inv` near p = 1/2: only the a = 1.5 outlier, low priority
+   (rdist measured the other shapes).
+7. The rest (subnormal arguments including `expm1`, the AMOS 2**30 limit,
+   `powm1`, `inv_boxcox1p`, `gammainc(1.5, tiny z)`, NumPy `sqrt`) as
+   low-priority reports.
+
+`tklmbda` is already reported (#21370, open). The reviews add the size of
+the bulk error and the logistic shortcut for small \|lam\|, which could go
+into that issue as a comment.

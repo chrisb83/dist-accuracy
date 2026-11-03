@@ -1,0 +1,38 @@
+== pdf 1e9 -1.5 1 0.9999999999
+  reference      1.141512350532454348332133e-23  (float 1.1415123505324543e-23)
+  cond (arg)     2.6  (within conditioning: <= 10.6 ulp)
+  scipy 1.18.1   np.float64(1.1415123441397204e-23)  2.5e+07 ulp  severe
+== pdf 1e6 -1.5 1 0.9999999999
+  reference      3.989029366949150494253302e-16  (float 3.9890293669491503e-16)
+  cond (arg)     2.5  (within conditioning: <= 10.5 ulp)
+  scipy 1.18.1   np.float64(3.989029366866918e-16) 9.28e+04 ulp  moderate
+== pdf 0.002 1 1e6 0
+  reference      53.9910542483740760088152  (float 53.99105424837408)
+  cond (arg)     4  (within conditioning: <= 12 ulp)
+  scipy 1.18.1   np.float64(53.99105425897329)  8.8e+05 ulp  moderate
+== pdf -100 -2 3 -2
+  reference      1.875248028536455449402544e-49  (float 1.8752480285364554e-49)
+  cond (arg)     103  (within conditioning: <= 111 ulp)
+  scipy 1.18.1   np.float64(1.8752480285365606e-49)      253 ulp  minor
+== cdf -0.002 1 1e6 0
+  reference      0.02275022643234613835849823  (float 0.02275022643234614)
+  cond (arg)     4.75  (within conditioning: <= 12.7 ulp)
+  scipy 1.18.1   np.float64(0.02275022643412455)  3.5e+05 ulp  moderate  [invalid value encountered in scalar divide]
+== cdf 0.0005 1 1e6 0
+  reference      0.691462389760792838095184  (float 0.6914623897607929)
+  cond (arg)     0.255  (within conditioning: <= 8.25 ulp)
+  scipy 1.18.1   np.float64(0.6914623897911271)  2.0e+05 ulp  moderate  [invalid value encountered in scalar divide]
+== cdf -0.008 1 1e6 0
+  reference      6.224346408513220535274192e-16  (float 6.22434640851322e-16)
+  cond (arg)     65  (within conditioning: <= 73 ulp)
+  scipy 1.18.1   np.float64(1.0)             7.2e+30 ulp  loss  [Infinite values encountered in scipy.special.kve. Value
+== sf 1000 -1.5 1 0.9999999999
+  reference      0.000008417373346058918530213362  (float 8.417373346058919e-06)
+  cond (arg)     1.5  (within conditioning: <= 9.5 ulp)
+  scipy 1.18.1   np.float64(8.417373345182504e-06)  4.7e+05 ulp  moderate
+== sf 10000 -1.5 1 0.9999999999
+  reference      0.0000002659826637246996120332923  (float 2.659826637246996e-07)
+  cond (arg)     1.5  (within conditioning: <= 9.5 ulp)
+  scipy 1.18.1   np.float64(1.0)             1.7e+22 ulp  loss  [Infinite values encountered in scipy.special.kve. Value
+== sf 1e6 -1.5 1 0.9999999999
+== cdf 1e9 -1.5 1 0.9999999999

@@ -1,0 +1,33 @@
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  241  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss  [divide by zero encountered in _pdf_single (vectorized); invalid value encountered in _pdf_single (vectorized)]
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.0)             2.0e+16 ulp  loss  [Infinite values encountered in scipy.special.kve. Values replaced by NaN to avoid incorrect results.; divide by zero encountered in scalar divide; invalid value encountered in _integrate_pdf (vectorized); invalid value encountered in scalar divide]
+  cond (arg)     -  (within conditioning: <= 8 ulp)
+  cond (shapes)  -  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.0)             8.4e+16 ulp  loss  [Infinite values encountered in scipy.special.kve. Values replaced by NaN to avoid incorrect results.; divide by zero encountered in scalar divide; invalid value encountered in _integrate_pdf (vectorized); invalid value encountered in scalar divide]
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  1.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss  [invalid value encountered in _pdf_single (vectorized); underflow encountered in _pdf_single (vectorized)]
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  1.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(0.0)                 inf ulp  loss
+  cond (arg)     0.0017  (within conditioning: <= 8 ulp)
+  cond (shapes)  0.00255  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.0)             4.5e+15 ulp  severe  [Infinite values encountered in scipy.special.kve. Values replaced by NaN to avoid incorrect results.; invalid value encountered in _integrate_pdf (vectorized); invalid value encountered in scalar multiply]
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  0.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(12615.663118693084)  1.8e+08 ulp  severe
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  0.5  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  0.0527  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss
+  cond (arg)     0  (within conditioning: <= 8 ulp)
+  cond (shapes)  1.1e-101  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(1.0)             4.5e+15 ulp  loss  [Infinite values encountered in scipy.special.kve. Values replaced by NaN to avoid incorrect results.; invalid value encountered in _integrate_pdf (vectorized); invalid value encountered in scalar divide]
+  cond (arg)     1  (within conditioning: <= 9 ulp)
+  cond (shapes)  1  (context only: error from a 1-ulp change of the shapes)
+  scipy 1.18.1   np.float64(nan)                 inf ulp  loss

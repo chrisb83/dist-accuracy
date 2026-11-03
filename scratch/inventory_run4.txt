@@ -1,0 +1,53 @@
+== erlang (erlang_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [3794, 3846]
+   pdf     implemented (in gamma_gen), lines [3628, 3630]
+   logpdf  implemented (in gamma_gen), lines [3632, 3633]
+   cdf     implemented (in gamma_gen), lines [3635, 3636]
+   logcdf  inherited: log(cdf)
+   sf      implemented (in gamma_gen), lines [3638, 3639]
+   logsf   inherited: log(sf)
+   ppf     implemented (in gamma_gen), lines [3641, 3642]
+   isf     implemented (in gamma_gen), lines [3644, 3645]
+   shape {'name': 'a', 'domain': [1.0, inf], 'inclusive': [True, False], 'integrality': True}
+   example params: [[10.0]], support there: [0.0, inf]
+   helpers: ['_skew']
+   special functions: []
+   related: ['gamma']
+
+== loguniform (reciprocal_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [9225, 9328]
+   pdf     implemented, lines [9294, 9296]
+   logpdf  implemented, lines [9298, 9299]
+   cdf     implemented, lines [9301, 9302]
+   logcdf  inherited: log(cdf)
+   sf      inherited: 1 - cdf
+   logsf   inherited: log(sf)
+   ppf     implemented, lines [9304, 9305]
+   isf     inherited: ppf(1 - q)
+   shape {'name': 'a', 'domain': [5e-324, inf], 'inclusive': [False, False], 'integrality': False}
+   shape {'name': 'b', 'domain': [5e-324, inf], 'inclusive': [False, False], 'integrality': False}
+   example params: [[0.01, 1.25]], support there: [0.01, 1.25] (_get_support overridden)
+   docstring math: f(x, a, b) = \frac{1}{x \log(b/a)}
+   helpers: ['_log_diff']
+   special functions: []
+   related: []
+
+== reciprocal (reciprocal_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [9225, 9328]
+   pdf     implemented, lines [9294, 9296]
+   logpdf  implemented, lines [9298, 9299]
+   cdf     implemented, lines [9301, 9302]
+   logcdf  inherited: log(cdf)
+   sf      inherited: 1 - cdf
+   logsf   inherited: log(sf)
+   ppf     implemented, lines [9304, 9305]
+   isf     inherited: ppf(1 - q)
+   shape {'name': 'a', 'domain': [5e-324, inf], 'inclusive': [False, False], 'integrality': False}
+   shape {'name': 'b', 'domain': [5e-324, inf], 'inclusive': [False, False], 'integrality': False}
+   example params: [[0.01, 1.25]], support there: [0.01, 1.25] (_get_support overridden)
+   docstring math: f(x, a, b) = \frac{1}{x \log(b/a)}
+   helpers: ['_log_diff']
+   special functions: []
+   related: []
+
+wrote reports/inventory.json (3 updated, 103 total)

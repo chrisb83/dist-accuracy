@@ -73,7 +73,7 @@ none
 
 ## Existing GitHub issues
 
-not checked
+none found (web search; gh unavailable)
 
 ## Verification
 

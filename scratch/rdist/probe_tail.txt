@@ -1,0 +1,7 @@
+c=1e+06 x=-0.029999985000011248: y err 1.39e-17; exact I(rounded y) 3.76e+03 ulp; Boost vs exact I(rounded y) 9.78e+03 ulp; scipy 1.35e+04 ulp; X^2-form 340 ulp
+c=1e+06 x=-0.0199999900000075: y err -8.67e-18; exact I(rounded y) 1.57e+03 ulp; Boost vs exact I(rounded y) 6.91e+03 ulp; scipy 8.47e+03 ulp; X^2-form 67.2 ulp
+c=1e+06 x=-0.00999999500000375: y err 2.34e-17; exact I(rounded y) 2.13e+03 ulp; Boost vs exact I(rounded y) 1.38e+03 ulp; scipy 753 ulp; X^2-form 4.5e+15 ulp
+c=1e+06 x=-0.00199999900000075: y err 2.69e-17; exact I(rounded y) 575 ulp; Boost vs exact I(rounded y) 1.25e+03 ulp; scipy 1.82e+03 ulp; X^2-form 2.21 ulp
+c=1e+06 x=-0.000999999500000375: y err -1.43e-17; exact I(rounded y) 197 ulp; Boost vs exact I(rounded y) 682 ulp; scipy 485 ulp; X^2-form 2.61 ulp
+c=1000 x=-0.3: y err -2.78e-17; exact I(rounded y) 83.3 ulp; Boost vs exact I(rounded y) 129 ulp; scipy 212 ulp; X^2-form 1.1 ulp
+c=1000 x=-0.29999999999999993: y err 0.00e+00; exact I(rounded y) 0 ulp; Boost vs exact I(rounded y) 321 ulp; scipy 321 ulp; X^2-form 26.1 ulp

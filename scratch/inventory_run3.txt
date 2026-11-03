@@ -1,0 +1,187 @@
+== argus (argus_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [11888, 12087]
+   pdf     implemented, lines [11939, 11940]
+   logpdf  implemented, lines [11932, 11937]
+   cdf     implemented, lines [11942, 11943]
+   logcdf  inherited: log(cdf)
+   sf      implemented, lines [11945, 11946]
+   logsf   inherited: log(sf)
+   ppf     inherited: numerical inversion of cdf
+   isf     inherited: ppf(1 - q)
+   shape {'name': 'chi', 'domain': [5e-324, inf], 'inclusive': [False, False], 'integrality': False}
+   example params: [[1.0]], support there: [0.0, 1.0]
+   docstring math: f(x, \chi) = \frac{\chi^3}{\sqrt{2\pi} \Psi(\chi)} x \sqrt{1-x^2} \exp(-\chi^2 (1 - x^2)/2)
+   docstring math: \Psi(\chi) = \Phi(\chi) - \chi \phi(\chi) - 1/2
+   helpers: ['_argus_phi', '_check_shape', '_norm_pdf']
+   special functions: ['sc.ive']
+   related: []
+
+== burr (burr_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [1145, 1264]
+   pdf     implemented, lines [1199, 1206]
+   logpdf  implemented, lines [1208, 1216]
+   cdf     implemented, lines [1218, 1219]
+   logcdf  implemented, lines [1221, 1222]
+   sf      implemented, lines [1224, 1225]
+   logsf   implemented, lines [1227, 1228]
+   ppf     implemented, lines [1230, 1231]
+   isf     implemented, lines [1233, 1235]
+   shape {'name': 'c', 'domain': [5e-324, inf], 'inclusive': [False, False], 'integrality': False}
+   shape {'name': 'd', 'domain': [5e-324, inf], 'inclusive': [False, False], 'integrality': False}
+   example params: [[10.5, 4.3]], support there: [0.0, inf]
+   docstring math: f(x; c, d) = c d \frac{x^{-c - 1}} {{(1 + x^{-c})}^{d + 1}}
+   helpers: []
+   special functions: ['sc.beta', 'sc.expm1', 'sc.log1p', 'sc.xlog1py', 'sc.xlogy']
+   related: ['fisk']
+
+== expon (expon_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [2050, 2156]
+   pdf     implemented, lines [2083, 2085]
+   logpdf  implemented, lines [2087, 2088]
+   cdf     implemented, lines [2090, 2091]
+   logcdf  inherited: log(cdf)
+   sf      implemented, lines [2096, 2097]
+   logsf   implemented, lines [2099, 2100]
+   ppf     implemented, lines [2093, 2094]
+   isf     implemented, lines [2102, 2103]
+   example params: [[]], support there: [0.0, inf]
+   docstring math: f(x) = \exp(-x)
+   helpers: ['_remove_optimizer_parameters']
+   special functions: ['sc.expm1', 'sc.log1p']
+   related: []
+
+== genhyperbolic (genhyperbolic_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [4010, 4236]
+   pdf     implemented, lines [4124, 4131]
+   logpdf  implemented, lines [4115, 4122]
+   cdf     implemented, lines [4170, 4171]
+   logcdf  inherited: log(cdf)
+   sf      implemented, lines [4173, 4174]
+   logsf   inherited: log(sf)
+   ppf     inherited: numerical inversion of cdf
+   isf     inherited: ppf(1 - q)
+   shape {'name': 'p', 'domain': [-inf, inf], 'inclusive': [False, False], 'integrality': False}
+   shape {'name': 'a', 'domain': [0.0, inf], 'inclusive': [True, False], 'integrality': False}
+   shape {'name': 'b', 'domain': [-inf, inf], 'inclusive': [False, False], 'integrality': False}
+   example params: [[0.5, 1.5, -0.5]], support there: [-inf, inf]
+   docstring math: f(x, p, a, b) = \frac{(a^2 - b^2)^{p/2}} {\sqrt{2\pi}a^{p-1/2} K_p\Big(\sqrt{a^2 - b^2}\Big)} e^{bx} \times \frac{K_{p - 1/2} (a \sqrt{1 + x^2})} {(\sqrt{1 + x^2})^{1/2 - p}}
+   docstring math: f(x, \lambda, \alpha, \beta, \delta, \mu) = \frac{(\gamma/\delta)^\lambda}{\sqrt{2\pi}K_\lambda(\delta \gamma)} e^{\beta (x - \mu)} \times \frac{K_{\lambda - 1/2} (\alpha \sqrt{\delta^2 + (x - \mu)^2})} {(\sqrt{\delta^2 + (x - \mu)^2} / \alpha)^{1/2 - \lambda}}
+   helpers: []
+   special functions: ['sc.kv', 'special.kv', 'special.kve']
+   related: []
+
+== gennorm (gennorm_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [11520, 11617]
+   pdf     implemented, lines [11570, 11571]
+   logpdf  implemented, lines [11573, 11574]
+   cdf     implemented, lines [11576, 11579]
+   logcdf  inherited: log(cdf)
+   sf      implemented, lines [11586, 11587]
+   logsf   inherited: log(sf)
+   ppf     implemented, lines [11581, 11584]
+   isf     implemented, lines [11589, 11590]
+   shape {'name': 'beta', 'domain': [5e-324, inf], 'inclusive': [False, False], 'integrality': False}
+   example params: [[1.2988442399460265]], support there: [-inf, inf]
+   docstring math: f(x, \beta) = \frac{\beta}{2 \Gamma(1/\beta)} \exp(-|x|^\beta),
+   helpers: []
+   special functions: ['sc.gammaincc', 'sc.gammainccinv', 'sc.gammaln', 'special.gamma']
+   related: []
+
+== halfcauchy (halfcauchy_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [4514, 4601]
+   pdf     implemented, lines [4537, 4539]
+   logpdf  implemented, lines [4541, 4542]
+   cdf     implemented, lines [4544, 4545]
+   logcdf  inherited: log(cdf)
+   sf      implemented, lines [4550, 4551]
+   logsf   inherited: log(sf)
+   ppf     implemented, lines [4547, 4548]
+   isf     implemented, lines [4553, 4554]
+   example params: [[]], support there: [0.0, inf]
+   docstring math: f(x) = \frac{2}{\pi (1 + x^2)}
+   helpers: ['_check_fit_input_parameters']
+   special functions: ['sc.log1p']
+   related: []
+
+== irwinhall (irwinhall_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [9402, 9527]
+   pdf     implemented, lines [9493, 9496]
+   logpdf  inherited: log(pdf)
+   cdf     implemented, lines [9498, 9501]
+   logcdf  inherited: log(cdf)
+   sf      implemented, lines [9503, 9506]
+   logsf   inherited: log(sf)
+   ppf     inherited: numerical inversion of cdf
+   isf     inherited: ppf(1 - q)
+   shape {'name': 'n', 'domain': [1.0, inf], 'inclusive': [True, False], 'integrality': True}
+   example params: [[10.0]], support there: [0.0, 10.0] (_get_support overridden)
+   helpers: ['_isintegral']
+   special functions: ['sc.comb', 'sc.stirling2']
+   related: []
+
+== norm (norm_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [394, 503]
+   pdf     implemented, lines [423, 425]
+   logpdf  implemented, lines [427, 428]
+   cdf     implemented, lines [430, 431]
+   logcdf  implemented, lines [433, 434]
+   sf      implemented, lines [436, 437]
+   logsf   implemented, lines [439, 440]
+   ppf     implemented, lines [442, 443]
+   isf     implemented, lines [445, 446]
+   example params: [[]], support there: [-inf, inf]
+   docstring math: f(x) = \frac{\exp(-x^2/2)}{\sqrt{2\pi}}
+   helpers: ['_norm_cdf', '_norm_isf', '_norm_logcdf', '_norm_logpdf', '_norm_logsf', '_norm_pdf', '_norm_ppf', '_norm_sf', '_remove_optimizer_parameters']
+   special functions: ['sc.factorial2']
+   related: ['gengamma', 'loggamma', 'nakagami', 't']
+
+== semicircular (semicircular_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [9591, 9648]
+   pdf     implemented, lines [9625, 9626]
+   logpdf  implemented, lines [9628, 9629]
+   cdf     implemented, lines [9631, 9632]
+   logcdf  inherited: log(cdf)
+   sf      inherited: 1 - cdf
+   logsf   inherited: log(sf)
+   ppf     implemented, lines [9634, 9635]
+   isf     inherited: ppf(1 - q)
+   example params: [[]], support there: [-1.0, 1.0]
+   docstring math: f(x) = \frac{2}{\pi} \sqrt{1-x^2}
+   helpers: []
+   special functions: ['sc.log1p']
+   related: ['rdist']
+
+== uniform (uniform_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [10931, 11127]
+   pdf     implemented, lines [10965, 10966]
+   logpdf  inherited: log(pdf)
+   cdf     implemented, lines [10968, 10969]
+   logcdf  inherited: log(cdf)
+   sf      inherited: 1 - cdf
+   logsf   inherited: log(sf)
+   ppf     implemented, lines [10971, 10972]
+   isf     inherited: ppf(1 - q)
+   example params: [[]], support there: [0.0, 1.0]
+   docstring math: f(x) = \begin{cases} 1 & \text{for } 0 \le x \le 1 \\ 0 & \text{otherwise} \end{cases}
+   helpers: ['_remove_optimizer_parameters']
+   special functions: []
+   related: []
+
+== vonmises_line (vonmises_gen), SciPy 1.18.1
+   source: C:\Users\chbau\miniforge-pypy3\envs\ds\Lib\site-packages\scipy\stats\_continuous_distns.py lines [11133, 11379]
+   pdf     implemented, lines [11250, 11255]
+   logpdf  implemented, lines [11257, 11259]
+   cdf     implemented, lines [11261, 11262]
+   logcdf  inherited: log(cdf)
+   sf      inherited: 1 - cdf
+   logsf   inherited: log(sf)
+   ppf     inherited: numerical inversion of cdf
+   isf     inherited: ppf(1 - q)
+   shape {'name': 'kappa', 'domain': [0.0, inf], 'inclusive': [True, False], 'integrality': False}
+   example params: [[3.99390425810714]], support there: [-3.141592653589793, 3.141592653589793]
+   docstring math: f(x, \kappa) = \frac{ \exp(\kappa \cos(x)) }{ 2 \pi I_0(\kappa) }
+   helpers: ['_check_fit_input_parameters']
+   special functions: ['sc.cosm1', 'sc.i0e', 'sc.i1e', 'special.i0']
+   related: []
+
+wrote reports/inventory.json (11 updated, 100 total)
