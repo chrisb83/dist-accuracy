@@ -29,6 +29,69 @@ document them in `reports/<dist>.md`. Nothing in SciPy is changed.
 Created while running: `reports/` (reports, `inventory.json`, `INDEX.md`),
 `refs/` (mpmath reference modules), `scratch/`, `.cache/dist-accuracy/`.
 
+## Agentic workflow design
+
+There are two skills, which hold the procedure and the tools, and two agents,
+which do the work for one distribution each.
+
+**1. `/dist-accuracy-orchestrate` (skill, run by you; the coordinator)**
+
+- **Inventory.** `inventory.py` lists each distribution's own methods, the
+  inherited ones, branches, helpers and special functions, and writes them to
+  `reports/inventory.json`.
+- **Plan.** It skips distributions that already have a valid report, so
+  interrupted runs resume. Distributions that others call into come first
+  (e.g. `burr` before `fisk`), so later reports can cite them.
+- **Dispatch.** It starts one analyst per distribution, in parallel batches
+  (default 4).
+- **Quality gate.** `reports.py check` validates each report. A malformed
+  report goes back to the analyst once.
+- It then runs a verifier on every report with serious findings and looks up
+  existing GitHub issues. Finally `reports.py index` builds `reports/INDEX.md`,
+  including cross-cutting issues such as shared helpers or "sf = 1 - cdf in N
+  distributions".
+
+**2. `dist-accuracy-review` (skill; the method itself, loaded by both agents)**
+
+- Read the source and match expressions against `patterns.md`: cancellation,
+  overflow/underflow, power rounding, and so on. Write down hypotheses about
+  where each one should fail.
+- Write an mpmath reference `refs/<dist>_ref.py` at high precision, with
+  self-checks.
+- Measure the methods with `accuracy.py`, which reports the error in ulp
+  together with the condition number and a severity (loss / severe /
+  moderate / minor).
+- Write `reports/<dist>.md` from the template:
+  - findings, each with a mechanism tied to a code line, a reproducer and a
+    fix direction;
+  - regimes that were checked and are fine;
+  - opportunities for inherited methods.
+
+**3. `dist-accuracy-analyst` (agent; one per distribution)**
+
+- Follows the review skill for one distribution.
+- Writes only its reference, its report and its scratch files.
+- Measures only methods the distribution implements itself. Inherited
+  defaults are discussed under Opportunities and are not measured.
+- Every finding needs a measurement. An unmeasured suspicion goes under
+  "Suspected, not confirmed".
+
+**4. `dist-accuracy-verifier` (agent; independent second opinion)**
+
+- Re-checks every loss and severe finding, plus at most two moderate ones.
+- Computes its own reference values first and opens the analyst's reference
+  only if the two disagree.
+- Uses a different route where possible, e.g. integrating the pdf with
+  `mp.quad`, or checking cdf(x) = q for quantiles. It evaluates at 100 and
+  200 digits.
+- Checks that the stated mechanism matches the cited code line.
+- Fills in the report's Verification table.
+- If a finding is "not reproduced", it goes back to a new analyst for
+  correction.
+
+**Flow:** inventory → analysts in parallel batches → format check →
+verifiers → GitHub lookup → `INDEX.md`.
+
 ## Setup
 
 1. Copy this folder's `.claude/` directory into an empty project directory
