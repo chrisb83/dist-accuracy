@@ -1,0 +1,8 @@
+Pixi task (build in build): spin build --setup-args=-Dblas=openblas --setup-args=-Dlapack=openblas --setup-args=-Duse-g77-abi=true && cp .pixi/envs/build/Library/bin/openblas.dll build-install/Lib/site-packages/scipy/linalg/openblas.dll: (Build SciPy (default settings))
+$ meson compile -j 8 -C build
+ninja: Entering directory `C:/Users/Christoph/Documents/repos/scipy/build'
+[1/356] Generating scipy/generate-version with a custom command
+[2/356] Generating subprojects/highs/highs/HConfig.h with a custom command
+INFO: autodetecting backend as ninja
+INFO: calculating backend command to run: C:\Users\Christoph\Documents\repos\scipy\.pixi\envs\build\Library\bin\ninja.EXE -C C:/Users/Christoph/Documents/repos/scipy/build -j 8
+$ meson install --no-rebuild --only-changed -C build --destdir '..\build-install' --tags=runtime,python-runtime,tests,devel --skip-subprojects
